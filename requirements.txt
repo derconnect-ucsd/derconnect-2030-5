@@ -1,3 +1,0 @@
-gridappsd_2030_5
-pysep
-plotly
