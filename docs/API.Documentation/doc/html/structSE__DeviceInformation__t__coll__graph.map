@@ -1,0 +1,6 @@
+<map id="SE_DeviceInformation_t" name="SE_DeviceInformation_t">
+<area shape="rect" id="node2" href="$structSE__DRLCCapabilities__t.html" title="SE_DRLCCapabilities_t" alt="" coords="63,95,226,121"/>
+<area shape="rect" id="node3" href="$structSE__RealEnergy__t.html" title="SE_RealEnergy_t" alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node4" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="156,5,288,32"/>
+<area shape="rect" id="node5" href="$structSE__SupportedLocaleListLink__t.html" title="SE_SupportedLocaleListLink_t" alt="" coords="250,95,450,121"/>
+</map>

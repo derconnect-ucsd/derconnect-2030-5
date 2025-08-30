@@ -1,0 +1,56 @@
+\hypertarget{structEventBlock}{}\section{Event\+Block Struct Reference}
+\label{structEventBlock}\index{Event\+Block@{Event\+Block}}
+
+
+An \hyperlink{structEventBlock}{Event\+Block} is an Event instance scheduled for a particular End\+Device.  
+
+
+
+
+Collaboration diagram for Event\+Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{structEventBlock__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEventBlock_a681d92c984804b2eaf72a5a9841cb7d9}\label{structEventBlock_a681d92c984804b2eaf72a5a9841cb7d9}} 
+struct \+\_\+\+Event\+Block $\ast$ \hyperlink{structEventBlock_a681d92c984804b2eaf72a5a9841cb7d9}{next}
+\begin{DoxyCompactList}\small\item\em is a pointer to the next \hyperlink{structEventBlock}{Event\+Block} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_a529c411c181e43ce96c1ae4ff1adb354}\label{structEventBlock_a529c411c181e43ce96c1ae4ff1adb354}} 
+\hyperlink{structStub}{Stub} $\ast$ \hyperlink{structEventBlock_a529c411c181e43ce96c1ae4ff1adb354}{device}
+\begin{DoxyCompactList}\small\item\em is a pointer to the End\+Device \hyperlink{structStub}{Stub} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_aee1d8030865b3cb2a3dafebfe167e8d3}\label{structEventBlock_aee1d8030865b3cb2a3dafebfe167e8d3}} 
+void $\ast$ \hyperlink{structEventBlock_aee1d8030865b3cb2a3dafebfe167e8d3}{event}
+\begin{DoxyCompactList}\small\item\em is a pointer to the Event \hyperlink{structStub}{Stub} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_af4881ab7d86bb9d46c0f13fa02469f72}\label{structEventBlock_af4881ab7d86bb9d46c0f13fa02469f72}} 
+void $\ast$ \hyperlink{structEventBlock_af4881ab7d86bb9d46c0f13fa02469f72}{program}
+\begin{DoxyCompactList}\small\item\em is a pointer to the D\+E\+R\+Program for D\+E\+R\+Controls \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_a7ec65a162162bfdb2aa61b13ca5e38ab}\label{structEventBlock_a7ec65a162162bfdb2aa61b13ca5e38ab}} 
+uint8\+\_\+t \hyperlink{structEventBlock_a7ec65a162162bfdb2aa61b13ca5e38ab}{status}
+\begin{DoxyCompactList}\small\item\em the schedule event status \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_a526e1cf5ed438fc4db00a051ad125b00}\label{structEventBlock_a526e1cf5ed438fc4db00a051ad125b00}} 
+uint8\+\_\+t \hyperlink{structEventBlock_a526e1cf5ed438fc4db00a051ad125b00}{primacy}
+\begin{DoxyCompactList}\small\item\em associated event primacy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_ad72299594bd9c924aef2a77b190ea8ae}\label{structEventBlock_ad72299594bd9c924aef2a77b190ea8ae}} 
+uint32\+\_\+t \hyperlink{structEventBlock_ad72299594bd9c924aef2a77b190ea8ae}{der}
+\begin{DoxyCompactList}\small\item\em bitmask of active D\+ER controls \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_a8b8ddebee094a509e07f82b542ce3924}\label{structEventBlock_a8b8ddebee094a509e07f82b542ce3924}} 
+int64\+\_\+t \hyperlink{structEventBlock_a8b8ddebee094a509e07f82b542ce3924}{start}
+\begin{DoxyCompactList}\small\item\em the effective start time \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structEventBlock_a7987c8ec7f2cddcb5ab782335c2c1cbb}\label{structEventBlock_a7987c8ec7f2cddcb5ab782335c2c1cbb}} 
+int64\+\_\+t \hyperlink{structEventBlock_a7987c8ec7f2cddcb5ab782335c2c1cbb}{end}
+\begin{DoxyCompactList}\small\item\em the effective end time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An \hyperlink{structEventBlock}{Event\+Block} is an Event instance scheduled for a particular End\+Device. 
+
+The start and end times are effective times with the event randomization already applied, primacy is derived the context that the event occured. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+schedule.\+c\end{DoxyCompactItemize}

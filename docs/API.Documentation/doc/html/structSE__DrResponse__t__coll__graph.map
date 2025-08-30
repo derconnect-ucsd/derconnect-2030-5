@@ -1,0 +1,7 @@
+<map id="SE_DrResponse_t" name="SE_DrResponse_t">
+<area shape="rect" id="node2" href="$structSE__SetPoint__t.html" title="SE_SetPoint_t" alt="" coords="53,5,161,32"/>
+<area shape="rect" id="node3" href="$structSE__Offset__t.html" title="SE_Offset_t" alt="" coords="59,56,154,83"/>
+<area shape="rect" id="node4" href="$structSE__DutyCycle__t.html" title="SE_DutyCycle_t" alt="" coords="47,107,167,133"/>
+<area shape="rect" id="node5" href="$structSE__AppliedTargetReduction__t.html" title="SE_AppliedTargetReduction_t" alt="" coords="8,157,205,184"/>
+<area shape="rect" id="node6" href="$structSE__ApplianceLoadReduction__t.html" title="SE_ApplianceLoadReduction_t" alt="" coords="5,208,208,235"/>
+</map>

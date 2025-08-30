@@ -1,0 +1,88 @@
+\hypertarget{group__DRLCCapabilities}{}\section{D\+R\+L\+C\+Capabilities}
+\label{group__DRLCCapabilities}\index{D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}}
+Collaboration diagram for D\+R\+L\+C\+Capabilities\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{group__DRLCCapabilities}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DRLCCapabilities__t}{S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSE__RealEnergy__t}{S\+E\+\_\+\+Real\+Energy\+\_\+t} \hyperlink{group__DRLCCapabilities_ga6e021a85ef95aff057ee874c073e496e}{S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t\+::average\+Energy}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__DRLCCapabilities_ga5a0d146e5a4e0b544873034fb4d8b0a4}{S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t\+::max\+Demand}
+\item 
+\hyperlink{group__HexBinary32_ga062e99a233c4875284116657d048bb98}{S\+E\+\_\+\+Hex\+Binary32\+\_\+t} \hyperlink{group__DRLCCapabilities_gaea3195869d953f2caa66af4cadd8b567}{S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t\+::options\+Implemented}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains information about the static capabilities of the device, to allow service providers to know what types of functions are supported, what the normal operating ranges and limits are, and other similar information, in order to provide better suggestions of applicable programs to receive the maximum benefit. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DRLCCapabilities_ga6e021a85ef95aff057ee874c073e496e}\label{group__DRLCCapabilities_ga6e021a85ef95aff057ee874c073e496e}} 
+\index{D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}!average\+Energy@{average\+Energy}}
+\index{average\+Energy@{average\+Energy}!D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}}
+\subsubsection{\texorpdfstring{average\+Energy}{averageEnergy}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t\+::average\+Energy}
+
+The average hourly energy usage when in normal operating mode. \mbox{\Hypertarget{group__DRLCCapabilities_ga5a0d146e5a4e0b544873034fb4d8b0a4}\label{group__DRLCCapabilities_ga5a0d146e5a4e0b544873034fb4d8b0a4}} 
+\index{D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}!max\+Demand@{max\+Demand}}
+\index{max\+Demand@{max\+Demand}!D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}}
+\subsubsection{\texorpdfstring{max\+Demand}{maxDemand}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t\+::max\+Demand}
+
+The maximum demand rating of this end device. \mbox{\Hypertarget{group__DRLCCapabilities_gaea3195869d953f2caa66af4cadd8b567}\label{group__DRLCCapabilities_gaea3195869d953f2caa66af4cadd8b567}} 
+\index{D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}!options\+Implemented@{options\+Implemented}}
+\index{options\+Implemented@{options\+Implemented}!D\+R\+L\+C\+Capabilities@{D\+R\+L\+C\+Capabilities}}
+\subsubsection{\texorpdfstring{options\+Implemented}{optionsImplemented}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+R\+L\+C\+Capabilities\+\_\+t\+::options\+Implemented}
+
+Bitmap indicating the D\+R\+LC options implemented by the device.
+
+0 -\/ Target reduction (k\+Wh)
+
+1 -\/ Target reduction (kW)
+
+2 -\/ Target reduction (Watts)
+
+3 -\/ Target reduction (Cubic Meters)
+
+4 -\/ Target reduction (Cubic Feet)
+
+5 -\/ Target reduction (US Gallons)
+
+6 -\/ Target reduction (Imperial Gallons)
+
+7 -\/ Target reduction (B\+T\+Us)
+
+8 -\/ Target reduction (Liters)
+
+9 -\/ Target reduction (k\+PA (gauge))
+
+10 -\/ Target reduction (k\+PA (absolute))
+
+11 -\/ Target reduction (Mega Joule)
+
+12 -\/ Target reduction (Unitless)
+
+13-\/15 -\/ Reserved
+
+16 -\/ Temperature set point
+
+17 -\/ Temperature offset
+
+18 -\/ Duty cycle
+
+19 -\/ Load adjustment percentage
+
+20 -\/ Appliance load reduction
+
+21-\/32 -\/ Reserved 

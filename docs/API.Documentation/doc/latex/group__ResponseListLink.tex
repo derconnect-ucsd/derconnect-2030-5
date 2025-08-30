@@ -1,0 +1,48 @@
+\hypertarget{group__ResponseListLink}{}\section{Response\+List\+Link}
+\label{group__ResponseListLink}\index{Response\+List\+Link@{Response\+List\+Link}}
+Collaboration diagram for Response\+List\+Link\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{group__ResponseListLink}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ResponseListLink__t}{S\+E\+\_\+\+Response\+List\+Link\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__ResponseListLink_ga54194415a4458904a89ba172148b82e8}{S\+E\+\_\+\+Response\+List\+Link\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ResponseListLink_ga48bb0add8ae3c93f524b731f596f1343}{S\+E\+\_\+\+Response\+List\+Link\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__ResponseListLink_ga5cf19fe8f4b95dc44ce8305d28fb9fd8}{S\+E\+\_\+\+Response\+List\+Link\+\_\+t\+::all}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+H\+A\+LL contain a Link to a \hyperlink{structList}{List} of Response instances. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ResponseListLink_ga54194415a4458904a89ba172148b82e8}\label{group__ResponseListLink_ga54194415a4458904a89ba172148b82e8}} 
+\index{Response\+List\+Link@{Response\+List\+Link}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Response\+List\+Link@{Response\+List\+Link}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+List\+Link\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+all\+\_\+exists (1 $<$$<$ 0) \mbox{\Hypertarget{group__ResponseListLink_ga5cf19fe8f4b95dc44ce8305d28fb9fd8}\label{group__ResponseListLink_ga5cf19fe8f4b95dc44ce8305d28fb9fd8}} 
+\index{Response\+List\+Link@{Response\+List\+Link}!all@{all}}
+\index{all@{all}!Response\+List\+Link@{Response\+List\+Link}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+List\+Link\+\_\+t\+::all}
+
+Indicates the total number of items in the referenced list. This attribute S\+H\+A\+LL be present if the href is a local or relative U\+RI. This attribute S\+H\+O\+U\+LD N\+OT be present if the href is a remote or absolute U\+RI, as the server may be unaware of changes to the value. \mbox{\Hypertarget{group__ResponseListLink_ga48bb0add8ae3c93f524b731f596f1343}\label{group__ResponseListLink_ga48bb0add8ae3c93f524b731f596f1343}} 
+\index{Response\+List\+Link@{Response\+List\+Link}!href@{href}}
+\index{href@{href}!Response\+List\+Link@{Response\+List\+Link}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+List\+Link\+\_\+t\+::href}
+
+A U\+RI reference. 

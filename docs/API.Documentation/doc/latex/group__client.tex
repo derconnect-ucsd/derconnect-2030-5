@@ -1,0 +1,58 @@
+\hypertarget{group__client}{}\section{Client}
+\label{group__client}\index{Client@{Client}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__client_ga59d02ac70e666d153e0d9cb6374a19ac}\label{group__client_ga59d02ac70e666d153e0d9cb6374a19ac}} 
+\#define {\bfseries S\+E\+R\+V\+I\+C\+E\+\_\+\+F\+O\+U\+ND}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+1)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__client_ga7c5c3327618a1b3c4757c415fb42ba8d}{client\+\_\+poll} (void $\ast$$\ast$any, int timeout)
+\begin{DoxyCompactList}\small\item\em Perform polling on the behalf of a client. \end{DoxyCompactList}\item 
+void \hyperlink{group__client_ga1309e49c4a65b13752f11098b765620e}{client\+\_\+init} (int index, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Perform client initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides client initialization and service discovery events. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__client_ga1309e49c4a65b13752f11098b765620e}\label{group__client_ga1309e49c4a65b13752f11098b765620e}} 
+\index{Client@{Client}!client\+\_\+init@{client\+\_\+init}}
+\index{client\+\_\+init@{client\+\_\+init}!Client@{Client}}
+\subsubsection{\texorpdfstring{client\+\_\+init()}{client\_init()}}
+{\footnotesize\ttfamily void client\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Perform client initialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & is the interface index \\
+\hline
+{\em name} & is the path/name of device used to load the device certificate and private key pair. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__client_ga7c5c3327618a1b3c4757c415fb42ba8d}\label{group__client_ga7c5c3327618a1b3c4757c415fb42ba8d}} 
+\index{Client@{Client}!client\+\_\+poll@{client\+\_\+poll}}
+\index{client\+\_\+poll@{client\+\_\+poll}!Client@{Client}}
+\subsubsection{\texorpdfstring{client\+\_\+poll()}{client\_poll()}}
+{\footnotesize\ttfamily int client\+\_\+poll (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{any,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Perform polling on the behalf of a client. 
+
+Returns S\+E\+R\+V\+I\+C\+E\+\_\+\+F\+O\+U\+ND with a pointer to a Service as the event object when a the service discovery returns a discovers a new service. 
+\begin{DoxyParams}{Parameters}
+{\em any} & receives the event object pointer. \\
+\hline
+{\em timeout} & is the polling timeout in milliseconds, or -\/1 to indicate an infitie timeout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{group__event_ga2628ea8d12e8b2563c32f05dc7fff6fa}{Event\+Type} and the associated object in the any parameter. 
+\end{DoxyReturn}

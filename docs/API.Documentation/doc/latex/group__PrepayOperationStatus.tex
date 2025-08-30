@@ -1,0 +1,76 @@
+\hypertarget{group__PrepayOperationStatus}{}\section{Prepay\+Operation\+Status}
+\label{group__PrepayOperationStatus}\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+Collaboration diagram for Prepay\+Operation\+Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{group__PrepayOperationStatus}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__PrepayOperationStatus__t}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__PrepayOperationStatus_ga5f61a74f1a28ce905aa0c45ecf150704}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__PrepayOperationStatus_ga4111baa24c3cf308caa4879263d9354e}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::href}
+\item 
+\hyperlink{structSE__CreditTypeChange__t}{S\+E\+\_\+\+Credit\+Type\+Change\+\_\+t} \hyperlink{group__PrepayOperationStatus_ga585930db1ced44829ce2699542c605da}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::credit\+Type\+Change}
+\item 
+\hyperlink{group__CreditTypeType_ga5a63742e5c65087df17ed6ad8f420b5e}{S\+E\+\_\+\+Credit\+Type\+Type\+\_\+t} \hyperlink{group__PrepayOperationStatus_ga931c94832d59d1ab3b0940fcf20bb956}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::credit\+Type\+In\+Use}
+\item 
+\hyperlink{structSE__ServiceChange__t}{S\+E\+\_\+\+Service\+Change\+\_\+t} \hyperlink{group__PrepayOperationStatus_ga3934e843a26a66a371d3fc0e867d8238}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::service\+Change}
+\item 
+\hyperlink{group__ServiceStatusType_gaa3cd725afc87388d65acf81254caee7d}{S\+E\+\_\+\+Service\+Status\+Type\+\_\+t} \hyperlink{group__PrepayOperationStatus_ga14485626368fa2177e115ed7117f2338}{S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::service\+Status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Prepay\+Operation\+Status describes the status of the service or commodity being conditionally controlled by the Prepayment function set. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__PrepayOperationStatus_ga5f61a74f1a28ce905aa0c45ecf150704}\label{group__PrepayOperationStatus_ga5f61a74f1a28ce905aa0c45ecf150704}} 
+\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+service\+Change\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+credit\+Type\+In\+Use\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+credit\+Type\+Change\+\_\+exists (1 $<$$<$ 7) \mbox{\Hypertarget{group__PrepayOperationStatus_ga585930db1ced44829ce2699542c605da}\label{group__PrepayOperationStatus_ga585930db1ced44829ce2699542c605da}} 
+\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}!credit\+Type\+Change@{credit\+Type\+Change}}
+\index{credit\+Type\+Change@{credit\+Type\+Change}!Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+\subsubsection{\texorpdfstring{credit\+Type\+Change}{creditTypeChange}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::credit\+Type\+Change}
+
+Credit\+Type\+Change is used to define a pending change of credit\+Type\+In\+Use, which will activate at a specified time. \mbox{\Hypertarget{group__PrepayOperationStatus_ga931c94832d59d1ab3b0940fcf20bb956}\label{group__PrepayOperationStatus_ga931c94832d59d1ab3b0940fcf20bb956}} 
+\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}!credit\+Type\+In\+Use@{credit\+Type\+In\+Use}}
+\index{credit\+Type\+In\+Use@{credit\+Type\+In\+Use}!Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+\subsubsection{\texorpdfstring{credit\+Type\+In\+Use}{creditTypeInUse}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::credit\+Type\+In\+Use}
+
+Credit\+Type\+In\+Use identifies whether the present mode of operation is consuming regular credit or emergency credit. \mbox{\Hypertarget{group__PrepayOperationStatus_ga4111baa24c3cf308caa4879263d9354e}\label{group__PrepayOperationStatus_ga4111baa24c3cf308caa4879263d9354e}} 
+\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}!href@{href}}
+\index{href@{href}!Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__PrepayOperationStatus_ga3934e843a26a66a371d3fc0e867d8238}\label{group__PrepayOperationStatus_ga3934e843a26a66a371d3fc0e867d8238}} 
+\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}!service\+Change@{service\+Change}}
+\index{service\+Change@{service\+Change}!Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+\subsubsection{\texorpdfstring{service\+Change}{serviceChange}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::service\+Change}
+
+Service\+Change is used to define a pending change of service\+Status, which will activate at a specified time. \mbox{\Hypertarget{group__PrepayOperationStatus_ga14485626368fa2177e115ed7117f2338}\label{group__PrepayOperationStatus_ga14485626368fa2177e115ed7117f2338}} 
+\index{Prepay\+Operation\+Status@{Prepay\+Operation\+Status}!service\+Status@{service\+Status}}
+\index{service\+Status@{service\+Status}!Prepay\+Operation\+Status@{Prepay\+Operation\+Status}}
+\subsubsection{\texorpdfstring{service\+Status}{serviceStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Prepay\+Operation\+Status\+\_\+t\+::service\+Status}
+
+Service\+Status identifies whether the service is connected or disconnected, or armed for connection or disconnection. 

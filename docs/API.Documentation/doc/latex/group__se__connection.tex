@@ -1,0 +1,304 @@
+\hypertarget{group__se__connection}{}\section{Se\+Connection}
+\label{group__se__connection}\index{Se\+Connection@{Se\+Connection}}
+Collaboration diagram for Se\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{group__se__connection}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__se__connection_ga0797b07932619a4e69970f98e664975e}\label{group__se__connection_ga0797b07932619a4e69970f98e664975e}} 
+\#define {\bfseries S\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}~\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}
+\item 
+\mbox{\Hypertarget{group__se__connection_gaed97bc02f1ccb365ae1d206ec8e1fedc}\label{group__se__connection_gaed97bc02f1ccb365ae1d206ec8e1fedc}} 
+\#define {\bfseries S\+E\+\_\+\+E\+R\+R\+OR}~(H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE+1)
+\item 
+\mbox{\Hypertarget{group__se__connection_ga34e0cc3dfc977d99a60e046da5edd259}\label{group__se__connection_ga34e0cc3dfc977d99a60e046da5edd259}} 
+\#define {\bfseries S\+E\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}~(H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE+2)
+\item 
+\mbox{\Hypertarget{group__se__connection_gacc114dc18a79e463ea4eccd547a6bb6c}\label{group__se__connection_gacc114dc18a79e463ea4eccd547a6bb6c}} 
+\#define {\bfseries se\+\_\+post}(conn,  data,  type,  href)~\hyperlink{group__se__connection_ga0a92824fc6a6d3ed2bdf433ba00aebc0}{se\+\_\+send} (conn, data, type, href, H\+T\+T\+P\+\_\+\+P\+O\+ST)
+\item 
+\mbox{\Hypertarget{group__se__connection_gacc91661d3f4cf8a4ca3c949534a2e1dc}\label{group__se__connection_gacc91661d3f4cf8a4ca3c949534a2e1dc}} 
+\#define {\bfseries se\+\_\+put}(conn,  data,  type,  href)~\hyperlink{group__se__connection_ga0a92824fc6a6d3ed2bdf433ba00aebc0}{se\+\_\+send} (conn, data, type, href, H\+T\+T\+P\+\_\+\+P\+UT)
+\item 
+\#define {\bfseries link\+\_\+send}(conn,  obj,  data,  type,  method)
+\item 
+\mbox{\Hypertarget{group__se__connection_ga96bf3a90974ba3a1da538c16e4887043}\label{group__se__connection_ga96bf3a90974ba3a1da538c16e4887043}} 
+\#define {\bfseries link\+\_\+put}(conn,  obj,  data,  type)~link\+\_\+send (conn, obj, data, type, H\+T\+T\+P\+\_\+\+P\+UT)
+\item 
+\mbox{\Hypertarget{group__se__connection_ga1535da8d60ab0c1462e8f2a02f798bd3}\label{group__se__connection_ga1535da8d60ab0c1462e8f2a02f798bd3}} 
+\#define {\bfseries link\+\_\+post}(conn,  obj,  data,  type)~link\+\_\+send (conn, obj, data, type, H\+T\+T\+P\+\_\+\+P\+O\+ST)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__se__connection_gaf11d1431bb63b6aa4d92e8291efb6509}\label{group__se__connection_gaf11d1431bb63b6aa4d92e8291efb6509}} 
+typedef struct \+\_\+\+Se\+Connection {\bfseries Se\+Connection}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__se__connection_gaf5055605e320b3f9ea9fa330b57604e7}\label{group__se__connection_gaf5055605e320b3f9ea9fa330b57604e7}} 
+enum {\bfseries Response\+Type} \{ \newline
+{\bfseries Event\+Received} =1, 
+\newline
+{\bfseries Event\+Started}, 
+\newline
+{\bfseries Event\+Completed}, 
+\newline
+{\bfseries Event\+Opt\+Out}, 
+\newline
+{\bfseries Event\+Opt\+In}, 
+\newline
+{\bfseries Event\+Canceled}, 
+\newline
+{\bfseries Event\+Superseded}, 
+\newline
+{\bfseries Event\+Partial\+Opt\+Out}, 
+\newline
+{\bfseries Event\+Partial\+Opt\+In}, 
+\newline
+{\bfseries Event\+Complete\+Opt\+Out}, 
+\newline
+{\bfseries Event\+Acknowledge}, 
+\newline
+{\bfseries Event\+No\+Display}, 
+\newline
+{\bfseries Event\+Aborted\+Server}, 
+\newline
+{\bfseries Event\+Aborted\+Program}, 
+\newline
+{\bfseries Event\+Inapplicable} =252, 
+\newline
+{\bfseries Event\+Invalid}, 
+\newline
+{\bfseries Event\+Expired}
+ \}
+\item 
+\mbox{\Hypertarget{group__se__connection_ga3d348876b4715f38655df6f90291300e}\label{group__se__connection_ga3d348876b4715f38655df6f90291300e}} 
+enum {\bfseries Se\+Media\+Type} \{ \newline
+{\bfseries S\+E\+\_\+\+E\+XI}, 
+\newline
+{\bfseries S\+E\+\_\+\+X\+ML}, 
+\newline
+{\bfseries A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+X\+ML}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__se__connection_ga0a92824fc6a6d3ed2bdf433ba00aebc0}{se\+\_\+send} (void $\ast$conn, void $\ast$obj, int type, char $\ast$href, int method)
+\begin{DoxyCompactList}\small\item\em P\+UT or P\+O\+ST an I\+E\+EE 2030.\+5 object to a server. \end{DoxyCompactList}\item 
+void \hyperlink{group__se__connection_ga13afc522df9bb8bcc2ce6908c95f3ec9}{se\+\_\+response} (void $\ast$resp, \hyperlink{structSE__Event__t}{S\+E\+\_\+\+Event\+\_\+t} $\ast$ev, char $\ast$lfdi, int status)
+\begin{DoxyCompactList}\small\item\em Initialize a Response to an Event. \end{DoxyCompactList}\item 
+uint64\+\_\+t $\ast$ \hyperlink{group__se__connection_ga4bb69847ff4ebb89bf7e84aa80960c53}{se\+\_\+sfdi} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get the S\+F\+DI of the server or client. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{group__se__connection_gadd4baee7388cfb3c1f39a33bbbf9f4b1}{se\+\_\+content\+\_\+type} (void $\ast$conn, int $\ast$type)
+\begin{DoxyCompactList}\small\item\em Return the negotiated content type. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__se__connection_gaa358895b986fa80d6ab485646b63f04e}{se\+\_\+body} (void $\ast$conn, int $\ast$type)
+\begin{DoxyCompactList}\small\item\em Returns the message body as an I\+E\+EE 2030.\+5 object (if any). \end{DoxyCompactList}\item 
+int \hyperlink{group__se__connection_ga4d041c447020f6ba4d310facc21f1776}{se\+\_\+receive} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Receive an I\+E\+EE 2030.\+5 message. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__se__connection_ga46a034b6bbe2211018b10b0eba5d96be}{se\+\_\+connect} (\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$addr, int secure)
+\begin{DoxyCompactList}\small\item\em Connect to an I\+E\+EE 2030.\+5 server. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__se__connection_gad174138f5dd085fa16adcdccf495083e}{se\+\_\+connect\+\_\+uri} (\hyperlink{structUri}{Uri} $\ast$uri)
+\begin{DoxyCompactList}\small\item\em Connect to an I\+E\+EE 2030.\+5 server using a \hyperlink{structUri}{Uri} parameter. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__se__connection_gafda63e89032e1e11058c4632e3f63bec}{se\+\_\+accept} (\hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$a, int secure)
+\begin{DoxyCompactList}\small\item\em Accept a connection request from an I\+E\+EE 2030.\+5 client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Se\+Connection extends an Http\+Connection and provides support for the I\+E\+EE 2030.\+5 media types \char`\"{}application/sep+xml\char`\"{} and \char`\"{}application/sep-\/exi\char`\"{}. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__se__connection_ga4d13cea2846403e4c14305d14b314e93}\label{group__se__connection_ga4d13cea2846403e4c14305d14b314e93}} 
+\index{Se\+Connection@{Se\+Connection}!link\+\_\+send@{link\+\_\+send}}
+\index{link\+\_\+send@{link\+\_\+send}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{link\+\_\+send}{link\_send}}
+{\footnotesize\ttfamily \#define link\+\_\+send(\begin{DoxyParamCaption}\item[{}]{conn,  }\item[{}]{obj,  }\item[{}]{data,  }\item[{}]{type,  }\item[{}]{method }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} ((data) && se\_exists (obj, type##Link))        \(\backslash\)
+    se\_send (conn, data, SE\_##type, (obj)->type##Link.href, method)
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__se__connection_gafda63e89032e1e11058c4632e3f63bec}\label{group__se__connection_gafda63e89032e1e11058c4632e3f63bec}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+accept@{se\+\_\+accept}}
+\index{se\+\_\+accept@{se\+\_\+accept}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+accept()}{se\_accept()}}
+{\footnotesize\ttfamily void $\ast$ se\+\_\+accept (\begin{DoxyParamCaption}\item[{\hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$}]{a,  }\item[{int}]{secure }\end{DoxyParamCaption})}
+
+
+
+Accept a connection request from an I\+E\+EE 2030.\+5 client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & is a pointer to an Acceptor \\
+\hline
+{\em secure} & is 1 for an encrypted T\+LS connection, 0 for an unencypted T\+CP connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a Se\+Connection. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__connection_gaa358895b986fa80d6ab485646b63f04e}\label{group__se__connection_gaa358895b986fa80d6ab485646b63f04e}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+body@{se\+\_\+body}}
+\index{se\+\_\+body@{se\+\_\+body}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+body()}{se\_body()}}
+{\footnotesize\ttfamily void $\ast$ se\+\_\+body (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int $\ast$}]{type }\end{DoxyParamCaption})}
+
+
+
+Returns the message body as an I\+E\+EE 2030.\+5 object (if any). 
+
+If \hyperlink{group__se__connection_ga4d041c447020f6ba4d310facc21f1776}{se\+\_\+receive} returns an H\+T\+TP method or an H\+T\+TP response, this function returns the H\+T\+TP message body as an I\+E\+EE 2030.\+5 object if any were present or N\+U\+LL to indicate the message body was empty. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em type} & is a pointer to the returned type of I\+E\+EE 2030.\+5 object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an I\+E\+EE 2030.\+5 object present in the H\+T\+TP message body (if any), otherwise N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__connection_ga46a034b6bbe2211018b10b0eba5d96be}\label{group__se__connection_ga46a034b6bbe2211018b10b0eba5d96be}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+connect@{se\+\_\+connect}}
+\index{se\+\_\+connect@{se\+\_\+connect}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+connect()}{se\_connect()}}
+{\footnotesize\ttfamily void $\ast$ se\+\_\+connect (\begin{DoxyParamCaption}\item[{\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$}]{addr,  }\item[{int}]{secure }\end{DoxyParamCaption})}
+
+
+
+Connect to an I\+E\+EE 2030.\+5 server. 
+
+Only one connection is maintained per server address/port, so this function first searches a list of existing connection for a matching Address, before creating a new connection. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & is a pointer to Address of the server \\
+\hline
+{\em secure} & is 1 for a encrypted T\+LS connection, 0 for an unencrypted T\+CP connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to an Se\+Connection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__connection_gad174138f5dd085fa16adcdccf495083e}\label{group__se__connection_gad174138f5dd085fa16adcdccf495083e}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+connect\+\_\+uri@{se\+\_\+connect\+\_\+uri}}
+\index{se\+\_\+connect\+\_\+uri@{se\+\_\+connect\+\_\+uri}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+connect\+\_\+uri()}{se\_connect\_uri()}}
+{\footnotesize\ttfamily void $\ast$ se\+\_\+connect\+\_\+uri (\begin{DoxyParamCaption}\item[{\hyperlink{structUri}{Uri} $\ast$}]{uri }\end{DoxyParamCaption})}
+
+
+
+Connect to an I\+E\+EE 2030.\+5 server using a \hyperlink{structUri}{Uri} parameter. 
+
+The same as \hyperlink{group__se__connection_ga46a034b6bbe2211018b10b0eba5d96be}{se\+\_\+connect}, but uses a \hyperlink{structUri}{Uri} as a parameter. The U\+RI scheme determines whether to attempt a secure connection, \char`\"{}https\char`\"{} for an encrypted T\+LS connection, \char`\"{}http\char`\"{} for an unencrypted T\+CP connection. 
+\begin{DoxyParams}{Parameters}
+{\em uri} & is a \hyperlink{structUri}{Uri} with a host and a H\+T\+TP scheme \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to an Se\+Connection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__connection_gadd4baee7388cfb3c1f39a33bbbf9f4b1}\label{group__se__connection_gadd4baee7388cfb3c1f39a33bbbf9f4b1}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+content\+\_\+type@{se\+\_\+content\+\_\+type}}
+\index{se\+\_\+content\+\_\+type@{se\+\_\+content\+\_\+type}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+content\+\_\+type()}{se\_content\_type()}}
+{\footnotesize\ttfamily const char $\ast$ se\+\_\+content\+\_\+type (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int $\ast$}]{type }\end{DoxyParamCaption})}
+
+
+
+Return the negotiated content type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is pointer to an Se\+Connection \\
+\hline
+{\em type} & is pointer to the returned content type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the negotiated content type as a string and integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__connection_ga4d041c447020f6ba4d310facc21f1776}\label{group__se__connection_ga4d041c447020f6ba4d310facc21f1776}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+receive@{se\+\_\+receive}}
+\index{se\+\_\+receive@{se\+\_\+receive}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+receive()}{se\_receive()}}
+{\footnotesize\ttfamily int se\+\_\+receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Receive an I\+E\+EE 2030.\+5 message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Se\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the H\+T\+TP method on success (see \hyperlink{group__http__connection_ga8573192ee45dd0e3a5111bab62e03e44}{http\+\_\+receive})
+\end{DoxyReturn}
+S\+E\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE to indicate an incomplete message
+
+S\+E\+\_\+\+E\+R\+R\+OR to indicate an error in the message \mbox{\Hypertarget{group__se__connection_ga13afc522df9bb8bcc2ce6908c95f3ec9}\label{group__se__connection_ga13afc522df9bb8bcc2ce6908c95f3ec9}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+response@{se\+\_\+response}}
+\index{se\+\_\+response@{se\+\_\+response}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+response()}{se\_response()}}
+{\footnotesize\ttfamily void se\+\_\+response (\begin{DoxyParamCaption}\item[{void $\ast$}]{resp,  }\item[{\hyperlink{structSE__Event__t}{S\+E\+\_\+\+Event\+\_\+t} $\ast$}]{ev,  }\item[{char $\ast$}]{lfdi,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Initialize a Response to an Event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resp} & is a pointer to an \hyperlink{structSE__Response__t}{S\+E\+\_\+\+Response\+\_\+t} object or dervied type. \\
+\hline
+{\em ev} & is a pointer to an \hyperlink{structSE__Event__t}{S\+E\+\_\+\+Event\+\_\+t} object \\
+\hline
+{\em lfdi} & is the lfdi of an End\+Device. \\
+\hline
+{\em status} & updates the event with a Response\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__connection_ga0a92824fc6a6d3ed2bdf433ba00aebc0}\label{group__se__connection_ga0a92824fc6a6d3ed2bdf433ba00aebc0}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+send@{se\+\_\+send}}
+\index{se\+\_\+send@{se\+\_\+send}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+send()}{se\_send()}}
+{\footnotesize\ttfamily void se\+\_\+send (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{void $\ast$}]{obj,  }\item[{int}]{type,  }\item[{char $\ast$}]{href,  }\item[{int}]{method }\end{DoxyParamCaption})}
+
+
+
+P\+UT or P\+O\+ST an I\+E\+EE 2030.\+5 object to a server. 
+
+Use the conn parameter to send the object if the host address matches the server specified in the the href parameter, otherwise attempt a new connection and send the object on that connection. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em obj} & is a pointer to an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em type} & is the schema type of the object \\
+\hline
+{\em href} & is a U\+RI string, the location to send the object to \\
+\hline
+{\em method} & is the H\+T\+TP method to use, either H\+T\+T\+P\+\_\+\+P\+O\+ST or H\+T\+T\+P\+\_\+\+P\+UT \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__connection_ga4bb69847ff4ebb89bf7e84aa80960c53}\label{group__se__connection_ga4bb69847ff4ebb89bf7e84aa80960c53}} 
+\index{Se\+Connection@{Se\+Connection}!se\+\_\+sfdi@{se\+\_\+sfdi}}
+\index{se\+\_\+sfdi@{se\+\_\+sfdi}!Se\+Connection@{Se\+Connection}}
+\subsubsection{\texorpdfstring{se\+\_\+sfdi()}{se\_sfdi()}}
+{\footnotesize\ttfamily uint64\+\_\+t $\ast$ se\+\_\+sfdi (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get the S\+F\+DI of the server or client. 
+
+When a secure connection is established, certificates are exchanged between the client and server. The S\+F\+DI is a hash reduction of a device\textquotesingle{}s certificate. Use this function to 

@@ -1,0 +1,48 @@
+\hypertarget{group__ActiveTextMessageListLink}{}\section{Active\+Text\+Message\+List\+Link}
+\label{group__ActiveTextMessageListLink}\index{Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}}
+Collaboration diagram for Active\+Text\+Message\+List\+Link\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{group__ActiveTextMessageListLink}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ActiveTextMessageListLink__t}{S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__ActiveTextMessageListLink_ga2bfa632d9e5fe1727367092113aafecf}{S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ActiveTextMessageListLink_gabca12a79cb2612036a2d49ec33f8fa53}{S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__ActiveTextMessageListLink_ga0fe1d2a7f428daddc9a0ca75931c144e}{S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t\+::all}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+H\+A\+LL contain a Link to a \hyperlink{structList}{List} of active Text\+Message instances. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ActiveTextMessageListLink_ga2bfa632d9e5fe1727367092113aafecf}\label{group__ActiveTextMessageListLink_ga2bfa632d9e5fe1727367092113aafecf}} 
+\index{Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+all\+\_\+exists (1 $<$$<$ 0) \mbox{\Hypertarget{group__ActiveTextMessageListLink_ga0fe1d2a7f428daddc9a0ca75931c144e}\label{group__ActiveTextMessageListLink_ga0fe1d2a7f428daddc9a0ca75931c144e}} 
+\index{Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}!all@{all}}
+\index{all@{all}!Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t\+::all}
+
+Indicates the total number of items in the referenced list. This attribute S\+H\+A\+LL be present if the href is a local or relative U\+RI. This attribute S\+H\+O\+U\+LD N\+OT be present if the href is a remote or absolute U\+RI, as the server may be unaware of changes to the value. \mbox{\Hypertarget{group__ActiveTextMessageListLink_gabca12a79cb2612036a2d49ec33f8fa53}\label{group__ActiveTextMessageListLink_gabca12a79cb2612036a2d49ec33f8fa53}} 
+\index{Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}!href@{href}}
+\index{href@{href}!Active\+Text\+Message\+List\+Link@{Active\+Text\+Message\+List\+Link}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Active\+Text\+Message\+List\+Link\+\_\+t\+::href}
+
+A U\+RI reference. 

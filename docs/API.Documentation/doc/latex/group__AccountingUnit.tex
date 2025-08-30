@@ -1,0 +1,64 @@
+\hypertarget{group__AccountingUnit}{}\section{Accounting\+Unit}
+\label{group__AccountingUnit}\index{Accounting\+Unit@{Accounting\+Unit}}
+Collaboration diagram for Accounting\+Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{group__AccountingUnit}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__AccountingUnit__t}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__AccountingUnit_ga955b8d2446e61fde2b55b98207719d4e}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::\+\_\+flags}
+\item 
+\hyperlink{structSE__RealEnergy__t}{S\+E\+\_\+\+Real\+Energy\+\_\+t} \hyperlink{group__AccountingUnit_gaaa1abdf6bb3cb5cda82403e02c17136b}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::energy\+Unit}
+\item 
+\hyperlink{group__CurrencyCode_gadef02433fe757d7bd9fd0d9b59f690a0}{S\+E\+\_\+\+Currency\+Code\+\_\+t} \hyperlink{group__AccountingUnit_ga3dcc7761e45b6e3b62acb258997ba854}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::monetary\+Unit}
+\item 
+\hyperlink{group__PowerOfTenMultiplierType_gaf0317b781dc8dbb9cb6ac4e44a14fdef}{S\+E\+\_\+\+Power\+Of\+Ten\+Multiplier\+Type\+\_\+t} \hyperlink{group__AccountingUnit_ga56b43f2fc79c97ad77b7809ea172d72f}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::multiplier}
+\item 
+\hyperlink{group__Int32_gaa7afc819cfc8033c5fa408e34da8b71a}{S\+E\+\_\+\+Int32\+\_\+t} \hyperlink{group__AccountingUnit_ga3c90f530724e607bdb4b133c0fae9df4}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Unit for accounting; use either \textquotesingle{}energy\+Unit\textquotesingle{} or \textquotesingle{}currency\+Unit\textquotesingle{} to specify the unit for \textquotesingle{}value\textquotesingle{}. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__AccountingUnit_ga955b8d2446e61fde2b55b98207719d4e}\label{group__AccountingUnit_ga955b8d2446e61fde2b55b98207719d4e}} 
+\index{Accounting\+Unit@{Accounting\+Unit}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Accounting\+Unit@{Accounting\+Unit}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+energy\+Unit\+\_\+exists (1 $<$$<$ 0) \mbox{\Hypertarget{group__AccountingUnit_gaaa1abdf6bb3cb5cda82403e02c17136b}\label{group__AccountingUnit_gaaa1abdf6bb3cb5cda82403e02c17136b}} 
+\index{Accounting\+Unit@{Accounting\+Unit}!energy\+Unit@{energy\+Unit}}
+\index{energy\+Unit@{energy\+Unit}!Accounting\+Unit@{Accounting\+Unit}}
+\subsubsection{\texorpdfstring{energy\+Unit}{energyUnit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::energy\+Unit}
+
+Unit of service. \mbox{\Hypertarget{group__AccountingUnit_ga3dcc7761e45b6e3b62acb258997ba854}\label{group__AccountingUnit_ga3dcc7761e45b6e3b62acb258997ba854}} 
+\index{Accounting\+Unit@{Accounting\+Unit}!monetary\+Unit@{monetary\+Unit}}
+\index{monetary\+Unit@{monetary\+Unit}!Accounting\+Unit@{Accounting\+Unit}}
+\subsubsection{\texorpdfstring{monetary\+Unit}{monetaryUnit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::monetary\+Unit}
+
+Unit of currency. \mbox{\Hypertarget{group__AccountingUnit_ga56b43f2fc79c97ad77b7809ea172d72f}\label{group__AccountingUnit_ga56b43f2fc79c97ad77b7809ea172d72f}} 
+\index{Accounting\+Unit@{Accounting\+Unit}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!Accounting\+Unit@{Accounting\+Unit}}
+\subsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::multiplier}
+
+Multiplier for the \textquotesingle{}energy\+Unit\textquotesingle{} or \textquotesingle{}monetary\+Unit\textquotesingle{}. \mbox{\Hypertarget{group__AccountingUnit_ga3c90f530724e607bdb4b133c0fae9df4}\label{group__AccountingUnit_ga3c90f530724e607bdb4b133c0fae9df4}} 
+\index{Accounting\+Unit@{Accounting\+Unit}!value@{value}}
+\index{value@{value}!Accounting\+Unit@{Accounting\+Unit}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Accounting\+Unit\+\_\+t\+::value}
+
+Value of the monetary aspect 

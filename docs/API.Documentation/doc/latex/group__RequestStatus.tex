@@ -1,0 +1,46 @@
+\hypertarget{group__RequestStatus}{}\section{Request\+Status}
+\label{group__RequestStatus}\index{Request\+Status@{Request\+Status}}
+Collaboration diagram for Request\+Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{group__RequestStatus}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__RequestStatus__t}{S\+E\+\_\+\+Request\+Status\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__RequestStatus_ga5a17406904af9612df11590a4fd8b1fe}{S\+E\+\_\+\+Request\+Status\+\_\+t\+::date\+Time}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__RequestStatus_ga5c594ed3fb20fdf8681c8dfd7957c78d}{S\+E\+\_\+\+Request\+Status\+\_\+t\+::request\+Status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Request\+Status object is used to indicate the current status of a Flow Reservation Request. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__RequestStatus_ga5a17406904af9612df11590a4fd8b1fe}\label{group__RequestStatus_ga5a17406904af9612df11590a4fd8b1fe}} 
+\index{Request\+Status@{Request\+Status}!date\+Time@{date\+Time}}
+\index{date\+Time@{date\+Time}!Request\+Status@{Request\+Status}}
+\subsubsection{\texorpdfstring{date\+Time}{dateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Request\+Status\+\_\+t\+::date\+Time}
+
+The date\+Time attribute will provide a timestamp of when the request status was set. date\+Time M\+U\+ST be set to the time at which the status change occurred, not a time in the future or past. \mbox{\Hypertarget{group__RequestStatus_ga5c594ed3fb20fdf8681c8dfd7957c78d}\label{group__RequestStatus_ga5c594ed3fb20fdf8681c8dfd7957c78d}} 
+\index{Request\+Status@{Request\+Status}!request\+Status@{request\+Status}}
+\index{request\+Status@{request\+Status}!Request\+Status@{Request\+Status}}
+\subsubsection{\texorpdfstring{request\+Status}{requestStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Request\+Status\+\_\+t\+::request\+Status}
+
+Field representing the request status type.
+
+0 = Requested
+
+1 = Cancelled
+
+All other values reserved. 

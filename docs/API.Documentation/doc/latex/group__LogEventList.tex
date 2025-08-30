@@ -1,0 +1,70 @@
+\hypertarget{group__LogEventList}{}\section{Log\+Event\+List}
+\label{group__LogEventList}\index{Log\+Event\+List@{Log\+Event\+List}}
+Collaboration diagram for Log\+Event\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{group__LogEventList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__LogEventList__t}{S\+E\+\_\+\+Log\+Event\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__LogEventList_gae960d38cd55dcdb637b2a418f6131a28}\label{group__LogEventList_gae960d38cd55dcdb637b2a418f6131a28}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__LogEventList_ga2adcec0539539616990cb3ab699bc9e0}{S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__LogEventList_ga56149eb351e449cbb2722991e2daa1bc}{S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__LogEventList_gac1fb1159b6c4504d77ae255eb3d36e17}{S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__LogEventList_ga6cfbe323819724f04cdb2a6ee4300628}{S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__LogEventList_ga388cf556e1a06ced33e78bbac0c0ab88}{S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__LogEventList_gac6e18e732845e2abfcc33093d3f86b6b}\label{group__LogEventList_gac6e18e732845e2abfcc33093d3f86b6b}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::\+Log\+Event}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Log\+Event objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__LogEventList_gac1fb1159b6c4504d77ae255eb3d36e17}\label{group__LogEventList_gac1fb1159b6c4504d77ae255eb3d36e17}} 
+\index{Log\+Event\+List@{Log\+Event\+List}!all@{all}}
+\index{all@{all}!Log\+Event\+List@{Log\+Event\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__LogEventList_ga2adcec0539539616990cb3ab699bc9e0}\label{group__LogEventList_ga2adcec0539539616990cb3ab699bc9e0}} 
+\index{Log\+Event\+List@{Log\+Event\+List}!href@{href}}
+\index{href@{href}!Log\+Event\+List@{Log\+Event\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__LogEventList_ga388cf556e1a06ced33e78bbac0c0ab88}\label{group__LogEventList_ga388cf556e1a06ced33e78bbac0c0ab88}} 
+\index{Log\+Event\+List@{Log\+Event\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Log\+Event\+List@{Log\+Event\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__LogEventList_ga6cfbe323819724f04cdb2a6ee4300628}\label{group__LogEventList_ga6cfbe323819724f04cdb2a6ee4300628}} 
+\index{Log\+Event\+List@{Log\+Event\+List}!results@{results}}
+\index{results@{results}!Log\+Event\+List@{Log\+Event\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__LogEventList_ga56149eb351e449cbb2722991e2daa1bc}\label{group__LogEventList_ga56149eb351e449cbb2722991e2daa1bc}} 
+\index{Log\+Event\+List@{Log\+Event\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Log\+Event\+List@{Log\+Event\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

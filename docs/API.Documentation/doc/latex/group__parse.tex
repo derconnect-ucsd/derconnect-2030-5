@@ -1,0 +1,182 @@
+\hypertarget{group__parse}{}\section{Parse}
+\label{group__parse}\index{Parse@{Parse}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__parse_ga3e16ad91ee0aeae3293a3908c21e501b}\label{group__parse_ga3e16ad91ee0aeae3293a3908c21e501b}} 
+typedef struct \+\_\+\+Parser {\bfseries Parser}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__parse_ga69faec40afb94556fb457d8a94db7eed}{exi\+\_\+parse\+\_\+init} (Parser $\ast$p, const Schema $\ast$schema, char $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Initialize the Parser to parse an E\+XI document. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__parse_gaa8a34fd82dce1d5e2930cb6b9c6213ae}{parse\+\_\+doc} (Parser $\ast$p, int $\ast$type)
+\begin{DoxyCompactList}\small\item\em Parse an X\+ML or E\+XI document. \end{DoxyCompactList}\item 
+int \hyperlink{group__parse_gafe03ba10b14b1ef18f300a2903fa6fda}{parse\+\_\+error} (Parser $\ast$p)
+\begin{DoxyCompactList}\small\item\em Is there an error in parsing the document? \end{DoxyCompactList}\item 
+void \hyperlink{group__parse_ga0ba1e788336cceb259406346f55ead8d}{print\+\_\+parse\+\_\+stack} (Parser $\ast$p)
+\begin{DoxyCompactList}\small\item\em Print the current parse stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__parse_ga934c8c33c8bb24318ba54d2d57647f5d}\label{group__parse_ga934c8c33c8bb24318ba54d2d57647f5d}} 
+Parser $\ast$ \hyperlink{group__parse_ga934c8c33c8bb24318ba54d2d57647f5d}{parser\+\_\+new} ()
+\begin{DoxyCompactList}\small\item\em Allocate a Parser. \end{DoxyCompactList}\item 
+void \hyperlink{group__parse_ga2bd22b6ec87e6096554c665371fa1ba5}{parser\+\_\+free} (Parser $\ast$p)
+\begin{DoxyCompactList}\small\item\em Free a Parser. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__parse_gaaafb364e4f9991b31ed7653e936f3806}{parser\+\_\+data} (Parser $\ast$p)
+\begin{DoxyCompactList}\small\item\em Return a pointer to a Parser\textquotesingle{}s unparsed data. \end{DoxyCompactList}\item 
+void \hyperlink{group__parse_gad168a73b5bc04a6a128f4c8756abf080}{parser\+\_\+rebuffer} (Parser $\ast$p, void $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Update the Parser\textquotesingle{}s unparsed data pointer. \end{DoxyCompactList}\item 
+void \hyperlink{group__parse_gad28bad9bf84823a7c937a544a462db55}{parse\+\_\+init} (Parser $\ast$p, const Schema $\ast$schema, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Initialize the Parser to parse an X\+ML document. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The parser converts an X\+ML or E\+XI document into a C object (a typed data structure). The parser is schema based, which means that the document structure (the order and types of elements and values) is predefined by an X\+ML schema. Successful parsing means that the document conforms to the schema, failure means that the document did not conform or that the document is incomplete.
+
+The parser has a state and can stop and resume parsing at any point in the document, this means that a large document can be parsed in segments. This feature can be used to reduce the space needed to store documents and the segment of time used to process documents. For example, using a fixed length buffer to store document data means that the space required to store the document and the time used to process a document segment is constant. This can useful if there is a need share processing time between other tasks or if resources are constrained.
+
+The only requirement is that the buffer that contains the document is large enough to contain the largest X\+ML or E\+XI token, the unit of information that advances the parser\textquotesingle{}s state machine. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__parse_ga69faec40afb94556fb457d8a94db7eed}\label{group__parse_ga69faec40afb94556fb457d8a94db7eed}} 
+\index{Parse@{Parse}!exi\+\_\+parse\+\_\+init@{exi\+\_\+parse\+\_\+init}}
+\index{exi\+\_\+parse\+\_\+init@{exi\+\_\+parse\+\_\+init}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{exi\+\_\+parse\+\_\+init()}{exi\_parse\_init()}}
+{\footnotesize\ttfamily void exi\+\_\+parse\+\_\+init (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p,  }\item[{const Schema $\ast$}]{schema,  }\item[{char $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Initialize the Parser to parse an E\+XI document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Parser object \\
+\hline
+{\em schema} & is the schema to use \\
+\hline
+{\em data} & is the beginning of the E\+XI stream \\
+\hline
+{\em length} & is the length of the stream in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__parse_gaa8a34fd82dce1d5e2930cb6b9c6213ae}\label{group__parse_gaa8a34fd82dce1d5e2930cb6b9c6213ae}} 
+\index{Parse@{Parse}!parse\+\_\+doc@{parse\+\_\+doc}}
+\index{parse\+\_\+doc@{parse\+\_\+doc}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parse\+\_\+doc()}{parse\_doc()}}
+{\footnotesize\ttfamily void $\ast$ parse\+\_\+doc (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p,  }\item[{int $\ast$}]{type }\end{DoxyParamCaption})}
+
+
+
+Parse an X\+ML or E\+XI document. 
+
+Use \hyperlink{group__parse_gad28bad9bf84823a7c937a544a462db55}{parse\+\_\+init} or \hyperlink{group__parse_ga69faec40afb94556fb457d8a94db7eed}{exi\+\_\+parse\+\_\+init} to initialize the Parser, then call parse\+\_\+doc to parse the document. If the document is larger than the containing buffer, call \hyperlink{group__parse_gaaafb364e4f9991b31ed7653e936f3806}{parser\+\_\+data} to get a pointer to the unparsed data, and \hyperlink{group__parse_gad168a73b5bc04a6a128f4c8756abf080}{parser\+\_\+rebuffer} to update the parser once more data has been read. Repeat calls to \hyperlink{group__parse_gaa8a34fd82dce1d5e2930cb6b9c6213ae}{parse\+\_\+doc} until the data is completely read or the parse fails. 
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Parser \\
+\hline
+{\em type} & is a pointer to the returned schema type of object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object and type on success, N\+U\+LL otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__parse_gafe03ba10b14b1ef18f300a2903fa6fda}\label{group__parse_gafe03ba10b14b1ef18f300a2903fa6fda}} 
+\index{Parse@{Parse}!parse\+\_\+error@{parse\+\_\+error}}
+\index{parse\+\_\+error@{parse\+\_\+error}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parse\+\_\+error()}{parse\_error()}}
+{\footnotesize\ttfamily int parse\+\_\+error (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Is there an error in parsing the document? 
+
+Parsing can fail if the document is incomplete or there is an error in the document. This function checks for a parse error. 
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Parser. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if there is an error parsing the document, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__parse_gad28bad9bf84823a7c937a544a462db55}\label{group__parse_gad28bad9bf84823a7c937a544a462db55}} 
+\index{Parse@{Parse}!parse\+\_\+init@{parse\+\_\+init}}
+\index{parse\+\_\+init@{parse\+\_\+init}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parse\+\_\+init()}{parse\_init()}}
+{\footnotesize\ttfamily void parse\+\_\+init (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p,  }\item[{const Schema $\ast$}]{schema,  }\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Initialize the Parser to parse an X\+ML document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to the Parser \\
+\hline
+{\em schema} & is a pointer to the Schema \\
+\hline
+{\em data} & is a pointer to the X\+ML stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__parse_gaaafb364e4f9991b31ed7653e936f3806}\label{group__parse_gaaafb364e4f9991b31ed7653e936f3806}} 
+\index{Parse@{Parse}!parser\+\_\+data@{parser\+\_\+data}}
+\index{parser\+\_\+data@{parser\+\_\+data}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parser\+\_\+data()}{parser\_data()}}
+{\footnotesize\ttfamily char $\ast$ parser\+\_\+data (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Return a pointer to a Parser\textquotesingle{}s unparsed data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Parser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__parse_ga2bd22b6ec87e6096554c665371fa1ba5}\label{group__parse_ga2bd22b6ec87e6096554c665371fa1ba5}} 
+\index{Parse@{Parse}!parser\+\_\+free@{parser\+\_\+free}}
+\index{parser\+\_\+free@{parser\+\_\+free}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parser\+\_\+free()}{parser\_free()}}
+{\footnotesize\ttfamily void parser\+\_\+free (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Free a Parser. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Parser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__parse_gad168a73b5bc04a6a128f4c8756abf080}\label{group__parse_gad168a73b5bc04a6a128f4c8756abf080}} 
+\index{Parse@{Parse}!parser\+\_\+rebuffer@{parser\+\_\+rebuffer}}
+\index{parser\+\_\+rebuffer@{parser\+\_\+rebuffer}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parser\+\_\+rebuffer()}{parser\_rebuffer()}}
+{\footnotesize\ttfamily void parser\+\_\+rebuffer (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p,  }\item[{void $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Update the Parser\textquotesingle{}s unparsed data pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to the Parser \\
+\hline
+{\em data} & is a pointer to the unparsed data \\
+\hline
+{\em length} & is the length of the unparsed data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__parse_ga0ba1e788336cceb259406346f55ead8d}\label{group__parse_ga0ba1e788336cceb259406346f55ead8d}} 
+\index{Parse@{Parse}!print\+\_\+parse\+\_\+stack@{print\+\_\+parse\+\_\+stack}}
+\index{print\+\_\+parse\+\_\+stack@{print\+\_\+parse\+\_\+stack}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{print\+\_\+parse\+\_\+stack()}{print\_parse\_stack()}}
+{\footnotesize\ttfamily void print\+\_\+parse\+\_\+stack (\begin{DoxyParamCaption}\item[{Parser $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Print the current parse stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Parser \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,50 @@
+\hypertarget{group__SubscriptionBase}{}\section{Subscription\+Base}
+\label{group__SubscriptionBase}\index{Subscription\+Base@{Subscription\+Base}}
+Collaboration diagram for Subscription\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__SubscriptionBase}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__Notification}{Notification}
+\item 
+\hyperlink{group__Subscription}{Subscription}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__SubscriptionBase__t}{S\+E\+\_\+\+Subscription\+Base\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__SubscriptionBase_gacb5f5f74f0249244f1ff2bd98757a08a}\label{group__SubscriptionBase_gacb5f5f74f0249244f1ff2bd98757a08a}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Subscription\+Base\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__SubscriptionBase_ga397ee2afb88c8687bccb35b3acec3490}{S\+E\+\_\+\+Subscription\+Base\+\_\+t\+::href}
+\item 
+char $\ast$ \hyperlink{group__SubscriptionBase_ga20d85c9e20b561f7f7d7aa3b337c0e4f}{S\+E\+\_\+\+Subscription\+Base\+\_\+t\+::subscribed\+Resource}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the information related to a client subscription to receive updates to a resource automatically. The actual resources may be passed in the Notification by specifying a specific xsi\+:type for the \hyperlink{structResource}{Resource} and passing the full representation. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__SubscriptionBase_ga397ee2afb88c8687bccb35b3acec3490}\label{group__SubscriptionBase_ga397ee2afb88c8687bccb35b3acec3490}} 
+\index{Subscription\+Base@{Subscription\+Base}!href@{href}}
+\index{href@{href}!Subscription\+Base@{Subscription\+Base}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+Base\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__SubscriptionBase_ga20d85c9e20b561f7f7d7aa3b337c0e4f}\label{group__SubscriptionBase_ga20d85c9e20b561f7f7d7aa3b337c0e4f}} 
+\index{Subscription\+Base@{Subscription\+Base}!subscribed\+Resource@{subscribed\+Resource}}
+\index{subscribed\+Resource@{subscribed\+Resource}!Subscription\+Base@{Subscription\+Base}}
+\subsubsection{\texorpdfstring{subscribed\+Resource}{subscribedResource}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+Base\+\_\+t\+::subscribed\+Resource}
+
+The resource for which the subscription applies. Query string parameters S\+H\+A\+LL N\+OT be specified when subscribing to list resources. Should a query string parameter be specified, servers S\+H\+A\+LL ignore them. 

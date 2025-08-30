@@ -1,0 +1,40 @@
+\hypertarget{group__PowerFactor}{}\section{Power\+Factor}
+\label{group__PowerFactor}\index{Power\+Factor@{Power\+Factor}}
+Collaboration diagram for Power\+Factor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{group__PowerFactor}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__PowerFactor__t}{S\+E\+\_\+\+Power\+Factor\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__Int16_ga0d600c7df811a7d4b4816e8965877690}{S\+E\+\_\+\+Int16\+\_\+t} \hyperlink{group__PowerFactor_gac0b338823886a77ad3c03fab42c9ac5a}{S\+E\+\_\+\+Power\+Factor\+\_\+t\+::displacement}
+\item 
+\hyperlink{group__PowerOfTenMultiplierType_gaf0317b781dc8dbb9cb6ac4e44a14fdef}{S\+E\+\_\+\+Power\+Of\+Ten\+Multiplier\+Type\+\_\+t} \hyperlink{group__PowerFactor_ga7e8d88767803b7c7ed6f1c6f7eb5e08a}{S\+E\+\_\+\+Power\+Factor\+\_\+t\+::multiplier}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Specifies a setpoint for Displacement Power Factor, the ratio between apparent and active powers at the fundamental frequency (e.\+g. 60 Hz). 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__PowerFactor_gac0b338823886a77ad3c03fab42c9ac5a}\label{group__PowerFactor_gac0b338823886a77ad3c03fab42c9ac5a}} 
+\index{Power\+Factor@{Power\+Factor}!displacement@{displacement}}
+\index{displacement@{displacement}!Power\+Factor@{Power\+Factor}}
+\subsubsection{\texorpdfstring{displacement}{displacement}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Power\+Factor\+\_\+t\+::displacement}
+
+Significand of a signed value of cos(theta) between -\/0.\+9999 and 1.\+0. E.\+g. a value of -\/0.\+95 may be specified as a displacement of -\/950 and a multiplier of -\/3. Sign S\+H\+A\+LL be interpreted according to the E\+EI convention. \mbox{\Hypertarget{group__PowerFactor_ga7e8d88767803b7c7ed6f1c6f7eb5e08a}\label{group__PowerFactor_ga7e8d88767803b7c7ed6f1c6f7eb5e08a}} 
+\index{Power\+Factor@{Power\+Factor}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!Power\+Factor@{Power\+Factor}}
+\subsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Power\+Factor\+\_\+t\+::multiplier}
+
+Specifies exponent of \textquotesingle{}displacement\textquotesingle{}. 

@@ -1,0 +1,87 @@
+\hypertarget{group__Subscription}{}\section{Subscription}
+\label{group__Subscription}\index{Subscription@{Subscription}}
+Collaboration diagram for Subscription\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{group__Subscription}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Subscription__t}{S\+E\+\_\+\+Subscription\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Subscription_ga3ed789b5419270cc9a8a5534048f9da9}{S\+E\+\_\+\+Subscription\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Subscription_ga68652b485c042e80274c1c8cd71c9d46}{S\+E\+\_\+\+Subscription\+\_\+t\+::href}
+\item 
+char $\ast$ \hyperlink{group__Subscription_ga6bb29c2c4620a20e0162662014161d18}{S\+E\+\_\+\+Subscription\+\_\+t\+::subscribed\+Resource}
+\item 
+\mbox{\Hypertarget{group__Subscription_ga844b81a5fd88e1e262c1759040f3c849}\label{group__Subscription_ga844b81a5fd88e1e262c1759040f3c849}} 
+\hyperlink{structSE__Condition__t}{S\+E\+\_\+\+Condition\+\_\+t} {\bfseries S\+E\+\_\+\+Subscription\+\_\+t\+::\+Condition}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__Subscription_ga96241742b8da02d3964190abedf7ec22}{S\+E\+\_\+\+Subscription\+\_\+t\+::encoding}
+\item 
+\hyperlink{group__String16_ga96799b35e03c3e6545eb138a7f879015}{S\+E\+\_\+\+String16\+\_\+t} \hyperlink{group__Subscription_gab7978f478f8d68b3c5d1a4f18b13d2ed}{S\+E\+\_\+\+Subscription\+\_\+t\+::level}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__Subscription_ga554e08734299558c7ce58d97a8a27a8d}{S\+E\+\_\+\+Subscription\+\_\+t\+::limit}
+\item 
+char $\ast$ \hyperlink{group__Subscription_gaa9e106fec3c507732a98db50afb9cc34}{S\+E\+\_\+\+Subscription\+\_\+t\+::notification\+U\+RI}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the information related to a client subscription to receive updates to a resource automatically. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Subscription_ga3ed789b5419270cc9a8a5534048f9da9}\label{group__Subscription_ga3ed789b5419270cc9a8a5534048f9da9}} 
+\index{Subscription@{Subscription}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Condition\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__Subscription_ga96241742b8da02d3964190abedf7ec22}\label{group__Subscription_ga96241742b8da02d3964190abedf7ec22}} 
+\index{Subscription@{Subscription}!encoding@{encoding}}
+\index{encoding@{encoding}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::encoding}
+
+0 -\/ application/sep+xml
+
+1 -\/ application/sep-\/exi
+
+2-\/255 -\/ reserved \mbox{\Hypertarget{group__Subscription_ga68652b485c042e80274c1c8cd71c9d46}\label{group__Subscription_ga68652b485c042e80274c1c8cd71c9d46}} 
+\index{Subscription@{Subscription}!href@{href}}
+\index{href@{href}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__Subscription_gab7978f478f8d68b3c5d1a4f18b13d2ed}\label{group__Subscription_gab7978f478f8d68b3c5d1a4f18b13d2ed}} 
+\index{Subscription@{Subscription}!level@{level}}
+\index{level@{level}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::level}
+
+Contains the preferred schema and extensibility level indication such as \char`\"{}+\+S1\char`\"{} \mbox{\Hypertarget{group__Subscription_ga554e08734299558c7ce58d97a8a27a8d}\label{group__Subscription_ga554e08734299558c7ce58d97a8a27a8d}} 
+\index{Subscription@{Subscription}!limit@{limit}}
+\index{limit@{limit}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::limit}
+
+This element is used to indicate the maximum number of list items that should be included in a notification when the subscribed resource changes. This limit is meant to be functionally equivalent to the ‘limit’ query string parameter, but applies to both list resources as well as other resources. For list resources, if a limit of ‘0’ is specified, then notifications S\+H\+A\+LL contain a list resource with results=’0’ (equivalent to a simple change notification). For list resources, if a limit greater than ‘0’ is specified, then notifications S\+H\+A\+LL contain a list resource with results equal to the limit specified (or less, should the list contain fewer items than the limit specified or should the server be unable to provide the requested number of items for any reason) and follow the same rules for list resources (e.\+g., ordering). For non-\/list resources, if a limit of ‘0’ is specified, then notifications S\+H\+A\+LL N\+OT contain a resource representation (equivalent to a simple change notification). For non-\/list resources, if a limit greater than ‘0’ is specified, then notifications S\+H\+A\+LL contain the representation of the changed resource. \mbox{\Hypertarget{group__Subscription_gaa9e106fec3c507732a98db50afb9cc34}\label{group__Subscription_gaa9e106fec3c507732a98db50afb9cc34}} 
+\index{Subscription@{Subscription}!notification\+U\+RI@{notification\+U\+RI}}
+\index{notification\+U\+RI@{notification\+U\+RI}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{notification\+U\+RI}{notificationURI}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::notification\+U\+RI}
+
+The resource to which to post the notifications about the requested subscribed resource. Because this U\+RI will exist on a server other than the one being P\+O\+S\+Ted to, this attribute S\+H\+A\+LL be a fully-\/qualified absolute U\+RI, not a relative reference. \mbox{\Hypertarget{group__Subscription_ga6bb29c2c4620a20e0162662014161d18}\label{group__Subscription_ga6bb29c2c4620a20e0162662014161d18}} 
+\index{Subscription@{Subscription}!subscribed\+Resource@{subscribed\+Resource}}
+\index{subscribed\+Resource@{subscribed\+Resource}!Subscription@{Subscription}}
+\subsubsection{\texorpdfstring{subscribed\+Resource}{subscribedResource}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Subscription\+\_\+t\+::subscribed\+Resource}
+
+The resource for which the subscription applies. Query string parameters S\+H\+A\+LL N\+OT be specified when subscribing to list resources. Should a query string parameter be specified, servers S\+H\+A\+LL ignore them. 

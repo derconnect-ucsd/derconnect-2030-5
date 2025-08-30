@@ -1,0 +1,46 @@
+\hypertarget{structSE__InverterStatusType__t}{}\section{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t Struct Reference}
+\label{structSE__InverterStatusType__t}\index{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t@{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t}}
+
+
+{\ttfamily \#include $<$se\+\_\+types.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__InverterStatusType_ga87657492474108fe3e58f3e8ac2a5e8d}{date\+Time}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__InverterStatusType_ga2e5ea03a4944948d5ab06b26e1be0bd3}{value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+ER Inverter\+Status value\+:
+
+0 -\/ N/A
+
+1 -\/ off
+
+2 -\/ sleeping (auto-\/shutdown) or D\+ER is at low output power/voltage
+
+3 -\/ starting up or ON but not producing power
+
+4 -\/ tracking M\+P\+PT power point
+
+5 -\/ forced power reduction/derating
+
+6 -\/ shutting down
+
+7 -\/ one or more faults exist
+
+8 -\/ standby (service on unit) -\/ D\+ER may be at high output voltage/power
+
+9 -\/ test mode
+
+10 -\/ as defined in manufacturer status
+
+All other values reserved. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+se\+\_\+types.\+h\item 
+se\+\_\+types\+\_\+doc.\+h\end{DoxyCompactItemize}

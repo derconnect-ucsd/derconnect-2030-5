@@ -1,0 +1,66 @@
+\hypertarget{group__util}{}\section{Utility}
+\label{group__util}\index{Utility@{Utility}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__util_gabb702d8b501669a23aa0ab3b281b9384}\label{group__util_gabb702d8b501669a23aa0ab3b281b9384}} 
+\#define {\bfseries min}(x,  y)~(((x) $<$ (y))? x \+: y)
+\item 
+\mbox{\Hypertarget{group__util_gac39d9cef6a5e030ba8d9e11121054268}\label{group__util_gac39d9cef6a5e030ba8d9e11121054268}} 
+\#define {\bfseries max}(x,  y)~(((x) $<$ (y))? y \+: x)
+\item 
+\mbox{\Hypertarget{group__util_ga978d2d13a74f00232a0dfa306776a343}\label{group__util_ga978d2d13a74f00232a0dfa306776a343}} 
+\#define {\bfseries ok}(x)~if (!(x)) return N\+U\+LL
+\item 
+\mbox{\Hypertarget{group__util_ga2e5f7da3a0f150887e71ad1904250a6a}\label{group__util_ga2e5f7da3a0f150887e71ad1904250a6a}} 
+\#define {\bfseries ok\+\_\+v}(x,  value)~if (!(x)) return value
+\item 
+\mbox{\Hypertarget{group__util_ga142287b2552d8354d673374eb4da4232}\label{group__util_ga142287b2552d8354d673374eb4da4232}} 
+\#define {\bfseries streq}(a,  b)~(strcmp (a, b) == 0)
+\item 
+\mbox{\Hypertarget{group__util_ga7b002d2f1af1d22f254ff7d0ec562e4d}\label{group__util_ga7b002d2f1af1d22f254ff7d0ec562e4d}} 
+\#define {\bfseries in\+\_\+range}(x,  a,  b)~((x) $>$= a \&\& (x) $<$= b)
+\item 
+\mbox{\Hypertarget{group__util_ga0baaa8aae76c1e2b628ecd9fbe530246}\label{group__util_ga0baaa8aae76c1e2b628ecd9fbe530246}} 
+\#define {\bfseries alpha}(c)~(in\+\_\+range (c, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}z\textquotesingle{}) $\vert$$\vert$ in\+\_\+range (c, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}Z\textquotesingle{}))
+\item 
+\mbox{\Hypertarget{group__util_gafaa414047311c37a0f8a652d0d4c571b}\label{group__util_gafaa414047311c37a0f8a652d0d4c571b}} 
+\#define {\bfseries digit}(c)~in\+\_\+range (c, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}9\textquotesingle{})
+\item 
+\mbox{\Hypertarget{group__util_ga9ebe29b0bd82de0dc8f102185670f02b}\label{group__util_ga9ebe29b0bd82de0dc8f102185670f02b}} 
+\#define {\bfseries ws}(c)~(c == \textquotesingle{}\textbackslash{}n\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{} \textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}t\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}r\textquotesingle{})
+\item 
+\mbox{\Hypertarget{group__util_ga4e1e9a595436501b0bcc7282253134f6}\label{group__util_ga4e1e9a595436501b0bcc7282253134f6}} 
+\#define {\bfseries only}(x)~($\ast$trim (x) == \textquotesingle{}\textbackslash{}0\textquotesingle{})
+\item 
+\mbox{\Hypertarget{group__util_ga0cc6ef8d4fe6294e49525e3a00523e0c}\label{group__util_ga0cc6ef8d4fe6294e49525e3a00523e0c}} 
+\#define {\bfseries struct\+\_\+field}(type,  any,  name)~((type $\ast$)any)-\/$>$name
+\item 
+\mbox{\Hypertarget{group__util_ga18384400cb9c135f484bb0a96f01847f}\label{group__util_ga18384400cb9c135f484bb0a96f01847f}} 
+\#define {\bfseries type\+\_\+alloc}(type)~calloc (1, sizeof (type))
+\item 
+\mbox{\Hypertarget{group__util_ga98c3b1619c89864826487b3d8c70ed55}\label{group__util_ga98c3b1619c89864826487b3d8c70ed55}} 
+\#define {\bfseries number\+\_\+q}(x,  data)~(digit ($\ast$(data))? number (x, data) \+: data)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__util_ga73bcd536544e3c6fc70962a2ff4b1380}\label{group__util_ga73bcd536544e3c6fc70962a2ff4b1380}} 
+int {\bfseries bit\+\_\+count} (uint32\+\_\+t x)
+\item 
+\mbox{\Hypertarget{group__util_gafef5b9be4010502873e2e7dc429268fe}\label{group__util_gafef5b9be4010502873e2e7dc429268fe}} 
+int {\bfseries string\+\_\+index} (const char $\ast$s, const char $\ast$const $\ast$ss, int n)
+\item 
+\mbox{\Hypertarget{group__util_ga143ecd8743bf51301a95a62a209e9102}\label{group__util_ga143ecd8743bf51301a95a62a209e9102}} 
+char $\ast$ {\bfseries trim} (char $\ast$data)
+\item 
+\mbox{\Hypertarget{group__util_ga3c069cf4558ac0ac060b49fa0f9dfe3e}\label{group__util_ga3c069cf4558ac0ac060b49fa0f9dfe3e}} 
+char $\ast$ {\bfseries number} (int $\ast$x, char $\ast$data)
+\item 
+\mbox{\Hypertarget{group__util_ga0f73ec81c4257fd6da0b2d42c40accfe}\label{group__util_ga0f73ec81c4257fd6da0b2d42c40accfe}} 
+char $\ast$ {\bfseries number64} (uint64\+\_\+t $\ast$x, char $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides base layer idiomatic C macros and functions. 

@@ -1,0 +1,27 @@
+var group__se__typedefs =
+[
+    [ "UInt48", "group__UInt48.html", "group__UInt48" ],
+    [ "UInt8", "group__UInt8.html", "group__UInt8" ],
+    [ "UInt32", "group__UInt32.html", "group__UInt32" ],
+    [ "Int32", "group__Int32.html", "group__Int32" ],
+    [ "Int8", "group__Int8.html", "group__Int8" ],
+    [ "Int48", "group__Int48.html", "group__Int48" ],
+    [ "Int64", "group__Int64.html", "group__Int64" ],
+    [ "HexBinary16", "group__HexBinary16.html", "group__HexBinary16" ],
+    [ "UInt16", "group__UInt16.html", "group__UInt16" ],
+    [ "String32", "group__String32.html", "group__String32" ],
+    [ "HexBinary128", "group__HexBinary128.html", "group__HexBinary128" ],
+    [ "HexBinary160", "group__HexBinary160.html", "group__HexBinary160" ],
+    [ "UInt64", "group__UInt64.html", "group__UInt64" ],
+    [ "HexBinary48", "group__HexBinary48.html", "group__HexBinary48" ],
+    [ "HexBinary8", "group__HexBinary8.html", "group__HexBinary8" ],
+    [ "Int16", "group__Int16.html", "group__Int16" ],
+    [ "String6", "group__String6.html", "group__String6" ],
+    [ "String192", "group__String192.html", "group__String192" ],
+    [ "HexBinary32", "group__HexBinary32.html", "group__HexBinary32" ],
+    [ "String42", "group__String42.html", "group__String42" ],
+    [ "String20", "group__String20.html", "group__String20" ],
+    [ "String16", "group__String16.html", "group__String16" ],
+    [ "HexBinary64", "group__HexBinary64.html", "group__HexBinary64" ],
+    [ "UInt40", "group__UInt40.html", "group__UInt40" ]
+];

@@ -1,0 +1,197 @@
+\hypertarget{group__schema}{}\section{Schema}
+\label{group__schema}\index{Schema@{Schema}}
+Collaboration diagram for Schema\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{group__schema}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__se__object}{I\+E\+E\+E 2030.\+5 Schema}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__schema_gae752315e97aafce8b5c8e9e20aff6a33}\label{group__schema_gae752315e97aafce8b5c8e9e20aff6a33}} 
+\#define {\bfseries xs\+\_\+type}(b,  l)~(((l)$<$$<$4)$\vert$(b))
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__schema_ga1b5bfe9c3418e3d48c52a1c8910cf7cb}\label{group__schema_ga1b5bfe9c3418e3d48c52a1c8910cf7cb}} 
+enum {\bfseries Xs\+Type} \{ \newline
+{\bfseries X\+S\+\_\+\+N\+U\+LL}, 
+\newline
+{\bfseries X\+S\+\_\+\+S\+T\+R\+I\+NG}, 
+\newline
+{\bfseries X\+S\+\_\+\+B\+O\+O\+L\+E\+AN}, 
+\newline
+{\bfseries X\+S\+\_\+\+H\+E\+X\+\_\+\+B\+I\+N\+A\+RY}, 
+\newline
+{\bfseries X\+S\+\_\+\+A\+N\+Y\+\_\+\+U\+RI}, 
+\newline
+{\bfseries X\+S\+\_\+\+L\+O\+NG}, 
+\newline
+{\bfseries X\+S\+\_\+\+I\+NT}, 
+\newline
+{\bfseries X\+S\+\_\+\+S\+H\+O\+RT}, 
+\newline
+{\bfseries X\+S\+\_\+\+B\+Y\+TE}, 
+\newline
+{\bfseries X\+S\+\_\+\+U\+L\+O\+NG}, 
+\newline
+{\bfseries X\+S\+\_\+\+U\+I\+NT}, 
+\newline
+{\bfseries X\+S\+\_\+\+U\+S\+H\+O\+RT}, 
+\newline
+{\bfseries X\+S\+\_\+\+U\+B\+Y\+TE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__schema_ga293c4bf89890fd3439dd400cc2ac6102}\label{group__schema_ga293c4bf89890fd3439dd400cc2ac6102}} 
+int {\bfseries se\+\_\+is\+\_\+a} (const Schema\+Element $\ast$se, int base, const Schema $\ast$schema)
+\item 
+int \hyperlink{group__schema_ga16de35ef559b5cc37cf33dd647ceb366}{type\+\_\+is\+\_\+a} (int type, int base, const Schema $\ast$schema)
+\begin{DoxyCompactList}\small\item\em Is a type derived from another type within a schema? \end{DoxyCompactList}\item 
+int \hyperlink{group__schema_ga4c9e71b8c2112dfc32414022942618de}{object\+\_\+size} (int type, const Schema $\ast$schema)
+\begin{DoxyCompactList}\small\item\em What is the size of an object of a given type? \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{group__schema_gae3861a7135e24f7b3c648abe34e644a8}{type\+\_\+name} (int type, const Schema $\ast$schema)
+\begin{DoxyCompactList}\small\item\em Return a string representation of a type. \end{DoxyCompactList}\item 
+void \hyperlink{group__schema_gac3b76ccf2dbe0879a4445d3b7ebd1eba}{free\+\_\+object\+\_\+elements} (void $\ast$obj, int type, const Schema $\ast$schema)
+\begin{DoxyCompactList}\small\item\em Free an object\textquotesingle{}s elements without freeing the object container. \end{DoxyCompactList}\item 
+void \hyperlink{group__schema_gaff2eea92a7727eb0f66bfa00ab05b080}{free\+\_\+object} (void $\ast$obj, int type, const Schema $\ast$schema)
+\begin{DoxyCompactList}\small\item\em Free an object\textquotesingle{}s elements and the container. \end{DoxyCompactList}\item 
+void \hyperlink{group__schema_gadec1b0417cb8f2c7ee7075d5be5e09c1}{replace\+\_\+object} (void $\ast$dest, void $\ast$src, int type, const Schema $\ast$schema)
+\begin{DoxyCompactList}\small\item\em Replace one object for another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the Schema and Schema\+Element data types, provides utility functions for Schema defined objects. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__schema_gaff2eea92a7727eb0f66bfa00ab05b080}\label{group__schema_gaff2eea92a7727eb0f66bfa00ab05b080}} 
+\index{Schema@{Schema}!free\+\_\+object@{free\+\_\+object}}
+\index{free\+\_\+object@{free\+\_\+object}!Schema@{Schema}}
+\subsubsection{\texorpdfstring{free\+\_\+object()}{free\_object()}}
+{\footnotesize\ttfamily void free\+\_\+object (\begin{DoxyParamCaption}\item[{void $\ast$}]{obj,  }\item[{int}]{type,  }\item[{const Schema $\ast$}]{schema }\end{DoxyParamCaption})}
+
+
+
+Free an object\textquotesingle{}s elements and the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & is a pointer to a schema typed object \\
+\hline
+{\em type} & is the type of the object \\
+\hline
+{\em schema} & is a pointer to the Schema \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__schema_gac3b76ccf2dbe0879a4445d3b7ebd1eba}\label{group__schema_gac3b76ccf2dbe0879a4445d3b7ebd1eba}} 
+\index{Schema@{Schema}!free\+\_\+object\+\_\+elements@{free\+\_\+object\+\_\+elements}}
+\index{free\+\_\+object\+\_\+elements@{free\+\_\+object\+\_\+elements}!Schema@{Schema}}
+\subsubsection{\texorpdfstring{free\+\_\+object\+\_\+elements()}{free\_object\_elements()}}
+{\footnotesize\ttfamily void free\+\_\+object\+\_\+elements (\begin{DoxyParamCaption}\item[{void $\ast$}]{obj,  }\item[{int}]{type,  }\item[{const Schema $\ast$}]{schema }\end{DoxyParamCaption})}
+
+
+
+Free an object\textquotesingle{}s elements without freeing the object container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & is a pointer to a schema typed object \\
+\hline
+{\em type} & is the type of the object \\
+\hline
+{\em schema} & is a pointer to the Schema \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__schema_ga4c9e71b8c2112dfc32414022942618de}\label{group__schema_ga4c9e71b8c2112dfc32414022942618de}} 
+\index{Schema@{Schema}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Schema@{Schema}}
+\subsubsection{\texorpdfstring{object\+\_\+size()}{object\_size()}}
+{\footnotesize\ttfamily int object\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{const Schema $\ast$}]{schema }\end{DoxyParamCaption})}
+
+
+
+What is the size of an object of a given type? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & is a schema type \\
+\hline
+{\em schema} & is a pointer to a Schema \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the schema typed object in bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__schema_gadec1b0417cb8f2c7ee7075d5be5e09c1}\label{group__schema_gadec1b0417cb8f2c7ee7075d5be5e09c1}} 
+\index{Schema@{Schema}!replace\+\_\+object@{replace\+\_\+object}}
+\index{replace\+\_\+object@{replace\+\_\+object}!Schema@{Schema}}
+\subsubsection{\texorpdfstring{replace\+\_\+object()}{replace\_object()}}
+{\footnotesize\ttfamily void replace\+\_\+object (\begin{DoxyParamCaption}\item[{void $\ast$}]{dest,  }\item[{void $\ast$}]{src,  }\item[{int}]{type,  }\item[{const Schema $\ast$}]{schema }\end{DoxyParamCaption})}
+
+
+
+Replace one object for another. 
+
+Free the elements of the destination object and copy the source object to the same location. Free the source object container. 
+\begin{DoxyParams}{Parameters}
+{\em dest} & is the destination object \\
+\hline
+{\em src} & is the source object \\
+\hline
+{\em type} & is the schema type of the objects \\
+\hline
+{\em schema} & is a pointer to the Schema \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__schema_ga16de35ef559b5cc37cf33dd647ceb366}\label{group__schema_ga16de35ef559b5cc37cf33dd647ceb366}} 
+\index{Schema@{Schema}!type\+\_\+is\+\_\+a@{type\+\_\+is\+\_\+a}}
+\index{type\+\_\+is\+\_\+a@{type\+\_\+is\+\_\+a}!Schema@{Schema}}
+\subsubsection{\texorpdfstring{type\+\_\+is\+\_\+a()}{type\_is\_a()}}
+{\footnotesize\ttfamily int type\+\_\+is\+\_\+a (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{base,  }\item[{const Schema $\ast$}]{schema }\end{DoxyParamCaption})}
+
+
+
+Is a type derived from another type within a schema? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & is the derived type \\
+\hline
+{\em base} & is a base type \\
+\hline
+{\em schema} & is a pointer to a Schema \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if type is derived from base, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__schema_gae3861a7135e24f7b3c648abe34e644a8}\label{group__schema_gae3861a7135e24f7b3c648abe34e644a8}} 
+\index{Schema@{Schema}!type\+\_\+name@{type\+\_\+name}}
+\index{type\+\_\+name@{type\+\_\+name}!Schema@{Schema}}
+\subsubsection{\texorpdfstring{type\+\_\+name()}{type\_name()}}
+{\footnotesize\ttfamily const char $\ast$ type\+\_\+name (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{const Schema $\ast$}]{schema }\end{DoxyParamCaption})}
+
+
+
+Return a string representation of a type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & is a schema type \\
+\hline
+{\em schema} & is a pointer to a Schema \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the type name as a string 
+\end{DoxyReturn}

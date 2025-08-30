@@ -1,0 +1,49 @@
+\hypertarget{structSE__FlowReservationRequest__t}{}\section{S\+E\+\_\+\+Flow\+Reservation\+Request\+\_\+t Struct Reference}
+\label{structSE__FlowReservationRequest__t}\index{S\+E\+\_\+\+Flow\+Reservation\+Request\+\_\+t@{S\+E\+\_\+\+Flow\+Reservation\+Request\+\_\+t}}
+
+
+{\ttfamily \#include $<$se\+\_\+types.\+h$>$}
+
+
+
+Collaboration diagram for S\+E\+\_\+\+Flow\+Reservation\+Request\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSE__FlowReservationRequest__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__FlowReservationRequest_ga0764d897ff608d7dbad85a6cb7aa89ba}{\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__FlowReservationRequest_ga26db6aba32274d08e0038686ec6ae177}{href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__FlowReservationRequest_ga71989250ddc7ef28b356f8bc3cba85a1}{m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__FlowReservationRequest_gaa9f88864ccfb91a42dfd5f4961d69831}{description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__FlowReservationRequest_gad473a8896b755ebbeea7993abb91648e}{version}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__FlowReservationRequest_ga102e894f5430b9982cb9a6b8812a82eb}{creation\+Time}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FlowReservationRequest_gae84ba3c66b07ed3f5b9e567893c0796a}{duration\+Requested}
+\item 
+\hyperlink{structSE__SignedRealEnergy__t}{S\+E\+\_\+\+Signed\+Real\+Energy\+\_\+t} \hyperlink{group__FlowReservationRequest_ga02b7ef2f402468e92c66728984b2b0c8}{energy\+Requested}
+\item 
+\hyperlink{structSE__DateTimeInterval__t}{S\+E\+\_\+\+Date\+Time\+Interval\+\_\+t} \hyperlink{group__FlowReservationRequest_gaae530fc46e3436602dbeb1d39b07b097}{interval\+Requested}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__FlowReservationRequest_ga607d366d123a4f21005c78a04f1739f4}{power\+Requested}
+\item 
+\hyperlink{structSE__RequestStatus__t}{S\+E\+\_\+\+Request\+Status\+\_\+t} {\bfseries Request\+Status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to request flow transactions. Client End\+Devices submit a request for charging or discharging from the server. The server creates an associated Flow\+Reservation\+Response containing the charging parameters and interval to provide a lower aggregated demand at the premises, or within a larger part of the distribution system. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+se\+\_\+types.\+h\item 
+se\+\_\+types\+\_\+doc.\+h\end{DoxyCompactItemize}

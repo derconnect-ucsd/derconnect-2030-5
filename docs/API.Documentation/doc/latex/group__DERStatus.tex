@@ -1,0 +1,148 @@
+\hypertarget{group__DERStatus}{}\section{D\+E\+R\+Status}
+\label{group__DERStatus}\index{D\+E\+R\+Status@{D\+E\+R\+Status}}
+Collaboration diagram for D\+E\+R\+Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{group__DERStatus}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DERStatus__t}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__DERStatus_gab4c1e1321c0115d4bf5b67665d12f296}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__DERStatus_ga412be5b1d9e2bcc7acff42c20bec4f2d}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__DERStatus_ga6880d05b460ec1817d4bda4904674639}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::subscribable}
+\item 
+\hyperlink{structSE__ConnectStatusType__t}{S\+E\+\_\+\+Connect\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga9e187f594a02795f7901a8536eaf93fd}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::gen\+Connect\+Status}
+\item 
+\hyperlink{structSE__InverterStatusType__t}{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga5c07bcc9536a224372b681863babfa29}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::inverter\+Status}
+\item 
+\hyperlink{structSE__LocalControlModeStatusType__t}{S\+E\+\_\+\+Local\+Control\+Mode\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga5ff487916a297613474b4be108121256}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::local\+Control\+Mode\+Status}
+\item 
+\hyperlink{structSE__ManufacturerStatusType__t}{S\+E\+\_\+\+Manufacturer\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga4d93047bbc5c2f04885400ca75e35d7e}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::manufacturer\+Status}
+\item 
+\hyperlink{structSE__OperationalModeStatusType__t}{S\+E\+\_\+\+Operational\+Mode\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga8db3dd530b0cbb5e02d952f763b30dd4}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::operational\+Mode\+Status}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__DERStatus_gaced41f46b4b7e97358567bf65f377339}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::reading\+Time}
+\item 
+\hyperlink{structSE__StateOfChargeStatusType__t}{S\+E\+\_\+\+State\+Of\+Charge\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga288cbcbc32535bf38ed8931c49103c4b}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::state\+Of\+Charge\+Status}
+\item 
+\hyperlink{structSE__StorageModeStatusType__t}{S\+E\+\_\+\+Storage\+Mode\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_gae47ec69bc3ff69a8b5f7b36e49f4aed9}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::storage\+Mode\+Status}
+\item 
+\hyperlink{structSE__ConnectStatusType__t}{S\+E\+\_\+\+Connect\+Status\+Type\+\_\+t} \hyperlink{group__DERStatus_ga008c4b8df0ff5f20ee6ffc4336bda96e}{S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::stor\+Connect\+Status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+ER status information. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DERStatus_gab4c1e1321c0115d4bf5b67665d12f296}\label{group__DERStatus_gab4c1e1321c0115d4bf5b67665d12f296}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+stor\+Connect\+Status\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+storage\+Mode\+Status\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+state\+Of\+Charge\+Status\+\_\+exists (1 $<$$<$ 7)
+
+\#define S\+E\+\_\+operational\+Mode\+Status\+\_\+exists (1 $<$$<$ 8)
+
+\#define S\+E\+\_\+manufacturer\+Status\+\_\+exists (1 $<$$<$ 9)
+
+\#define S\+E\+\_\+local\+Control\+Mode\+Status\+\_\+exists (1 $<$$<$ 10)
+
+\#define S\+E\+\_\+inverter\+Status\+\_\+exists (1 $<$$<$ 11)
+
+\#define S\+E\+\_\+gen\+Connect\+Status\+\_\+exists (1 $<$$<$ 12) \mbox{\Hypertarget{group__DERStatus_ga9e187f594a02795f7901a8536eaf93fd}\label{group__DERStatus_ga9e187f594a02795f7901a8536eaf93fd}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!gen\+Connect\+Status@{gen\+Connect\+Status}}
+\index{gen\+Connect\+Status@{gen\+Connect\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{gen\+Connect\+Status}{genConnectStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::gen\+Connect\+Status}
+
+Connect/status value for generator D\+ER.
+
+See Connect\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_ga412be5b1d9e2bcc7acff42c20bec4f2d}\label{group__DERStatus_ga412be5b1d9e2bcc7acff42c20bec4f2d}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!href@{href}}
+\index{href@{href}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__DERStatus_ga5c07bcc9536a224372b681863babfa29}\label{group__DERStatus_ga5c07bcc9536a224372b681863babfa29}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!inverter\+Status@{inverter\+Status}}
+\index{inverter\+Status@{inverter\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{inverter\+Status}{inverterStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::inverter\+Status}
+
+D\+ER Inverter\+Status/value.
+
+See Inverter\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_ga5ff487916a297613474b4be108121256}\label{group__DERStatus_ga5ff487916a297613474b4be108121256}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!local\+Control\+Mode\+Status@{local\+Control\+Mode\+Status}}
+\index{local\+Control\+Mode\+Status@{local\+Control\+Mode\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{local\+Control\+Mode\+Status}{localControlModeStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::local\+Control\+Mode\+Status}
+
+The local control mode status.
+
+See Local\+Control\+Mode\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_ga4d93047bbc5c2f04885400ca75e35d7e}\label{group__DERStatus_ga4d93047bbc5c2f04885400ca75e35d7e}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!manufacturer\+Status@{manufacturer\+Status}}
+\index{manufacturer\+Status@{manufacturer\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{manufacturer\+Status}{manufacturerStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::manufacturer\+Status}
+
+Manufacturer status code. \mbox{\Hypertarget{group__DERStatus_ga8db3dd530b0cbb5e02d952f763b30dd4}\label{group__DERStatus_ga8db3dd530b0cbb5e02d952f763b30dd4}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!operational\+Mode\+Status@{operational\+Mode\+Status}}
+\index{operational\+Mode\+Status@{operational\+Mode\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{operational\+Mode\+Status}{operationalModeStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::operational\+Mode\+Status}
+
+Operational mode currently in use.
+
+See Operational\+Mode\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_gaced41f46b4b7e97358567bf65f377339}\label{group__DERStatus_gaced41f46b4b7e97358567bf65f377339}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!reading\+Time@{reading\+Time}}
+\index{reading\+Time@{reading\+Time}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{reading\+Time}{readingTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::reading\+Time}
+
+The timestamp when the current status was last updated. \mbox{\Hypertarget{group__DERStatus_ga288cbcbc32535bf38ed8931c49103c4b}\label{group__DERStatus_ga288cbcbc32535bf38ed8931c49103c4b}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!state\+Of\+Charge\+Status@{state\+Of\+Charge\+Status}}
+\index{state\+Of\+Charge\+Status@{state\+Of\+Charge\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{state\+Of\+Charge\+Status}{stateOfChargeStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::state\+Of\+Charge\+Status}
+
+State of charge status.
+
+See State\+Of\+Charge\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_gae47ec69bc3ff69a8b5f7b36e49f4aed9}\label{group__DERStatus_gae47ec69bc3ff69a8b5f7b36e49f4aed9}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!storage\+Mode\+Status@{storage\+Mode\+Status}}
+\index{storage\+Mode\+Status@{storage\+Mode\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{storage\+Mode\+Status}{storageModeStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::storage\+Mode\+Status}
+
+Storage mode status.
+
+See Storage\+Mode\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_ga008c4b8df0ff5f20ee6ffc4336bda96e}\label{group__DERStatus_ga008c4b8df0ff5f20ee6ffc4336bda96e}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!stor\+Connect\+Status@{stor\+Connect\+Status}}
+\index{stor\+Connect\+Status@{stor\+Connect\+Status}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{stor\+Connect\+Status}{storConnectStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::stor\+Connect\+Status}
+
+Connect/status value for storage D\+ER.
+
+See Connect\+Status\+Type for values. \mbox{\Hypertarget{group__DERStatus_ga6880d05b460ec1817d4bda4904674639}\label{group__DERStatus_ga6880d05b460ec1817d4bda4904674639}} 
+\index{D\+E\+R\+Status@{D\+E\+R\+Status}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!D\+E\+R\+Status@{D\+E\+R\+Status}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Status\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

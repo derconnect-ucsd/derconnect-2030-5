@@ -1,0 +1,11 @@
+<map id="SE_SelfDevice_t" name="SE_SelfDevice_t">
+<area shape="rect" id="node2" href="$structSE__DeviceStatusLink__t.html" title="SE_DeviceStatusLink_t" alt="" coords="19,20,181,47"/>
+<area shape="rect" id="node3" href="$structSE__DERListLink__t.html" title="SE_DERListLink_t" alt="" coords="34,71,166,97"/>
+<area shape="rect" id="node4" href="$structSE__LogEventListLink__t.html" title="SE_LogEventListLink_t" alt="" coords="21,121,179,148"/>
+<area shape="rect" id="node5" href="$structSE__LoadShedAvailabilityListLink__t.html" title="SE_LoadShedAvailabilityList\lLink_t" alt="" coords="5,173,195,214"/>
+<area shape="rect" id="node6" href="$structSE__ConfigurationLink__t.html" title="SE_ConfigurationLink_t" alt="" coords="21,239,179,265"/>
+<area shape="rect" id="node7" href="$structSE__PowerStatusLink__t.html" title="SE_PowerStatusLink_t" alt="" coords="21,289,179,316"/>
+<area shape="rect" id="node8" href="$structSE__IPInterfaceListLink__t.html" title="SE_IPInterfaceListLink_t" alt="" coords="17,340,183,367"/>
+<area shape="rect" id="node9" href="$structSE__FileStatusLink__t.html" title="SE_FileStatusLink_t" alt="" coords="29,391,171,417"/>
+<area shape="rect" id="node10" href="$structSE__DeviceInformationLink__t.html" title="SE_DeviceInformationLink_t" alt="" coords="6,441,194,468"/>
+</map>

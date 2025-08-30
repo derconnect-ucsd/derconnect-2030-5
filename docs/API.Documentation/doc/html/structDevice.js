@@ -1,0 +1,26 @@
+var structDevice =
+[
+    [ "base", "structDevice.html#adcc3ba7edd6f9597048b1755eb521cf5", null ],
+    [ "dderc", "structDevice.html#a585cbfb645d7e76c1cc87e362b0b5cd2", null ],
+    [ "dderc", "structDevice.html#a87e04f5b31a9ba069f4f209c7f795edd", null ],
+    [ "der", "structDevice.html#aaa0db1b1870bc14474ff08f6625f0f54", null ],
+    [ "dera", "structDevice.html#af5f0ad97ea408306dddc541bc25e3bc0", null ],
+    [ "derc", "structDevice.html#a1a6854d811e5b7fd438f7af53c75c0fe", null ],
+    [ "dercap", "structDevice.html#afb0dc99d24a0c6e09a645246691fde0b", null ],
+    [ "derg", "structDevice.html#a34c3bf1ed3a44f2eeca53f35524e4341", null ],
+    [ "derp", "structDevice.html#a15523d1de382e1a72b6a354e032472d8", null ],
+    [ "derpl", "structDevice.html#ab51f57009ed35c4192326d01c16ab75b", null ],
+    [ "ders", "structDevice.html#af5d4a291b22a76b7bc7195250415a1de", null ],
+    [ "frp", "structDevice.html#a28a9800ab53619e2a5e44b6483fdba57", null ],
+    [ "frq", "structDevice.html#ac01a66e40477bbdbcf06fae7287e1d07", null ],
+    [ "id", "structDevice.html#acba8d88e9870a9c9e034c4e438264655", null ],
+    [ "lfdi", "structDevice.html#aebee5086907173f3172b6afd12e930ac", null ],
+    [ "metering_rate", "structDevice.html#aa988dd4991dd6ec4ce48d72d5450142c", null ],
+    [ "mup", "structDevice.html#a355c3754ed703678afe913c8f76e4999", null ],
+    [ "next", "structDevice.html#a095ae4d50dbca9b68d873fd50f33884d", null ],
+    [ "path", "structDevice.html#a5ffe83e93fb09927cac55bbb230ddf0d", null ],
+    [ "ps", "structDevice.html#ac1cd1b935d967f46b8e37f340248be84", null ],
+    [ "readings", "structDevice.html#aa891882344911f2abb01ddf0ffc624ea", null ],
+    [ "settings", "structDevice.html#acf84ed4b9ec6c42521688f6d880f4619", null ],
+    [ "sfdi", "structDevice.html#ae4e72cd6c13d3a2b1c14d05633e04ecb", null ]
+];

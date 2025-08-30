@@ -1,0 +1,6 @@
+<map id="Schedule" name="Schedule">
+<area shape="rect" id="node2" href="$structEventBlock.html" title="An EventBlock is an Event instance scheduled for a particular EndDevice. " alt="" coords="115,213,205,240"/>
+<area shape="rect" id="node3" href="$structStub.html" title="Stub" alt="" coords="45,124,94,151"/>
+<area shape="rect" id="node4" href="$structList.html" title="Linked List structure. " alt="" coords="5,5,48,32"/>
+<area shape="rect" id="node5" href="$structResource.html" title="Resource structure. " alt="" coords="73,5,151,32"/>
+</map>

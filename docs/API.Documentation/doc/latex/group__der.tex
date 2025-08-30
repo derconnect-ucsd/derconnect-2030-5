@@ -1,0 +1,115 @@
+\hypertarget{group__der}{}\section{D\+ER Device}
+\label{group__der}\index{D\+E\+R Device@{D\+E\+R Device}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDerDevice}{Der\+Device}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__der_ga4ea6726b38ac5fa5cc0f3b5c9a4e6271}\label{group__der_ga4ea6726b38ac5fa5cc0f3b5c9a4e6271}} 
+\#define {\bfseries D\+E\+V\+I\+C\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+9)
+\item 
+\mbox{\Hypertarget{group__der_ga2255813dedf7a6b9bdc4b0afd320022d}\label{group__der_ga2255813dedf7a6b9bdc4b0afd320022d}} 
+\#define {\bfseries D\+E\+V\+I\+C\+E\+\_\+\+M\+E\+T\+E\+R\+I\+NG}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+10)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structDerDevice}{Der\+Device} $\ast$ \hyperlink{group__der_ga8c23c07a7eb3a5b0d9896d8b771aa34c}{get\+\_\+device} (uint64\+\_\+t sfdi)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{structDerDevice}{Der\+Device} with the matching S\+F\+DI. \end{DoxyCompactList}\item 
+void \hyperlink{group__der_ga40451d206ceaf9e1c8531f7d751056d7}{device\+\_\+settings} (uint64\+\_\+t sfdi, char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load device settings from the directory. \end{DoxyCompactList}\item 
+void \hyperlink{group__der_gafd7d2723cd9a24b23c7d06fda373a91e}{device\+\_\+cert} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load a device certificate and store in the \hyperlink{structDerDevice}{Der\+Device} hash. \end{DoxyCompactList}\item 
+void \hyperlink{group__der_ga857218ef8ee25342bf29186a52db116b}{device\+\_\+certs} (char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load a set of device certificates. \end{DoxyCompactList}\item 
+void \hyperlink{group__der_gacd4c1d7510184ea16d1727e84d44b098}{schedule\+\_\+der} (\hyperlink{structStub}{Stub} $\ast$edev)
+\begin{DoxyCompactList}\small\item\em Create a D\+ER schedule for an End\+Device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The D\+ER module provides methods and structures for managing D\+ER End\+Devices. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__der_gafd7d2723cd9a24b23c7d06fda373a91e}\label{group__der_gafd7d2723cd9a24b23c7d06fda373a91e}} 
+\index{D\+E\+R Device@{D\+E\+R Device}!device\+\_\+cert@{device\+\_\+cert}}
+\index{device\+\_\+cert@{device\+\_\+cert}!D\+E\+R Device@{D\+E\+R Device}}
+\subsubsection{\texorpdfstring{device\+\_\+cert()}{device\_cert()}}
+{\footnotesize\ttfamily void device\+\_\+cert (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Load a device certificate and store in the \hyperlink{structDerDevice}{Der\+Device} hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & is the file name of the device certificate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__der_ga857218ef8ee25342bf29186a52db116b}\label{group__der_ga857218ef8ee25342bf29186a52db116b}} 
+\index{D\+E\+R Device@{D\+E\+R Device}!device\+\_\+certs@{device\+\_\+certs}}
+\index{device\+\_\+certs@{device\+\_\+certs}!D\+E\+R Device@{D\+E\+R Device}}
+\subsubsection{\texorpdfstring{device\+\_\+certs()}{device\_certs()}}
+{\footnotesize\ttfamily void device\+\_\+certs (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Load a set of device certificates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & is the name of the directory containing the device certificates. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__der_ga40451d206ceaf9e1c8531f7d751056d7}\label{group__der_ga40451d206ceaf9e1c8531f7d751056d7}} 
+\index{D\+E\+R Device@{D\+E\+R Device}!device\+\_\+settings@{device\+\_\+settings}}
+\index{device\+\_\+settings@{device\+\_\+settings}!D\+E\+R Device@{D\+E\+R Device}}
+\subsubsection{\texorpdfstring{device\+\_\+settings()}{device\_settings()}}
+{\footnotesize\ttfamily void device\+\_\+settings (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{sfdi,  }\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Load device settings from the directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfdi} & is the device S\+F\+DI \\
+\hline
+{\em path} & is the name of a directory containing X\+ML files with the device settings \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__der_ga8c23c07a7eb3a5b0d9896d8b771aa34c}\label{group__der_ga8c23c07a7eb3a5b0d9896d8b771aa34c}} 
+\index{D\+E\+R Device@{D\+E\+R Device}!get\+\_\+device@{get\+\_\+device}}
+\index{get\+\_\+device@{get\+\_\+device}!D\+E\+R Device@{D\+E\+R Device}}
+\subsubsection{\texorpdfstring{get\+\_\+device()}{get\_device()}}
+{\footnotesize\ttfamily \hyperlink{structDerDevice}{Der\+Device}$\ast$ get\+\_\+device (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{sfdi }\end{DoxyParamCaption})}
+
+
+
+Get a \hyperlink{structDerDevice}{Der\+Device} with the matching S\+F\+DI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfdi} & is the End\+Device S\+F\+DI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a \hyperlink{structDerDevice}{Der\+Device} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__der_gacd4c1d7510184ea16d1727e84d44b098}\label{group__der_gacd4c1d7510184ea16d1727e84d44b098}} 
+\index{D\+E\+R Device@{D\+E\+R Device}!schedule\+\_\+der@{schedule\+\_\+der}}
+\index{schedule\+\_\+der@{schedule\+\_\+der}!D\+E\+R Device@{D\+E\+R Device}}
+\subsubsection{\texorpdfstring{schedule\+\_\+der()}{schedule\_der()}}
+{\footnotesize\ttfamily void schedule\+\_\+der (\begin{DoxyParamCaption}\item[{\hyperlink{structStub}{Stub} $\ast$}]{edev }\end{DoxyParamCaption})}
+
+
+
+Create a D\+ER schedule for an End\+Device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edev} & is a pointer to an End\+Device \hyperlink{structStub}{Stub} \\
+\hline
+\end{DoxyParams}

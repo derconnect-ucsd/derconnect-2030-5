@@ -1,0 +1,94 @@
+\hypertarget{group__RespondableIdentifiedObject}{}\section{Respondable\+Identified\+Object}
+\label{group__RespondableIdentifiedObject}\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+Collaboration diagram for Respondable\+Identified\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__RespondableIdentifiedObject}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__RespondableIdentifiedObject__t}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__RespondableIdentifiedObject_ga82b7a1e98f1e8257e1e251e1e12b21ad}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__RespondableIdentifiedObject_gad04aef488a91cb6cc560b43b0f2f136b}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::href}
+\item 
+char $\ast$ \hyperlink{group__RespondableIdentifiedObject_gacc38745c80ef60c65b39b81328769362}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::reply\+To}
+\item 
+\hyperlink{group__HexBinary8_gaecf2dab3615fb954a693c017a61f77d6}{S\+E\+\_\+\+Hex\+Binary8\+\_\+t} \hyperlink{group__RespondableIdentifiedObject_gac5e7e3639c4de39371139e684101f745}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::response\+Required}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__RespondableIdentifiedObject_ga2daf457582bcbf32ba965d1ce49a5143}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__RespondableIdentifiedObject_ga0a1440d88b9a579911a3576fb2070051}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__RespondableIdentifiedObject_ga0cd2bf56b9f373bbdf164c8819041c18}{S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::version}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Identified\+Object to which a Response can be requested. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__RespondableIdentifiedObject_ga82b7a1e98f1e8257e1e251e1e12b21ad}\label{group__RespondableIdentifiedObject_ga82b7a1e98f1e8257e1e251e1e12b21ad}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+response\+Required\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__RespondableIdentifiedObject_ga0a1440d88b9a579911a3576fb2070051}\label{group__RespondableIdentifiedObject_ga0a1440d88b9a579911a3576fb2070051}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!description@{description}}
+\index{description@{description}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__RespondableIdentifiedObject_gad04aef488a91cb6cc560b43b0f2f136b}\label{group__RespondableIdentifiedObject_gad04aef488a91cb6cc560b43b0f2f136b}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!href@{href}}
+\index{href@{href}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__RespondableIdentifiedObject_ga2daf457582bcbf32ba965d1ce49a5143}\label{group__RespondableIdentifiedObject_ga2daf457582bcbf32ba965d1ce49a5143}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__RespondableIdentifiedObject_gacc38745c80ef60c65b39b81328769362}\label{group__RespondableIdentifiedObject_gacc38745c80ef60c65b39b81328769362}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!reply\+To@{reply\+To}}
+\index{reply\+To@{reply\+To}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{reply\+To}{replyTo}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::reply\+To}
+
+A reference to the response resource address (U\+RI). Required on a response to a G\+ET if response\+Required is \char`\"{}true\char`\"{}. \mbox{\Hypertarget{group__RespondableIdentifiedObject_gac5e7e3639c4de39371139e684101f745}\label{group__RespondableIdentifiedObject_gac5e7e3639c4de39371139e684101f745}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!response\+Required@{response\+Required}}
+\index{response\+Required@{response\+Required}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{response\+Required}{responseRequired}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::response\+Required}
+
+Indicates whether or not a response is required upon receipt, creation or update of this resource. Responses shall be posted to the collection specified in \char`\"{}reply\+To\char`\"{}.
+
+If the resource has a device\+Category field, devices that match one or more of the device types indicated in device\+Category S\+H\+A\+LL respond according to the rules listed below. If the category does not match, the device S\+H\+A\+LL N\+OT respond. If the resource does not have a device\+Category field, a device receiving the resource S\+H\+A\+LL respond according to the rules listed below.
+
+Value encoded as hex according to the following bit assignments, any combination is possible.
+
+See Table 10-\/10 for the list of appropriate Response status codes to be sent for these purposes.
+
+0 -\/ End device shall indicate that message was received
+
+1 -\/ End device shall indicate specific response.
+
+2 -\/ End user / customer response is required.
+
+All other values reserved. \mbox{\Hypertarget{group__RespondableIdentifiedObject_ga0cd2bf56b9f373bbdf164c8819041c18}\label{group__RespondableIdentifiedObject_ga0cd2bf56b9f373bbdf164c8819041c18}} 
+\index{Respondable\+Identified\+Object@{Respondable\+Identified\+Object}!version@{version}}
+\index{version@{version}!Respondable\+Identified\+Object@{Respondable\+Identified\+Object}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Respondable\+Identified\+Object\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

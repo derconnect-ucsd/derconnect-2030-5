@@ -1,0 +1,70 @@
+\hypertarget{group__FunctionSetAssignmentsList}{}\section{Function\+Set\+Assignments\+List}
+\label{group__FunctionSetAssignmentsList}\index{Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}}
+Collaboration diagram for Function\+Set\+Assignments\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{group__FunctionSetAssignmentsList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__FunctionSetAssignmentsList__t}{S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__FunctionSetAssignmentsList_gad6d901e095653dbd48b331f675547e0a}\label{group__FunctionSetAssignmentsList_gad6d901e095653dbd48b331f675547e0a}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__FunctionSetAssignmentsList_ga68247d187c62acc81cce9a7d85ad209b}{S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__FunctionSetAssignmentsList_ga52f70232590c8b6c1b9d368bffbfa680}{S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FunctionSetAssignmentsList_gaa3cb8c5a55ac18b63bd2582417f168e0}{S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__FunctionSetAssignmentsList_ga38dcb9244c2fd218072dcfa083d510d8}{S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__FunctionSetAssignmentsList_gab2f324d046132de9d38914b6d93d2155}{S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__FunctionSetAssignmentsList_gabad09e3d889b620f756e6ceb124c8cfd}\label{group__FunctionSetAssignmentsList_gabad09e3d889b620f756e6ceb124c8cfd}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::\+Function\+Set\+Assignments}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Function\+Set\+Assignments objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__FunctionSetAssignmentsList_gaa3cb8c5a55ac18b63bd2582417f168e0}\label{group__FunctionSetAssignmentsList_gaa3cb8c5a55ac18b63bd2582417f168e0}} 
+\index{Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}!all@{all}}
+\index{all@{all}!Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FunctionSetAssignmentsList_ga68247d187c62acc81cce9a7d85ad209b}\label{group__FunctionSetAssignmentsList_ga68247d187c62acc81cce9a7d85ad209b}} 
+\index{Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}!href@{href}}
+\index{href@{href}!Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FunctionSetAssignmentsList_gab2f324d046132de9d38914b6d93d2155}\label{group__FunctionSetAssignmentsList_gab2f324d046132de9d38914b6d93d2155}} 
+\index{Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__FunctionSetAssignmentsList_ga38dcb9244c2fd218072dcfa083d510d8}\label{group__FunctionSetAssignmentsList_ga38dcb9244c2fd218072dcfa083d510d8}} 
+\index{Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}!results@{results}}
+\index{results@{results}!Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__FunctionSetAssignmentsList_ga52f70232590c8b6c1b9d368bffbfa680}\label{group__FunctionSetAssignmentsList_ga52f70232590c8b6c1b9d368bffbfa680}} 
+\index{Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Function\+Set\+Assignments\+List@{Function\+Set\+Assignments\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Function\+Set\+Assignments\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

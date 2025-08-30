@@ -1,0 +1,21 @@
+var structSE__LLInterface__t =
+[
+    [ "_flags", "group__LLInterface.html#gaa0dc55efd407aa5396ed13e3a59692a7", null ],
+    [ "CRCerrors", "group__LLInterface.html#gae30861c0bcee76e4fb3d6595c0627ee4", null ],
+    [ "EUI64", "group__LLInterface.html#ga04a90ef4163eeb75c14b51dc355c230b", null ],
+    [ "href", "group__LLInterface.html#ga1215360f15eba876078292b78bee513a", null ],
+    [ "IEEE_802_15_4", "group__LLInterface.html#ga43f5d176625b2f921d7699543d3040f1", null ],
+    [ "linkLayerType", "group__LLInterface.html#ga8ef715e1733f7b500277f889214fc442", null ],
+    [ "LLAckNotRx", "group__LLInterface.html#ga55320632c0236c217127525559c57b8b", null ],
+    [ "LLCSMAFail", "group__LLInterface.html#gabf6b980a7cdfc4791c5d1454186ccd97", null ],
+    [ "LLFramesDropRx", "group__LLInterface.html#ga35a45921948c27fb0592c48d649eeeff", null ],
+    [ "LLFramesDropTx", "group__LLInterface.html#ga0bf6d4a7c6b0fcc3abf05c0f6fe0d9a2", null ],
+    [ "LLFramesRx", "group__LLInterface.html#ga90c38987e2ab44715a8f858b2cb16fcc", null ],
+    [ "LLFramesTx", "group__LLInterface.html#ga85a2342a247104a6ad9cbf1b0453dea2", null ],
+    [ "LLMediaAccessFail", "group__LLInterface.html#ga50e029d2042a334b98066e875e95879d", null ],
+    [ "LLOctetsRx", "group__LLInterface.html#ga84ccf99bfd9658ce936851fdb77870b0", null ],
+    [ "LLOctetsTx", "group__LLInterface.html#gaf066ed5c9c829bca58631b4f14037851", null ],
+    [ "LLRetryCount", "group__LLInterface.html#gad89a03017476955c94cc21ad73dfc140", null ],
+    [ "LLSecurityErrorRx", "group__LLInterface.html#ga2ddb6e5f1bdcd13ad802cc379bd0f29e", null ],
+    [ "loWPAN", "group__LLInterface.html#ga13b2319fee4bd774eaa4ebe6b0957ec4", null ]
+];

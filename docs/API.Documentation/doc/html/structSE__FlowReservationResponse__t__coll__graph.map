@@ -1,0 +1,6 @@
+<map id="SE_FlowReservationResponse_t" name="SE_FlowReservationResponse_t">
+<area shape="rect" id="node2" href="$structSE__DateTimeInterval__t.html" title="SE_DateTimeInterval_t" alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node3" href="$structSE__EventStatus__t.html" title="SE_EventStatus_t" alt="" coords="189,5,319,32"/>
+<area shape="rect" id="node4" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="344,5,476,32"/>
+<area shape="rect" id="node5" href="$structSE__SignedRealEnergy__t.html" title="SE_SignedRealEnergy_t" alt="" coords="500,5,667,32"/>
+</map>

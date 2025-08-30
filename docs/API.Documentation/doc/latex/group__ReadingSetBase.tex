@@ -1,0 +1,76 @@
+\hypertarget{group__ReadingSetBase}{}\section{Reading\+Set\+Base}
+\label{group__ReadingSetBase}\index{Reading\+Set\+Base@{Reading\+Set\+Base}}
+Collaboration diagram for Reading\+Set\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ReadingSetBase}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__MirrorReadingSet}{Mirror\+Reading\+Set}
+\item 
+\hyperlink{group__BillingReadingSet}{Billing\+Reading\+Set}
+\item 
+\hyperlink{group__ReadingSet}{Reading\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ReadingSetBase__t}{S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__ReadingSetBase_ga06de15c739974e8fda5eed67aa4217c8}\label{group__ReadingSetBase_ga06de15c739974e8fda5eed67aa4217c8}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ReadingSetBase_ga4c94838462ed93e356089d894b4b408d}{S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__ReadingSetBase_ga7189226865c8cc699d86933793edbe14}{S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__ReadingSetBase_ga6e8ece381fda08a0af90abd901be7aec}{S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__ReadingSetBase_gacf87694263f9fa1022f9d5a28d2eb694}{S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::version}
+\item 
+\hyperlink{structSE__DateTimeInterval__t}{S\+E\+\_\+\+Date\+Time\+Interval\+\_\+t} \hyperlink{group__ReadingSetBase_ga4da03480f642318baf9793c7ff5e1006}{S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::time\+Period}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of Readings of the Reading\+Type indicated by the parent Meter\+Reading. Reading\+Base is abstract, used to define the elements common to Reading\+Set and Interval\+Block. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ReadingSetBase_ga6e8ece381fda08a0af90abd901be7aec}\label{group__ReadingSetBase_ga6e8ece381fda08a0af90abd901be7aec}} 
+\index{Reading\+Set\+Base@{Reading\+Set\+Base}!description@{description}}
+\index{description@{description}!Reading\+Set\+Base@{Reading\+Set\+Base}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__ReadingSetBase_ga4c94838462ed93e356089d894b4b408d}\label{group__ReadingSetBase_ga4c94838462ed93e356089d894b4b408d}} 
+\index{Reading\+Set\+Base@{Reading\+Set\+Base}!href@{href}}
+\index{href@{href}!Reading\+Set\+Base@{Reading\+Set\+Base}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ReadingSetBase_ga7189226865c8cc699d86933793edbe14}\label{group__ReadingSetBase_ga7189226865c8cc699d86933793edbe14}} 
+\index{Reading\+Set\+Base@{Reading\+Set\+Base}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Reading\+Set\+Base@{Reading\+Set\+Base}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__ReadingSetBase_ga4da03480f642318baf9793c7ff5e1006}\label{group__ReadingSetBase_ga4da03480f642318baf9793c7ff5e1006}} 
+\index{Reading\+Set\+Base@{Reading\+Set\+Base}!time\+Period@{time\+Period}}
+\index{time\+Period@{time\+Period}!Reading\+Set\+Base@{Reading\+Set\+Base}}
+\subsubsection{\texorpdfstring{time\+Period}{timePeriod}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::time\+Period}
+
+Specifies the time range during which the contained readings were taken. \mbox{\Hypertarget{group__ReadingSetBase_gacf87694263f9fa1022f9d5a28d2eb694}\label{group__ReadingSetBase_gacf87694263f9fa1022f9d5a28d2eb694}} 
+\index{Reading\+Set\+Base@{Reading\+Set\+Base}!version@{version}}
+\index{version@{version}!Reading\+Set\+Base@{Reading\+Set\+Base}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+Base\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

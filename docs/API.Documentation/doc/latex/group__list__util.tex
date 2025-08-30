@@ -1,0 +1,152 @@
+\hypertarget{group__list__util}{}\section{List Utility}
+\label{group__list__util}\index{List Utility@{List Utility}}
+Collaboration diagram for List Utility\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{group__list__util}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structList}{List} $\ast$ \hyperlink{group__list__util_ga874ff33e9f0bb93fc3d7ac5ab4f3e248}{list\+\_\+dup} (\hyperlink{structList}{List} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Duplicate a \hyperlink{structList}{List} (shallow copy). \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__list__util_gaeb12c90d4f427422d119991fcb361a3c}{list\+\_\+cat} (void $\ast$la, void $\ast$lb)
+\begin{DoxyCompactList}\small\item\em Concatenate two lists. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__list__util_ga2550a2043c99ed17cee21fc253cfa8cc}{list\+\_\+reverse} (void $\ast$list)
+\begin{DoxyCompactList}\small\item\em Reverse a list. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__list__util_gae6f4181f083344798db3d2e807d32508}{insert\+\_\+sorted} (void $\ast$list, void $\ast$item, int($\ast$compare)(void $\ast$a, void $\ast$b))
+\begin{DoxyCompactList}\small\item\em Insert a linked item into a sorted list. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__list__util_gada9f3e39c93165f776dbe69ef07a7159}{partition} (void $\ast$b, void $\ast$list, void $\ast$x, int($\ast$compare)(void $\ast$a, void $\ast$b))
+\begin{DoxyCompactList}\small\item\em Partition a list into two seperate lists based upon a pivot item. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__list__util_gab09951efeeb5dd1dfc3ccbf60d6d627e}{quick\+\_\+sort} (void $\ast$list, int($\ast$compare)(void $\ast$a, void $\ast$b))
+\begin{DoxyCompactList}\small\item\em Sort a list using quicksort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides utility functions that deal with lists. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__list__util_gae6f4181f083344798db3d2e807d32508}\label{group__list__util_gae6f4181f083344798db3d2e807d32508}} 
+\index{List Utility@{List Utility}!insert\+\_\+sorted@{insert\+\_\+sorted}}
+\index{insert\+\_\+sorted@{insert\+\_\+sorted}!List Utility@{List Utility}}
+\subsubsection{\texorpdfstring{insert\+\_\+sorted()}{insert\_sorted()}}
+{\footnotesize\ttfamily void $\ast$ insert\+\_\+sorted (\begin{DoxyParamCaption}\item[{void $\ast$}]{list,  }\item[{void $\ast$}]{item,  }\item[{int($\ast$)(void $\ast$a, void $\ast$b)}]{compare }\end{DoxyParamCaption})}
+
+
+
+Insert a linked item into a sorted list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & is a pointer to a linked list \\
+\hline
+{\em item} & is a pointer to a linked item \\
+\hline
+{\em compare} & is a pointer to a comparison function that compares two linked items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a sorted list with the item inserted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list__util_gaeb12c90d4f427422d119991fcb361a3c}\label{group__list__util_gaeb12c90d4f427422d119991fcb361a3c}} 
+\index{List Utility@{List Utility}!list\+\_\+cat@{list\+\_\+cat}}
+\index{list\+\_\+cat@{list\+\_\+cat}!List Utility@{List Utility}}
+\subsubsection{\texorpdfstring{list\+\_\+cat()}{list\_cat()}}
+{\footnotesize\ttfamily void $\ast$ list\+\_\+cat (\begin{DoxyParamCaption}\item[{void $\ast$}]{la,  }\item[{void $\ast$}]{lb }\end{DoxyParamCaption})}
+
+
+
+Concatenate two lists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & is a pointer to a linked list \\
+\hline
+{\em lb} & is a pointer to a linked list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list la + lb 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list__util_ga874ff33e9f0bb93fc3d7ac5ab4f3e248}\label{group__list__util_ga874ff33e9f0bb93fc3d7ac5ab4f3e248}} 
+\index{List Utility@{List Utility}!list\+\_\+dup@{list\+\_\+dup}}
+\index{list\+\_\+dup@{list\+\_\+dup}!List Utility@{List Utility}}
+\subsubsection{\texorpdfstring{list\+\_\+dup()}{list\_dup()}}
+{\footnotesize\ttfamily \hyperlink{structList}{List} $\ast$ list\+\_\+dup (\begin{DoxyParamCaption}\item[{\hyperlink{structList}{List} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+Duplicate a \hyperlink{structList}{List} (shallow copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & is a pointer to a linked \hyperlink{structList}{List} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copy of the list argument 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list__util_ga2550a2043c99ed17cee21fc253cfa8cc}\label{group__list__util_ga2550a2043c99ed17cee21fc253cfa8cc}} 
+\index{List Utility@{List Utility}!list\+\_\+reverse@{list\+\_\+reverse}}
+\index{list\+\_\+reverse@{list\+\_\+reverse}!List Utility@{List Utility}}
+\subsubsection{\texorpdfstring{list\+\_\+reverse()}{list\_reverse()}}
+{\footnotesize\ttfamily void $\ast$ list\+\_\+reverse (\begin{DoxyParamCaption}\item[{void $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+Reverse a list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & is a linked list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the reveresed list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list__util_gada9f3e39c93165f776dbe69ef07a7159}\label{group__list__util_gada9f3e39c93165f776dbe69ef07a7159}} 
+\index{List Utility@{List Utility}!partition@{partition}}
+\index{partition@{partition}!List Utility@{List Utility}}
+\subsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily void $\ast$ partition (\begin{DoxyParamCaption}\item[{void $\ast$}]{b,  }\item[{void $\ast$}]{list,  }\item[{void $\ast$}]{x,  }\item[{int($\ast$)(void $\ast$a, void $\ast$b)}]{compare }\end{DoxyParamCaption})}
+
+
+
+Partition a list into two seperate lists based upon a pivot item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lb} & points to a value that receives a pointer to a list \\
+\hline
+{\em list} & is a pointer to a list to be partitioned \\
+\hline
+{\em x} & is pivot item used to partition the list \\
+\hline
+{\em compare} & is a pointer to a function that compares list items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointers to two seperate lists (return value, $\ast$lb) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list__util_gab09951efeeb5dd1dfc3ccbf60d6d627e}\label{group__list__util_gab09951efeeb5dd1dfc3ccbf60d6d627e}} 
+\index{List Utility@{List Utility}!quick\+\_\+sort@{quick\+\_\+sort}}
+\index{quick\+\_\+sort@{quick\+\_\+sort}!List Utility@{List Utility}}
+\subsubsection{\texorpdfstring{quick\+\_\+sort()}{quick\_sort()}}
+{\footnotesize\ttfamily void $\ast$ quick\+\_\+sort (\begin{DoxyParamCaption}\item[{void $\ast$}]{list,  }\item[{int($\ast$)(void $\ast$a, void $\ast$b)}]{compare }\end{DoxyParamCaption})}
+
+
+
+Sort a list using quicksort. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & is a pointer to a linked list \\
+\hline
+{\em compare} & is a pointer to a function that compares list items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the sorted list 
+\end{DoxyReturn}

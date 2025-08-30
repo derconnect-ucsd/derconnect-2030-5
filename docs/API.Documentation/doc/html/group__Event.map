@@ -1,0 +1,6 @@
+<map id="Event" name="Event">
+<area shape="rect" id="node1" href="$group__TextMessage.html" title="TextMessage" alt="" coords="423,5,524,32"/>
+<area shape="rect" id="node3" href="$group__FlowReservationResponse.html" title="FlowReservationResponse" alt="" coords="384,56,563,83"/>
+<area shape="rect" id="node4" href="$group__RandomizableEvent.html" title="RandomizableEvent" alt="" coords="404,107,543,133"/>
+<area shape="rect" id="node5" href="$group__RespondableSubscribableIdentifiedObject.html" title="RespondableSubscribableIdentified\lObject" alt="" coords="5,49,232,90"/>
+</map>

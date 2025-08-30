@@ -1,0 +1,62 @@
+\hypertarget{group__FileList}{}\section{File\+List}
+\label{group__FileList}\index{File\+List@{File\+List}}
+Collaboration diagram for File\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{group__FileList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__FileList__t}{S\+E\+\_\+\+File\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__FileList_ga7357c2a222fb588fdfaa857ec6707474}\label{group__FileList_ga7357c2a222fb588fdfaa857ec6707474}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+File\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__FileList_ga7ddecb44b6b65daa5a5324c09a396853}{S\+E\+\_\+\+File\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FileList_ga3c96b7591e75f2ba60753bd7e7b706e5}{S\+E\+\_\+\+File\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__FileList_gaac837f0b9ccb09e669a79138ff5fc4b4}{S\+E\+\_\+\+File\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__FileList_ga27aa967b9be8765b2407b51ba6e3e65e}{S\+E\+\_\+\+File\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__FileList_ga6f1ae4ad3352f5b763c2631a04d52685}\label{group__FileList_ga6f1ae4ad3352f5b763c2631a04d52685}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+File\+List\+\_\+t\+::\+File}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold File objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__FileList_ga3c96b7591e75f2ba60753bd7e7b706e5}\label{group__FileList_ga3c96b7591e75f2ba60753bd7e7b706e5}} 
+\index{File\+List@{File\+List}!all@{all}}
+\index{all@{all}!File\+List@{File\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FileList_ga7ddecb44b6b65daa5a5324c09a396853}\label{group__FileList_ga7ddecb44b6b65daa5a5324c09a396853}} 
+\index{File\+List@{File\+List}!href@{href}}
+\index{href@{href}!File\+List@{File\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FileList_ga27aa967b9be8765b2407b51ba6e3e65e}\label{group__FileList_ga27aa967b9be8765b2407b51ba6e3e65e}} 
+\index{File\+List@{File\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!File\+List@{File\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__FileList_gaac837f0b9ccb09e669a79138ff5fc4b4}\label{group__FileList_gaac837f0b9ccb09e669a79138ff5fc4b4}} 
+\index{File\+List@{File\+List}!results@{results}}
+\index{results@{results}!File\+List@{File\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. 

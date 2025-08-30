@@ -1,0 +1,225 @@
+\hypertarget{group__se__discover}{}\section{I\+E\+EE 2030.5 Service Discovery}
+\label{group__se__discover}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+Collaboration diagram for I\+E\+EE 2030.5 Service Discovery\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{group__se__discover}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__se__discover_ga4a1f817f6757fd05bb2b582cd9e1205b}{Se\+Server\+Flag} \{ \newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bafbe37abfc443e8c557a534a30393ab3c}{B\+I\+L\+L\+I\+N\+G\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 0 ), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba7ad78247588b01f11e8740576e5e9f5f}{D\+R\+L\+C\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 1 ), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bab63e9be194aacb635adfc281aab2f7f7}{D\+E\+R\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 2), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205babde56b18131bac6b51ba7fd51dc1489e}{F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 3), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205badfde47494ae3389d83b0d18187a7da8f}{M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 4), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba77e2ed40aacd321a228cb023d37f58a8}{P\+R\+E\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 5), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baae048d4f23296125340e256b12745937}{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 6), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bae1ddb4361d9df46d3609da430a2c3b29}{P\+R\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 7), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba4692b2d1ca752be03016bd1d451bc94d}{T\+I\+M\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 8), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bac4f59c44ef057becb779300b41e06aa4}{M\+E\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 9), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baaf2077c809195de15cf38d741953e68e}{E\+D\+E\+V\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 10), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baa461605241221ca99d8081fb5f877cee}{M\+E\+T\+E\+R\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 11), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bac74423cece1e1ac77d87f664b25ba7f1}{S\+E\+L\+F\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 12), 
+\newline
+\hyperlink{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baf4e5f9a73c9aba029b10a0f5611113fb}{S\+E\+\_\+\+S\+E\+R\+V\+ER} = (1 $<$$<$ 13)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__se__discover_ga57f13e11b0b429523f50ae0157aa920d}{se\+\_\+subquery} (char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Return a server flag given its subquery name. \end{DoxyCompactList}\item 
+void \hyperlink{group__se__discover_gae649b86b4ed028c6288574dc69af24ae}{se\+\_\+discover} (int server, int qu)
+\begin{DoxyCompactList}\small\item\em Send a D\+N\+S-\/\+SD query for the indicated servers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__se__discover_ga62876295a90c1dae0a7564a18b2a2517}\label{group__se__discover_ga62876295a90c1dae0a7564a18b2a2517}} 
+void {\bfseries discover\+\_\+device} ()
+\item 
+char $\ast$ \hyperlink{group__se__discover_ga773e278c046c45a0d411bbb49cf2adea}{service\+\_\+path} (Service $\ast$s)
+\begin{DoxyCompactList}\small\item\em Return the value of the \textquotesingle{}path\textquotesingle{} key if set. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__se__discover_ga761f59dc096114f53a72b58bfe77d281}{service\+\_\+dcap} (Service $\ast$s)
+\begin{DoxyCompactList}\small\item\em Return the value of the \textquotesingle{}dcap\textquotesingle{} key if set. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__se__discover_ga22eb8b74c90f083ed7e0349424e46ec9}\label{group__se__discover_ga22eb8b74c90f083ed7e0349424e46ec9}} 
+int {\bfseries service\+\_\+type} (Service $\ast$s)
+\item 
+void $\ast$ \hyperlink{group__se__discover_ga2a10a4f15dbb85e5b0b93379f9e48ae8}{service\+\_\+connect} (Service $\ast$s, int secure)
+\begin{DoxyCompactList}\small\item\em Connect to a given service, return the connection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__se__discover_ga5e102de91a6d3a494bf00ceaaaedca72}\label{group__se__discover_ga5e102de91a6d3a494bf00ceaaaedca72}} 
+void {\bfseries discover\+\_\+init} (int index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides an implementation of I\+E\+EE 2030.\+5 Service Discovery. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__se__discover_ga4a1f817f6757fd05bb2b582cd9e1205b}\label{group__se__discover_ga4a1f817f6757fd05bb2b582cd9e1205b}} 
+\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!Se\+Server\+Flag@{Se\+Server\+Flag}}
+\index{Se\+Server\+Flag@{Se\+Server\+Flag}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+\subsubsection{\texorpdfstring{Se\+Server\+Flag}{SeServerFlag}}
+{\footnotesize\ttfamily enum \hyperlink{group__se__discover_ga4a1f817f6757fd05bb2b582cd9e1205b}{Se\+Server\+Flag}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+I\+L\+L\+I\+N\+G\+\_\+\+S\+E\+R\+V\+ER@{B\+I\+L\+L\+I\+N\+G\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!B\+I\+L\+L\+I\+N\+G\+\_\+\+S\+E\+R\+V\+ER@{B\+I\+L\+L\+I\+N\+G\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bafbe37abfc443e8c557a534a30393ab3c}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bafbe37abfc443e8c557a534a30393ab3c}} 
+B\+I\+L\+L\+I\+N\+G\+\_\+\+S\+E\+R\+V\+ER&Billing Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+R\+L\+C\+\_\+\+S\+E\+R\+V\+ER@{D\+R\+L\+C\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!D\+R\+L\+C\+\_\+\+S\+E\+R\+V\+ER@{D\+R\+L\+C\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba7ad78247588b01f11e8740576e5e9f5f}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba7ad78247588b01f11e8740576e5e9f5f}} 
+D\+R\+L\+C\+\_\+\+S\+E\+R\+V\+ER&Demand Response / Load Control Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+R\+\_\+\+S\+E\+R\+V\+ER@{D\+E\+R\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!D\+E\+R\+\_\+\+S\+E\+R\+V\+ER@{D\+E\+R\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bab63e9be194aacb635adfc281aab2f7f7}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bab63e9be194aacb635adfc281aab2f7f7}} 
+D\+E\+R\+\_\+\+S\+E\+R\+V\+ER&Distributed Energy Resources Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+ER@{F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+ER@{F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205babde56b18131bac6b51ba7fd51dc1489e}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205babde56b18131bac6b51ba7fd51dc1489e}} 
+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+ER&File Download Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+E\+R\+V\+ER@{M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+E\+R\+V\+ER@{M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205badfde47494ae3389d83b0d18187a7da8f}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205badfde47494ae3389d83b0d18187a7da8f}} 
+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+E\+R\+V\+ER&Messaging Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+R\+E\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER@{P\+R\+E\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!P\+R\+E\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER@{P\+R\+E\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba77e2ed40aacd321a228cb023d37f58a8}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba77e2ed40aacd321a228cb023d37f58a8}} 
+P\+R\+E\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER&Prepayment Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+S\+E\+R\+V\+ER@{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+S\+E\+R\+V\+ER@{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baae048d4f23296125340e256b12745937}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baae048d4f23296125340e256b12745937}} 
+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+S\+E\+R\+V\+ER&Response Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+R\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER@{P\+R\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!P\+R\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER@{P\+R\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bae1ddb4361d9df46d3609da430a2c3b29}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bae1ddb4361d9df46d3609da430a2c3b29}} 
+P\+R\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER&Pricing Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+I\+M\+E\+\_\+\+S\+E\+R\+V\+ER@{T\+I\+M\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!T\+I\+M\+E\+\_\+\+S\+E\+R\+V\+ER@{T\+I\+M\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba4692b2d1ca752be03016bd1d451bc94d}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205ba4692b2d1ca752be03016bd1d451bc94d}} 
+T\+I\+M\+E\+\_\+\+S\+E\+R\+V\+ER&Time Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER@{M\+E\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!M\+E\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER@{M\+E\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bac4f59c44ef057becb779300b41e06aa4}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bac4f59c44ef057becb779300b41e06aa4}} 
+M\+E\+T\+E\+R\+\_\+\+S\+E\+R\+V\+ER&Metering Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+E\+V\+\_\+\+S\+E\+R\+V\+ER@{E\+D\+E\+V\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!E\+D\+E\+V\+\_\+\+S\+E\+R\+V\+ER@{E\+D\+E\+V\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baaf2077c809195de15cf38d741953e68e}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baaf2077c809195de15cf38d741953e68e}} 
+E\+D\+E\+V\+\_\+\+S\+E\+R\+V\+ER&End Device Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+T\+E\+R\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+ER@{M\+E\+T\+E\+R\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!M\+E\+T\+E\+R\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+ER@{M\+E\+T\+E\+R\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baa461605241221ca99d8081fb5f877cee}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baa461605241221ca99d8081fb5f877cee}} 
+M\+E\+T\+E\+R\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+ER&Metering Mirroring Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+L\+F\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER@{S\+E\+L\+F\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!S\+E\+L\+F\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER@{S\+E\+L\+F\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bac74423cece1e1ac77d87f664b25ba7f1}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205bac74423cece1e1ac77d87f664b25ba7f1}} 
+S\+E\+L\+F\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+E\+R\+V\+ER&Self Device Server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+\_\+\+S\+E\+R\+V\+ER@{S\+E\+\_\+\+S\+E\+R\+V\+ER}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!S\+E\+\_\+\+S\+E\+R\+V\+ER@{S\+E\+\_\+\+S\+E\+R\+V\+ER}}}\mbox{\Hypertarget{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baf4e5f9a73c9aba029b10a0f5611113fb}\label{group__se__discover_gga4a1f817f6757fd05bb2b582cd9e1205baf4e5f9a73c9aba029b10a0f5611113fb}} 
+S\+E\+\_\+\+S\+E\+R\+V\+ER&Any Smart\+Energy Server \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__se__discover_gae649b86b4ed028c6288574dc69af24ae}\label{group__se__discover_gae649b86b4ed028c6288574dc69af24ae}} 
+\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!se\+\_\+discover@{se\+\_\+discover}}
+\index{se\+\_\+discover@{se\+\_\+discover}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+\subsubsection{\texorpdfstring{se\+\_\+discover()}{se\_discover()}}
+{\footnotesize\ttfamily void se\+\_\+discover (\begin{DoxyParamCaption}\item[{int}]{server,  }\item[{int}]{qu }\end{DoxyParamCaption})}
+
+
+
+Send a D\+N\+S-\/\+SD query for the indicated servers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server} & is a an bitwise OR ($\vert$) list of Se\+Server\+Flag values. \\
+\hline
+{\em qu} & is the value of the QU bit, 1 requests that the server send a unicast response, 0 requests that a server send a multicast response \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__discover_ga57f13e11b0b429523f50ae0157aa920d}\label{group__se__discover_ga57f13e11b0b429523f50ae0157aa920d}} 
+\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!se\+\_\+subquery@{se\+\_\+subquery}}
+\index{se\+\_\+subquery@{se\+\_\+subquery}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+\subsubsection{\texorpdfstring{se\+\_\+subquery()}{se\_subquery()}}
+{\footnotesize\ttfamily int se\+\_\+subquery (\begin{DoxyParamCaption}\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Return a server flag given its subquery name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & is a subquery name, one of \char`\"{}bill\char`\"{}, \char`\"{}dr\char`\"{}, \char`\"{}derp\char`\"{}, \char`\"{}file\char`\"{}, \char`\"{}msg\char`\"{}, \char`\"{}ppy\char`\"{}, \char`\"{}rsps\char`\"{}, \char`\"{}tp\char`\"{}, \char`\"{}tm\char`\"{}, \char`\"{}upt\char`\"{}, \char`\"{}edev\char`\"{}, \char`\"{}mup\char`\"{}, \char`\"{}sdev\char`\"{}, or \char`\"{}smartenergy\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one of the values of Se\+Server\+Flag corresponding with the subquery name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__discover_ga2a10a4f15dbb85e5b0b93379f9e48ae8}\label{group__se__discover_ga2a10a4f15dbb85e5b0b93379f9e48ae8}} 
+\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!service\+\_\+connect@{service\+\_\+connect}}
+\index{service\+\_\+connect@{service\+\_\+connect}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+\subsubsection{\texorpdfstring{service\+\_\+connect()}{service\_connect()}}
+{\footnotesize\ttfamily void $\ast$ service\+\_\+connect (\begin{DoxyParamCaption}\item[{Service $\ast$}]{s,  }\item[{int}]{secure }\end{DoxyParamCaption})}
+
+
+
+Connect to a given service, return the connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a Service \\
+\hline
+{\em secure} & indicates whether to attempt a secure T\+LS connection or not, this is only possible when the \textquotesingle{}https\textquotesingle{} key is set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__discover_ga761f59dc096114f53a72b58bfe77d281}\label{group__se__discover_ga761f59dc096114f53a72b58bfe77d281}} 
+\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!service\+\_\+dcap@{service\+\_\+dcap}}
+\index{service\+\_\+dcap@{service\+\_\+dcap}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+\subsubsection{\texorpdfstring{service\+\_\+dcap()}{service\_dcap()}}
+{\footnotesize\ttfamily char $\ast$ service\+\_\+dcap (\begin{DoxyParamCaption}\item[{Service $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Return the value of the \textquotesingle{}dcap\textquotesingle{} key if set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a Service \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the \textquotesingle{}dcap\textquotesingle{} key if set, N\+U\+LL otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__discover_ga773e278c046c45a0d411bbb49cf2adea}\label{group__se__discover_ga773e278c046c45a0d411bbb49cf2adea}} 
+\index{I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}!service\+\_\+path@{service\+\_\+path}}
+\index{service\+\_\+path@{service\+\_\+path}!I\+E\+E\+E 2030.\+5 Service Discovery@{I\+E\+E\+E 2030.\+5 Service Discovery}}
+\subsubsection{\texorpdfstring{service\+\_\+path()}{service\_path()}}
+{\footnotesize\ttfamily char $\ast$ service\+\_\+path (\begin{DoxyParamCaption}\item[{Service $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Return the value of the \textquotesingle{}path\textquotesingle{} key if set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a Service \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the \textquotesingle{}path\textquotesingle{} key if set, N\+U\+LL otherwise 
+\end{DoxyReturn}

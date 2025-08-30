@@ -1,0 +1,75 @@
+\hypertarget{group__ReadingSet}{}\section{Reading\+Set}
+\label{group__ReadingSet}\index{Reading\+Set@{Reading\+Set}}
+Collaboration diagram for Reading\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{group__ReadingSet}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ReadingSet__t}{S\+E\+\_\+\+Reading\+Set\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__ReadingSet_ga447ad86f7f9c278c2e3f166e89f6955c}{S\+E\+\_\+\+Reading\+Set\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ReadingSet_gabdc2579f4df7fa4a87a23c41d057cf51}{S\+E\+\_\+\+Reading\+Set\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__ReadingSet_gadeeb229d0f424fe8275177847d9764fb}{S\+E\+\_\+\+Reading\+Set\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__ReadingSet_gad67b558463072ec2819dd73f6ef2ee7b}{S\+E\+\_\+\+Reading\+Set\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__ReadingSet_gab59f9eff3274eb6686af1cb1165b18b0}{S\+E\+\_\+\+Reading\+Set\+\_\+t\+::version}
+\item 
+\hyperlink{structSE__DateTimeInterval__t}{S\+E\+\_\+\+Date\+Time\+Interval\+\_\+t} \hyperlink{group__ReadingSet_gac688cdc34b6fb2eda9be0d9cd660f8ae}{S\+E\+\_\+\+Reading\+Set\+\_\+t\+::time\+Period}
+\item 
+\mbox{\Hypertarget{group__ReadingSet_ga933adb4afc63dc62945d4522abd1e2e6}\label{group__ReadingSet_ga933adb4afc63dc62945d4522abd1e2e6}} 
+\hyperlink{structSE__ReadingListLink__t}{S\+E\+\_\+\+Reading\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Reading\+Set\+\_\+t\+::\+Reading\+List\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A set of Readings of the Reading\+Type indicated by the parent Meter\+Reading. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ReadingSet_ga447ad86f7f9c278c2e3f166e89f6955c}\label{group__ReadingSet_ga447ad86f7f9c278c2e3f166e89f6955c}} 
+\index{Reading\+Set@{Reading\+Set}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Reading\+Set@{Reading\+Set}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Reading\+List\+Link\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__ReadingSet_gad67b558463072ec2819dd73f6ef2ee7b}\label{group__ReadingSet_gad67b558463072ec2819dd73f6ef2ee7b}} 
+\index{Reading\+Set@{Reading\+Set}!description@{description}}
+\index{description@{description}!Reading\+Set@{Reading\+Set}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__ReadingSet_gabdc2579f4df7fa4a87a23c41d057cf51}\label{group__ReadingSet_gabdc2579f4df7fa4a87a23c41d057cf51}} 
+\index{Reading\+Set@{Reading\+Set}!href@{href}}
+\index{href@{href}!Reading\+Set@{Reading\+Set}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ReadingSet_gadeeb229d0f424fe8275177847d9764fb}\label{group__ReadingSet_gadeeb229d0f424fe8275177847d9764fb}} 
+\index{Reading\+Set@{Reading\+Set}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Reading\+Set@{Reading\+Set}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__ReadingSet_gac688cdc34b6fb2eda9be0d9cd660f8ae}\label{group__ReadingSet_gac688cdc34b6fb2eda9be0d9cd660f8ae}} 
+\index{Reading\+Set@{Reading\+Set}!time\+Period@{time\+Period}}
+\index{time\+Period@{time\+Period}!Reading\+Set@{Reading\+Set}}
+\subsubsection{\texorpdfstring{time\+Period}{timePeriod}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+\_\+t\+::time\+Period}
+
+Specifies the time range during which the contained readings were taken. \mbox{\Hypertarget{group__ReadingSet_gab59f9eff3274eb6686af1cb1165b18b0}\label{group__ReadingSet_gab59f9eff3274eb6686af1cb1165b18b0}} 
+\index{Reading\+Set@{Reading\+Set}!version@{version}}
+\index{version@{version}!Reading\+Set@{Reading\+Set}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

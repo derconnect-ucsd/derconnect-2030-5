@@ -1,0 +1,9 @@
+<map id="SE_EndDeviceControl_t" name="SE_EndDeviceControl_t">
+<area shape="rect" id="node2" href="$structSE__SetPoint__t.html" title="SE_SetPoint_t" alt="" coords="53,5,161,32"/>
+<area shape="rect" id="node3" href="$structSE__DateTimeInterval__t.html" title="SE_DateTimeInterval_t" alt="" coords="27,56,186,83"/>
+<area shape="rect" id="node4" href="$structSE__Offset__t.html" title="SE_Offset_t" alt="" coords="59,107,154,133"/>
+<area shape="rect" id="node5" href="$structSE__DutyCycle__t.html" title="SE_DutyCycle_t" alt="" coords="47,157,167,184"/>
+<area shape="rect" id="node6" href="$structSE__EventStatus__t.html" title="SE_EventStatus_t" alt="" coords="41,208,172,235"/>
+<area shape="rect" id="node7" href="$structSE__ApplianceLoadReduction__t.html" title="SE_ApplianceLoadReduction_t" alt="" coords="5,259,208,285"/>
+<area shape="rect" id="node8" href="$structSE__TargetReduction__t.html" title="SE_TargetReduction_t" alt="" coords="29,309,184,336"/>
+</map>

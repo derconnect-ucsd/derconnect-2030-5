@@ -1,0 +1,4 @@
+<map id="SE_LoadShedAvailability_t" name="SE_LoadShedAvailability_t">
+<area shape="rect" id="node2" href="$structSE__DemandResponseProgramLink__t.html" title="SE_DemandResponseProgram\lLink_t" alt="" coords="5,5,209,47"/>
+<area shape="rect" id="node3" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="257,13,389,39"/>
+</map>

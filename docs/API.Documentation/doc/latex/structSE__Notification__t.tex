@@ -1,0 +1,41 @@
+\hypertarget{structSE__Notification__t}{}\section{S\+E\+\_\+\+Notification\+\_\+t Struct Reference}
+\label{structSE__Notification__t}\index{S\+E\+\_\+\+Notification\+\_\+t@{S\+E\+\_\+\+Notification\+\_\+t}}
+
+
+{\ttfamily \#include $<$se\+\_\+types.\+h$>$}
+
+
+
+Collaboration diagram for S\+E\+\_\+\+Notification\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{structSE__Notification__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Notification_ga9cea77779c1429775de7c3bbf1e8c361}{\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Notification_ga9d9fbe351ee2dd052e844c3dc0cd8222}{href}
+\item 
+char $\ast$ \hyperlink{group__Notification_ga80e27fbceef2bc002f54d227f0815df6}{subscribed\+Resource}
+\item 
+char $\ast$ \hyperlink{group__Notification_ga9dab2eb1085b330946a147430a8a9c3e}{new\+Resource\+U\+RI}
+\item 
+\hyperlink{structSE__Resource__t}{S\+E\+\_\+\+Resource\+\_\+t} {\bfseries Resource}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__Notification_ga5ed1873d82ef9cabb0b98af44f0a3cc1}{status}
+\item 
+char $\ast$ \hyperlink{group__Notification_gacd85c02c4ba0556285ab3f8544b31f96}{subscription\+U\+RI}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the information related to a client subscription to receive updates to a resource automatically. The actual resources may be passed in the Notification by specifying a specific xsi\+:type for the \hyperlink{structResource}{Resource} and passing the full representation. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+se\+\_\+types.\+h\item 
+se\+\_\+types\+\_\+doc.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,197 @@
+\hypertarget{group__retrieve}{}\section{Retrieve}
+\label{group__retrieve}\index{Retrieve@{Retrieve}}
+Collaboration diagram for Retrieve\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{group__retrieve}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structStub}{Stub}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__retrieve_ga509ffa3cc1f8769507050a47cc7c592c}\label{group__retrieve_ga509ffa3cc1f8769507050a47cc7c592c}} 
+\#define {\bfseries R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+O\+LL}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+6)
+\item 
+\mbox{\Hypertarget{group__retrieve_ga683225f11cfab927d9715cd71af0b927}\label{group__retrieve_ga683225f11cfab927d9715cd71af0b927}} 
+\#define {\bfseries R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+R\+E\+M\+O\+VE}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+7)
+\item 
+\#define \hyperlink{group__retrieve_gae0aa47da379792fa9140b33c15717432}{get\+\_\+root}(conn,  obj,  type)
+\begin{DoxyCompactList}\small\item\em Get a subordinate resource given a parent object. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__retrieve_ga697aeee2ace4e231973511356419305b}{get\+\_\+list\+\_\+root}(conn,  obj,  type)
+\begin{DoxyCompactList}\small\item\em Get a subordinate List resource given a parent object. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__retrieve_gad89a532bdbbf6035ee756dc3deaa0d8f}{get\+\_\+dep}(r,  obj,  type)~new\+\_\+dep (r, \hyperlink{group__retrieve_gae0aa47da379792fa9140b33c15717432}{get\+\_\+root} ((r)-\/$>$conn, obj, type), S\+E\+\_\+\#\#type\#\#Link\+\_\+exists)
+\item 
+\#define \hyperlink{group__retrieve_ga504d67179b0a93f66842e322429ade11}{get\+\_\+list\+\_\+dep}(r,  obj,  type)~new\+\_\+dep (r, \hyperlink{group__retrieve_ga697aeee2ace4e231973511356419305b}{get\+\_\+list\+\_\+root} ((r)-\/$>$conn, obj, type), S\+E\+\_\+\#\#type\#\#Link\+\_\+exists)
+\begin{DoxyCompactList}\small\item\em Get a subordinate List resource \hyperlink{structStub}{Stub} and make the parent resource a dependent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__retrieve_ga6b78d0ec32d2700719ed6a675fd929eb}\label{group__retrieve_ga6b78d0ec32d2700719ed6a675fd929eb}} 
+typedef void($\ast$ \hyperlink{group__retrieve_ga6b78d0ec32d2700719ed6a675fd929eb}{Dep\+Func}) (\hyperlink{structStub}{Stub} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Dependency function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structStub}{Stub} $\ast$ \hyperlink{group__retrieve_gaf9f86c838708d01c95a1f4f4c7c69aa1}{get\+\_\+resource} (void $\ast$conn, int type, const char $\ast$href, int count)
+\begin{DoxyCompactList}\small\item\em Get an I\+E\+EE 2030.\+5 resource. \end{DoxyCompactList}\item 
+int \hyperlink{group__retrieve_ga0466059a942d7af750c786d02711ca65}{process\+\_\+http} (void $\ast$conn, \hyperlink{group__retrieve_ga6b78d0ec32d2700719ed6a675fd929eb}{Dep\+Func} dep)
+\begin{DoxyCompactList}\small\item\em Process H\+T\+TP data from an Se\+Connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The retrieve module provides high level methods to retrieve resources from I\+E\+EE 2030.\+5 servers. These methods use a placeholder called a \hyperlink{structStub}{Stub} to track the state of retrieval and provide local storage for a resource. The Stubs can be linked together to create and manage hierarchies of both dependent and required resources.
+
+When a resource and all of its subordinates are fully and successfully retrieved then the resource is considered complete, this condition is monitored by the retrieval algorithm and can optionally signal a user supplied routine using the resource as a parameter. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__retrieve_gad89a532bdbbf6035ee756dc3deaa0d8f}\label{group__retrieve_gad89a532bdbbf6035ee756dc3deaa0d8f}} 
+\index{Retrieve@{Retrieve}!get\+\_\+dep@{get\+\_\+dep}}
+\index{get\+\_\+dep@{get\+\_\+dep}!Retrieve@{Retrieve}}
+\subsubsection{\texorpdfstring{get\+\_\+dep}{get\_dep}}
+{\footnotesize\ttfamily \#define get\+\_\+dep(\begin{DoxyParamCaption}\item[{}]{r,  }\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})~new\+\_\+dep (r, \hyperlink{group__retrieve_gae0aa47da379792fa9140b33c15717432}{get\+\_\+root} ((r)-\/$>$conn, obj, type), S\+E\+\_\+\#\#type\#\#Link\+\_\+exists)}
+
+Get a subordinate resource \hyperlink{structStub}{Stub} and make the parent resource a dependent.
+
+Creates a two way link between the subordinate and parent resources, the parent stores a bit representing the requirement for the subordinate resource and the subordinate resource clears this bit once all of its requirements are met (full retrieval of itself and all of its subordinates). 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em r} & is a pointer to a \hyperlink{structStub}{Stub}, the parent resource \\
+\hline
+{\em obj} & is a pointer to an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em type} & is the type name of the subordinate resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the subordinate resource \hyperlink{structStub}{Stub} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__retrieve_ga504d67179b0a93f66842e322429ade11}\label{group__retrieve_ga504d67179b0a93f66842e322429ade11}} 
+\index{Retrieve@{Retrieve}!get\+\_\+list\+\_\+dep@{get\+\_\+list\+\_\+dep}}
+\index{get\+\_\+list\+\_\+dep@{get\+\_\+list\+\_\+dep}!Retrieve@{Retrieve}}
+\subsubsection{\texorpdfstring{get\+\_\+list\+\_\+dep}{get\_list\_dep}}
+{\footnotesize\ttfamily \#define get\+\_\+list\+\_\+dep(\begin{DoxyParamCaption}\item[{}]{r,  }\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})~new\+\_\+dep (r, \hyperlink{group__retrieve_ga697aeee2ace4e231973511356419305b}{get\+\_\+list\+\_\+root} ((r)-\/$>$conn, obj, type), S\+E\+\_\+\#\#type\#\#Link\+\_\+exists)}
+
+
+
+Get a subordinate List resource \hyperlink{structStub}{Stub} and make the parent resource a dependent. 
+
+Performs the same function as \hyperlink{group__retrieve_gad89a532bdbbf6035ee756dc3deaa0d8f}{get\+\_\+dep} except for List resources. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em r} & is a pointer to a \hyperlink{structStub}{Stub}, the parent resource \\
+\hline
+{\em obj} & is a pointer to an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em type} & is the type name of the subordinate resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the subordinate resource \hyperlink{structStub}{Stub} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__retrieve_ga697aeee2ace4e231973511356419305b}\label{group__retrieve_ga697aeee2ace4e231973511356419305b}} 
+\index{Retrieve@{Retrieve}!get\+\_\+list\+\_\+root@{get\+\_\+list\+\_\+root}}
+\index{get\+\_\+list\+\_\+root@{get\+\_\+list\+\_\+root}!Retrieve@{Retrieve}}
+\subsubsection{\texorpdfstring{get\+\_\+list\+\_\+root}{get\_list\_root}}
+{\footnotesize\ttfamily \#define get\+\_\+list\+\_\+root(\begin{DoxyParamCaption}\item[{}]{conn,  }\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(se\_exists (obj, type##Link)?         \(\backslash\)
+   get\_resource (conn, SE\_##type, (obj)->type##Link.href, \(\backslash\)
+     (obj)->type##Link.all) : NULL)
+\end{DoxyCode}
+
+
+Get a subordinate List resource given a parent object. 
+
+The same as \hyperlink{group__retrieve_gae0aa47da379792fa9140b33c15717432}{get\+\_\+root} but for subordinate List resources. Links to List resources include the \char`\"{}all\char`\"{} parameter, this indicates the number of items contained in the List resource and is used as a query parameter in the H\+T\+TP G\+ET request. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em obj} & is a pointer to an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em type} & is the type name of the subordinate resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the \hyperlink{structStub}{Stub} for the resourceif the link exists, N\+U\+LL otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__retrieve_gae0aa47da379792fa9140b33c15717432}\label{group__retrieve_gae0aa47da379792fa9140b33c15717432}} 
+\index{Retrieve@{Retrieve}!get\+\_\+root@{get\+\_\+root}}
+\index{get\+\_\+root@{get\+\_\+root}!Retrieve@{Retrieve}}
+\subsubsection{\texorpdfstring{get\+\_\+root}{get\_root}}
+{\footnotesize\ttfamily \#define get\+\_\+root(\begin{DoxyParamCaption}\item[{}]{conn,  }\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(se\_exists (obj, type##Link)?         \(\backslash\)
+   get\_resource (conn, SE\_##type, (obj)->type##Link.href, 0) : NULL)
+\end{DoxyCode}
+
+
+Get a subordinate resource given a parent object. 
+
+Subordinate resources are retrieved from links in the parent object. Links follow a naming convention, they are named after the type of the subordinate resource with the string \char`\"{}\+Link\char`\"{} appended. This macro provides a convienent way to retrieve a subordinate resource, taking advantage of the naming pattern used to link subordinate resources from their parent object. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em obj} & is a pointer to an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em type} & is the type name of the subordinate resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the \hyperlink{structStub}{Stub} for the resource if the link exists, N\+U\+LL otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__retrieve_gaf9f86c838708d01c95a1f4f4c7c69aa1}\label{group__retrieve_gaf9f86c838708d01c95a1f4f4c7c69aa1}} 
+\index{Retrieve@{Retrieve}!get\+\_\+resource@{get\+\_\+resource}}
+\index{get\+\_\+resource@{get\+\_\+resource}!Retrieve@{Retrieve}}
+\subsubsection{\texorpdfstring{get\+\_\+resource()}{get\_resource()}}
+{\footnotesize\ttfamily \hyperlink{structStub}{Stub} $\ast$ get\+\_\+resource (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int}]{type,  }\item[{const char $\ast$}]{href,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Get an I\+E\+EE 2030.\+5 resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em type} & is an I\+E\+EE 2030.\+5 schema type \\
+\hline
+{\em href} & is U\+RI string, the location of the resource \\
+\hline
+{\em count} & is the number of items to get for List resources, should be 0 for non-\/\+List resources \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the \hyperlink{structStub}{Stub} for the resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__retrieve_ga0466059a942d7af750c786d02711ca65}\label{group__retrieve_ga0466059a942d7af750c786d02711ca65}} 
+\index{Retrieve@{Retrieve}!process\+\_\+http@{process\+\_\+http}}
+\index{process\+\_\+http@{process\+\_\+http}!Retrieve@{Retrieve}}
+\subsubsection{\texorpdfstring{process\+\_\+http()}{process\_http()}}
+{\footnotesize\ttfamily int process\+\_\+http (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{\hyperlink{group__retrieve_ga6b78d0ec32d2700719ed6a675fd929eb}{Dep\+Func}}]{dep }\end{DoxyParamCaption})}
+
+
+
+Process H\+T\+TP data from an Se\+Connection. 
+
+For each retrieved resource that matches a pre-\/existing \hyperlink{structStub}{Stub} resource, store the resource and process it with the dependency function to retrieve any subordinate resources and create the requirement/dependency relationship. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Se\+Connection \\
+\hline
+{\em dep} & is a pointer to a Dep\+Func \\
+\hline
+\end{DoxyParams}

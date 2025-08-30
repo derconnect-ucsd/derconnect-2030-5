@@ -1,0 +1,5 @@
+<map id="SE_PowerStatus_t" name="SE_PowerStatus_t">
+<area shape="rect" id="node2" href="$structSE__PEVInfo__t.html" title="SE_PEVInfo_t" alt="" coords="91,109,198,136"/>
+<area shape="rect" id="node3" href="$structSE__RealEnergy__t.html" title="SE_RealEnergy_t" alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node4" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="156,5,288,32"/>
+</map>

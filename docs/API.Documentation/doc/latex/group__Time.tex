@@ -1,0 +1,116 @@
+\hypertarget{group__Time}{}\section{Time}
+\label{group__Time}\index{Time@{Time}}
+Collaboration diagram for Time\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{group__Time}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Time__t}{S\+E\+\_\+\+Time\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Time_ga77ececb939204e19a09422aab87ca739}{S\+E\+\_\+\+Time\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Time_ga550afbd989e7f4252cde4854ce409321}{S\+E\+\_\+\+Time\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__Time_ga56ef9035d9d9bd59708c6e229c12ac1d}{S\+E\+\_\+\+Time\+\_\+t\+::poll\+Rate}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__Time_ga5cf45c45c382652cb37ce1a82a5168c5}{S\+E\+\_\+\+Time\+\_\+t\+::current\+Time}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__Time_ga37d25a3c96a9202c1cfe1ebba752dfde}{S\+E\+\_\+\+Time\+\_\+t\+::dst\+End\+Time}
+\item 
+\hyperlink{group__TimeOffsetType_ga3de71705a6723a1013cf383b705cbd8a}{S\+E\+\_\+\+Time\+Offset\+Type\+\_\+t} \hyperlink{group__Time_gad39cc4dd3b9a9c27fc6bebc96087e759}{S\+E\+\_\+\+Time\+\_\+t\+::dst\+Offset}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__Time_gaf4060734856defac5df4e4ebc2a18690}{S\+E\+\_\+\+Time\+\_\+t\+::dst\+Start\+Time}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__Time_ga5ef728cdc93212ad86dbfd9cddf7cfb3}{S\+E\+\_\+\+Time\+\_\+t\+::local\+Time}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__Time_gaffccaff3c359127d182761e91ab28867}{S\+E\+\_\+\+Time\+\_\+t\+::quality}
+\item 
+\hyperlink{group__TimeOffsetType_ga3de71705a6723a1013cf383b705cbd8a}{S\+E\+\_\+\+Time\+Offset\+Type\+\_\+t} \hyperlink{group__Time_ga3017647596cbc5718fc84d97f7738684}{S\+E\+\_\+\+Time\+\_\+t\+::tz\+Offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the representation of time, constantly updated. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Time_ga77ececb939204e19a09422aab87ca739}\label{group__Time_ga77ececb939204e19a09422aab87ca739}} 
+\index{Time@{Time}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Time@{Time}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+local\+Time\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__Time_ga5cf45c45c382652cb37ce1a82a5168c5}\label{group__Time_ga5cf45c45c382652cb37ce1a82a5168c5}} 
+\index{Time@{Time}!current\+Time@{current\+Time}}
+\index{current\+Time@{current\+Time}!Time@{Time}}
+\subsubsection{\texorpdfstring{current\+Time}{currentTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::current\+Time}
+
+The current time, in the format defined by Time\+Type. \mbox{\Hypertarget{group__Time_ga37d25a3c96a9202c1cfe1ebba752dfde}\label{group__Time_ga37d25a3c96a9202c1cfe1ebba752dfde}} 
+\index{Time@{Time}!dst\+End\+Time@{dst\+End\+Time}}
+\index{dst\+End\+Time@{dst\+End\+Time}!Time@{Time}}
+\subsubsection{\texorpdfstring{dst\+End\+Time}{dstEndTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::dst\+End\+Time}
+
+Time at which daylight savings ends (dst\+Offset no longer applied). Result of dst\+End\+Rule calculation. \mbox{\Hypertarget{group__Time_gad39cc4dd3b9a9c27fc6bebc96087e759}\label{group__Time_gad39cc4dd3b9a9c27fc6bebc96087e759}} 
+\index{Time@{Time}!dst\+Offset@{dst\+Offset}}
+\index{dst\+Offset@{dst\+Offset}!Time@{Time}}
+\subsubsection{\texorpdfstring{dst\+Offset}{dstOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::dst\+Offset}
+
+Daylight savings time offset from local standard time. A typical practice is advancing clocks one hour when daylight savings time is in effect, which would result in a positive dst\+Offset. \mbox{\Hypertarget{group__Time_gaf4060734856defac5df4e4ebc2a18690}\label{group__Time_gaf4060734856defac5df4e4ebc2a18690}} 
+\index{Time@{Time}!dst\+Start\+Time@{dst\+Start\+Time}}
+\index{dst\+Start\+Time@{dst\+Start\+Time}!Time@{Time}}
+\subsubsection{\texorpdfstring{dst\+Start\+Time}{dstStartTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::dst\+Start\+Time}
+
+Time at which daylight savings begins (apply dst\+Offset). Result of dst\+Start\+Rule calculation. \mbox{\Hypertarget{group__Time_ga550afbd989e7f4252cde4854ce409321}\label{group__Time_ga550afbd989e7f4252cde4854ce409321}} 
+\index{Time@{Time}!href@{href}}
+\index{href@{href}!Time@{Time}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__Time_ga5ef728cdc93212ad86dbfd9cddf7cfb3}\label{group__Time_ga5ef728cdc93212ad86dbfd9cddf7cfb3}} 
+\index{Time@{Time}!local\+Time@{local\+Time}}
+\index{local\+Time@{local\+Time}!Time@{Time}}
+\subsubsection{\texorpdfstring{local\+Time}{localTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::local\+Time}
+
+Local time\+: local\+Time = current\+Time + tz\+Offset (+ dst\+Offset when in effect). \mbox{\Hypertarget{group__Time_ga56ef9035d9d9bd59708c6e229c12ac1d}\label{group__Time_ga56ef9035d9d9bd59708c6e229c12ac1d}} 
+\index{Time@{Time}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Time@{Time}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__Time_gaffccaff3c359127d182761e91ab28867}\label{group__Time_gaffccaff3c359127d182761e91ab28867}} 
+\index{Time@{Time}!quality@{quality}}
+\index{quality@{quality}!Time@{Time}}
+\subsubsection{\texorpdfstring{quality}{quality}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::quality}
+
+Metric indicating the quality of the time source from which the service acquired time. Lower (smaller) quality enumeration values are assumed to be more accurate.
+
+3 -\/ time obtained from external authoritative source such as N\+TP
+
+4 -\/ time obtained from level 3 source
+
+5 -\/ time manually set or obtained from level 4 source
+
+6 -\/ time obtained from level 5 source
+
+7 -\/ time intentionally uncoordinated
+
+All other values are reserved for future use. \mbox{\Hypertarget{group__Time_ga3017647596cbc5718fc84d97f7738684}\label{group__Time_ga3017647596cbc5718fc84d97f7738684}} 
+\index{Time@{Time}!tz\+Offset@{tz\+Offset}}
+\index{tz\+Offset@{tz\+Offset}!Time@{Time}}
+\subsubsection{\texorpdfstring{tz\+Offset}{tzOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+\_\+t\+::tz\+Offset}
+
+Local time zone offset from current\+Time. Does not include any daylight savings time offsets. For American time zones, a negative tz\+Offset S\+H\+A\+LL be used (eg, E\+ST = G\+M\+T-\/5 which is -\/18000). 

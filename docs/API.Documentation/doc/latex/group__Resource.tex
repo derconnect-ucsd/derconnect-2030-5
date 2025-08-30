@@ -1,0 +1,102 @@
+\hypertarget{group__Resource}{}\section{Resource}
+\label{group__Resource}\index{Resource@{Resource}}
+Collaboration diagram for Resource\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__Resource}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__ReadingType}{Reading\+Type}
+\item 
+\hyperlink{group__ReadingBase}{Reading\+Base}
+\item 
+\hyperlink{group__IdentifiedObject}{Identified\+Object}
+\item 
+\hyperlink{group__List}{List}
+\item 
+\hyperlink{group__RespondableResource}{Respondable\+Resource}
+\item 
+\hyperlink{group__SubscribableResource}{Subscribable\+Resource}
+\item 
+\hyperlink{group__DERCapability}{D\+E\+R\+Capability}
+\item 
+\hyperlink{group__SupplyInterruptionOverride}{Supply\+Interruption\+Override}
+\item 
+\hyperlink{group__PrepayOperationStatus}{Prepay\+Operation\+Status}
+\item 
+\hyperlink{group__AccountBalance}{Account\+Balance}
+\item 
+\hyperlink{group__BillingPeriod}{Billing\+Period}
+\item 
+\hyperlink{group__ConsumptionTariffInterval}{Consumption\+Tariff\+Interval}
+\item 
+\hyperlink{group__LoadShedAvailability}{Load\+Shed\+Availability}
+\item 
+\hyperlink{group__FileStatus}{File\+Status}
+\item 
+\hyperlink{group__File}{File}
+\item 
+\hyperlink{group__PriceResponseCfg}{Price\+Response\+Cfg}
+\item 
+\hyperlink{group__LogEvent}{Log\+Event}
+\item 
+\hyperlink{group__RPLSourceRoutes}{R\+P\+L\+Source\+Routes}
+\item 
+\hyperlink{group__RPLInstance}{R\+P\+L\+Instance}
+\item 
+\hyperlink{group__Neighbor}{Neighbor}
+\item 
+\hyperlink{group__LLInterface}{L\+L\+Interface}
+\item 
+\hyperlink{group__IPInterface}{I\+P\+Interface}
+\item 
+\hyperlink{group__IPAddr}{I\+P\+Addr}
+\item 
+\hyperlink{group__PowerStatus}{Power\+Status}
+\item 
+\hyperlink{group__SupportedLocale}{Supported\+Locale}
+\item 
+\hyperlink{group__DeviceInformation}{Device\+Information}
+\item 
+\hyperlink{group__Time}{Time}
+\item 
+\hyperlink{group__Response}{Response}
+\item 
+\hyperlink{group__SubscriptionBase}{Subscription\+Base}
+\item 
+\hyperlink{group__FunctionSetAssignmentsBase}{Function\+Set\+Assignments\+Base}
+\item 
+\hyperlink{group__Registration}{Registration}
+\item 
+\hyperlink{group__DeviceStatus}{Device\+Status}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Resource__t}{S\+E\+\_\+\+Resource\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__Resource_gae655fca5b3241deb31ebf016ed2017b6}\label{group__Resource_gae655fca5b3241deb31ebf016ed2017b6}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Resource\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Resource_gab28da8155327844e859d3d90bf37f2ec}{S\+E\+\_\+\+Resource\+\_\+t\+::href}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A resource is an addressable unit of information, either a collection (\hyperlink{structList}{List}) or instance of an object (identified\+Object, or simply, \hyperlink{structResource}{Resource}) 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Resource_gab28da8155327844e859d3d90bf37f2ec}\label{group__Resource_gab28da8155327844e859d3d90bf37f2ec}} 
+\index{Resource@{Resource}!href@{href}}
+\index{href@{href}!Resource@{Resource}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Resource\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. 

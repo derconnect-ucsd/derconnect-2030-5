@@ -1,0 +1,266 @@
+\hypertarget{group__se__object}{}\section{I\+E\+EE 2030.5 Schema}
+\label{group__se__object}\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+Collaboration diagram for I\+E\+EE 2030.5 Schema\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{group__se__object}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__se__object_gad1c4836517f639b152ab8cc59f2b7804}{se\+\_\+list\+\_\+field}(obj,  info)~(\hyperlink{structList}{List} $\ast$$\ast$)((obj)+(info)-\/$>$offset)
+\begin{DoxyCompactList}\small\item\em Get the list field of a I\+E\+EE 2030.\+5 list type object. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__se__object_ga6a18ca73ed2f7d19fe79cf78283e9f2c}{se\+\_\+type\+\_\+is\+\_\+a}(type,  base)~\hyperlink{group__schema_ga16de35ef559b5cc37cf33dd647ceb366}{type\+\_\+is\+\_\+a} (type, base, \&se\+\_\+schema)
+\begin{DoxyCompactList}\small\item\em Is an I\+E\+EE 2030.\+5 object type derived from a base type? \end{DoxyCompactList}\item 
+\#define \hyperlink{group__se__object_ga6434555a70cf68b6665831c6e241d86f}{se\+\_\+list}(type)
+\begin{DoxyCompactList}\small\item\em Is an I\+E\+EE 2030.\+5 object type a \hyperlink{structList}{List} derived type? \end{DoxyCompactList}\item 
+\#define \hyperlink{group__se__object_ga8e501f611d4bebae2149ca3fdd8cd930}{se\+\_\+object\+\_\+size}(type)~\hyperlink{group__schema_ga4c9e71b8c2112dfc32414022942618de}{object\+\_\+size} (type, \&se\+\_\+schema)
+\begin{DoxyCompactList}\small\item\em Return the size of an I\+E\+EE 2030.\+5 object given its type. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__se__object_gab24b84e0b8b364115f5b5af19a9860a2}{free\+\_\+se\+\_\+object}(obj,  type)~\hyperlink{group__schema_gaff2eea92a7727eb0f66bfa00ab05b080}{free\+\_\+object} (obj, type, \&se\+\_\+schema)
+\begin{DoxyCompactList}\small\item\em Free an I\+E\+EE 2030.\+5 object. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__se__object_ga31d6d3800c0c415a852faaa5f41b3afe}{replace\+\_\+se\+\_\+object}(dest,  src,  type)~\hyperlink{group__schema_gadec1b0417cb8f2c7ee7075d5be5e09c1}{replace\+\_\+object} (dest, src, type, \&se\+\_\+schema)
+\begin{DoxyCompactList}\small\item\em Replace an I\+E\+EE 2030.\+5 object with another of the same type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__se__object_gad96c116a02961bde7e4a699139f8adea}{mrid\+\_\+gen} (uint8\+\_\+t $\ast$mrid)
+\begin{DoxyCompactList}\small\item\em Generate M\+R\+ID for I\+E\+EE 2030.\+5 identified object. \end{DoxyCompactList}\item 
+List\+Info $\ast$ \hyperlink{group__se__object_ga249023246a074e695d42948c654dba6a}{find\+\_\+list\+\_\+info} (unsigned short type)
+\begin{DoxyCompactList}\small\item\em Get the List\+Info structure for the given schema type. \end{DoxyCompactList}\item 
+int \hyperlink{group__se__object_gaa45cdec61c8e3594c5d084c6cea59c19}{compare\+\_\+keys} (void $\ast$a, void $\ast$b, List\+Info $\ast$info)
+\begin{DoxyCompactList}\small\item\em Compare the keys of two I\+E\+EE 2030.\+5 objects using the provided list ordering. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__se__object_ga1d9e0f10dfb0525cdae0e42a0d01a97a}{insert\+\_\+se\+\_\+object} (\hyperlink{structList}{List} $\ast$list, \hyperlink{structList}{List} $\ast$n, List\+Info $\ast$info)
+\begin{DoxyCompactList}\small\item\em Insert an I\+E\+EE 2030.\+5 object into a sorted list. \end{DoxyCompactList}\item 
+void \hyperlink{group__se__object_gaf615b5ea6652436f3f63c95fb82df4bc}{se\+\_\+output\+\_\+init} (Output $\ast$o, char $\ast$buffer, int size, int xml)
+\begin{DoxyCompactList}\small\item\em Initialize an Output object to output an X\+ML or E\+XI document. \end{DoxyCompactList}\item 
+void \hyperlink{group__se__object_gafe7627c4d5ad5e1a035a8be38db3260e}{print\+\_\+se\+\_\+object} (void $\ast$obj, int type)
+\begin{DoxyCompactList}\small\item\em Print an I\+E\+EE 2030.\+5 object as an X\+ML document. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides utility functions for I\+E\+EE 2030.\+5 schema defined objects. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__se__object_gab24b84e0b8b364115f5b5af19a9860a2}\label{group__se__object_gab24b84e0b8b364115f5b5af19a9860a2}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!free\+\_\+se\+\_\+object@{free\+\_\+se\+\_\+object}}
+\index{free\+\_\+se\+\_\+object@{free\+\_\+se\+\_\+object}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{free\+\_\+se\+\_\+object}{free\_se\_object}}
+{\footnotesize\ttfamily \#define free\+\_\+se\+\_\+object(\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})~\hyperlink{group__schema_gaff2eea92a7727eb0f66bfa00ab05b080}{free\+\_\+object} (obj, type, \&se\+\_\+schema)}
+
+
+
+Free an I\+E\+EE 2030.\+5 object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & is an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em type} & is the type of the o \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__object_ga31d6d3800c0c415a852faaa5f41b3afe}\label{group__se__object_ga31d6d3800c0c415a852faaa5f41b3afe}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!replace\+\_\+se\+\_\+object@{replace\+\_\+se\+\_\+object}}
+\index{replace\+\_\+se\+\_\+object@{replace\+\_\+se\+\_\+object}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{replace\+\_\+se\+\_\+object}{replace\_se\_object}}
+{\footnotesize\ttfamily \#define replace\+\_\+se\+\_\+object(\begin{DoxyParamCaption}\item[{}]{dest,  }\item[{}]{src,  }\item[{}]{type }\end{DoxyParamCaption})~\hyperlink{group__schema_gadec1b0417cb8f2c7ee7075d5be5e09c1}{replace\+\_\+object} (dest, src, type, \&se\+\_\+schema)}
+
+
+
+Replace an I\+E\+EE 2030.\+5 object with another of the same type. 
+
+Frees the elements of the destination object and copies the source object to the same location, replacing one object with another. Also frees the source object container. \mbox{\Hypertarget{group__se__object_ga6434555a70cf68b6665831c6e241d86f}\label{group__se__object_ga6434555a70cf68b6665831c6e241d86f}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!se\+\_\+list@{se\+\_\+list}}
+\index{se\+\_\+list@{se\+\_\+list}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{se\+\_\+list}{se\_list}}
+{\footnotesize\ttfamily \#define se\+\_\+list(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\hyperlink{group__se__object_ga6a18ca73ed2f7d19fe79cf78283e9f2c}{se\_type\_is\_a} (type, SE\_SubscribableList) \(\backslash\)
+           || \hyperlink{group__se__object_ga6a18ca73ed2f7d19fe79cf78283e9f2c}{se\_type\_is\_a} (type, SE\_List))
+\end{DoxyCode}
+
+
+Is an I\+E\+EE 2030.\+5 object type a \hyperlink{structList}{List} derived type? 
+
+\begin{DoxyReturn}{Returns}
+1 if the type is a Subscribable\+List or a \hyperlink{structList}{List} type, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__object_gad1c4836517f639b152ab8cc59f2b7804}\label{group__se__object_gad1c4836517f639b152ab8cc59f2b7804}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!se\+\_\+list\+\_\+field@{se\+\_\+list\+\_\+field}}
+\index{se\+\_\+list\+\_\+field@{se\+\_\+list\+\_\+field}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{se\+\_\+list\+\_\+field}{se\_list\_field}}
+{\footnotesize\ttfamily \#define se\+\_\+list\+\_\+field(\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{info }\end{DoxyParamCaption})~(\hyperlink{structList}{List} $\ast$$\ast$)((obj)+(info)-\/$>$offset)}
+
+
+
+Get the list field of a I\+E\+EE 2030.\+5 list type object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & is a pointer to an I\+E\+EE 2030.\+5 list type object \\
+\hline
+{\em info} & is a pointer to the List\+Info for the list type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the list field of the object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__object_ga8e501f611d4bebae2149ca3fdd8cd930}\label{group__se__object_ga8e501f611d4bebae2149ca3fdd8cd930}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!se\+\_\+object\+\_\+size@{se\+\_\+object\+\_\+size}}
+\index{se\+\_\+object\+\_\+size@{se\+\_\+object\+\_\+size}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{se\+\_\+object\+\_\+size}{se\_object\_size}}
+{\footnotesize\ttfamily \#define se\+\_\+object\+\_\+size(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~\hyperlink{group__schema_ga4c9e71b8c2112dfc32414022942618de}{object\+\_\+size} (type, \&se\+\_\+schema)}
+
+
+
+Return the size of an I\+E\+EE 2030.\+5 object given its type. 
+
+Queries the schema to determine the size of a object given its type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & is the type of the I\+E\+EE 2030.\+5 object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the object in bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__object_ga6a18ca73ed2f7d19fe79cf78283e9f2c}\label{group__se__object_ga6a18ca73ed2f7d19fe79cf78283e9f2c}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!se\+\_\+type\+\_\+is\+\_\+a@{se\+\_\+type\+\_\+is\+\_\+a}}
+\index{se\+\_\+type\+\_\+is\+\_\+a@{se\+\_\+type\+\_\+is\+\_\+a}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{se\+\_\+type\+\_\+is\+\_\+a}{se\_type\_is\_a}}
+{\footnotesize\ttfamily \#define se\+\_\+type\+\_\+is\+\_\+a(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{base }\end{DoxyParamCaption})~\hyperlink{group__schema_ga16de35ef559b5cc37cf33dd647ceb366}{type\+\_\+is\+\_\+a} (type, base, \&se\+\_\+schema)}
+
+
+
+Is an I\+E\+EE 2030.\+5 object type derived from a base type? 
+
+Queries the schema to determine if an object of certain type is derived from a base object. This is useful for dealing with certain classes of objects (e.\+g se\+\_\+object\+\_\+is\+\_\+a (type, S\+E\+\_\+\+Resource), or se\+\_\+object\+\_\+is\+\_\+a (type, S\+E\+\_\+\+Event)). 
+\begin{DoxyParams}{Parameters}
+{\em type} & is the type of the derived object \\
+\hline
+{\em base} & is the type of the base object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if object is derived from base, 0 otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__se__object_gaa45cdec61c8e3594c5d084c6cea59c19}\label{group__se__object_gaa45cdec61c8e3594c5d084c6cea59c19}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!compare\+\_\+keys@{compare\+\_\+keys}}
+\index{compare\+\_\+keys@{compare\+\_\+keys}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{compare\+\_\+keys()}{compare\_keys()}}
+{\footnotesize\ttfamily int compare\+\_\+keys (\begin{DoxyParamCaption}\item[{void $\ast$}]{a,  }\item[{void $\ast$}]{b,  }\item[{List\+Info $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+Compare the keys of two I\+E\+EE 2030.\+5 objects using the provided list ordering. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & is an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em b} & is an I\+E\+EE 2030.\+5 object \\
+\hline
+{\em info} & is a pointer to a List\+Info structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result $<$ 0 if a comes before b, a result $>$ 0 if a comes after b, and a result == 0 if a and b can occupy the same position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__object_ga249023246a074e695d42948c654dba6a}\label{group__se__object_ga249023246a074e695d42948c654dba6a}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!find\+\_\+list\+\_\+info@{find\+\_\+list\+\_\+info}}
+\index{find\+\_\+list\+\_\+info@{find\+\_\+list\+\_\+info}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{find\+\_\+list\+\_\+info()}{find\_list\_info()}}
+{\footnotesize\ttfamily List\+Info $\ast$ find\+\_\+list\+\_\+info (\begin{DoxyParamCaption}\item[{unsigned short}]{type }\end{DoxyParamCaption})}
+
+
+
+Get the List\+Info structure for the given schema type. 
+
+The type should be one the I\+E\+EE 2030.\+5 list types for a non-\/\+N\+U\+LL result. 
+\begin{DoxyParams}{Parameters}
+{\em type} & is an S\+E\+\_\+ type name (e.\+g. S\+E\+\_\+\+End\+Device\+List) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the List\+Info structure for the given type or N\+U\+LL if the type is not a list type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__object_ga1d9e0f10dfb0525cdae0e42a0d01a97a}\label{group__se__object_ga1d9e0f10dfb0525cdae0e42a0d01a97a}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!insert\+\_\+se\+\_\+object@{insert\+\_\+se\+\_\+object}}
+\index{insert\+\_\+se\+\_\+object@{insert\+\_\+se\+\_\+object}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{insert\+\_\+se\+\_\+object()}{insert\_se\_object()}}
+{\footnotesize\ttfamily void $\ast$ insert\+\_\+se\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{structList}{List} $\ast$}]{list,  }\item[{\hyperlink{structList}{List} $\ast$}]{n,  }\item[{List\+Info $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+Insert an I\+E\+EE 2030.\+5 object into a sorted list. 
+
+Comparison is based upon the List\+Info given. 
+\begin{DoxyParams}{Parameters}
+{\em list} & is a list of objects of a uniform type given by info-\/$>$type \\
+\hline
+{\em n} & is a pointer to the \hyperlink{structList}{List} container of the object to be inserted. \\
+\hline
+{\em info} & is a pointer to the List\+Info upon which the comparison is made. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sorted list with n inserted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__se__object_gad96c116a02961bde7e4a699139f8adea}\label{group__se__object_gad96c116a02961bde7e4a699139f8adea}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!mrid\+\_\+gen@{mrid\+\_\+gen}}
+\index{mrid\+\_\+gen@{mrid\+\_\+gen}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{mrid\+\_\+gen()}{mrid\_gen()}}
+{\footnotesize\ttfamily void mrid\+\_\+gen (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{mrid }\end{DoxyParamCaption})}
+
+
+
+Generate M\+R\+ID for I\+E\+EE 2030.\+5 identified object. 
+
+M\+R\+ID is a 16 byte number based upon a random number, a global count, and a manufactuer P\+EN. 
+\begin{DoxyParams}{Parameters}
+{\em mrid} & is pointer to an array of 16 bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__object_gafe7627c4d5ad5e1a035a8be38db3260e}\label{group__se__object_gafe7627c4d5ad5e1a035a8be38db3260e}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!print\+\_\+se\+\_\+object@{print\+\_\+se\+\_\+object}}
+\index{print\+\_\+se\+\_\+object@{print\+\_\+se\+\_\+object}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{print\+\_\+se\+\_\+object()}{print\_se\_object()}}
+{\footnotesize\ttfamily void print\+\_\+se\+\_\+object (\begin{DoxyParamCaption}\item[{void $\ast$}]{obj,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Print an I\+E\+EE 2030.\+5 object as an X\+ML document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & is a pointer to the object \\
+\hline
+{\em type} & is the object type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__se__object_gaf615b5ea6652436f3f63c95fb82df4bc}\label{group__se__object_gaf615b5ea6652436f3f63c95fb82df4bc}} 
+\index{I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}!se\+\_\+output\+\_\+init@{se\+\_\+output\+\_\+init}}
+\index{se\+\_\+output\+\_\+init@{se\+\_\+output\+\_\+init}!I\+E\+E\+E 2030.\+5 Schema@{I\+E\+E\+E 2030.\+5 Schema}}
+\subsubsection{\texorpdfstring{se\+\_\+output\+\_\+init()}{se\_output\_init()}}
+{\footnotesize\ttfamily void se\+\_\+output\+\_\+init (\begin{DoxyParamCaption}\item[{Output $\ast$}]{o,  }\item[{char $\ast$}]{buffer,  }\item[{int}]{size,  }\item[{int}]{xml }\end{DoxyParamCaption})}
+
+
+
+Initialize an Output object to output an X\+ML or E\+XI document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & is a pointer to an Output object \\
+\hline
+{\em buffer} & is a container for the document \\
+\hline
+{\em size} & is the size of the container \\
+\hline
+{\em xml} & is 1 for an X\+ML document, 0 for an E\+XI document \\
+\hline
+\end{DoxyParams}

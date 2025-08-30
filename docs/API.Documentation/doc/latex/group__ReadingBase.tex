@@ -1,0 +1,109 @@
+\hypertarget{group__ReadingBase}{}\section{Reading\+Base}
+\label{group__ReadingBase}\index{Reading\+Base@{Reading\+Base}}
+Collaboration diagram for Reading\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ReadingBase}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__Reading}{Reading}
+\item 
+\hyperlink{group__BillingReading}{Billing\+Reading}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ReadingBase__t}{S\+E\+\_\+\+Reading\+Base\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__ReadingBase_ga31f65241519527acecdbec97ead29d78}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ReadingBase_ga5750523127b69f62ba464b3a300e2012}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::href}
+\item 
+\hyperlink{group__ConsumptionBlockType_ga526f797922e4c3009d50c28f457c462e}{S\+E\+\_\+\+Consumption\+Block\+Type\+\_\+t} \hyperlink{group__ReadingBase_ga92c363358c08a8377a2bc6fa4c2bbfca}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::consumption\+Block}
+\item 
+\hyperlink{group__HexBinary16_gac040be0e918a360be6bcf5e8b8ad2c49}{S\+E\+\_\+\+Hex\+Binary16\+\_\+t} \hyperlink{group__ReadingBase_gadb77e76eaaa912c124844cb44f5fa473}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::quality\+Flags}
+\item 
+\hyperlink{structSE__DateTimeInterval__t}{S\+E\+\_\+\+Date\+Time\+Interval\+\_\+t} \hyperlink{group__ReadingBase_gae16dcf4680bc1bdc74ce0a8b3e90919f}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::time\+Period}
+\item 
+\hyperlink{group__TOUType_gadcfd871f87df34ae8228b9484ebedc6a}{S\+E\+\_\+\+T\+O\+U\+Type\+\_\+t} \hyperlink{group__ReadingBase_ga610ccfbc828fc2c3c75d65739dab5991}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::tou\+Tier}
+\item 
+\hyperlink{group__Int48_ga87620025dc9f6c732fa48fcab95861ce}{S\+E\+\_\+\+Int48\+\_\+t} \hyperlink{group__ReadingBase_ga5bf0963cd698da8a48200e661ca04fcc}{S\+E\+\_\+\+Reading\+Base\+\_\+t\+::value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Specific value measured by a meter or other asset. Reading\+Base is abstract, used to define the elements common to Reading and Interval\+Reading. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ReadingBase_ga31f65241519527acecdbec97ead29d78}\label{group__ReadingBase_ga31f65241519527acecdbec97ead29d78}} 
+\index{Reading\+Base@{Reading\+Base}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+value\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+tou\+Tier\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+time\+Period\+\_\+exists (1 $<$$<$ 7)
+
+\#define S\+E\+\_\+quality\+Flags\+\_\+exists (1 $<$$<$ 8)
+
+\#define S\+E\+\_\+consumption\+Block\+\_\+exists (1 $<$$<$ 9) \mbox{\Hypertarget{group__ReadingBase_ga92c363358c08a8377a2bc6fa4c2bbfca}\label{group__ReadingBase_ga92c363358c08a8377a2bc6fa4c2bbfca}} 
+\index{Reading\+Base@{Reading\+Base}!consumption\+Block@{consumption\+Block}}
+\index{consumption\+Block@{consumption\+Block}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{consumption\+Block}{consumptionBlock}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::consumption\+Block}
+
+Indicates the consumption block related to the reading. R\+E\+Q\+U\+I\+R\+ED if Reading\+Type number\+Of\+Consumption\+Blocks is non-\/zero. If not specified, is assumed to be \char`\"{}0 -\/ N/\+A\char`\"{}. \mbox{\Hypertarget{group__ReadingBase_ga5750523127b69f62ba464b3a300e2012}\label{group__ReadingBase_ga5750523127b69f62ba464b3a300e2012}} 
+\index{Reading\+Base@{Reading\+Base}!href@{href}}
+\index{href@{href}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ReadingBase_gadb77e76eaaa912c124844cb44f5fa473}\label{group__ReadingBase_gadb77e76eaaa912c124844cb44f5fa473}} 
+\index{Reading\+Base@{Reading\+Base}!quality\+Flags@{quality\+Flags}}
+\index{quality\+Flags@{quality\+Flags}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{quality\+Flags}{qualityFlags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::quality\+Flags}
+
+\hyperlink{structList}{List} of codes indicating the quality of the reading, using specification\+:
+
+Bit 0 -\/ valid\+: data that has gone through all required validation checks and either passed them all or has been verified
+
+Bit 1 -\/ manually edited\+: Replaced or approved by a human
+
+Bit 2 -\/ estimated using reference day\+: data value was replaced by a machine computed value based on analysis of historical data using the same type of measurement.
+
+Bit 3 -\/ estimated using linear interpolation\+: data value was computed using linear interpolation based on the readings before and after it
+
+Bit 4 -\/ questionable\+: data that has failed one or more checks
+
+Bit 5 -\/ derived\+: data that has been calculated (using logic or mathematical operations), not necessarily measured directly
+
+Bit 6 -\/ projected (forecast)\+: data that has been calculated as a projection or forecast of future readings \mbox{\Hypertarget{group__ReadingBase_gae16dcf4680bc1bdc74ce0a8b3e90919f}\label{group__ReadingBase_gae16dcf4680bc1bdc74ce0a8b3e90919f}} 
+\index{Reading\+Base@{Reading\+Base}!time\+Period@{time\+Period}}
+\index{time\+Period@{time\+Period}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{time\+Period}{timePeriod}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::time\+Period}
+
+The time interval associated with the reading. If not specified, then defaults to the interval\+Length specified in the associated Reading\+Type. \mbox{\Hypertarget{group__ReadingBase_ga610ccfbc828fc2c3c75d65739dab5991}\label{group__ReadingBase_ga610ccfbc828fc2c3c75d65739dab5991}} 
+\index{Reading\+Base@{Reading\+Base}!tou\+Tier@{tou\+Tier}}
+\index{tou\+Tier@{tou\+Tier}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{tou\+Tier}{touTier}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::tou\+Tier}
+
+Indicates the time of use tier related to the reading. R\+E\+Q\+U\+I\+R\+ED if Reading\+Type number\+Of\+Tou\+Tiers is non-\/zero. If not specified, is assumed to be \char`\"{}0 -\/ N/\+A\char`\"{}. \mbox{\Hypertarget{group__ReadingBase_ga5bf0963cd698da8a48200e661ca04fcc}\label{group__ReadingBase_ga5bf0963cd698da8a48200e661ca04fcc}} 
+\index{Reading\+Base@{Reading\+Base}!value@{value}}
+\index{value@{value}!Reading\+Base@{Reading\+Base}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Base\+\_\+t\+::value}
+
+Value in units specified by Reading\+Type 

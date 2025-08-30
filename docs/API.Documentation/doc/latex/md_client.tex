@@ -1,0 +1,137 @@
+The I\+E\+EE 2030.\+5 client A\+PI provides a means for developers to integrate I\+E\+EE 2030.\+5 functionality into their applications. At the base is a portable platform layer that includes support for files, T\+CP connections, U\+DP ports, timers, and events. The event polling mechanism provides a portable and unified way of processing operating system events that is both responsive (non-\/blocking) and balanced (includes round robin scheduling).
+
+After platform initialization and interface selection are performed, the client will typically perform the following\+:
+
+
+\begin{DoxyItemize}
+\item D\+NS service discovery (D\+N\+S-\/\+SD)
+\item T\+C\+P/\+T\+LS connection establishment
+\item Resource retrieval
+\item Event scheduling
+\end{DoxyItemize}
+
+These and other functions are divided up into the following modules\+:
+
+\subsection*{Platform }
+
+The platform layer provides portable functions for performing operating system I/O. The platform layer consists of the following modules\+:
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__platform}{Platform}
+\begin{DoxyItemize}
+\item \hyperlink{group__event}{Event}
+\item \hyperlink{group__file}{File}
+\item \hyperlink{group__timer}{Timer}
+\item \hyperlink{group__network}{Network}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Applications must call \hyperlink{group__platform_ga390c450e83ddc7807da2e9f0a894d8d1}{platform\+\_\+init} before any other I/O based function call to properly initialize the platform layer.
+
+\subsubsection*{Events}
+
+Applications call \hyperlink{group__event_gaab7ac3049413d657bde5b7a6ae33c128}{event\+\_\+poll} to retrieve events from the platform layer. The set of events that can be retrieved from the platform layer are fixed, relating to network operations, expiring timers, and polling timeouts. This base set of events can be extended by adding timers and defining higher level event retrieval functions. For example \hyperlink{group__client_ga7c5c3327618a1b3c4757c415fb42ba8d}{client\+\_\+poll} processes U\+DP level packets from the service discovery port and returns a {\ttfamily S\+E\+R\+V\+I\+C\+E\+\_\+\+F\+O\+U\+ND} event to report a new service to the client.
+
+For the purpose of defining new events the plaform layer includes the constant {\ttfamily E\+V\+E\+N\+T\+\_\+\+N\+EW}. Higher level event retrieval functions can extend the set of events by returning unique offsets from {\ttfamily E\+V\+E\+N\+T\+\_\+\+N\+EW}.
+
+\subsubsection*{File I/O}
+
+Developers can use the standard C functions to perform file I/O portably, however there are no standard functions that can determine the file type or process directories. For these purposes the platform layer provides \hyperlink{group__file_ga2fc3c2a4230816bcc6c264a334d62c3c}{file\+\_\+type} to determine whether a file name represents a regular file or a directory, and also \hyperlink{group__file_ga3d464d8bbd8ca54a1686258319f5eeb3}{process\+\_\+dir} to process the files within a directory.
+
+\subsubsection*{Timers}
+
+Timers are another platform dependent feature. The platform layer provides \hyperlink{group__timer_ga0aaa8477c77e036e7f41f7704721b9f7}{add\+\_\+timer} and \hyperlink{group__timer_gab1f067b2c41862d5cf2a06ca8a5359da}{new\+\_\+timer} to create timers. The value passed to these functions are returned by \hyperlink{group__event_gaab7ac3049413d657bde5b7a6ae33c128}{event\+\_\+poll} at the time indicated by \hyperlink{group__timer_gacbdc140f686e71964beb4e5608313b5b}{set\+\_\+timer}. They should be defined as a unique offset from {\ttfamily E\+V\+E\+N\+T\+\_\+\+N\+EW} in order to distinguish timer events from other event types.
+
+\subsubsection*{Networking}
+
+The network layer provides a base for the I\+E\+EE 2030.\+5 functionality. Service discovery is performed by exchanging U\+DP packets, the H\+T\+TP R\+E\+S\+Tful operations that form the core of the I\+E\+EE 2030.\+5 protocol are performed on top of a T\+CP connection. In addition to providing this base, the network layer gives the developer a means of performing network operations portably and efficiently.
+
+\subsection*{Security/\+T\+LS Initialization }
+
+The security layer provides the means for loading device and root certifcates, initializing the T\+LS library, and computing the device credentials (L\+F\+DI and S\+F\+DI).
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__security}{Security}
+\end{DoxyItemize}
+
+\subsection*{Schema }
+
+I\+E\+EE 2030.\+5 resources are defined by an X\+ML schema (sep.\+xsd). This schema is processed to extract C type definitions (se\+\_\+types.\+h) and a table (se\+\_\+schema.\+c) which can be used to transform 2030.\+5 resources from their X\+ML or E\+XI representation into a C object representation. The process can also be reversed, transforming a C object into an X\+ML or E\+XI representation. The \hyperlink{group__schema}{Schema} module provides basic types for representing schemas in table form, and methods for querying the schema table and performing operations on schema based objects.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__schema}{Schema}
+\item \hyperlink{group__se__object}{I\+E\+EE 2030.\+5 Schema}
+\item \hyperlink{group__se__types}{2030.\+5 Types}
+\end{DoxyItemize}
+
+\subsection*{Parsing / Output }
+
+The \hyperlink{group__parse}{Parse} and \hyperlink{group__output}{Output} modules provide the means to transform a resource from its X\+ML or E\+XI representation into its C object representation and vice versa. These modules are general purpose however support is currently limited to the features required by the I\+E\+EE 2030.\+5 X\+ML schema.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__parse}{Parse}
+\item \hyperlink{group__output}{Output}
+\end{DoxyItemize}
+
+\subsection*{Connections }
+
+The client A\+PI provides three types of connections that build upon each other to provide higher level functionality.
+
+The \hyperlink{group__connection}{Connection} module extends the platform {\ttfamily Tcp\+Port} to provide either a T\+CP or a T\+C\+P+\+T\+LS connection with a server. The \hyperlink{group__http__connection}{Http\+Connection} module extends the \hyperlink{group__connection}{Connection} module to provide support for H\+T\+TP client and server connections. Finally, the \hyperlink{group__se__connection}{Se\+Connection} module extends the \hyperlink{group__http__connection}{Http\+Connection} module to provide support for I\+E\+EE 2030.\+5 media types, \char`\"{}application/sep+xml\char`\"{} and \char`\"{}application/sep-\/exi\char`\"{}.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__connection}{Connection}
+\item \hyperlink{group__http__connection}{Http\+Connection}
+\item \hyperlink{group__se__connection}{Se\+Connection}
+\end{DoxyItemize}
+
+\subsection*{Service Discovery }
+
+The \hyperlink{group__dnssd__client}{Service Discovery} module provide functions for D\+NS service discovery (D\+N\+S-\/\+SD). The \hyperlink{group__se__discover}{I\+E\+EE 2030.\+5 Service Discovery} module extends the \hyperlink{group__dnssd__client}{Service Discovery} module to provide support for I\+E\+EE 2030.\+5 subtype queries and connecting with I\+E\+EE 2030.\+5 service providers.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__dnssd__client}{Service Discovery}
+\item \hyperlink{group__se__discover}{I\+E\+EE 2030.\+5 Service Discovery}
+\end{DoxyItemize}
+
+\subsection*{Event Queuing }
+
+The \hyperlink{group__event__queue}{Event Queue} module provides a means to add time based events without the need to create a new system timer for each type of event. The \hyperlink{group__event__queue}{Event Queue} uses only a single timer which set to expire for the time of the next event.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__event__queue}{Event Queue}
+\end{DoxyItemize}
+
+\subsection*{Retrieval }
+
+The \hyperlink{group__retrieve}{Retrieve} module provides high level functions for I\+E\+EE 2030.\+5 resource retrieval, including support for creating placeholders called \hyperlink{structStub}{Stub} resources, tracking requirements and dependencies, and signaling retrieval completion.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__retrieve}{Retrieve}
+\end{DoxyItemize}
+
+\subsection*{Scheduling }
+
+For event based function sets such as Distributed Energy Resources (D\+ER) the \hyperlink{group__schedule}{Schedule} module provides functions and data structures to organize the events into schedules (\hyperlink{structSchedule}{Schedule}) corresponding to particular End\+Devices. Scheduling is done first when retrieval is complete for a given function set and is subsequently updated as events become active, are completed, superseded, or canceled. These events are recorded internally as the \hyperlink{group__event__queue}{Event Queue} events {\ttfamily E\+V\+E\+N\+T\+\_\+\+S\+T\+A\+RT} and {\ttfamily E\+V\+E\+N\+T\+\_\+\+E\+ND} so that the client application can respond appropriately to them.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__schedule}{Schedule}
+\end{DoxyItemize}
+
+\subsection*{D\+ER Client }
+
+The \hyperlink{group__der}{D\+ER Device} module organizes the resources of a D\+ER End\+Device providing a method of scheduling D\+E\+R\+Controls based upon the Function\+Set\+Assignments for an End\+Device.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{group__der}{D\+ER Device} 
+\end{DoxyItemize}

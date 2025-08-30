@@ -1,0 +1,121 @@
+\hypertarget{group__queue}{}\section{Queue}
+\label{group__queue}\index{Queue@{Queue}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structQueue}{Queue}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structQueue}{Queue} structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__queue_gab4e9f523209630c13dec04655bfacc49}{queue\+\_\+peek}(queue)~(void $\ast$)(queue)-\/$>$first
+\begin{DoxyCompactList}\small\item\em Return the head of the queue without removing it. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__queue_ga3001011f0b018b23ce87b33bbc6438d9}{queue\+\_\+empty}(queue)~((queue)-\/$>$first == N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Test if the queue is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__queue_gaf8cdbd97f880479207466745a6afe6b3}\label{group__queue_gaf8cdbd97f880479207466745a6afe6b3}} 
+\#define {\bfseries queue\+\_\+tail}(queue)~(void $\ast$)(queue)-\/$>$last
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__queue_gaaa24b65f3154f21e3ff86ef0722b5c33}{queue\+\_\+insert} (\hyperlink{structQueue}{Queue} $\ast$queue, void $\ast$item)
+\begin{DoxyCompactList}\small\item\em Insert linked item at the tail of the queue. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__queue_ga5f39cda20a9848df6e23aada641f5461}{queue\+\_\+remove} (\hyperlink{structQueue}{Queue} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Remove linked item from the head of the queue. \end{DoxyCompactList}\item 
+void \hyperlink{group__queue_ga42c7cc8caeb6778234887511db8fba40}{queue\+\_\+free} (\hyperlink{structQueue}{Queue} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Free queued items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__queue_ga3001011f0b018b23ce87b33bbc6438d9}\label{group__queue_ga3001011f0b018b23ce87b33bbc6438d9}} 
+\index{Queue@{Queue}!queue\+\_\+empty@{queue\+\_\+empty}}
+\index{queue\+\_\+empty@{queue\+\_\+empty}!Queue@{Queue}}
+\subsubsection{\texorpdfstring{queue\+\_\+empty}{queue\_empty}}
+{\footnotesize\ttfamily \#define queue\+\_\+empty(\begin{DoxyParamCaption}\item[{}]{queue }\end{DoxyParamCaption})~((queue)-\/$>$first == N\+U\+LL)}
+
+
+
+Test if the queue is empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & is a pointer to a \hyperlink{structQueue}{Queue} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the queue is not empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__queue_gab4e9f523209630c13dec04655bfacc49}\label{group__queue_gab4e9f523209630c13dec04655bfacc49}} 
+\index{Queue@{Queue}!queue\+\_\+peek@{queue\+\_\+peek}}
+\index{queue\+\_\+peek@{queue\+\_\+peek}!Queue@{Queue}}
+\subsubsection{\texorpdfstring{queue\+\_\+peek}{queue\_peek}}
+{\footnotesize\ttfamily \#define queue\+\_\+peek(\begin{DoxyParamCaption}\item[{}]{queue }\end{DoxyParamCaption})~(void $\ast$)(queue)-\/$>$first}
+
+
+
+Return the head of the queue without removing it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & is a pointer to a \hyperlink{structQueue}{Queue} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the head of the queue 
+\end{DoxyReturn}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__queue_ga42c7cc8caeb6778234887511db8fba40}\label{group__queue_ga42c7cc8caeb6778234887511db8fba40}} 
+\index{Queue@{Queue}!queue\+\_\+free@{queue\+\_\+free}}
+\index{queue\+\_\+free@{queue\+\_\+free}!Queue@{Queue}}
+\subsubsection{\texorpdfstring{queue\+\_\+free()}{queue\_free()}}
+{\footnotesize\ttfamily void queue\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{structQueue}{Queue} $\ast$}]{queue }\end{DoxyParamCaption})}
+
+
+
+Free queued items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & is a pointer to a \hyperlink{structQueue}{Queue} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__queue_gaaa24b65f3154f21e3ff86ef0722b5c33}\label{group__queue_gaaa24b65f3154f21e3ff86ef0722b5c33}} 
+\index{Queue@{Queue}!queue\+\_\+insert@{queue\+\_\+insert}}
+\index{queue\+\_\+insert@{queue\+\_\+insert}!Queue@{Queue}}
+\subsubsection{\texorpdfstring{queue\+\_\+insert()}{queue\_insert()}}
+{\footnotesize\ttfamily void queue\+\_\+insert (\begin{DoxyParamCaption}\item[{\hyperlink{structQueue}{Queue} $\ast$}]{queue,  }\item[{void $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Insert linked item at the tail of the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & is a pointer to a \hyperlink{structQueue}{Queue} \\
+\hline
+{\em item} & is a pointer to a linked item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__queue_ga5f39cda20a9848df6e23aada641f5461}\label{group__queue_ga5f39cda20a9848df6e23aada641f5461}} 
+\index{Queue@{Queue}!queue\+\_\+remove@{queue\+\_\+remove}}
+\index{queue\+\_\+remove@{queue\+\_\+remove}!Queue@{Queue}}
+\subsubsection{\texorpdfstring{queue\+\_\+remove()}{queue\_remove()}}
+{\footnotesize\ttfamily void $\ast$ queue\+\_\+remove (\begin{DoxyParamCaption}\item[{\hyperlink{structQueue}{Queue} $\ast$}]{queue }\end{DoxyParamCaption})}
+
+
+
+Remove linked item from the head of the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & is a pointer to a \hyperlink{structQueue}{Queue} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a linked item 
+\end{DoxyReturn}

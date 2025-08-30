@@ -1,0 +1,48 @@
+\hypertarget{group__NotificationListLink}{}\section{Notification\+List\+Link}
+\label{group__NotificationListLink}\index{Notification\+List\+Link@{Notification\+List\+Link}}
+Collaboration diagram for Notification\+List\+Link\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{group__NotificationListLink}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__NotificationListLink__t}{S\+E\+\_\+\+Notification\+List\+Link\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__NotificationListLink_ga5023938637f32b603975b8a403a27bee}{S\+E\+\_\+\+Notification\+List\+Link\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__NotificationListLink_ga5813d265b0bfb7682fca2205bd5ad8a5}{S\+E\+\_\+\+Notification\+List\+Link\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__NotificationListLink_ga313276d3b11f3056bd8e5ec14bcc3b12}{S\+E\+\_\+\+Notification\+List\+Link\+\_\+t\+::all}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+H\+A\+LL contain a Link to a \hyperlink{structList}{List} of Notification instances. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__NotificationListLink_ga5023938637f32b603975b8a403a27bee}\label{group__NotificationListLink_ga5023938637f32b603975b8a403a27bee}} 
+\index{Notification\+List\+Link@{Notification\+List\+Link}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Notification\+List\+Link@{Notification\+List\+Link}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Notification\+List\+Link\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+all\+\_\+exists (1 $<$$<$ 0) \mbox{\Hypertarget{group__NotificationListLink_ga313276d3b11f3056bd8e5ec14bcc3b12}\label{group__NotificationListLink_ga313276d3b11f3056bd8e5ec14bcc3b12}} 
+\index{Notification\+List\+Link@{Notification\+List\+Link}!all@{all}}
+\index{all@{all}!Notification\+List\+Link@{Notification\+List\+Link}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Notification\+List\+Link\+\_\+t\+::all}
+
+Indicates the total number of items in the referenced list. This attribute S\+H\+A\+LL be present if the href is a local or relative U\+RI. This attribute S\+H\+O\+U\+LD N\+OT be present if the href is a remote or absolute U\+RI, as the server may be unaware of changes to the value. \mbox{\Hypertarget{group__NotificationListLink_ga5813d265b0bfb7682fca2205bd5ad8a5}\label{group__NotificationListLink_ga5813d265b0bfb7682fca2205bd5ad8a5}} 
+\index{Notification\+List\+Link@{Notification\+List\+Link}!href@{href}}
+\index{href@{href}!Notification\+List\+Link@{Notification\+List\+Link}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Notification\+List\+Link\+\_\+t\+::href}
+
+A U\+RI reference. 

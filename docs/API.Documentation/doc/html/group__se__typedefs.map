@@ -1,0 +1,27 @@
+<map id="Typedefs" name="Typedefs">
+<area shape="rect" id="node1" href="$group__HexBinary64.html" title="HexBinary64" alt="" coords="282,5,379,32"/>
+<area shape="rect" id="node2" href="$group__UInt8.html" title="UInt8" alt="" coords="303,56,358,83"/>
+<area shape="rect" id="node3" href="$group__Int8.html" title="Int8" alt="" coords="309,107,353,133"/>
+<area shape="rect" id="node4" href="$group__UInt16.html" title="UInt16" alt="" coords="300,157,361,184"/>
+<area shape="rect" id="node5" href="$group__HexBinary16.html" title="HexBinary16" alt="" coords="282,208,379,235"/>
+<area shape="rect" id="node6" href="$group__HexBinary48.html" title="HexBinary48" alt="" coords="282,259,379,285"/>
+<area shape="rect" id="node7" href="$group__UInt32.html" title="UInt32" alt="" coords="300,309,361,336"/>
+<area shape="rect" id="node8" href="$group__HexBinary32.html" title="HexBinary32" alt="" coords="282,360,379,387"/>
+<area shape="rect" id="node9" href="$group__UInt40.html" title="UInt40" alt="" coords="300,411,361,437"/>
+<area shape="rect" id="node10" href="$group__Int16.html" title="Int16" alt="" coords="305,461,356,488"/>
+<area shape="rect" id="node11" href="$group__UInt48.html" title="UInt48" alt="" coords="300,512,361,539"/>
+<area shape="rect" id="node12" href="$group__Int32.html" title="Int32" alt="" coords="305,563,356,589"/>
+<area shape="rect" id="node13" href="$group__UInt64.html" title="UInt64" alt="" coords="300,613,361,640"/>
+<area shape="rect" id="node14" href="$group__Int48.html" title="Int48" alt="" coords="305,664,356,691"/>
+<area shape="rect" id="node15" href="$group__Int64.html" title="Int64" alt="" coords="305,715,356,741"/>
+<area shape="rect" id="node16" href="$group__se__types.html" title="2030.5 Types" alt="" coords="5,588,107,615"/>
+<area shape="rect" id="node17" href="$group__String192.html" title="String192" alt="" coords="292,765,369,792"/>
+<area shape="rect" id="node18" href="$group__HexBinary128.html" title="HexBinary128" alt="" coords="279,816,383,843"/>
+<area shape="rect" id="node19" href="$group__String32.html" title="String32" alt="" coords="295,867,366,893"/>
+<area shape="rect" id="node21" href="$group__String42.html" title="String42" alt="" coords="295,917,366,944"/>
+<area shape="rect" id="node22" href="$group__String16.html" title="String16" alt="" coords="295,968,366,995"/>
+<area shape="rect" id="node23" href="$group__String20.html" title="String20" alt="" coords="295,1019,366,1045"/>
+<area shape="rect" id="node24" href="$group__HexBinary160.html" title="HexBinary160" alt="" coords="279,1069,383,1096"/>
+<area shape="rect" id="node25" href="$group__HexBinary8.html" title="HexBinary8" alt="" coords="285,1120,376,1147"/>
+<area shape="rect" id="node26" href="$group__String6.html" title="String6" alt="" coords="299,1171,362,1197"/>
+</map>

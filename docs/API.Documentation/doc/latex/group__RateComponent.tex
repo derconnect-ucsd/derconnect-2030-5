@@ -1,0 +1,114 @@
+\hypertarget{group__RateComponent}{}\section{Rate\+Component}
+\label{group__RateComponent}\index{Rate\+Component@{Rate\+Component}}
+Collaboration diagram for Rate\+Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{group__RateComponent}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__RateComponent__t}{S\+E\+\_\+\+Rate\+Component\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__RateComponent_ga0c08e678db37ea8eb9fd67e3fcae4782}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__RateComponent_gaac1c4959b218d838c1b20379915e3abc}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__RateComponent_ga5febd8e03509ea29e372b4a5863809b6}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__RateComponent_gab7842f1806d07c3750119171d5637ced}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__RateComponent_ga0d6a6b7bf2528185f64ae073eabea734}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::version}
+\item 
+\mbox{\Hypertarget{group__RateComponent_ga220f509fe42ffcf555d04cbf6718c3aa}\label{group__RateComponent_ga220f509fe42ffcf555d04cbf6718c3aa}} 
+\hyperlink{structSE__ActiveTimeTariffIntervalListLink__t}{S\+E\+\_\+\+Active\+Time\+Tariff\+Interval\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Rate\+Component\+\_\+t\+::\+Active\+Time\+Tariff\+Interval\+List\+Link}
+\item 
+\hyperlink{structSE__UnitValueType__t}{S\+E\+\_\+\+Unit\+Value\+Type\+\_\+t} \hyperlink{group__RateComponent_ga51e5dd2544cb9bb2fc30c5254f13ed7e}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::flow\+Rate\+End\+Limit}
+\item 
+\hyperlink{structSE__UnitValueType__t}{S\+E\+\_\+\+Unit\+Value\+Type\+\_\+t} \hyperlink{group__RateComponent_ga4b5a6f687822495416f526dfd0f07575}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::flow\+Rate\+Start\+Limit}
+\item 
+\hyperlink{structSE__ReadingTypeLink__t}{S\+E\+\_\+\+Reading\+Type\+Link\+\_\+t} \hyperlink{group__RateComponent_ga108a8aae6b28aac45112a19b50ac3da0}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::\+Reading\+Type\+Link}
+\item 
+\hyperlink{group__RoleFlagsType_gac20b70bba5dd7d6773b13d69c372c957}{S\+E\+\_\+\+Role\+Flags\+Type\+\_\+t} \hyperlink{group__RateComponent_ga8641fd093a5e97212c53250b6509c5ed}{S\+E\+\_\+\+Rate\+Component\+\_\+t\+::role\+Flags}
+\item 
+\mbox{\Hypertarget{group__RateComponent_gab2020c72658c9efa668591b44fbac702}\label{group__RateComponent_gab2020c72658c9efa668591b44fbac702}} 
+\hyperlink{structSE__TimeTariffIntervalListLink__t}{S\+E\+\_\+\+Time\+Tariff\+Interval\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Rate\+Component\+\_\+t\+::\+Time\+Tariff\+Interval\+List\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Specifies the applicable charges for a single component of the rate, which could be generation price or consumption price, for example. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__RateComponent_ga0c08e678db37ea8eb9fd67e3fcae4782}\label{group__RateComponent_ga0c08e678db37ea8eb9fd67e3fcae4782}} 
+\index{Rate\+Component@{Rate\+Component}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+flow\+Rate\+Start\+Limit\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+flow\+Rate\+End\+Limit\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+\+Active\+Time\+Tariff\+Interval\+List\+Link\+\_\+exists (1 $<$$<$ 7) \mbox{\Hypertarget{group__RateComponent_gab7842f1806d07c3750119171d5637ced}\label{group__RateComponent_gab7842f1806d07c3750119171d5637ced}} 
+\index{Rate\+Component@{Rate\+Component}!description@{description}}
+\index{description@{description}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__RateComponent_ga51e5dd2544cb9bb2fc30c5254f13ed7e}\label{group__RateComponent_ga51e5dd2544cb9bb2fc30c5254f13ed7e}} 
+\index{Rate\+Component@{Rate\+Component}!flow\+Rate\+End\+Limit@{flow\+Rate\+End\+Limit}}
+\index{flow\+Rate\+End\+Limit@{flow\+Rate\+End\+Limit}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{flow\+Rate\+End\+Limit}{flowRateEndLimit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::flow\+Rate\+End\+Limit}
+
+Specifies the maximum flow rate (e.\+g. kW for electricity) for which this Rate\+Component applies, for the usage point and given rate / tariff.
+
+In combination with flow\+Rate\+Start\+Limit, allows a service provider to define the demand or output characteristics for the particular tariff design. If a server includes the flow\+Rate\+End\+Limit attribute, then it S\+H\+A\+LL also include flow\+Rate\+Start\+Limit attribute.
+
+For example, a service provider’s tariff limits customers to 20 k\+Ws of demand for the given rate structure. Above this threshold (from 20-\/50 k\+Ws), there are different demand charges per unit of consumption. The service provider can use flow\+Rate\+Start\+Limit and flow\+Rate\+End\+Limit to describe the demand characteristics of the different rates. Similarly, these attributes can be used to describe limits on premises D\+E\+Rs that might be producing a commodity and sending it back into the distribution network.
+
+Note\+: At the time of writing, service provider tariffs with demand-\/based components were not originally identified as being in scope, and service provider tariffs vary widely in their use of demand components and the method for computing charges. It is expected that industry groups (e.\+g., Open\+SG) will document requirements in the future that the I\+E\+EE 2030.\+5 community can then use as source material for the next version of I\+E\+EE 2030.\+5. \mbox{\Hypertarget{group__RateComponent_ga4b5a6f687822495416f526dfd0f07575}\label{group__RateComponent_ga4b5a6f687822495416f526dfd0f07575}} 
+\index{Rate\+Component@{Rate\+Component}!flow\+Rate\+Start\+Limit@{flow\+Rate\+Start\+Limit}}
+\index{flow\+Rate\+Start\+Limit@{flow\+Rate\+Start\+Limit}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{flow\+Rate\+Start\+Limit}{flowRateStartLimit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::flow\+Rate\+Start\+Limit}
+
+Specifies the minimum flow rate (e.\+g., kW for electricity) for which this Rate\+Component applies, for the usage point and given rate / tariff.
+
+In combination with flow\+Rate\+End\+Limit, allows a service provider to define the demand or output characteristics for the particular tariff design. If a server includes the flow\+Rate\+Start\+Limit attribute, then it S\+H\+A\+LL also include flow\+Rate\+End\+Limit attribute. \mbox{\Hypertarget{group__RateComponent_gaac1c4959b218d838c1b20379915e3abc}\label{group__RateComponent_gaac1c4959b218d838c1b20379915e3abc}} 
+\index{Rate\+Component@{Rate\+Component}!href@{href}}
+\index{href@{href}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__RateComponent_ga5febd8e03509ea29e372b4a5863809b6}\label{group__RateComponent_ga5febd8e03509ea29e372b4a5863809b6}} 
+\index{Rate\+Component@{Rate\+Component}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__RateComponent_ga108a8aae6b28aac45112a19b50ac3da0}\label{group__RateComponent_ga108a8aae6b28aac45112a19b50ac3da0}} 
+\index{Rate\+Component@{Rate\+Component}!Reading\+Type\+Link@{Reading\+Type\+Link}}
+\index{Reading\+Type\+Link@{Reading\+Type\+Link}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{Reading\+Type\+Link}{ReadingTypeLink}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::\+Reading\+Type\+Link}
+
+Provides indication of the Reading\+Type with which this price is associated. \mbox{\Hypertarget{group__RateComponent_ga8641fd093a5e97212c53250b6509c5ed}\label{group__RateComponent_ga8641fd093a5e97212c53250b6509c5ed}} 
+\index{Rate\+Component@{Rate\+Component}!role\+Flags@{role\+Flags}}
+\index{role\+Flags@{role\+Flags}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{role\+Flags}{roleFlags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::role\+Flags}
+
+Specifies the roles that this usage point has been assigned. \mbox{\Hypertarget{group__RateComponent_ga0d6a6b7bf2528185f64ae073eabea734}\label{group__RateComponent_ga0d6a6b7bf2528185f64ae073eabea734}} 
+\index{Rate\+Component@{Rate\+Component}!version@{version}}
+\index{version@{version}!Rate\+Component@{Rate\+Component}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Rate\+Component\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

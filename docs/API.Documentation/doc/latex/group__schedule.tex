@@ -1,0 +1,144 @@
+\hypertarget{group__schedule}{}\section{Schedule}
+\label{group__schedule}\index{Schedule@{Schedule}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structEventBlock}{Event\+Block}
+\begin{DoxyCompactList}\small\item\em An \hyperlink{structEventBlock}{Event\+Block} is an Event instance scheduled for a particular End\+Device. \end{DoxyCompactList}\item 
+struct \hyperlink{structSchedule}{Schedule}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{structSchedule}{Schedule} organizes the events of a particular function set for an End\+Device in terms of the rules in section 12.\+1.\+3 Event Rules and Guidlines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__schedule_ga78a859df05d86016268b99c2d6bbb5ed}\label{group__schedule_ga78a859df05d86016268b99c2d6bbb5ed}} 
+\#define {\bfseries S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+U\+P\+D\+A\+TE}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+8)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__schedule_gac03f53915dd13820e0dfd3b3c93bed17}\label{group__schedule_gac03f53915dd13820e0dfd3b3c93bed17}} 
+enum {\bfseries Event\+Status} \{ \newline
+{\bfseries Scheduled}, 
+\newline
+{\bfseries Active}, 
+\newline
+{\bfseries Canceled}, 
+\newline
+{\bfseries Canceled\+Random}, 
+\newline
+{\bfseries Superseded}, 
+\newline
+{\bfseries Aborted}, 
+\newline
+{\bfseries Active\+Wait}, 
+\newline
+{\bfseries Schedule\+Superseded}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__schedule_ga9d4cd083882e87732612850c3250ffbf}{device\+\_\+response} (\hyperlink{structStub}{Stub} $\ast$device, \hyperlink{structStub}{Stub} $\ast$event, int status)
+\begin{DoxyCompactList}\small\item\em Send an event response to the server on the behalf of a device. \end{DoxyCompactList}\item 
+\hyperlink{structEventBlock}{Event\+Block} $\ast$ \hyperlink{group__schedule_gadabb3fc64df947b899dc1c69b19cc387}{schedule\+\_\+event} (\hyperlink{structSchedule}{Schedule} $\ast$s, \hyperlink{structStub}{Stub} $\ast$event, int primacy)
+\begin{DoxyCompactList}\small\item\em Add an event to a schedule with an associated primacy. \end{DoxyCompactList}\item 
+void \hyperlink{group__schedule_gaf04a182093aa4cb92a4ee5d2617197fd}{event\+\_\+update} (\hyperlink{structStub}{Stub} $\ast$event)
+\begin{DoxyCompactList}\small\item\em Update the schedules associated with an event. \end{DoxyCompactList}\item 
+void \hyperlink{group__schedule_gabd767b69f0c96529550af0593e8efe75}{update\+\_\+schedule} (\hyperlink{structSchedule}{Schedule} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Update the schedule based upon the current time. \end{DoxyCompactList}\item 
+void \hyperlink{group__schedule_ga69ef66c1e814d8296384803a0da27d4a}{schedule\+\_\+init} (\hyperlink{structSchedule}{Schedule} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Initialize the schedule. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The schedule module provides methods for I\+E\+EE 2030.\+5 event scheduling. Scheduling is done per function set such as Pricing, Distributed Energy Resources (D\+ER), or Demand Response / Load Control (D\+R\+LC).
+
+The events of each function set are independent and each End\+Device may utilitize one or more function sets, therefore an End\+Device could have one or more independent event schedules. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__schedule_ga9d4cd083882e87732612850c3250ffbf}\label{group__schedule_ga9d4cd083882e87732612850c3250ffbf}} 
+\index{Schedule@{Schedule}!device\+\_\+response@{device\+\_\+response}}
+\index{device\+\_\+response@{device\+\_\+response}!Schedule@{Schedule}}
+\subsubsection{\texorpdfstring{device\+\_\+response()}{device\_response()}}
+{\footnotesize\ttfamily void device\+\_\+response (\begin{DoxyParamCaption}\item[{\hyperlink{structStub}{Stub} $\ast$}]{device,  }\item[{\hyperlink{structStub}{Stub} $\ast$}]{event,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Send an event response to the server on the behalf of a device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & is a pointer to an End\+Device \hyperlink{structStub}{Stub} \\
+\hline
+{\em event} & is a pointer to an Event \hyperlink{structStub}{Stub} \\
+\hline
+{\em status} & is the status of the event response (Response\+Type) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__schedule_gaf04a182093aa4cb92a4ee5d2617197fd}\label{group__schedule_gaf04a182093aa4cb92a4ee5d2617197fd}} 
+\index{Schedule@{Schedule}!event\+\_\+update@{event\+\_\+update}}
+\index{event\+\_\+update@{event\+\_\+update}!Schedule@{Schedule}}
+\subsubsection{\texorpdfstring{event\+\_\+update()}{event\_update()}}
+{\footnotesize\ttfamily void event\+\_\+update (\begin{DoxyParamCaption}\item[{\hyperlink{structStub}{Stub} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Update the schedules associated with an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & is a pointer to an event \hyperlink{structStub}{Stub} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__schedule_gadabb3fc64df947b899dc1c69b19cc387}\label{group__schedule_gadabb3fc64df947b899dc1c69b19cc387}} 
+\index{Schedule@{Schedule}!schedule\+\_\+event@{schedule\+\_\+event}}
+\index{schedule\+\_\+event@{schedule\+\_\+event}!Schedule@{Schedule}}
+\subsubsection{\texorpdfstring{schedule\+\_\+event()}{schedule\_event()}}
+{\footnotesize\ttfamily \hyperlink{structEventBlock}{Event\+Block} $\ast$ schedule\+\_\+event (\begin{DoxyParamCaption}\item[{\hyperlink{structSchedule}{Schedule} $\ast$}]{s,  }\item[{\hyperlink{structStub}{Stub} $\ast$}]{event,  }\item[{int}]{primacy }\end{DoxyParamCaption})}
+
+
+
+Add an event to a schedule with an associated primacy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a \hyperlink{structSchedule}{Schedule} \\
+\hline
+{\em event} & is a pointer to an Event \\
+\hline
+{\em primacy} & is the associated primacy for the event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to an \hyperlink{structEventBlock}{Event\+Block} belonging to the schedule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__schedule_ga69ef66c1e814d8296384803a0da27d4a}\label{group__schedule_ga69ef66c1e814d8296384803a0da27d4a}} 
+\index{Schedule@{Schedule}!schedule\+\_\+init@{schedule\+\_\+init}}
+\index{schedule\+\_\+init@{schedule\+\_\+init}!Schedule@{Schedule}}
+\subsubsection{\texorpdfstring{schedule\+\_\+init()}{schedule\_init()}}
+{\footnotesize\ttfamily void schedule\+\_\+init (\begin{DoxyParamCaption}\item[{\hyperlink{structSchedule}{Schedule} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Initialize the schedule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a \hyperlink{structSchedule}{Schedule} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__schedule_gabd767b69f0c96529550af0593e8efe75}\label{group__schedule_gabd767b69f0c96529550af0593e8efe75}} 
+\index{Schedule@{Schedule}!update\+\_\+schedule@{update\+\_\+schedule}}
+\index{update\+\_\+schedule@{update\+\_\+schedule}!Schedule@{Schedule}}
+\subsubsection{\texorpdfstring{update\+\_\+schedule()}{update\_schedule()}}
+{\footnotesize\ttfamily void update\+\_\+schedule (\begin{DoxyParamCaption}\item[{\hyperlink{structSchedule}{Schedule} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Update the schedule based upon the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a \hyperlink{structSchedule}{Schedule} \\
+\hline
+\end{DoxyParams}

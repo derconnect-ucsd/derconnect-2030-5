@@ -1,0 +1,106 @@
+\hypertarget{group__DeviceStatus}{}\section{Device\+Status}
+\label{group__DeviceStatus}\index{Device\+Status@{Device\+Status}}
+Collaboration diagram for Device\+Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{group__DeviceStatus}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DeviceStatus__t}{S\+E\+\_\+\+Device\+Status\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__DeviceStatus_gaaf6c4544a5c3d62732dc559d43634149}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__DeviceStatus_gac832af3c5e30f58a11ec61588798c6ea}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__DeviceStatus_ga128ee35b8323aa8aa753b754fd502ec8}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::poll\+Rate}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__DeviceStatus_ga01b3f945cf198175ee85e8c068825f6e}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::changed\+Time}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__DeviceStatus_ga88599e2bbaa35b2fc2f340a24f873b13}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::on\+Count}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__DeviceStatus_ga298a44d2837e5f528c9f81ec73c69fc7}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::op\+State}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__DeviceStatus_ga6c24575c59f3ab054c989011e29e5d5d}{S\+E\+\_\+\+Device\+Status\+\_\+t\+::op\+Time}
+\item 
+\mbox{\Hypertarget{group__DeviceStatus_ga3a85f6c56c803ade972114ad61aa46f1}\label{group__DeviceStatus_ga3a85f6c56c803ade972114ad61aa46f1}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Device\+Status\+\_\+t\+::\+Temperature}
+\item 
+\mbox{\Hypertarget{group__DeviceStatus_gaaf5fe0853b729f379d83d698fd823d6c}\label{group__DeviceStatus_gaaf5fe0853b729f379d83d698fd823d6c}} 
+\hyperlink{structSE__TimeLink__t}{S\+E\+\_\+\+Time\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Device\+Status\+\_\+t\+::\+Time\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Status of device 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DeviceStatus_gaaf6c4544a5c3d62732dc559d43634149}\label{group__DeviceStatus_gaaf6c4544a5c3d62732dc559d43634149}} 
+\index{Device\+Status@{Device\+Status}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+op\+Time\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+op\+State\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+on\+Count\+\_\+exists (1 $<$$<$ 7) \mbox{\Hypertarget{group__DeviceStatus_ga01b3f945cf198175ee85e8c068825f6e}\label{group__DeviceStatus_ga01b3f945cf198175ee85e8c068825f6e}} 
+\index{Device\+Status@{Device\+Status}!changed\+Time@{changed\+Time}}
+\index{changed\+Time@{changed\+Time}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{changed\+Time}{changedTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::changed\+Time}
+
+The time at which the reported values were recorded. \mbox{\Hypertarget{group__DeviceStatus_gac832af3c5e30f58a11ec61588798c6ea}\label{group__DeviceStatus_gac832af3c5e30f58a11ec61588798c6ea}} 
+\index{Device\+Status@{Device\+Status}!href@{href}}
+\index{href@{href}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__DeviceStatus_ga88599e2bbaa35b2fc2f340a24f873b13}\label{group__DeviceStatus_ga88599e2bbaa35b2fc2f340a24f873b13}} 
+\index{Device\+Status@{Device\+Status}!on\+Count@{on\+Count}}
+\index{on\+Count@{on\+Count}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{on\+Count}{onCount}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::on\+Count}
+
+The number of times that the device has been turned on\+: Count of \char`\"{}device on\char`\"{} times, since the last time the counter was reset \mbox{\Hypertarget{group__DeviceStatus_ga298a44d2837e5f528c9f81ec73c69fc7}\label{group__DeviceStatus_ga298a44d2837e5f528c9f81ec73c69fc7}} 
+\index{Device\+Status@{Device\+Status}!op\+State@{op\+State}}
+\index{op\+State@{op\+State}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{op\+State}{opState}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::op\+State}
+
+Device operational state\+:
+
+0 -\/ Not applicable / Unknown
+
+1 -\/ Not operating
+
+2 -\/ Operating
+
+3 -\/ Starting up
+
+4 -\/ Shutting down
+
+5 -\/ At disconnect level
+
+6 -\/ kW ramping
+
+7 -\/ k\+Var ramping \mbox{\Hypertarget{group__DeviceStatus_ga6c24575c59f3ab054c989011e29e5d5d}\label{group__DeviceStatus_ga6c24575c59f3ab054c989011e29e5d5d}} 
+\index{Device\+Status@{Device\+Status}!op\+Time@{op\+Time}}
+\index{op\+Time@{op\+Time}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{op\+Time}{opTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::op\+Time}
+
+Total time device has operated\+: re-\/settable\+: Accumulated time in seconds since the last time the counter was reset. \mbox{\Hypertarget{group__DeviceStatus_ga128ee35b8323aa8aa753b754fd502ec8}\label{group__DeviceStatus_ga128ee35b8323aa8aa753b754fd502ec8}} 
+\index{Device\+Status@{Device\+Status}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Device\+Status@{Device\+Status}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Device\+Status\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. 

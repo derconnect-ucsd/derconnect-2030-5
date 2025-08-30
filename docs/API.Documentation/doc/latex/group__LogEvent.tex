@@ -1,0 +1,160 @@
+\hypertarget{group__LogEvent}{}\section{Log\+Event}
+\label{group__LogEvent}\index{Log\+Event@{Log\+Event}}
+Collaboration diagram for Log\+Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{group__LogEvent}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__LogEvent__t}{S\+E\+\_\+\+Log\+Event\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__LogEvent_ga7097aa812a92768f9a6444ad1f44e7ab}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__LogEvent_ga7a77c2d8bf99665d52ad8a077c62892b}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::href}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__LogEvent_gacaa033ae90debff32b1e3d913b02b1e0}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::created\+Date\+Time}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__LogEvent_gab8efc7faed19706fb29eae8aaae704e3}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::details}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__LogEvent_ga335ea28cf8492d2ae95aaa2af959d78b}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::extended\+Data}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__LogEvent_gae3dd072a18ca3eab7d466064a072a2ed}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::function\+Set}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__LogEvent_ga94b54840b21fa653aa8a15407470e017}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::log\+Event\+Code}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__LogEvent_ga88d7a251a6ed7939d961c7bc7e9071f4}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::log\+Event\+ID}
+\item 
+\hyperlink{group__PENType_ga75343bbeec563c431fef2977b4dfa4e9}{S\+E\+\_\+\+P\+E\+N\+Type\+\_\+t} \hyperlink{group__LogEvent_ga3b9a19af528c15c42d19845194d6d859}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::log\+Event\+P\+EN}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__LogEvent_ga2e3fe4dcccd980fb39556aca65124b51}{S\+E\+\_\+\+Log\+Event\+\_\+t\+::profile\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A time stamped instance of a significant event detected by the device. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__LogEvent_ga7097aa812a92768f9a6444ad1f44e7ab}\label{group__LogEvent_ga7097aa812a92768f9a6444ad1f44e7ab}} 
+\index{Log\+Event@{Log\+Event}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+extended\+Data\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+details\+\_\+exists (1 $<$$<$ 6) \mbox{\Hypertarget{group__LogEvent_gacaa033ae90debff32b1e3d913b02b1e0}\label{group__LogEvent_gacaa033ae90debff32b1e3d913b02b1e0}} 
+\index{Log\+Event@{Log\+Event}!created\+Date\+Time@{created\+Date\+Time}}
+\index{created\+Date\+Time@{created\+Date\+Time}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{created\+Date\+Time}{createdDateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::created\+Date\+Time}
+
+The date and time that the event occurred. \mbox{\Hypertarget{group__LogEvent_gab8efc7faed19706fb29eae8aaae704e3}\label{group__LogEvent_gab8efc7faed19706fb29eae8aaae704e3}} 
+\index{Log\+Event@{Log\+Event}!details@{details}}
+\index{details@{details}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{details}{details}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::details}
+
+Human readable text that M\+AY be used to transmit additional details about the event. A host M\+AY remove this field when received. \mbox{\Hypertarget{group__LogEvent_ga335ea28cf8492d2ae95aaa2af959d78b}\label{group__LogEvent_ga335ea28cf8492d2ae95aaa2af959d78b}} 
+\index{Log\+Event@{Log\+Event}!extended\+Data@{extended\+Data}}
+\index{extended\+Data@{extended\+Data}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{extended\+Data}{extendedData}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::extended\+Data}
+
+May be used to transmit additional details about the event. \mbox{\Hypertarget{group__LogEvent_gae3dd072a18ca3eab7d466064a072a2ed}\label{group__LogEvent_gae3dd072a18ca3eab7d466064a072a2ed}} 
+\index{Log\+Event@{Log\+Event}!function\+Set@{function\+Set}}
+\index{function\+Set@{function\+Set}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{function\+Set}{functionSet}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::function\+Set}
+
+If the profile\+ID indicates this is I\+E\+EE 2030.\+5, the function\+Set is defined by I\+E\+EE 2030.\+5 and S\+H\+A\+LL be one of the values from the table below (I\+E\+EE 2030.\+5 function set identifiers). If the profile\+ID is anything else, the function\+Set is defined by the identified profile.
+
+0 General (not specific to a function set)
+
+1 Publish and Subscribe
+
+2 End Device
+
+3 Function Set Assignment
+
+4 Response
+
+5 Demand Response and Load Control
+
+6 Metering
+
+7 Pricing
+
+8 Messaging
+
+9 Billing
+
+10 Prepayment
+
+11 Distributed Energy Resources
+
+12 Time
+
+13 Software Download
+
+14 Device Information
+
+15 Power Status
+
+16 Network Status
+
+17 Log Event \hyperlink{structList}{List}
+
+18 Configuration
+
+19 Security
+
+All other values are reserved. \mbox{\Hypertarget{group__LogEvent_ga7a77c2d8bf99665d52ad8a077c62892b}\label{group__LogEvent_ga7a77c2d8bf99665d52ad8a077c62892b}} 
+\index{Log\+Event@{Log\+Event}!href@{href}}
+\index{href@{href}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__LogEvent_ga94b54840b21fa653aa8a15407470e017}\label{group__LogEvent_ga94b54840b21fa653aa8a15407470e017}} 
+\index{Log\+Event@{Log\+Event}!log\+Event\+Code@{log\+Event\+Code}}
+\index{log\+Event\+Code@{log\+Event\+Code}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{log\+Event\+Code}{logEventCode}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::log\+Event\+Code}
+
+An 8 bit unsigned integer. log\+Event\+Codes are scoped to a profile and a function set. If the profile is I\+E\+EE 2030.\+5, the log\+Event\+Code is defined by I\+E\+EE 2030.\+5 within one of the function sets of I\+E\+EE 2030.\+5. If the profile is anything else, the log\+Event\+Code is defined by the specified profile. \mbox{\Hypertarget{group__LogEvent_ga88d7a251a6ed7939d961c7bc7e9071f4}\label{group__LogEvent_ga88d7a251a6ed7939d961c7bc7e9071f4}} 
+\index{Log\+Event@{Log\+Event}!log\+Event\+ID@{log\+Event\+ID}}
+\index{log\+Event\+ID@{log\+Event\+ID}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{log\+Event\+ID}{logEventID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::log\+Event\+ID}
+
+This 16-\/bit value, combined with created\+Date\+Time, profile\+ID, and log\+Event\+P\+EN, should provide a reasonable level of uniqueness. \mbox{\Hypertarget{group__LogEvent_ga3b9a19af528c15c42d19845194d6d859}\label{group__LogEvent_ga3b9a19af528c15c42d19845194d6d859}} 
+\index{Log\+Event@{Log\+Event}!log\+Event\+P\+EN@{log\+Event\+P\+EN}}
+\index{log\+Event\+P\+EN@{log\+Event\+P\+EN}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{log\+Event\+P\+EN}{logEventPEN}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::log\+Event\+P\+EN}
+
+The Private Enterprise Number(\+P\+E\+N) of the entity that defined the profile\+ID, function\+Set, and log\+Event\+Code of the log\+Event. Zig\+Bee-\/assigned log\+Event\+Codes S\+H\+A\+LL use the Zig\+Bee Alliance P\+EN. Combinations of profile\+ID, function\+Set, and log\+Event\+Code S\+H\+A\+LL have unique meaning within a log\+Event\+P\+EN and are defined by the owner of the P\+EN. \mbox{\Hypertarget{group__LogEvent_ga2e3fe4dcccd980fb39556aca65124b51}\label{group__LogEvent_ga2e3fe4dcccd980fb39556aca65124b51}} 
+\index{Log\+Event@{Log\+Event}!profile\+ID@{profile\+ID}}
+\index{profile\+ID@{profile\+ID}!Log\+Event@{Log\+Event}}
+\subsubsection{\texorpdfstring{profile\+ID}{profileID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Log\+Event\+\_\+t\+::profile\+ID}
+
+The profile\+ID identifies which profile (HA, BA, SE, etc) defines the following event information.
+
+0 Not profile specific.
+
+1 Vendor Defined
+
+2 I\+E\+EE 2030.\+5
+
+3 Home Automation
+
+4 Building Automation
+
+All other values are reserved. 

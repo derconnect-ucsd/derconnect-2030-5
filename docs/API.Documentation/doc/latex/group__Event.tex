@@ -1,0 +1,130 @@
+\hypertarget{group__Event}{}\section{Event}
+\label{group__Event}\index{Event@{Event}}
+Collaboration diagram for Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Event}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__RandomizableEvent}{Randomizable\+Event}
+\item 
+\hyperlink{group__FlowReservationResponse}{Flow\+Reservation\+Response}
+\item 
+\hyperlink{group__TextMessage}{Text\+Message}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Event__t}{S\+E\+\_\+\+Event\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Event_gac9829e2ed56cc6d533951c5829a06447}{S\+E\+\_\+\+Event\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Event_gab778833a8a3a8f65c71ed89d477ffd26}{S\+E\+\_\+\+Event\+\_\+t\+::href}
+\item 
+char $\ast$ \hyperlink{group__Event_ga6e7f7661e18f5488e25401be9e7ee189}{S\+E\+\_\+\+Event\+\_\+t\+::reply\+To}
+\item 
+\hyperlink{group__HexBinary8_gaecf2dab3615fb954a693c017a61f77d6}{S\+E\+\_\+\+Hex\+Binary8\+\_\+t} \hyperlink{group__Event_ga78cfb38c0c12b9e22a7bc22493dfc841}{S\+E\+\_\+\+Event\+\_\+t\+::response\+Required}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__Event_ga39e93713a0f72e98d013681430dbea2b}{S\+E\+\_\+\+Event\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__Event_ga6985465bb16ad66b47d319bbce654b5c}{S\+E\+\_\+\+Event\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__Event_gae4f20895ab9cd471d8b83c6a44f936fe}{S\+E\+\_\+\+Event\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__Event_ga2e534e84cddb42f9ac5e30cac9852117}{S\+E\+\_\+\+Event\+\_\+t\+::version}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__Event_gaf230dbf11dcdc46c1f94be114028033f}{S\+E\+\_\+\+Event\+\_\+t\+::creation\+Time}
+\item 
+\mbox{\Hypertarget{group__Event_gac0e75aa423cc1fde371fc17e76bdcb25}\label{group__Event_gac0e75aa423cc1fde371fc17e76bdcb25}} 
+\hyperlink{structSE__EventStatus__t}{S\+E\+\_\+\+Event\+Status\+\_\+t} {\bfseries S\+E\+\_\+\+Event\+\_\+t\+::\+Event\+Status}
+\item 
+\hyperlink{structSE__DateTimeInterval__t}{S\+E\+\_\+\+Date\+Time\+Interval\+\_\+t} \hyperlink{group__Event_gaeaa7db57ff123c151dba417d4d60ec42}{S\+E\+\_\+\+Event\+\_\+t\+::interval}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Event indicates information that applies to a particular period of time. Events S\+H\+A\+LL be executed relative to the time of the server, as described in the Time function set section 11.\+1. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Event_gac9829e2ed56cc6d533951c5829a06447}\label{group__Event_gac9829e2ed56cc6d533951c5829a06447}} 
+\index{Event@{Event}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Event@{Event}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+response\+Required\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__Event_gaf230dbf11dcdc46c1f94be114028033f}\label{group__Event_gaf230dbf11dcdc46c1f94be114028033f}} 
+\index{Event@{Event}!creation\+Time@{creation\+Time}}
+\index{creation\+Time@{creation\+Time}!Event@{Event}}
+\subsubsection{\texorpdfstring{creation\+Time}{creationTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::creation\+Time}
+
+The time at which the Event was created. \mbox{\Hypertarget{group__Event_gae4f20895ab9cd471d8b83c6a44f936fe}\label{group__Event_gae4f20895ab9cd471d8b83c6a44f936fe}} 
+\index{Event@{Event}!description@{description}}
+\index{description@{description}!Event@{Event}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__Event_gab778833a8a3a8f65c71ed89d477ffd26}\label{group__Event_gab778833a8a3a8f65c71ed89d477ffd26}} 
+\index{Event@{Event}!href@{href}}
+\index{href@{href}!Event@{Event}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__Event_gaeaa7db57ff123c151dba417d4d60ec42}\label{group__Event_gaeaa7db57ff123c151dba417d4d60ec42}} 
+\index{Event@{Event}!interval@{interval}}
+\index{interval@{interval}!Event@{Event}}
+\subsubsection{\texorpdfstring{interval}{interval}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::interval}
+
+The period during which the Event applies. \mbox{\Hypertarget{group__Event_ga6985465bb16ad66b47d319bbce654b5c}\label{group__Event_ga6985465bb16ad66b47d319bbce654b5c}} 
+\index{Event@{Event}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Event@{Event}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__Event_ga6e7f7661e18f5488e25401be9e7ee189}\label{group__Event_ga6e7f7661e18f5488e25401be9e7ee189}} 
+\index{Event@{Event}!reply\+To@{reply\+To}}
+\index{reply\+To@{reply\+To}!Event@{Event}}
+\subsubsection{\texorpdfstring{reply\+To}{replyTo}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::reply\+To}
+
+A reference to the response resource address (U\+RI). Required on a response to a G\+ET if response\+Required is \char`\"{}true\char`\"{}. \mbox{\Hypertarget{group__Event_ga78cfb38c0c12b9e22a7bc22493dfc841}\label{group__Event_ga78cfb38c0c12b9e22a7bc22493dfc841}} 
+\index{Event@{Event}!response\+Required@{response\+Required}}
+\index{response\+Required@{response\+Required}!Event@{Event}}
+\subsubsection{\texorpdfstring{response\+Required}{responseRequired}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::response\+Required}
+
+Indicates whether or not a response is required upon receipt, creation or update of this resource. Responses shall be posted to the collection specified in \char`\"{}reply\+To\char`\"{}.
+
+If the resource has a device\+Category field, devices that match one or more of the device types indicated in device\+Category S\+H\+A\+LL respond according to the rules listed below. If the category does not match, the device S\+H\+A\+LL N\+OT respond. If the resource does not have a device\+Category field, a device receiving the resource S\+H\+A\+LL respond according to the rules listed below.
+
+Value encoded as hex according to the following bit assignments, any combination is possible.
+
+See Table 10-\/10 for the list of appropriate Response status codes to be sent for these purposes.
+
+0 -\/ End device shall indicate that message was received
+
+1 -\/ End device shall indicate specific response.
+
+2 -\/ End user / customer response is required.
+
+All other values reserved. \mbox{\Hypertarget{group__Event_ga39e93713a0f72e98d013681430dbea2b}\label{group__Event_ga39e93713a0f72e98d013681430dbea2b}} 
+\index{Event@{Event}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Event@{Event}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). \mbox{\Hypertarget{group__Event_ga2e534e84cddb42f9ac5e30cac9852117}\label{group__Event_ga2e534e84cddb42f9ac5e30cac9852117}} 
+\index{Event@{Event}!version@{version}}
+\index{version@{version}!Event@{Event}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

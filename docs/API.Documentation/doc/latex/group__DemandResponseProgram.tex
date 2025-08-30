@@ -1,0 +1,100 @@
+\hypertarget{group__DemandResponseProgram}{}\section{Demand\+Response\+Program}
+\label{group__DemandResponseProgram}\index{Demand\+Response\+Program@{Demand\+Response\+Program}}
+Collaboration diagram for Demand\+Response\+Program\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{group__DemandResponseProgram}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DemandResponseProgram__t}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__DemandResponseProgram_gabee537c682dee0fedf7998b5d1d7c40a}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__DemandResponseProgram_gabe6a9ae9d11c40abf1de49df60c33fb2}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__DemandResponseProgram_ga3a7dd308a30495cb98c203c6ae3074d1}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__DemandResponseProgram_ga5ba27e88d6bbc2941240c7ed18ab91c7}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__DemandResponseProgram_ga1e8b20fd85c49cfe1c51cf8e23f882b5}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::version}
+\item 
+\mbox{\Hypertarget{group__DemandResponseProgram_ga81a783ce95dfdd5fe1451d9aaa59be37}\label{group__DemandResponseProgram_ga81a783ce95dfdd5fe1451d9aaa59be37}} 
+\hyperlink{structSE__ActiveEndDeviceControlListLink__t}{S\+E\+\_\+\+Active\+End\+Device\+Control\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::\+Active\+End\+Device\+Control\+List\+Link}
+\item 
+\hyperlink{group__PerCent_ga14278cbee754c63496035b722b417ddc}{S\+E\+\_\+\+Per\+Cent\+\_\+t} \hyperlink{group__DemandResponseProgram_ga6eb5a29af00dc76559cac834c13483e7}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::availability\+Update\+Percent\+Change\+Threshold}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__DemandResponseProgram_gaa9a70f7f15f23119e07dc018038b5fd4}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::availability\+Update\+Power\+Change\+Threshold}
+\item 
+\mbox{\Hypertarget{group__DemandResponseProgram_ga74d041154165d23e9da4f5b68ca1eb76}\label{group__DemandResponseProgram_ga74d041154165d23e9da4f5b68ca1eb76}} 
+\hyperlink{structSE__EndDeviceControlListLink__t}{S\+E\+\_\+\+End\+Device\+Control\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::\+End\+Device\+Control\+List\+Link}
+\item 
+\hyperlink{group__PrimacyType_ga484b22ef8ff92c8801e6a8b7bd8351eb}{S\+E\+\_\+\+Primacy\+Type\+\_\+t} \hyperlink{group__DemandResponseProgram_ga40432a268b74349a00a8d08ed9710519}{S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::primacy}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Demand response program. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DemandResponseProgram_gabee537c682dee0fedf7998b5d1d7c40a}\label{group__DemandResponseProgram_gabee537c682dee0fedf7998b5d1d7c40a}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+End\+Device\+Control\+List\+Link\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+availability\+Update\+Power\+Change\+Threshold\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+availability\+Update\+Percent\+Change\+Threshold\+\_\+exists (1 $<$$<$ 7)
+
+\#define S\+E\+\_\+\+Active\+End\+Device\+Control\+List\+Link\+\_\+exists (1 $<$$<$ 8) \mbox{\Hypertarget{group__DemandResponseProgram_ga6eb5a29af00dc76559cac834c13483e7}\label{group__DemandResponseProgram_ga6eb5a29af00dc76559cac834c13483e7}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!availability\+Update\+Percent\+Change\+Threshold@{availability\+Update\+Percent\+Change\+Threshold}}
+\index{availability\+Update\+Percent\+Change\+Threshold@{availability\+Update\+Percent\+Change\+Threshold}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{availability\+Update\+Percent\+Change\+Threshold}{availabilityUpdatePercentChangeThreshold}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::availability\+Update\+Percent\+Change\+Threshold}
+
+This attribute allows program providers to specify the requested granularity of updates to Load\+Shed\+Availability sheddable\+Percent. If not present, or set to 0, then updates to Load\+Shed\+Availability S\+H\+A\+LL N\+OT be provided. If present and greater than zero, then clients S\+H\+A\+LL provide their Load\+Shed\+Availability if it has not previously been provided, and thereafter if the difference between the previously provided value and the current value of Load\+Shed\+Availability sheddable\+Percent is greater than availability\+Update\+Percent\+Change\+Threshold. \mbox{\Hypertarget{group__DemandResponseProgram_gaa9a70f7f15f23119e07dc018038b5fd4}\label{group__DemandResponseProgram_gaa9a70f7f15f23119e07dc018038b5fd4}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!availability\+Update\+Power\+Change\+Threshold@{availability\+Update\+Power\+Change\+Threshold}}
+\index{availability\+Update\+Power\+Change\+Threshold@{availability\+Update\+Power\+Change\+Threshold}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{availability\+Update\+Power\+Change\+Threshold}{availabilityUpdatePowerChangeThreshold}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::availability\+Update\+Power\+Change\+Threshold}
+
+This attribute allows program providers to specify the requested granularity of updates to Load\+Shed\+Availability sheddable\+Power. If not present, or set to 0, then updates to Load\+Shed\+Availability S\+H\+A\+LL N\+OT be provided. If present and greater than zero, then clients S\+H\+A\+LL provide their Load\+Shed\+Availability if it has not previously been provided, and thereafter if the difference between the previously provided value and the current value of Load\+Shed\+Availability sheddable\+Power is greater than availability\+Update\+Power\+Change\+Threshold. \mbox{\Hypertarget{group__DemandResponseProgram_ga5ba27e88d6bbc2941240c7ed18ab91c7}\label{group__DemandResponseProgram_ga5ba27e88d6bbc2941240c7ed18ab91c7}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!description@{description}}
+\index{description@{description}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__DemandResponseProgram_gabe6a9ae9d11c40abf1de49df60c33fb2}\label{group__DemandResponseProgram_gabe6a9ae9d11c40abf1de49df60c33fb2}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!href@{href}}
+\index{href@{href}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__DemandResponseProgram_ga3a7dd308a30495cb98c203c6ae3074d1}\label{group__DemandResponseProgram_ga3a7dd308a30495cb98c203c6ae3074d1}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__DemandResponseProgram_ga40432a268b74349a00a8d08ed9710519}\label{group__DemandResponseProgram_ga40432a268b74349a00a8d08ed9710519}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!primacy@{primacy}}
+\index{primacy@{primacy}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{primacy}{primacy}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::primacy}
+
+Indicates the relative primacy of the provider of this program. \mbox{\Hypertarget{group__DemandResponseProgram_ga1e8b20fd85c49cfe1c51cf8e23f882b5}\label{group__DemandResponseProgram_ga1e8b20fd85c49cfe1c51cf8e23f882b5}} 
+\index{Demand\+Response\+Program@{Demand\+Response\+Program}!version@{version}}
+\index{version@{version}!Demand\+Response\+Program@{Demand\+Response\+Program}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

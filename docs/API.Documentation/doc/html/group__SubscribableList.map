@@ -1,0 +1,24 @@
+<map id="SubscribableList" name="SubscribableList">
+<area shape="rect" id="node1" href="$group__ReadingSetList.html" title="ReadingSetList" alt="" coords="418,5,529,32"/>
+<area shape="rect" id="node2" href="$group__EndDeviceList.html" title="EndDeviceList" alt="" coords="420,56,527,83"/>
+<area shape="rect" id="node3" href="$group__CustomerAgreementList.html" title="CustomerAgreementList" alt="" coords="392,107,555,133"/>
+<area shape="rect" id="node4" href="$group__EndDeviceControlList.html" title="EndDeviceControlList" alt="" coords="399,157,548,184"/>
+<area shape="rect" id="node5" href="$group__DERProgramList.html" title="DERProgramList" alt="" coords="413,208,534,235"/>
+<area shape="rect" id="node6" href="$group__MeterReadingList.html" title="MeterReadingList" alt="" coords="411,259,535,285"/>
+<area shape="rect" id="node7" href="$group__SubscribableResource.html" title="SubscribableResource" alt="" coords="5,512,159,539"/>
+<area shape="rect" id="node8" href="$group__PrepaymentList.html" title="PrepaymentList" alt="" coords="417,309,530,336"/>
+<area shape="rect" id="node9" href="$group__CustomerAccountList.html" title="CustomerAccountList" alt="" coords="399,360,547,387"/>
+<area shape="rect" id="node10" href="$group__FunctionSetAssignmentsList.html" title="FunctionSetAssignmentsList" alt="" coords="379,411,568,437"/>
+<area shape="rect" id="node11" href="$group__MessagingProgramList.html" title="MessagingProgramList" alt="" coords="396,461,551,488"/>
+<area shape="rect" id="node12" href="$group__TariffProfileList.html" title="TariffProfileList" alt="" coords="418,512,529,539"/>
+<area shape="rect" id="node13" href="$group__ReadingList.html" title="ReadingList" alt="" coords="428,563,519,589"/>
+<area shape="rect" id="node14" href="$group__TimeTariffIntervalList.html" title="TimeTariffIntervalList" alt="" coords="401,613,546,640"/>
+<area shape="rect" id="node15" href="$group__FlowReservationResponseList.html" title="FlowReservationResponseList" alt="" coords="373,664,573,691"/>
+<area shape="rect" id="node16" href="$group__BillingPeriodList.html" title="BillingPeriodList" alt="" coords="416,715,531,741"/>
+<area shape="rect" id="node17" href="$group__DemandResponseProgramList.html" title="DemandResponseProgramList" alt="" coords="373,765,573,792"/>
+<area shape="rect" id="node18" href="$group__UsagePointList.html" title="UsagePointList" alt="" coords="418,816,529,843"/>
+<area shape="rect" id="node19" href="$group__DERControlList.html" title="DERControlList" alt="" coords="416,867,531,893"/>
+<area shape="rect" id="node20" href="$group__BillingReadingSetList.html" title="BillingReadingSetList" alt="" coords="400,917,547,944"/>
+<area shape="rect" id="node21" href="$group__TextMessageList.html" title="TextMessageList" alt="" coords="412,968,535,995"/>
+<area shape="rect" id="node22" href="$group__LogEventList.html" title="LogEventList" alt="" coords="424,1019,523,1045"/>
+</map>

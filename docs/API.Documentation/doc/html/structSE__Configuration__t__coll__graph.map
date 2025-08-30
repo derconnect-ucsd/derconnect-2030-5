@@ -1,0 +1,5 @@
+<map id="SE_Configuration_t" name="SE_Configuration_t">
+<area shape="rect" id="node2" href="$structSE__PriceResponseCfgListLink__t.html" title="SE_PriceResponseCfgListLink_t" alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node3" href="$structSE__TimeConfiguration__t.html" title="SE_TimeConfiguration_t" alt="" coords="243,5,407,32"/>
+<area shape="rect" id="node4" href="$structSE__PowerConfiguration__t.html" title="SE_PowerConfiguration_t" alt="" coords="431,5,603,32"/>
+</map>

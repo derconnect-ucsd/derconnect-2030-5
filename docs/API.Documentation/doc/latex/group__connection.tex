@@ -1,0 +1,214 @@
+\hypertarget{group__connection}{}\section{Connection}
+\label{group__connection}\index{Connection@{Connection}}
+Collaboration diagram for Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{group__connection}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__http__connection}{Http\+Connection}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__connection_gaf241e6d0ce6d580ee96096edbbda6b60}\label{group__connection_gaf241e6d0ce6d580ee96096edbbda6b60}} 
+typedef struct \+\_\+\+Connection {\bfseries Connection}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__connection_gaa68bfc8983f200bfbae62a07dd04ebf0}\label{group__connection_gaa68bfc8983f200bfbae62a07dd04ebf0}} 
+enum {\bfseries Session\+Status} \{ \newline
+{\bfseries S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+NE}, 
+\newline
+{\bfseries S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+\newline
+{\bfseries S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+EW}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__connection_ga2235487c1e762621555875579dc10fea}{conn\+\_\+session} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Return the session status of a Connection. \end{DoxyCompactList}\item 
+int \hyperlink{group__connection_ga8b841fbab5b0a476ce2d8bf8a05ecbcd}{conn\+\_\+read} (void $\ast$conn, char $\ast$buffer, int size)
+\begin{DoxyCompactList}\small\item\em Read data from a Connection. \end{DoxyCompactList}\item 
+int \hyperlink{group__connection_gae63df32b30da421837e2c67cfacc3497}{conn\+\_\+write} (void $\ast$conn, const char $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Write data to a Connection. \end{DoxyCompactList}\item 
+void \hyperlink{group__connection_gada463d4dd44545e50cd269a5c363787d}{conn\+\_\+close} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Close a Connection. \end{DoxyCompactList}\item 
+int \hyperlink{group__connection_ga5fb5239072d730188d6a86b611146005}{conn\+\_\+secure} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Is the Connection a T\+LS Connection? \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__connection_gaa06e12daa8e40fc9090823e03283a3d6}{conn\+\_\+accept} (void $\ast$conn, \hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$a, int secure)
+\begin{DoxyCompactList}\small\item\em Accept a connection. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__connection_ga65e5baf687f5019281338a8c57f55e64}{conn\+\_\+connect} (void $\ast$conn, \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$server, int secure)
+\begin{DoxyCompactList}\small\item\em Connect to a server. \end{DoxyCompactList}\item 
+const uint8\+\_\+t $\ast$ \hyperlink{group__connection_ga472e20ef3d5e6f8800959c8b4f9c757b}{tls\+\_\+session\+\_\+id} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get the T\+LS session ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Connection extends a Tcp\+Port and provides an interface to either a T\+CP or T\+LS connection. Connections are established by calling either \hyperlink{group__connection_ga65e5baf687f5019281338a8c57f55e64}{conn\+\_\+connect} or \hyperlink{group__connection_gaa06e12daa8e40fc9090823e03283a3d6}{conn\+\_\+accept}, the \char`\"{}secure\char`\"{} parameter determines whether to use T\+LS or not. After a connection has been initiated the client (or server) calls \hyperlink{group__connection_ga2235487c1e762621555875579dc10fea}{conn\+\_\+session} to check the status of the connection. In the case of T\+LS, repeat calls to \hyperlink{group__connection_ga2235487c1e762621555875579dc10fea}{conn\+\_\+session} might be required to fully negotiate a T\+LS session. After a session has been established, use \hyperlink{group__connection_ga8b841fbab5b0a476ce2d8bf8a05ecbcd}{conn\+\_\+read} and \hyperlink{group__connection_gae63df32b30da421837e2c67cfacc3497}{conn\+\_\+write} to read and write data to the connection stream. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__connection_gaa06e12daa8e40fc9090823e03283a3d6}\label{group__connection_gaa06e12daa8e40fc9090823e03283a3d6}} 
+\index{Connection@{Connection}!conn\+\_\+accept@{conn\+\_\+accept}}
+\index{conn\+\_\+accept@{conn\+\_\+accept}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+accept()}{conn\_accept()}}
+{\footnotesize\ttfamily void $\ast$ conn\+\_\+accept (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{\hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$}]{a,  }\item[{int}]{secure }\end{DoxyParamCaption})}
+
+
+
+Accept a connection. 
+
+Accepts a T\+CP connection request from the Acceptor. If a secure connection is requested, assign the Connection the role of a T\+LS server and setup the connection for reading and writing T\+LS data. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+{\em a} & is a pointer to a T\+CP connection Acceptor \\
+\hline
+{\em secure} & is 1 for T\+LS connection, 0 for a T\+CP connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of conn 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__connection_gada463d4dd44545e50cd269a5c363787d}\label{group__connection_gada463d4dd44545e50cd269a5c363787d}} 
+\index{Connection@{Connection}!conn\+\_\+close@{conn\+\_\+close}}
+\index{conn\+\_\+close@{conn\+\_\+close}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+close()}{conn\_close()}}
+{\footnotesize\ttfamily void conn\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Close a Connection. 
+
+Send a T\+LS alert for a T\+LS connection, and send R\+ST for a T\+CP connection. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__connection_ga65e5baf687f5019281338a8c57f55e64}\label{group__connection_ga65e5baf687f5019281338a8c57f55e64}} 
+\index{Connection@{Connection}!conn\+\_\+connect@{conn\+\_\+connect}}
+\index{conn\+\_\+connect@{conn\+\_\+connect}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+connect()}{conn\_connect()}}
+{\footnotesize\ttfamily void $\ast$ conn\+\_\+connect (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$}]{server,  }\item[{int}]{secure }\end{DoxyParamCaption})}
+
+
+
+Connect to a server. 
+
+Send a T\+CP connection request to the server at the Address. If a secure connection is requested assign the Connection the role of a T\+LS client and setup the connection for reading and writing T\+LS data. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+{\em server} & is the Address of a T\+C\+P/\+T\+LS server \\
+\hline
+{\em secure} & is 1 for a T\+LS connection, 0 for a T\+CP connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value conn 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__connection_ga8b841fbab5b0a476ce2d8bf8a05ecbcd}\label{group__connection_ga8b841fbab5b0a476ce2d8bf8a05ecbcd}} 
+\index{Connection@{Connection}!conn\+\_\+read@{conn\+\_\+read}}
+\index{conn\+\_\+read@{conn\+\_\+read}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+read()}{conn\_read()}}
+{\footnotesize\ttfamily int conn\+\_\+read (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{char $\ast$}]{buffer,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Read data from a Connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+{\em buffer} & is a container to the data to be read \\
+\hline
+{\em size} & is the size of the container in bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the data read or -\/1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__connection_ga5fb5239072d730188d6a86b611146005}\label{group__connection_ga5fb5239072d730188d6a86b611146005}} 
+\index{Connection@{Connection}!conn\+\_\+secure@{conn\+\_\+secure}}
+\index{conn\+\_\+secure@{conn\+\_\+secure}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+secure()}{conn\_secure()}}
+{\footnotesize\ttfamily int conn\+\_\+secure (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Is the Connection a T\+LS Connection? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 for a T\+LS connection, 0 for a T\+CP connection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__connection_ga2235487c1e762621555875579dc10fea}\label{group__connection_ga2235487c1e762621555875579dc10fea}} 
+\index{Connection@{Connection}!conn\+\_\+session@{conn\+\_\+session}}
+\index{conn\+\_\+session@{conn\+\_\+session}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+session()}{conn\_session()}}
+{\footnotesize\ttfamily int conn\+\_\+session (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Return the session status of a Connection. 
+
+For a T\+LS connection, perform session negotiation including client/server Hello messages and the exchange of certificates. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one of S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+O\+NE, S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED, S\+E\+S\+S\+I\+O\+N\+\_\+\+N\+EW 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__connection_gae63df32b30da421837e2c67cfacc3497}\label{group__connection_gae63df32b30da421837e2c67cfacc3497}} 
+\index{Connection@{Connection}!conn\+\_\+write@{conn\+\_\+write}}
+\index{conn\+\_\+write@{conn\+\_\+write}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{conn\+\_\+write()}{conn\_write()}}
+{\footnotesize\ttfamily int conn\+\_\+write (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{const char $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Write data to a Connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+{\em data} & is a pointer to the data \\
+\hline
+{\em length} & is the length of the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the data written or -\/1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__connection_ga472e20ef3d5e6f8800959c8b4f9c757b}\label{group__connection_ga472e20ef3d5e6f8800959c8b4f9c757b}} 
+\index{Connection@{Connection}!tls\+\_\+session\+\_\+id@{tls\+\_\+session\+\_\+id}}
+\index{tls\+\_\+session\+\_\+id@{tls\+\_\+session\+\_\+id}!Connection@{Connection}}
+\subsubsection{\texorpdfstring{tls\+\_\+session\+\_\+id()}{tls\_session\_id()}}
+{\footnotesize\ttfamily const uint8\+\_\+t $\ast$ tls\+\_\+session\+\_\+id (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get the T\+LS session ID. 
+
+The session ID is a 32 byte value that identifies a client/server session. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to a Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the session ID for a T\+LS connection, N\+U\+LL otherwise 
+\end{DoxyReturn}

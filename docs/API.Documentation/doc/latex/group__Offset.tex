@@ -1,0 +1,64 @@
+\hypertarget{group__Offset}{}\section{Offset}
+\label{group__Offset}\index{Offset@{Offset}}
+Collaboration diagram for Offset\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{group__Offset}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Offset__t}{S\+E\+\_\+\+Offset\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Offset_gace5a81a43bae113bcd0c8770fbd38ed2}{S\+E\+\_\+\+Offset\+\_\+t\+::\+\_\+flags}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__Offset_ga86382d921f0bb39066867b7519d207fa}{S\+E\+\_\+\+Offset\+\_\+t\+::cooling\+Offset}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__Offset_ga40bf7a0665bcb020988d5aaa8e0f23a7}{S\+E\+\_\+\+Offset\+\_\+t\+::heating\+Offset}
+\item 
+\hyperlink{group__PerCent_ga14278cbee754c63496035b722b417ddc}{S\+E\+\_\+\+Per\+Cent\+\_\+t} \hyperlink{group__Offset_ga1f508f716b28a7d822a64597dd800c32}{S\+E\+\_\+\+Offset\+\_\+t\+::load\+Adjustment\+Percentage\+Offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+If a temperature offset is sent that causes the heating or cooling temperature set point to exceed the limit boundaries that are programmed into the device, the device S\+H\+A\+LL respond by setting the temperature at the limit.
+
+If an E\+DC is being targeted at multiple devices or to a device that controls multiple devices (e.\+g., E\+MS), it can provide multiple Offset types within one E\+DC. For events with multiple Offset types, a client S\+H\+A\+LL select the Offset that best fits their operating function.
+
+Alternatively, an event with a single Offset type can be targeted at an E\+MS in order to request a percentage load reduction on the average energy usage of the entire premise. An E\+MS S\+H\+O\+U\+LD use the Metering function set to determine the initial load in the premise, reduce energy consumption by controlling devices at its disposal, and at the conclusion of the event, once again use the Metering function set to determine if the desired load reduction was achieved. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Offset_gace5a81a43bae113bcd0c8770fbd38ed2}\label{group__Offset_gace5a81a43bae113bcd0c8770fbd38ed2}} 
+\index{Offset@{Offset}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Offset@{Offset}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Offset\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+load\+Adjustment\+Percentage\+Offset\+\_\+exists (1 $<$$<$ 0)
+
+\#define S\+E\+\_\+heating\+Offset\+\_\+exists (1 $<$$<$ 1)
+
+\#define S\+E\+\_\+cooling\+Offset\+\_\+exists (1 $<$$<$ 2) \mbox{\Hypertarget{group__Offset_ga86382d921f0bb39066867b7519d207fa}\label{group__Offset_ga86382d921f0bb39066867b7519d207fa}} 
+\index{Offset@{Offset}!cooling\+Offset@{cooling\+Offset}}
+\index{cooling\+Offset@{cooling\+Offset}!Offset@{Offset}}
+\subsubsection{\texorpdfstring{cooling\+Offset}{coolingOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Offset\+\_\+t\+::cooling\+Offset}
+
+The value change requested for the cooling offset, in degree C / 10. The value should be added to the normal set point for cooling, or if load\+Shift\+Forward is true, then the value should be subtracted from the normal set point. \mbox{\Hypertarget{group__Offset_ga40bf7a0665bcb020988d5aaa8e0f23a7}\label{group__Offset_ga40bf7a0665bcb020988d5aaa8e0f23a7}} 
+\index{Offset@{Offset}!heating\+Offset@{heating\+Offset}}
+\index{heating\+Offset@{heating\+Offset}!Offset@{Offset}}
+\subsubsection{\texorpdfstring{heating\+Offset}{heatingOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Offset\+\_\+t\+::heating\+Offset}
+
+The value change requested for the heating offset, in degree C / 10. The value should be subtracted for heating, or if load\+Shift\+Forward is true, then the value should be added to the normal set point. \mbox{\Hypertarget{group__Offset_ga1f508f716b28a7d822a64597dd800c32}\label{group__Offset_ga1f508f716b28a7d822a64597dd800c32}} 
+\index{Offset@{Offset}!load\+Adjustment\+Percentage\+Offset@{load\+Adjustment\+Percentage\+Offset}}
+\index{load\+Adjustment\+Percentage\+Offset@{load\+Adjustment\+Percentage\+Offset}!Offset@{Offset}}
+\subsubsection{\texorpdfstring{load\+Adjustment\+Percentage\+Offset}{loadAdjustmentPercentageOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Offset\+\_\+t\+::load\+Adjustment\+Percentage\+Offset}
+
+The value change requested for the load adjustment percentage. The value should be subtracted from the normal setting, or if load\+Shift\+Forward is true, then the value should be added to the normal setting. 

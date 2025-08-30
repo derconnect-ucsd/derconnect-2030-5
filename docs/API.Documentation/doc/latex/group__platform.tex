@@ -1,0 +1,60 @@
+\hypertarget{group__platform}{}\section{Platform}
+\label{group__platform}\index{Platform@{Platform}}
+Collaboration diagram for Platform\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{group__platform}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__event}{Event}
+\item 
+\hyperlink{group__file}{File}
+\item 
+\hyperlink{group__timer}{Timer}
+\item 
+\hyperlink{group__network}{Network}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__platform_ga419da961b43e4e33b1084dd6566c0f45}\label{group__platform_ga419da961b43e4e33b1084dd6566c0f45}} 
+\#define {\bfseries print\+\_\+error}(func)~perror (func)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__platform_ga390c450e83ddc7807da2e9f0a894d8d1}{platform\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Initialize the platform layer. \end{DoxyCompactList}\item 
+void \hyperlink{group__platform_ga7daa4503916928a2d93ded5c924f57d5}{set\+\_\+timezone} (int tz\+\_\+offset, int dst\+\_\+offset, time\+\_\+t dst\+\_\+start, time\+\_\+t dst\+\_\+end)
+\begin{DoxyCompactList}\small\item\em Set the time zone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__platform_ga390c450e83ddc7807da2e9f0a894d8d1}\label{group__platform_ga390c450e83ddc7807da2e9f0a894d8d1}} 
+\index{Platform@{Platform}!platform\+\_\+init@{platform\+\_\+init}}
+\index{platform\+\_\+init@{platform\+\_\+init}!Platform@{Platform}}
+\subsubsection{\texorpdfstring{platform\+\_\+init()}{platform\_init()}}
+{\footnotesize\ttfamily void platform\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the platform layer. 
+
+This function should be called before any other plaform layer function to ensure that the platform is properly initialized. \mbox{\Hypertarget{group__platform_ga7daa4503916928a2d93ded5c924f57d5}\label{group__platform_ga7daa4503916928a2d93ded5c924f57d5}} 
+\index{Platform@{Platform}!set\+\_\+timezone@{set\+\_\+timezone}}
+\index{set\+\_\+timezone@{set\+\_\+timezone}!Platform@{Platform}}
+\subsubsection{\texorpdfstring{set\+\_\+timezone()}{set\_timezone()}}
+{\footnotesize\ttfamily void set\+\_\+timezone (\begin{DoxyParamCaption}\item[{int}]{tz\+\_\+offset,  }\item[{int}]{dst\+\_\+offset,  }\item[{time\+\_\+t}]{dst\+\_\+start,  }\item[{time\+\_\+t}]{dst\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+Set the time zone. 
+
+Set the time zone portably for the localtime function, I\+SO C leaves the time zone handling implementation defined. 

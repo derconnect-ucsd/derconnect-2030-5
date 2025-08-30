@@ -1,0 +1,5 @@
+<map id="SE_TimeTariffInterval_t" name="SE_TimeTariffInterval_t">
+<area shape="rect" id="node2" href="$structSE__ConsumptionTariffIntervalListLink__t.html" title="SE_ConsumptionTariffInterval\lListLink_t" alt="" coords="5,5,203,47"/>
+<area shape="rect" id="node3" href="$structSE__DateTimeInterval__t.html" title="SE_DateTimeInterval_t" alt="" coords="227,13,386,39"/>
+<area shape="rect" id="node4" href="$structSE__EventStatus__t.html" title="SE_EventStatus_t" alt="" coords="411,13,541,39"/>
+</map>

@@ -1,0 +1,62 @@
+\hypertarget{group__ReadingSetList}{}\section{Reading\+Set\+List}
+\label{group__ReadingSetList}\index{Reading\+Set\+List@{Reading\+Set\+List}}
+Collaboration diagram for Reading\+Set\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group__ReadingSetList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ReadingSetList__t}{S\+E\+\_\+\+Reading\+Set\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__ReadingSetList_ga70e20e04ac9f65195d9b34a07f8bd1ed}\label{group__ReadingSetList_ga70e20e04ac9f65195d9b34a07f8bd1ed}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ReadingSetList_ga0070650a5263a076d3ce35b922fc53ea}{S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__ReadingSetList_ga95a98662b6838987c7eece397b81f7d2}{S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__ReadingSetList_ga1994d11924fcf8fc6a97155fa178c76f}{S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__ReadingSetList_gab43c330676fe1ada7052c94c529d7e29}{S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::results}
+\item 
+\mbox{\Hypertarget{group__ReadingSetList_ga874aa4e996e3f51a9776fa98c92f9b04}\label{group__ReadingSetList_ga874aa4e996e3f51a9776fa98c92f9b04}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::\+Reading\+Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Reading\+Set objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ReadingSetList_ga1994d11924fcf8fc6a97155fa178c76f}\label{group__ReadingSetList_ga1994d11924fcf8fc6a97155fa178c76f}} 
+\index{Reading\+Set\+List@{Reading\+Set\+List}!all@{all}}
+\index{all@{all}!Reading\+Set\+List@{Reading\+Set\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ReadingSetList_ga0070650a5263a076d3ce35b922fc53ea}\label{group__ReadingSetList_ga0070650a5263a076d3ce35b922fc53ea}} 
+\index{Reading\+Set\+List@{Reading\+Set\+List}!href@{href}}
+\index{href@{href}!Reading\+Set\+List@{Reading\+Set\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ReadingSetList_gab43c330676fe1ada7052c94c529d7e29}\label{group__ReadingSetList_gab43c330676fe1ada7052c94c529d7e29}} 
+\index{Reading\+Set\+List@{Reading\+Set\+List}!results@{results}}
+\index{results@{results}!Reading\+Set\+List@{Reading\+Set\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__ReadingSetList_ga95a98662b6838987c7eece397b81f7d2}\label{group__ReadingSetList_ga95a98662b6838987c7eece397b81f7d2}} 
+\index{Reading\+Set\+List@{Reading\+Set\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Reading\+Set\+List@{Reading\+Set\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Reading\+Set\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

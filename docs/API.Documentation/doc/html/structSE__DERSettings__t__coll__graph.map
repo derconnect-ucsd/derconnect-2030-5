@@ -1,0 +1,10 @@
+<map id="SE_DERSettings_t" name="SE_DERSettings_t">
+<area shape="rect" id="node2" href="$structSE__ReactivePower__t.html" title="SE_ReactivePower_t" alt="" coords="5,25,152,52"/>
+<area shape="rect" id="node3" href="$structSE__AmpereHour__t.html" title="SE_AmpereHour_t" alt="" coords="13,76,144,103"/>
+<area shape="rect" id="node4" href="$structSE__WattHour__t.html" title="SE_WattHour_t" alt="" coords="21,127,136,153"/>
+<area shape="rect" id="node5" href="$structSE__CurrentRMS__t.html" title="SE_CurrentRMS_t" alt="" coords="13,177,144,204"/>
+<area shape="rect" id="node6" href="$structSE__PowerFactor__t.html" title="SE_PowerFactor_t" alt="" coords="13,232,145,259"/>
+<area shape="rect" id="node7" href="$structSE__ApparentPower__t.html" title="SE_ApparentPower_t" alt="" coords="5,307,152,333"/>
+<area shape="rect" id="node8" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="13,381,145,408"/>
+<area shape="rect" id="node9" href="$structSE__VoltageRMS__t.html" title="SE_VoltageRMS_t" alt="" coords="13,441,145,468"/>
+</map>

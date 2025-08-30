@@ -1,0 +1,50 @@
+\hypertarget{group__PowerConfiguration}{}\section{Power\+Configuration}
+\label{group__PowerConfiguration}\index{Power\+Configuration@{Power\+Configuration}}
+Collaboration diagram for Power\+Configuration\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group__PowerConfiguration}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__PowerConfiguration__t}{S\+E\+\_\+\+Power\+Configuration\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__PowerConfiguration_gaffb8f5fe39b37d5db62a169a4add7087}{S\+E\+\_\+\+Power\+Configuration\+\_\+t\+::\+\_\+flags}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__PowerConfiguration_gabe59076653672547fa38fa99fea40738}{S\+E\+\_\+\+Power\+Configuration\+\_\+t\+::battery\+Install\+Time}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__PowerConfiguration_gaec3de6e5b673fb3fd57c4bcf33491360}{S\+E\+\_\+\+Power\+Configuration\+\_\+t\+::low\+Charge\+Threshold}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains configuration related to the device\textquotesingle{}s power sources 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__PowerConfiguration_gaffb8f5fe39b37d5db62a169a4add7087}\label{group__PowerConfiguration_gaffb8f5fe39b37d5db62a169a4add7087}} 
+\index{Power\+Configuration@{Power\+Configuration}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Power\+Configuration@{Power\+Configuration}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Power\+Configuration\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+low\+Charge\+Threshold\+\_\+exists (1 $<$$<$ 0)
+
+\#define S\+E\+\_\+battery\+Install\+Time\+\_\+exists (1 $<$$<$ 1) \mbox{\Hypertarget{group__PowerConfiguration_gabe59076653672547fa38fa99fea40738}\label{group__PowerConfiguration_gabe59076653672547fa38fa99fea40738}} 
+\index{Power\+Configuration@{Power\+Configuration}!battery\+Install\+Time@{battery\+Install\+Time}}
+\index{battery\+Install\+Time@{battery\+Install\+Time}!Power\+Configuration@{Power\+Configuration}}
+\subsubsection{\texorpdfstring{battery\+Install\+Time}{batteryInstallTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Power\+Configuration\+\_\+t\+::battery\+Install\+Time}
+
+Time/\+Date at which battery was installed, \mbox{\Hypertarget{group__PowerConfiguration_gaec3de6e5b673fb3fd57c4bcf33491360}\label{group__PowerConfiguration_gaec3de6e5b673fb3fd57c4bcf33491360}} 
+\index{Power\+Configuration@{Power\+Configuration}!low\+Charge\+Threshold@{low\+Charge\+Threshold}}
+\index{low\+Charge\+Threshold@{low\+Charge\+Threshold}!Power\+Configuration@{Power\+Configuration}}
+\subsubsection{\texorpdfstring{low\+Charge\+Threshold}{lowChargeThreshold}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Power\+Configuration\+\_\+t\+::low\+Charge\+Threshold}
+
+In context of the Power\+Status resource, this is the value of Estimated\+Time\+Remaining below which Battery\+Status \char`\"{}low\char`\"{} is indicated and the L\+E\+\_\+\+L\+O\+W\+\_\+\+B\+A\+T\+T\+E\+RY is raised. 

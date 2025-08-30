@@ -1,0 +1,76 @@
+\hypertarget{group__AccountBalance}{}\section{Account\+Balance}
+\label{group__AccountBalance}\index{Account\+Balance@{Account\+Balance}}
+Collaboration diagram for Account\+Balance\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__AccountBalance}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__AccountBalance__t}{S\+E\+\_\+\+Account\+Balance\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__AccountBalance_ga159898a9138df7e3c536ff9d29b8e812}{S\+E\+\_\+\+Account\+Balance\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__AccountBalance_gadccc9402133c6ca77e618358c960068b}{S\+E\+\_\+\+Account\+Balance\+\_\+t\+::href}
+\item 
+\hyperlink{structSE__AccountingUnit__t}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t} \hyperlink{group__AccountBalance_ga91ffb617dfc316f5a8e2332846c5834d}{S\+E\+\_\+\+Account\+Balance\+\_\+t\+::available\+Credit}
+\item 
+\hyperlink{group__CreditStatusType_gadc768115dd9712a2356f01ac1aab6700}{S\+E\+\_\+\+Credit\+Status\+Type\+\_\+t} \hyperlink{group__AccountBalance_ga77494ec1a8a44d085d63afc1e0f936eb}{S\+E\+\_\+\+Account\+Balance\+\_\+t\+::credit\+Status}
+\item 
+\hyperlink{structSE__AccountingUnit__t}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t} \hyperlink{group__AccountBalance_gab10aee5ec25f421ce4a7d4e470d72744}{S\+E\+\_\+\+Account\+Balance\+\_\+t\+::emergency\+Credit}
+\item 
+\hyperlink{group__CreditStatusType_gadc768115dd9712a2356f01ac1aab6700}{S\+E\+\_\+\+Credit\+Status\+Type\+\_\+t} \hyperlink{group__AccountBalance_ga93e7a084d8d647dee96f8650febd4683}{S\+E\+\_\+\+Account\+Balance\+\_\+t\+::emergency\+Credit\+Status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Account\+Balance contains the regular credit and emergency credit balance for this given service or commodity prepay instance. It may also contain status information concerning the balance data. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__AccountBalance_ga159898a9138df7e3c536ff9d29b8e812}\label{group__AccountBalance_ga159898a9138df7e3c536ff9d29b8e812}} 
+\index{Account\+Balance@{Account\+Balance}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Account\+Balance@{Account\+Balance}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Account\+Balance\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+emergency\+Credit\+Status\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+emergency\+Credit\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+credit\+Status\+\_\+exists (1 $<$$<$ 7) \mbox{\Hypertarget{group__AccountBalance_ga91ffb617dfc316f5a8e2332846c5834d}\label{group__AccountBalance_ga91ffb617dfc316f5a8e2332846c5834d}} 
+\index{Account\+Balance@{Account\+Balance}!available\+Credit@{available\+Credit}}
+\index{available\+Credit@{available\+Credit}!Account\+Balance@{Account\+Balance}}
+\subsubsection{\texorpdfstring{available\+Credit}{availableCredit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Account\+Balance\+\_\+t\+::available\+Credit}
+
+Available\+Credit shows the balance of the sum of credits minus the sum of charges. In a Central Wallet mode this value may be passed down to the Prepayment server via an out-\/of-\/band mechanism. In Local or E\+SI modes, this value may be calculated based upon summation of Credit\+Register transactions minus consumption charges calculated using Metering (and possibly Pricing) function set data. This value may be negative; for instance, if disconnection is prevented due to a Supply Interruption Override. \mbox{\Hypertarget{group__AccountBalance_ga77494ec1a8a44d085d63afc1e0f936eb}\label{group__AccountBalance_ga77494ec1a8a44d085d63afc1e0f936eb}} 
+\index{Account\+Balance@{Account\+Balance}!credit\+Status@{credit\+Status}}
+\index{credit\+Status@{credit\+Status}!Account\+Balance@{Account\+Balance}}
+\subsubsection{\texorpdfstring{credit\+Status}{creditStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Account\+Balance\+\_\+t\+::credit\+Status}
+
+Credit\+Status identifies whether the present value of available\+Credit is considered OK, low, exhausted, or negative. \mbox{\Hypertarget{group__AccountBalance_gab10aee5ec25f421ce4a7d4e470d72744}\label{group__AccountBalance_gab10aee5ec25f421ce4a7d4e470d72744}} 
+\index{Account\+Balance@{Account\+Balance}!emergency\+Credit@{emergency\+Credit}}
+\index{emergency\+Credit@{emergency\+Credit}!Account\+Balance@{Account\+Balance}}
+\subsubsection{\texorpdfstring{emergency\+Credit}{emergencyCredit}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Account\+Balance\+\_\+t\+::emergency\+Credit}
+
+Emergency\+Credit is the amount of credit still available for the given service or commodity prepayment instance. If both available\+Credit and emergy\+Credit are exhausted, then service will typically be disconnected. \mbox{\Hypertarget{group__AccountBalance_ga93e7a084d8d647dee96f8650febd4683}\label{group__AccountBalance_ga93e7a084d8d647dee96f8650febd4683}} 
+\index{Account\+Balance@{Account\+Balance}!emergency\+Credit\+Status@{emergency\+Credit\+Status}}
+\index{emergency\+Credit\+Status@{emergency\+Credit\+Status}!Account\+Balance@{Account\+Balance}}
+\subsubsection{\texorpdfstring{emergency\+Credit\+Status}{emergencyCreditStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Account\+Balance\+\_\+t\+::emergency\+Credit\+Status}
+
+Emergency\+Credit\+Status identifies whether the present value of emergency\+Credit is considered OK, low, exhausted, or negative. \mbox{\Hypertarget{group__AccountBalance_gadccc9402133c6ca77e618358c960068b}\label{group__AccountBalance_gadccc9402133c6ca77e618358c960068b}} 
+\index{Account\+Balance@{Account\+Balance}!href@{href}}
+\index{href@{href}!Account\+Balance@{Account\+Balance}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Account\+Balance\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. 

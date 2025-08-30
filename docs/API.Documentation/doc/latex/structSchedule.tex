@@ -1,0 +1,58 @@
+\hypertarget{structSchedule}{}\section{Schedule Struct Reference}
+\label{structSchedule}\index{Schedule@{Schedule}}
+
+
+A \hyperlink{structSchedule}{Schedule} organizes the events of a particular function set for an End\+Device in terms of the rules in section 12.\+1.\+3 Event Rules and Guidlines.  
+
+
+
+
+Collaboration diagram for Schedule\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{structSchedule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structSchedule_a84dd5004f63caca72fcd30ef9b090ca5}\label{structSchedule_a84dd5004f63caca72fcd30ef9b090ca5}} 
+\hyperlink{structStub}{Stub} $\ast$ \hyperlink{structSchedule_a84dd5004f63caca72fcd30ef9b090ca5}{device}
+\begin{DoxyCompactList}\small\item\em End\+Device that is the subject of scheduling. \end{DoxyCompactList}\item 
+Hash\+Table $\ast$ \hyperlink{structSchedule_ac21659f7ad23db734ff12a5818fbfe30}{blocks}
+\item 
+\mbox{\Hypertarget{structSchedule_aedb5f95618e961c0f40d833179c0cb3d}\label{structSchedule_aedb5f95618e961c0f40d833179c0cb3d}} 
+\hyperlink{structEventBlock}{Event\+Block} $\ast$ \hyperlink{structSchedule_aedb5f95618e961c0f40d833179c0cb3d}{scheduled}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structEventBlock}{Event\+Block} queue sorted by effective start time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSchedule_a8c2ee1e7008d59ecdd7b5e85c7bbc4e5}\label{structSchedule_a8c2ee1e7008d59ecdd7b5e85c7bbc4e5}} 
+\hyperlink{structEventBlock}{Event\+Block} $\ast$ \hyperlink{structSchedule_a8c2ee1e7008d59ecdd7b5e85c7bbc4e5}{active}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structEventBlock}{Event\+Block} queue sorted by effective end time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSchedule_a0a22398acd5a70aade763e2d9832e31a}\label{structSchedule_a0a22398acd5a70aade763e2d9832e31a}} 
+\hyperlink{structEventBlock}{Event\+Block} $\ast$ \hyperlink{structSchedule_a0a22398acd5a70aade763e2d9832e31a}{superseded}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structEventBlock}{Event\+Block} queue sorted by effective start time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structSchedule}{Schedule} organizes the events of a particular function set for an End\+Device in terms of the rules in section 12.\+1.\+3 Event Rules and Guidlines. 
+
+Events are assigned to an \hyperlink{structEventBlock}{Event\+Block} which can belong to one of three queues, {\ttfamily scheduled}, {\ttfamily active}, and {\ttfamily superseded}. Event\+Blocks that correspond with server events that have been marked Canceled or Superseded belong to none of these queues and are eventually removed from the schedule when the events expire.
+
+Initially all Event\+Blocks are inserted into the {\ttfamily scheduled} queue using the rules for overlapping and nested events. Future events that are superseded by scheduling are marked {\ttfamily Schedule\+Superseded} and are placed in the superseded queue. If the set of events changes for some reason, these events may eventually rejoin the {\ttfamily scheduled} queue.
+
+When Event\+Blocks in the scheduled queue become active (i.\+e when the current time matches the effective start time) they are transfered to the {\ttfamily active} queue, in the process they may be superseded by existing active Event\+Blocks or they may supersede other active Event\+Blocks. In these cases the superseded Event\+Blocks are removed from the schedule and a Response is sent to the server with the response status Event\+Superseded.
+
+If an \hyperlink{structEventBlock}{Event\+Block} is sucessfully transfered to the {\ttfamily active} queue and the Event\+Status.\+current\+Status retrieved from the server is Active then an internal E\+V\+E\+N\+T\+\_\+\+S\+T\+A\+RT event is generated for current time. If the Event\+Status.\+current\+Status is Scheduled, then the event will be marked {\ttfamily Active\+Wait} and remain in the active queue, but the E\+V\+E\+N\+T\+\_\+\+S\+T\+A\+RT event will only be generated when current\+Status for the event changes to Active. When the \hyperlink{structEventBlock}{Event\+Block} expires (i.\+e the current time matches the effective end time) or it is superseded then an internal E\+V\+E\+N\+T\+\_\+\+E\+ND event is generated at that time for the \hyperlink{structEventBlock}{Event\+Block}. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structSchedule_ac21659f7ad23db734ff12a5818fbfe30}\label{structSchedule_ac21659f7ad23db734ff12a5818fbfe30}} 
+\index{Schedule@{Schedule}!blocks@{blocks}}
+\index{blocks@{blocks}!Schedule@{Schedule}}
+\subsubsection{\texorpdfstring{blocks}{blocks}}
+{\footnotesize\ttfamily Hash\+Table$\ast$ Schedule\+::blocks}
+
+Hash\+Table of Event\+Blocks that belong to the schedule using the Event m\+R\+ID as the hash key. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+schedule.\+c\end{DoxyCompactItemize}

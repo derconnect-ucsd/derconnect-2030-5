@@ -1,0 +1,62 @@
+\hypertarget{group__IPInterfaceList}{}\section{I\+P\+Interface\+List}
+\label{group__IPInterfaceList}\index{I\+P\+Interface\+List@{I\+P\+Interface\+List}}
+Collaboration diagram for I\+P\+Interface\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{group__IPInterfaceList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__IPInterfaceList__t}{S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__IPInterfaceList_gabcfa055fd653754af5238d54542c3883}\label{group__IPInterfaceList_gabcfa055fd653754af5238d54542c3883}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__IPInterfaceList_ga8d2aa9f5037c9e3dd1c5f57574f18623}{S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__IPInterfaceList_ga7599acc849916884bf2ab40af9644c87}{S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__IPInterfaceList_ga4ef447fb08fb976a9d26d9764d111abb}{S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__IPInterfaceList_gacffb60f8d3c1549c12714eb33d91d745}{S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__IPInterfaceList_gad86b233379b38db0bb467ad0ee4379c4}\label{group__IPInterfaceList_gad86b233379b38db0bb467ad0ee4379c4}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::\+I\+P\+Interface}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structList}{List} of I\+P\+Interface instances. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__IPInterfaceList_ga7599acc849916884bf2ab40af9644c87}\label{group__IPInterfaceList_ga7599acc849916884bf2ab40af9644c87}} 
+\index{I\+P\+Interface\+List@{I\+P\+Interface\+List}!all@{all}}
+\index{all@{all}!I\+P\+Interface\+List@{I\+P\+Interface\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__IPInterfaceList_ga8d2aa9f5037c9e3dd1c5f57574f18623}\label{group__IPInterfaceList_ga8d2aa9f5037c9e3dd1c5f57574f18623}} 
+\index{I\+P\+Interface\+List@{I\+P\+Interface\+List}!href@{href}}
+\index{href@{href}!I\+P\+Interface\+List@{I\+P\+Interface\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__IPInterfaceList_gacffb60f8d3c1549c12714eb33d91d745}\label{group__IPInterfaceList_gacffb60f8d3c1549c12714eb33d91d745}} 
+\index{I\+P\+Interface\+List@{I\+P\+Interface\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!I\+P\+Interface\+List@{I\+P\+Interface\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__IPInterfaceList_ga4ef447fb08fb976a9d26d9764d111abb}\label{group__IPInterfaceList_ga4ef447fb08fb976a9d26d9764d111abb}} 
+\index{I\+P\+Interface\+List@{I\+P\+Interface\+List}!results@{results}}
+\index{results@{results}!I\+P\+Interface\+List@{I\+P\+Interface\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+I\+P\+Interface\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. 

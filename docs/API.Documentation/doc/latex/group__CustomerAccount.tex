@@ -1,0 +1,108 @@
+\hypertarget{group__CustomerAccount}{}\section{Customer\+Account}
+\label{group__CustomerAccount}\index{Customer\+Account@{Customer\+Account}}
+Collaboration diagram for Customer\+Account\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group__CustomerAccount}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__CustomerAccount__t}{S\+E\+\_\+\+Customer\+Account\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__CustomerAccount_ga67357b4c7d720b91d84e22a2d383b840}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__CustomerAccount_gab1bd1ed1eeba3c50a86025c8eae89d7c}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__CustomerAccount_ga082521d42ddb1a5f0726f2581b0dd79c}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__CustomerAccount_ga78f10a26490a0a66e2754e50f1c82d03}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__CustomerAccount_ga8b1e7a90151362aeb3a332887fa74081}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::version}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__CustomerAccount_ga57aff523528ef264d27004ae1bff0377}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::currency}
+\item 
+\hyperlink{group__String42_gad5a294b994fa3a024ca6d747f784f0d9}{S\+E\+\_\+\+String42\+\_\+t} \hyperlink{group__CustomerAccount_gade9da1bd7f943a99c644c927b0a25318}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::customer\+Account}
+\item 
+\mbox{\Hypertarget{group__CustomerAccount_ga0ef52c460aa4eefcaecec6afd01f4a78}\label{group__CustomerAccount_ga0ef52c460aa4eefcaecec6afd01f4a78}} 
+\hyperlink{structSE__CustomerAgreementListLink__t}{S\+E\+\_\+\+Customer\+Agreement\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Customer\+Account\+\_\+t\+::\+Customer\+Agreement\+List\+Link}
+\item 
+\hyperlink{group__String42_gad5a294b994fa3a024ca6d747f784f0d9}{S\+E\+\_\+\+String42\+\_\+t} \hyperlink{group__CustomerAccount_gaa057fa102ef3d9ab9c241455867a37ae}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::customer\+Name}
+\item 
+\hyperlink{group__PowerOfTenMultiplierType_gaf0317b781dc8dbb9cb6ac4e44a14fdef}{S\+E\+\_\+\+Power\+Of\+Ten\+Multiplier\+Type\+\_\+t} \hyperlink{group__CustomerAccount_gae70b8191d202d0a24ee6f90f8cbe9614}{S\+E\+\_\+\+Customer\+Account\+\_\+t\+::price\+Power\+Of\+Ten\+Multiplier}
+\item 
+\mbox{\Hypertarget{group__CustomerAccount_ga5df754b3217fb49ca092e5566b5067d9}\label{group__CustomerAccount_ga5df754b3217fb49ca092e5566b5067d9}} 
+\hyperlink{structSE__ServiceSupplierLink__t}{S\+E\+\_\+\+Service\+Supplier\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Customer\+Account\+\_\+t\+::\+Service\+Supplier\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assignment of a group of products and services purchased by the Customer through a Customer\+Agreement, used as a mechanism for customer billing and payment. It contains common information from the various types of Customer\+Agreements to create billings (invoices) for a Customer and receive payment. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__CustomerAccount_ga67357b4c7d720b91d84e22a2d383b840}\label{group__CustomerAccount_ga67357b4c7d720b91d84e22a2d383b840}} 
+\index{Customer\+Account@{Customer\+Account}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Service\+Supplier\+Link\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+customer\+Name\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+\+Customer\+Agreement\+List\+Link\+\_\+exists (1 $<$$<$ 7)
+
+\#define S\+E\+\_\+customer\+Account\+\_\+exists (1 $<$$<$ 8) \mbox{\Hypertarget{group__CustomerAccount_ga57aff523528ef264d27004ae1bff0377}\label{group__CustomerAccount_ga57aff523528ef264d27004ae1bff0377}} 
+\index{Customer\+Account@{Customer\+Account}!currency@{currency}}
+\index{currency@{currency}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{currency}{currency}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::currency}
+
+The I\+SO 4217 code indicating the currency applicable to the bill amounts in the summary. See list at \href{http://www.unece.org/cefact/recommendations/rec09/rec09_ecetrd203.pdf}{\tt http\+://www.\+unece.\+org/cefact/recommendations/rec09/rec09\+\_\+ecetrd203.\+pdf} \mbox{\Hypertarget{group__CustomerAccount_gade9da1bd7f943a99c644c927b0a25318}\label{group__CustomerAccount_gade9da1bd7f943a99c644c927b0a25318}} 
+\index{Customer\+Account@{Customer\+Account}!customer\+Account@{customer\+Account}}
+\index{customer\+Account@{customer\+Account}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{customer\+Account}{customerAccount}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::customer\+Account}
+
+The account number for the customer (if applicable). \mbox{\Hypertarget{group__CustomerAccount_gaa057fa102ef3d9ab9c241455867a37ae}\label{group__CustomerAccount_gaa057fa102ef3d9ab9c241455867a37ae}} 
+\index{Customer\+Account@{Customer\+Account}!customer\+Name@{customer\+Name}}
+\index{customer\+Name@{customer\+Name}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{customer\+Name}{customerName}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::customer\+Name}
+
+The name of the customer. \mbox{\Hypertarget{group__CustomerAccount_ga78f10a26490a0a66e2754e50f1c82d03}\label{group__CustomerAccount_ga78f10a26490a0a66e2754e50f1c82d03}} 
+\index{Customer\+Account@{Customer\+Account}!description@{description}}
+\index{description@{description}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__CustomerAccount_gab1bd1ed1eeba3c50a86025c8eae89d7c}\label{group__CustomerAccount_gab1bd1ed1eeba3c50a86025c8eae89d7c}} 
+\index{Customer\+Account@{Customer\+Account}!href@{href}}
+\index{href@{href}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__CustomerAccount_ga082521d42ddb1a5f0726f2581b0dd79c}\label{group__CustomerAccount_ga082521d42ddb1a5f0726f2581b0dd79c}} 
+\index{Customer\+Account@{Customer\+Account}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__CustomerAccount_gae70b8191d202d0a24ee6f90f8cbe9614}\label{group__CustomerAccount_gae70b8191d202d0a24ee6f90f8cbe9614}} 
+\index{Customer\+Account@{Customer\+Account}!price\+Power\+Of\+Ten\+Multiplier@{price\+Power\+Of\+Ten\+Multiplier}}
+\index{price\+Power\+Of\+Ten\+Multiplier@{price\+Power\+Of\+Ten\+Multiplier}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{price\+Power\+Of\+Ten\+Multiplier}{pricePowerOfTenMultiplier}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::price\+Power\+Of\+Ten\+Multiplier}
+
+Indicates the power of ten multiplier for the prices in this function set. \mbox{\Hypertarget{group__CustomerAccount_ga8b1e7a90151362aeb3a332887fa74081}\label{group__CustomerAccount_ga8b1e7a90151362aeb3a332887fa74081}} 
+\index{Customer\+Account@{Customer\+Account}!version@{version}}
+\index{version@{version}!Customer\+Account@{Customer\+Account}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Customer\+Account\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

@@ -1,0 +1,6 @@
+<map id="SE_RateComponent_t" name="SE_RateComponent_t">
+<area shape="rect" id="node2" href="$structSE__TimeTariffIntervalListLink__t.html" title="SE_TimeTariffIntervalList\lLink_t" alt="" coords="13,5,184,47"/>
+<area shape="rect" id="node3" href="$structSE__ReadingTypeLink__t.html" title="SE_ReadingTypeLink_t" alt="" coords="19,71,178,98"/>
+<area shape="rect" id="node4" href="$structSE__ActiveTimeTariffIntervalListLink__t.html" title="SE_ActiveTimeTariffInterval\lListLink_t" alt="" coords="5,124,192,165"/>
+<area shape="rect" id="node5" href="$structSE__UnitValueType__t.html" title="SE_UnitValueType_t" alt="" coords="27,191,171,218"/>
+</map>

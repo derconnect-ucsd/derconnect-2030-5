@@ -1,0 +1,62 @@
+\hypertarget{group__BillingPeriodList}{}\section{Billing\+Period\+List}
+\label{group__BillingPeriodList}\index{Billing\+Period\+List@{Billing\+Period\+List}}
+Collaboration diagram for Billing\+Period\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{group__BillingPeriodList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__BillingPeriodList__t}{S\+E\+\_\+\+Billing\+Period\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__BillingPeriodList_gabd43dc579b594576e5f3239fafc397f8}\label{group__BillingPeriodList_gabd43dc579b594576e5f3239fafc397f8}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__BillingPeriodList_ga25178fff55f503152774d69d8a90203d}{S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__BillingPeriodList_ga8640613b3a337e43533d8476ab44133d}{S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__BillingPeriodList_ga989aa3386d8c97fd6463ef916625f7e0}{S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__BillingPeriodList_gadc844269764abba471b730d50aad225e}{S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::results}
+\item 
+\mbox{\Hypertarget{group__BillingPeriodList_ga0a472079a60c9401a0e0f2e13bd86b99}\label{group__BillingPeriodList_ga0a472079a60c9401a0e0f2e13bd86b99}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::\+Billing\+Period}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Billing\+Period objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__BillingPeriodList_ga989aa3386d8c97fd6463ef916625f7e0}\label{group__BillingPeriodList_ga989aa3386d8c97fd6463ef916625f7e0}} 
+\index{Billing\+Period\+List@{Billing\+Period\+List}!all@{all}}
+\index{all@{all}!Billing\+Period\+List@{Billing\+Period\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__BillingPeriodList_ga25178fff55f503152774d69d8a90203d}\label{group__BillingPeriodList_ga25178fff55f503152774d69d8a90203d}} 
+\index{Billing\+Period\+List@{Billing\+Period\+List}!href@{href}}
+\index{href@{href}!Billing\+Period\+List@{Billing\+Period\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__BillingPeriodList_gadc844269764abba471b730d50aad225e}\label{group__BillingPeriodList_gadc844269764abba471b730d50aad225e}} 
+\index{Billing\+Period\+List@{Billing\+Period\+List}!results@{results}}
+\index{results@{results}!Billing\+Period\+List@{Billing\+Period\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__BillingPeriodList_ga8640613b3a337e43533d8476ab44133d}\label{group__BillingPeriodList_ga8640613b3a337e43533d8476ab44133d}} 
+\index{Billing\+Period\+List@{Billing\+Period\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Billing\+Period\+List@{Billing\+Period\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Period\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

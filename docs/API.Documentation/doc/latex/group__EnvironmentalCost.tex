@@ -1,0 +1,64 @@
+\hypertarget{group__EnvironmentalCost}{}\section{Environmental\+Cost}
+\label{group__EnvironmentalCost}\index{Environmental\+Cost@{Environmental\+Cost}}
+Collaboration diagram for Environmental\+Cost\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{group__EnvironmentalCost}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__EnvironmentalCost__t}{S\+E\+\_\+\+Environmental\+Cost\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__EnvironmentalCost_ga9fb61a220a4b7b3f677b34a19ddec1d2}{S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::amount}
+\item 
+\hyperlink{group__CostKindType_ga7a0a832ce8a138d7ba008379e83b718b}{S\+E\+\_\+\+Cost\+Kind\+Type\+\_\+t} \hyperlink{group__EnvironmentalCost_ga1aeeee701b58bf3a63ad13c43e7a75cd}{S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::cost\+Kind}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__EnvironmentalCost_ga886bd3034acbc87051b648e6b2242453}{S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::cost\+Level}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__EnvironmentalCost_ga47696c1d43b551dfb6cc492460500ea1}{S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::num\+Cost\+Levels}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides alternative or secondary price information for the relevant Rate\+Component. Supports jurisdictions that seek to convey the environmental price per unit of the specified commodity not expressed in currency.
+
+Implementers and consumers can use this attribute to prioritize operations of their H\+AN devices (e.\+g., P\+EV charging during times of high availability of renewable electricity resources). 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__EnvironmentalCost_ga9fb61a220a4b7b3f677b34a19ddec1d2}\label{group__EnvironmentalCost_ga9fb61a220a4b7b3f677b34a19ddec1d2}} 
+\index{Environmental\+Cost@{Environmental\+Cost}!amount@{amount}}
+\index{amount@{amount}!Environmental\+Cost@{Environmental\+Cost}}
+\subsubsection{\texorpdfstring{amount}{amount}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::amount}
+
+The estimated or actual environmental or other cost, per commodity unit defined by the Reading\+Type, for this Rate\+Component (e.\+g., grams of carbon dioxide emissions each per k\+Wh). \mbox{\Hypertarget{group__EnvironmentalCost_ga1aeeee701b58bf3a63ad13c43e7a75cd}\label{group__EnvironmentalCost_ga1aeeee701b58bf3a63ad13c43e7a75cd}} 
+\index{Environmental\+Cost@{Environmental\+Cost}!cost\+Kind@{cost\+Kind}}
+\index{cost\+Kind@{cost\+Kind}!Environmental\+Cost@{Environmental\+Cost}}
+\subsubsection{\texorpdfstring{cost\+Kind}{costKind}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::cost\+Kind}
+
+The kind of cost referred to in the amount. \mbox{\Hypertarget{group__EnvironmentalCost_ga886bd3034acbc87051b648e6b2242453}\label{group__EnvironmentalCost_ga886bd3034acbc87051b648e6b2242453}} 
+\index{Environmental\+Cost@{Environmental\+Cost}!cost\+Level@{cost\+Level}}
+\index{cost\+Level@{cost\+Level}!Environmental\+Cost@{Environmental\+Cost}}
+\subsubsection{\texorpdfstring{cost\+Level}{costLevel}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::cost\+Level}
+
+The relative level of the amount attribute. In conjunction with num\+Cost\+Levels, this attribute informs a device of the relative scarcity of the amount attribute (e.\+g., a high or low availability of renewable generation).
+
+num\+Cost\+Levels and cost\+Level values S\+H\+A\+LL ascend in order of scarcity, where \char`\"{}0\char`\"{} signals the lowest relative cost and higher values signal increasing cost. For example, if num\+Cost\+Levels is equal to “3,” then if the lowest relative cost\+Level were equal to “0,” devices would assume this is the lowest relative period to operate. Likewise, if the cost\+Level in the next Time\+Tariff\+Interval instance is equal to “1,” then the device would assume it is relatively more expensive, in environmental terms, to operate during this Time\+Tariff\+Interval instance than the previous one.
+
+There is no limit to the number of relative price levels other than that indicated in the attribute type, but for practicality, service providers should strive for simplicity and recognize the diminishing returns derived from increasing the num\+Cost\+Level value greater than four. \mbox{\Hypertarget{group__EnvironmentalCost_ga47696c1d43b551dfb6cc492460500ea1}\label{group__EnvironmentalCost_ga47696c1d43b551dfb6cc492460500ea1}} 
+\index{Environmental\+Cost@{Environmental\+Cost}!num\+Cost\+Levels@{num\+Cost\+Levels}}
+\index{num\+Cost\+Levels@{num\+Cost\+Levels}!Environmental\+Cost@{Environmental\+Cost}}
+\subsubsection{\texorpdfstring{num\+Cost\+Levels}{numCostLevels}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Environmental\+Cost\+\_\+t\+::num\+Cost\+Levels}
+
+The number of all relative cost levels.
+
+In conjunction with cost\+Level, num\+Cost\+Levels signals the relative scarcity of the commodity for the duration of the Time\+Tariff\+Interval instance (e.\+g., a relative indication of cost). This is useful in providing context for nominal cost signals to consumers or devices that might see a range of amount values from different service providres or from the same service provider. 

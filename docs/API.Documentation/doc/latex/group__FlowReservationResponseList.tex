@@ -1,0 +1,70 @@
+\hypertarget{group__FlowReservationResponseList}{}\section{Flow\+Reservation\+Response\+List}
+\label{group__FlowReservationResponseList}\index{Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}}
+Collaboration diagram for Flow\+Reservation\+Response\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__FlowReservationResponseList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__FlowReservationResponseList__t}{S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__FlowReservationResponseList_ga993fd3fa6aad53a3b52c902440a0db4a}\label{group__FlowReservationResponseList_ga993fd3fa6aad53a3b52c902440a0db4a}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__FlowReservationResponseList_ga15fbe7db82b92d888f7ac378b6ae49ac}{S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__FlowReservationResponseList_gade27c5a37e139e3291bdf606cf6d95e9}{S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FlowReservationResponseList_ga49a6d546054984cdaccef7c6ee2908f4}{S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__FlowReservationResponseList_ga7869a4d9d09d798588eeaf961dc31a25}{S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__FlowReservationResponseList_ga3d1bfff63a8e2e3b3a292796427ee70f}{S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__FlowReservationResponseList_ga7dae3ea66513445070d62a80fa1626b9}\label{group__FlowReservationResponseList_ga7dae3ea66513445070d62a80fa1626b9}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::\+Flow\+Reservation\+Response}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Flow\+Reservation\+Response objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__FlowReservationResponseList_ga49a6d546054984cdaccef7c6ee2908f4}\label{group__FlowReservationResponseList_ga49a6d546054984cdaccef7c6ee2908f4}} 
+\index{Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}!all@{all}}
+\index{all@{all}!Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FlowReservationResponseList_ga15fbe7db82b92d888f7ac378b6ae49ac}\label{group__FlowReservationResponseList_ga15fbe7db82b92d888f7ac378b6ae49ac}} 
+\index{Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}!href@{href}}
+\index{href@{href}!Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FlowReservationResponseList_ga3d1bfff63a8e2e3b3a292796427ee70f}\label{group__FlowReservationResponseList_ga3d1bfff63a8e2e3b3a292796427ee70f}} 
+\index{Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__FlowReservationResponseList_ga7869a4d9d09d798588eeaf961dc31a25}\label{group__FlowReservationResponseList_ga7869a4d9d09d798588eeaf961dc31a25}} 
+\index{Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}!results@{results}}
+\index{results@{results}!Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__FlowReservationResponseList_gade27c5a37e139e3291bdf606cf6d95e9}\label{group__FlowReservationResponseList_gade27c5a37e139e3291bdf606cf6d95e9}} 
+\index{Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Flow\+Reservation\+Response\+List@{Flow\+Reservation\+Response\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Flow\+Reservation\+Response\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

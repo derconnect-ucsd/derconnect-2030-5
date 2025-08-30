@@ -1,0 +1,32 @@
+\hypertarget{group__DutyCycle}{}\section{Duty\+Cycle}
+\label{group__DutyCycle}\index{Duty\+Cycle@{Duty\+Cycle}}
+Collaboration diagram for Duty\+Cycle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{group__DutyCycle}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DutyCycle__t}{S\+E\+\_\+\+Duty\+Cycle\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__DutyCycle_ga11141a0c1bf2a7bdbf3d85b845792070}{S\+E\+\_\+\+Duty\+Cycle\+\_\+t\+::normal\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Duty cycle control is a device specific issue and is managed by the device. The duty cycle of the device under control should span the shortest practical time period in accordance with the nature of the device under control and the intent of the request for demand reduction. The default factory setting S\+H\+O\+U\+LD be three minutes for each 10\% of duty cycle. This indicates that the default time period over which a duty cycle is applied is 30 minutes, meaning a 10\% duty cycle would cause a device to be ON for 3 minutes. The “off state” S\+H\+A\+LL precede the “on state”. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DutyCycle_ga11141a0c1bf2a7bdbf3d85b845792070}\label{group__DutyCycle_ga11141a0c1bf2a7bdbf3d85b845792070}} 
+\index{Duty\+Cycle@{Duty\+Cycle}!normal\+Value@{normal\+Value}}
+\index{normal\+Value@{normal\+Value}!Duty\+Cycle@{Duty\+Cycle}}
+\subsubsection{\texorpdfstring{normal\+Value}{normalValue}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Duty\+Cycle\+\_\+t\+::normal\+Value}
+
+Contains the maximum On state duty cycle applied by the end device, as a percentage of time. The field not present indicates that this field has not been used by the end device. 

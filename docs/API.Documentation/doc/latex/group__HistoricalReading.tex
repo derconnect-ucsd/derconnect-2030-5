@@ -1,0 +1,72 @@
+\hypertarget{group__HistoricalReading}{}\section{Historical\+Reading}
+\label{group__HistoricalReading}\index{Historical\+Reading@{Historical\+Reading}}
+Collaboration diagram for Historical\+Reading\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{group__HistoricalReading}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__HistoricalReading__t}{S\+E\+\_\+\+Historical\+Reading\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__HistoricalReading_gaec60c35670fb8648d5ec83be962f1785}{S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__HistoricalReading_gaff00989792a61ee351a11cb2936a1485}{S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__HistoricalReading_gaf7799b8df72b4f3d12ea54daed827129}{S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__HistoricalReading_ga962f40eadac8ad924c5912f1cbacbfc0}{S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__HistoricalReading_ga150122578c7309243a68cfc321322f7f}{S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::version}
+\item 
+\mbox{\Hypertarget{group__HistoricalReading_gaeaa7c846482e2955c39d1e01c2243062}\label{group__HistoricalReading_gaeaa7c846482e2955c39d1e01c2243062}} 
+\hyperlink{structSE__BillingReadingSetListLink__t}{S\+E\+\_\+\+Billing\+Reading\+Set\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::\+Billing\+Reading\+Set\+List\+Link}
+\item 
+\mbox{\Hypertarget{group__HistoricalReading_gace46d5c7f161f55dc3238508da3206fe}\label{group__HistoricalReading_gace46d5c7f161f55dc3238508da3206fe}} 
+\hyperlink{structSE__ReadingTypeLink__t}{S\+E\+\_\+\+Reading\+Type\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::\+Reading\+Type\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+To be used to present readings that have been processed and possibly corrected (as allowed, due to missing or incorrect data) by backend systems. This includes quality codes valid, verified, estimated, and derived / corrected. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__HistoricalReading_gaec60c35670fb8648d5ec83be962f1785}\label{group__HistoricalReading_gaec60c35670fb8648d5ec83be962f1785}} 
+\index{Historical\+Reading@{Historical\+Reading}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Historical\+Reading@{Historical\+Reading}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Reading\+Type\+Link\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+\+Billing\+Reading\+Set\+List\+Link\+\_\+exists (1 $<$$<$ 6) \mbox{\Hypertarget{group__HistoricalReading_ga962f40eadac8ad924c5912f1cbacbfc0}\label{group__HistoricalReading_ga962f40eadac8ad924c5912f1cbacbfc0}} 
+\index{Historical\+Reading@{Historical\+Reading}!description@{description}}
+\index{description@{description}!Historical\+Reading@{Historical\+Reading}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__HistoricalReading_gaff00989792a61ee351a11cb2936a1485}\label{group__HistoricalReading_gaff00989792a61ee351a11cb2936a1485}} 
+\index{Historical\+Reading@{Historical\+Reading}!href@{href}}
+\index{href@{href}!Historical\+Reading@{Historical\+Reading}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__HistoricalReading_gaf7799b8df72b4f3d12ea54daed827129}\label{group__HistoricalReading_gaf7799b8df72b4f3d12ea54daed827129}} 
+\index{Historical\+Reading@{Historical\+Reading}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Historical\+Reading@{Historical\+Reading}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__HistoricalReading_ga150122578c7309243a68cfc321322f7f}\label{group__HistoricalReading_ga150122578c7309243a68cfc321322f7f}} 
+\index{Historical\+Reading@{Historical\+Reading}!version@{version}}
+\index{version@{version}!Historical\+Reading@{Historical\+Reading}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Historical\+Reading\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

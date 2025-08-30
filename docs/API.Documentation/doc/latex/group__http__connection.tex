@@ -1,0 +1,638 @@
+\hypertarget{group__http__connection}{}\section{Http\+Connection}
+\label{group__http__connection}\index{Http\+Connection@{Http\+Connection}}
+Collaboration diagram for Http\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__http__connection}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__se__connection}{Se\+Connection}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__http__connection_ga4242e44b555e915d598838a9b78ddbdf}{http\+\_\+post}(conn,  buffer,  uri)~\hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send} (conn, buffer, uri, H\+T\+T\+P\+\_\+\+P\+O\+ST)
+\begin{DoxyCompactList}\small\item\em Write a P\+O\+ST request to a buffer and queue the request. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__http__connection_gae0780a5dd17b70dee776f2cf9a91a242}{http\+\_\+put}(conn,  buffer,  uri)~\hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send} (conn, buffer, uri, H\+T\+T\+P\+\_\+\+P\+UT)
+\begin{DoxyCompactList}\small\item\em Write a P\+UT request to a buffer and queue the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__http__connection_ga29126786f6c9add04f306c51c4113994}\label{group__http__connection_ga29126786f6c9add04f306c51c4113994}} 
+typedef struct \+\_\+\+Http\+Connection {\bfseries Http\+Connection}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__http__connection_ga4353a75834bb35c4acd80b51434eef59}\label{group__http__connection_ga4353a75834bb35c4acd80b51434eef59}} 
+enum {\bfseries Http\+Method} \{ \newline
+{\bfseries H\+T\+T\+P\+\_\+\+G\+ET}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+P\+UT}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+P\+O\+ST}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+D\+E\+L\+E\+TE}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+H\+E\+AD}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+U\+N\+K\+N\+O\+WN}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+N\+O\+NE}, 
+\newline
+{\bfseries H\+T\+T\+P\+\_\+\+E\+R\+R\+OR}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__http__connection_gaf3fe661f3848c3ce13c987c4f3f72ffb}{http\+\_\+init} (void $\ast$conn, int client, const char $\ast$accept, const char $\ast$media)
+\begin{DoxyCompactList}\small\item\em Initialize an H\+T\+TP connection. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga219c5661faaf31ba853fc7a4f4aaac07}{http\+\_\+flush} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Flush queued data to an H\+T\+TP connection. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_gad284834e20a26101fcd6e6751922c92e}{http\+\_\+write} (void $\ast$conn, void $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Write data to an H\+T\+TP connection immediately if possible or queue for later. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga6d911522875a4b99a4172e4a02b78a8a}{http\+\_\+get} (void $\ast$conn, const char $\ast$uri)
+\begin{DoxyCompactList}\small\item\em Perform a G\+ET request immediately if possible or queue for later. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send} (void $\ast$conn, char $\ast$buffer, const char $\ast$uri, int method)
+\begin{DoxyCompactList}\small\item\em Write a P\+UT or P\+O\+ST request message to a buffer and queue the request. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga81ef4c524a625b75de614b745300fd45}{http\+\_\+status\+\_\+line} (char $\ast$buffer, int status, const char $\ast$reason)
+\begin{DoxyCompactList}\small\item\em Write an H\+T\+TP status line to buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga5b43c4092965e502da226511bb574b44}{http\+\_\+content} (char $\ast$buffer, const char $\ast$media, int length)
+\begin{DoxyCompactList}\small\item\em Write H\+T\+TP content headers to a buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_gaa36a00e63b21d521263da96cadd3ec44}{set\+\_\+content\+\_\+length} (char $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Update the Content-\/\+Length header. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga83590f08e1aeaaa81b2873583ce99dd2}{http\+\_\+close} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Close the H\+T\+TP connection and free queued requests/data. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga1aeb6fb256def5da05c835071e41dfa0}{http\+\_\+allow} (void $\ast$conn, const char $\ast$allow)
+\begin{DoxyCompactList}\small\item\em Send H\+T\+TP response, status 405 (Method Not Allowed). \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_gaa760070967803d689c4dd0fc407ff563}{http\+\_\+respond} (void $\ast$conn, int status)
+\begin{DoxyCompactList}\small\item\em Send an H\+T\+TP response with status. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga81402c76a79e0fdf3f0fb8d4c9ba52e9}{http\+\_\+created} (void $\ast$conn, const char $\ast$uri)
+\begin{DoxyCompactList}\small\item\em Send an H\+T\+TP response with status 201 (Created). \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga48e49b5c445099537f9b9b4ae89fa8df}{http\+\_\+no\+\_\+content} (void $\ast$conn, const char $\ast$uri)
+\begin{DoxyCompactList}\small\item\em Send H\+T\+TP response with status 204 (No Content). \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_gac4613339c6810e44f79f8c4942ae9f6c}{http\+\_\+error} (void $\ast$conn, int status)
+\begin{DoxyCompactList}\small\item\em Send H\+T\+TP response with status and close connection. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga8573192ee45dd0e3a5111bab62e03e44}{http\+\_\+receive} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Receive an H\+T\+TP request/response. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga92f8776c838fb93b9ea9aedfc665a694}{http\+\_\+body} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Does the H\+T\+TP message have a body? \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__http__connection_gaa572f95189ccc118a8fc1d070b76f896}{http\+\_\+data} (void $\ast$conn, int $\ast$length)
+\begin{DoxyCompactList}\small\item\em Return data from the message body. \end{DoxyCompactList}\item 
+void \hyperlink{group__http__connection_ga5150a5e062ed872568f6666ce8859baa}{http\+\_\+rebuffer} (void $\ast$conn, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Clear data up to the pointer and read more data from the connection. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga840e20735c835fbd29956a2d82b5ef71}{http\+\_\+complete} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Is data from the message body complete? \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_gaab725405e3c788f0b9b72d3a3cc5d2f3}{http\+\_\+status} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get status for H\+T\+TP response. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga588ce3ea3e16dab03a96b65b9d58d0dc}{http\+\_\+method} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Return the method associated with the H\+T\+TP response. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__http__connection_ga8cf07b868935828ebfe2b80c8b3d135e}{http\+\_\+path} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get the path for an H\+T\+TP request. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__http__connection_gae61eeb371ab52758dcdc2e376c32d7c1}{http\+\_\+query} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get the query for an H\+T\+TP request. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__http__connection_ga5e069d5d6ad16d184f959507c7e3bea8}{http\+\_\+range} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get the Accept header value (media range). \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_gad00b80f2f0573963fb7f6f0227fc748a}{http\+\_\+client} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Is the H\+T\+TP connection a client? \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__http__connection_gaf4fb8bd1fa38b29e340be73efac05a40}{http\+\_\+location} (void $\ast$conn)
+\begin{DoxyCompactList}\small\item\em Get the Location header value. \end{DoxyCompactList}\item 
+int \hyperlink{group__http__connection_ga08146812d01ea110926efc6dbf39b91d}{http\+\_\+parse\+\_\+uri} (\hyperlink{structUri}{Uri} $\ast$uri, void $\ast$conn, const char $\ast$href)
+\begin{DoxyCompactList}\small\item\em Parse an H\+T\+TP U\+RI using connection parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Http\+Connection extends a Connection and provides a client or server interface to an H\+T\+TP message stream (\href{https://tools.ietf.org/html/rfc7230}{\tt R\+FC 7230}, \href{https://tools.ietf.org/html/rfc7231}{\tt R\+FC 7231}).
+
+In H\+T\+TP client/server roles are fixed through the lifetime of the connection and are determined by whether a host requested a connection (a client) or accepted a connection request (a server). Clients submit requests (G\+ET, P\+UT, P\+O\+ST, D\+E\+L\+E\+TE) and process responses. Servers process client requests and respond with a status code and possibly a message body. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__http__connection_ga4242e44b555e915d598838a9b78ddbdf}\label{group__http__connection_ga4242e44b555e915d598838a9b78ddbdf}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+post@{http\+\_\+post}}
+\index{http\+\_\+post@{http\+\_\+post}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+post}{http\_post}}
+{\footnotesize\ttfamily \#define http\+\_\+post(\begin{DoxyParamCaption}\item[{}]{conn,  }\item[{}]{buffer,  }\item[{}]{uri }\end{DoxyParamCaption})~\hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send} (conn, buffer, uri, H\+T\+T\+P\+\_\+\+P\+O\+ST)}
+
+
+
+Write a P\+O\+ST request to a buffer and queue the request. 
+
+See \hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send}. \mbox{\Hypertarget{group__http__connection_gae0780a5dd17b70dee776f2cf9a91a242}\label{group__http__connection_gae0780a5dd17b70dee776f2cf9a91a242}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+put@{http\+\_\+put}}
+\index{http\+\_\+put@{http\+\_\+put}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+put}{http\_put}}
+{\footnotesize\ttfamily \#define http\+\_\+put(\begin{DoxyParamCaption}\item[{}]{conn,  }\item[{}]{buffer,  }\item[{}]{uri }\end{DoxyParamCaption})~\hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send} (conn, buffer, uri, H\+T\+T\+P\+\_\+\+P\+UT)}
+
+
+
+Write a P\+UT request to a buffer and queue the request. 
+
+See \hyperlink{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}{http\+\_\+send}. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__http__connection_ga1aeb6fb256def5da05c835071e41dfa0}\label{group__http__connection_ga1aeb6fb256def5da05c835071e41dfa0}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+allow@{http\+\_\+allow}}
+\index{http\+\_\+allow@{http\+\_\+allow}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+allow()}{http\_allow()}}
+{\footnotesize\ttfamily void http\+\_\+allow (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{const char $\ast$}]{allow }\end{DoxyParamCaption})}
+
+
+
+Send H\+T\+TP response, status 405 (Method Not Allowed). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em allow} & is a list of allowed methods (Allow header) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga92f8776c838fb93b9ea9aedfc665a694}\label{group__http__connection_ga92f8776c838fb93b9ea9aedfc665a694}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+body@{http\+\_\+body}}
+\index{http\+\_\+body@{http\+\_\+body}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+body()}{http\_body()}}
+{\footnotesize\ttfamily int http\+\_\+body (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Does the H\+T\+TP message have a body? 
+
+\begin{DoxyReturn}{Returns}
+1 if the message has a body, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_gad00b80f2f0573963fb7f6f0227fc748a}\label{group__http__connection_gad00b80f2f0573963fb7f6f0227fc748a}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+client@{http\+\_\+client}}
+\index{http\+\_\+client@{http\+\_\+client}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+client()}{http\_client()}}
+{\footnotesize\ttfamily int http\+\_\+client (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Is the H\+T\+TP connection a client? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 for a client side connection, 0 for a server side connection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga83590f08e1aeaaa81b2873583ce99dd2}\label{group__http__connection_ga83590f08e1aeaaa81b2873583ce99dd2}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+close@{http\+\_\+close}}
+\index{http\+\_\+close@{http\+\_\+close}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+close()}{http\_close()}}
+{\footnotesize\ttfamily void http\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Close the H\+T\+TP connection and free queued requests/data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga840e20735c835fbd29956a2d82b5ef71}\label{group__http__connection_ga840e20735c835fbd29956a2d82b5ef71}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+complete@{http\+\_\+complete}}
+\index{http\+\_\+complete@{http\+\_\+complete}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+complete()}{http\_complete()}}
+{\footnotesize\ttfamily int http\+\_\+complete (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Is data from the message body complete? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 is message is complete, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga5b43c4092965e502da226511bb574b44}\label{group__http__connection_ga5b43c4092965e502da226511bb574b44}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+content@{http\+\_\+content}}
+\index{http\+\_\+content@{http\+\_\+content}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+content()}{http\_content()}}
+{\footnotesize\ttfamily int http\+\_\+content (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{const char $\ast$}]{media,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Write H\+T\+TP content headers to a buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & is the storage for the headers \\
+\hline
+{\em media} & is the Content-\/\+Type \\
+\hline
+{\em length} & is the Content-\/\+Length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the headers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga81402c76a79e0fdf3f0fb8d4c9ba52e9}\label{group__http__connection_ga81402c76a79e0fdf3f0fb8d4c9ba52e9}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+created@{http\+\_\+created}}
+\index{http\+\_\+created@{http\+\_\+created}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+created()}{http\_created()}}
+{\footnotesize\ttfamily void http\+\_\+created (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{const char $\ast$}]{uri }\end{DoxyParamCaption})}
+
+
+
+Send an H\+T\+TP response with status 201 (Created). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em uri} & is the value to be returned in the Location header \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_gaa572f95189ccc118a8fc1d070b76f896}\label{group__http__connection_gaa572f95189ccc118a8fc1d070b76f896}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+data@{http\+\_\+data}}
+\index{http\+\_\+data@{http\+\_\+data}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+data()}{http\_data()}}
+{\footnotesize\ttfamily char $\ast$ http\+\_\+data (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int $\ast$}]{length }\end{DoxyParamCaption})}
+
+
+
+Return data from the message body. 
+
+Call again until all the data has been returned. \hyperlink{group__http__connection_ga840e20735c835fbd29956a2d82b5ef71}{http\+\_\+complete}
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em length} & is a pointer to the length of the data returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the data from the message body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_gac4613339c6810e44f79f8c4942ae9f6c}\label{group__http__connection_gac4613339c6810e44f79f8c4942ae9f6c}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+error@{http\+\_\+error}}
+\index{http\+\_\+error@{http\+\_\+error}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+error()}{http\_error()}}
+{\footnotesize\ttfamily void http\+\_\+error (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Send H\+T\+TP response with status and close connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em status} & is the status code to return \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga219c5661faaf31ba853fc7a4f4aaac07}\label{group__http__connection_ga219c5661faaf31ba853fc7a4f4aaac07}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+flush@{http\+\_\+flush}}
+\index{http\+\_\+flush@{http\+\_\+flush}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+flush()}{http\_flush()}}
+{\footnotesize\ttfamily void http\+\_\+flush (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Flush queued data to an H\+T\+TP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga6d911522875a4b99a4172e4a02b78a8a}\label{group__http__connection_ga6d911522875a4b99a4172e4a02b78a8a}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+get@{http\+\_\+get}}
+\index{http\+\_\+get@{http\+\_\+get}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+get()}{http\_get()}}
+{\footnotesize\ttfamily void http\+\_\+get (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{const char $\ast$}]{uri }\end{DoxyParamCaption})}
+
+
+
+Perform a G\+ET request immediately if possible or queue for later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em uri} & is the request U\+RI \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_gaf3fe661f3848c3ce13c987c4f3f72ffb}\label{group__http__connection_gaf3fe661f3848c3ce13c987c4f3f72ffb}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+init@{http\+\_\+init}}
+\index{http\+\_\+init@{http\+\_\+init}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+init()}{http\_init()}}
+{\footnotesize\ttfamily void http\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int}]{client,  }\item[{const char $\ast$}]{accept,  }\item[{const char $\ast$}]{media }\end{DoxyParamCaption})}
+
+
+
+Initialize an H\+T\+TP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em client} & is non-\/zero for a client Http\+Connection \\
+\hline
+{\em accept} & is a string listing acceptable media ranges (Accept header) \\
+\hline
+{\em media} & is the Content-\/\+Type for P\+UT and P\+O\+ST \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_gaf4fb8bd1fa38b29e340be73efac05a40}\label{group__http__connection_gaf4fb8bd1fa38b29e340be73efac05a40}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+location@{http\+\_\+location}}
+\index{http\+\_\+location@{http\+\_\+location}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+location()}{http\_location()}}
+{\footnotesize\ttfamily char $\ast$ http\+\_\+location (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get the Location header value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the Location header or N\+U\+LL if none exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga588ce3ea3e16dab03a96b65b9d58d0dc}\label{group__http__connection_ga588ce3ea3e16dab03a96b65b9d58d0dc}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+method@{http\+\_\+method}}
+\index{http\+\_\+method@{http\+\_\+method}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+method()}{http\_method()}}
+{\footnotesize\ttfamily int http\+\_\+method (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Return the method associated with the H\+T\+TP response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the H\+T\+TP method 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga48e49b5c445099537f9b9b4ae89fa8df}\label{group__http__connection_ga48e49b5c445099537f9b9b4ae89fa8df}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+no\+\_\+content@{http\+\_\+no\+\_\+content}}
+\index{http\+\_\+no\+\_\+content@{http\+\_\+no\+\_\+content}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+no\+\_\+content()}{http\_no\_content()}}
+{\footnotesize\ttfamily void http\+\_\+no\+\_\+content (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{const char $\ast$}]{uri }\end{DoxyParamCaption})}
+
+
+
+Send H\+T\+TP response with status 204 (No Content). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em uri} & is the value to be returned in the Location header \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga08146812d01ea110926efc6dbf39b91d}\label{group__http__connection_ga08146812d01ea110926efc6dbf39b91d}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+parse\+\_\+uri@{http\+\_\+parse\+\_\+uri}}
+\index{http\+\_\+parse\+\_\+uri@{http\+\_\+parse\+\_\+uri}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+parse\+\_\+uri()}{http\_parse\_uri()}}
+{\footnotesize\ttfamily int http\+\_\+parse\+\_\+uri (\begin{DoxyParamCaption}\item[{\hyperlink{structUri}{Uri} $\ast$}]{uri,  }\item[{void $\ast$}]{conn,  }\item[{const char $\ast$}]{href }\end{DoxyParamCaption})}
+
+
+
+Parse an H\+T\+TP U\+RI using connection parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & is a pointer \\
+\hline
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em href} & is a pointer to the U\+RI string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if href is a valid U\+RI, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga8cf07b868935828ebfe2b80c8b3d135e}\label{group__http__connection_ga8cf07b868935828ebfe2b80c8b3d135e}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+path@{http\+\_\+path}}
+\index{http\+\_\+path@{http\+\_\+path}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+path()}{http\_path()}}
+{\footnotesize\ttfamily char $\ast$ http\+\_\+path (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get the path for an H\+T\+TP request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_gae61eeb371ab52758dcdc2e376c32d7c1}\label{group__http__connection_gae61eeb371ab52758dcdc2e376c32d7c1}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+query@{http\+\_\+query}}
+\index{http\+\_\+query@{http\+\_\+query}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+query()}{http\_query()}}
+{\footnotesize\ttfamily char $\ast$ http\+\_\+query (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get the query for an H\+T\+TP request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the query 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga5e069d5d6ad16d184f959507c7e3bea8}\label{group__http__connection_ga5e069d5d6ad16d184f959507c7e3bea8}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+range@{http\+\_\+range}}
+\index{http\+\_\+range@{http\+\_\+range}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+range()}{http\_range()}}
+{\footnotesize\ttfamily char $\ast$ http\+\_\+range (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get the Accept header value (media range). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the media range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga5150a5e062ed872568f6666ce8859baa}\label{group__http__connection_ga5150a5e062ed872568f6666ce8859baa}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+rebuffer@{http\+\_\+rebuffer}}
+\index{http\+\_\+rebuffer@{http\+\_\+rebuffer}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+rebuffer()}{http\_rebuffer()}}
+{\footnotesize\ttfamily void http\+\_\+rebuffer (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Clear data up to the pointer and read more data from the connection. 
+
+An Http\+Connection uses a fixed length buffer to retrieve data, this function clears data and moves the remainder of the data to the beginning of the buffer so more data can be read. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em data} & is a pointer to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga8573192ee45dd0e3a5111bab62e03e44}\label{group__http__connection_ga8573192ee45dd0e3a5111bab62e03e44}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+receive@{http\+\_\+receive}}
+\index{http\+\_\+receive@{http\+\_\+receive}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+receive()}{http\_receive()}}
+{\footnotesize\ttfamily int http\+\_\+receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Receive an H\+T\+TP request/response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one of H\+T\+T\+P\+\_\+\+G\+ET, H\+T\+T\+P\+\_\+\+P\+UT, H\+T\+T\+P\+\_\+\+P\+O\+ST, H\+T\+T\+P\+\_\+\+D\+E\+L\+E\+TE, H\+T\+T\+P\+\_\+\+H\+E\+AD if an H\+T\+TP request is succesfully received (server).
+\end{DoxyReturn}
+H\+T\+T\+P\+\_\+\+U\+N\+K\+N\+O\+WN for a request with an method other than G\+ET, P\+UT, P\+O\+ST, D\+E\+L\+E\+TE, or H\+E\+AD (server).
+
+H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE for an H\+T\+TP response (client)
+
+H\+T\+T\+P\+\_\+\+N\+O\+NE for an incomplete message (client, server), \hyperlink{group__http__connection_ga8573192ee45dd0e3a5111bab62e03e44}{http\+\_\+receive} can called again when more data is available.
+
+H\+T\+T\+P\+\_\+\+E\+R\+R\+OR for an incorrect message (client, server) \mbox{\Hypertarget{group__http__connection_gaa760070967803d689c4dd0fc407ff563}\label{group__http__connection_gaa760070967803d689c4dd0fc407ff563}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+respond@{http\+\_\+respond}}
+\index{http\+\_\+respond@{http\+\_\+respond}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+respond()}{http\_respond()}}
+{\footnotesize\ttfamily void http\+\_\+respond (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Send an H\+T\+TP response with status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em status} & is the status code to return \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}\label{group__http__connection_ga9d3a703c0cf3b053e915eaec5b394c28}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+send@{http\+\_\+send}}
+\index{http\+\_\+send@{http\+\_\+send}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+send()}{http\_send()}}
+{\footnotesize\ttfamily int http\+\_\+send (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{char $\ast$}]{buffer,  }\item[{const char $\ast$}]{uri,  }\item[{int}]{method }\end{DoxyParamCaption})}
+
+
+
+Write a P\+UT or P\+O\+ST request message to a buffer and queue the request. 
+
+Use the length returned as a location for the request content. Use the function \hyperlink{group__http__connection_gaa36a00e63b21d521263da96cadd3ec44}{set\+\_\+content\+\_\+length} to update the Content-\/\+Length. Finally, use the function \hyperlink{group__http__connection_gad284834e20a26101fcd6e6751922c92e}{http\+\_\+write} to complete the request. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em buffer} & is a buffer large enough for the request \\
+\hline
+{\em uri} & is the request U\+RI \\
+\hline
+{\em method} & is either H\+T\+T\+P\+\_\+\+P\+UT or H\+T\+T\+P\+\_\+\+P\+O\+ST \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_gaab725405e3c788f0b9b72d3a3cc5d2f3}\label{group__http__connection_gaab725405e3c788f0b9b72d3a3cc5d2f3}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+status@{http\+\_\+status}}
+\index{http\+\_\+status@{http\+\_\+status}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+status()}{http\_status()}}
+{\footnotesize\ttfamily int http\+\_\+status (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn }\end{DoxyParamCaption})}
+
+
+
+Get status for H\+T\+TP response. 
+
+Valid when \hyperlink{group__http__connection_ga8573192ee45dd0e3a5111bab62e03e44}{http\+\_\+receive} returns H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_ga81ef4c524a625b75de614b745300fd45}\label{group__http__connection_ga81ef4c524a625b75de614b745300fd45}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+status\+\_\+line@{http\+\_\+status\+\_\+line}}
+\index{http\+\_\+status\+\_\+line@{http\+\_\+status\+\_\+line}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+status\+\_\+line()}{http\_status\_line()}}
+{\footnotesize\ttfamily int http\+\_\+status\+\_\+line (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{status,  }\item[{const char $\ast$}]{reason }\end{DoxyParamCaption})}
+
+
+
+Write an H\+T\+TP status line to buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & is the storage for the status line \\
+\hline
+{\em status} & is the status code \\
+\hline
+{\em reason} & is a string explaining the status \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the status line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__http__connection_gad284834e20a26101fcd6e6751922c92e}\label{group__http__connection_gad284834e20a26101fcd6e6751922c92e}} 
+\index{Http\+Connection@{Http\+Connection}!http\+\_\+write@{http\+\_\+write}}
+\index{http\+\_\+write@{http\+\_\+write}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{http\+\_\+write()}{http\_write()}}
+{\footnotesize\ttfamily void http\+\_\+write (\begin{DoxyParamCaption}\item[{void $\ast$}]{conn,  }\item[{void $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Write data to an H\+T\+TP connection immediately if possible or queue for later. 
+
+Use http\+\_\+flush to flush queued data. 
+\begin{DoxyParams}{Parameters}
+{\em conn} & is a pointer to an Http\+Connection \\
+\hline
+{\em data} & is an array of bytes \\
+\hline
+{\em length} & is the length of data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__http__connection_gaa36a00e63b21d521263da96cadd3ec44}\label{group__http__connection_gaa36a00e63b21d521263da96cadd3ec44}} 
+\index{Http\+Connection@{Http\+Connection}!set\+\_\+content\+\_\+length@{set\+\_\+content\+\_\+length}}
+\index{set\+\_\+content\+\_\+length@{set\+\_\+content\+\_\+length}!Http\+Connection@{Http\+Connection}}
+\subsubsection{\texorpdfstring{set\+\_\+content\+\_\+length()}{set\_content\_length()}}
+{\footnotesize\ttfamily void set\+\_\+content\+\_\+length (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Update the Content-\/\+Length header. 
+
+The Content-\/\+Length header should have a enough blank spaces for the length. This function overwrites the blank spaces with the length provided. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & contains a Content-\/\+Length header \\
+\hline
+{\em length} & is the value to be set for the Content-\/\+Length \\
+\hline
+\end{DoxyParams}

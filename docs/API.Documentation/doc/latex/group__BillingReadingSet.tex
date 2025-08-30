@@ -1,0 +1,75 @@
+\hypertarget{group__BillingReadingSet}{}\section{Billing\+Reading\+Set}
+\label{group__BillingReadingSet}\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+Collaboration diagram for Billing\+Reading\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{group__BillingReadingSet}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__BillingReadingSet__t}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__BillingReadingSet_gaadb95ac5d5abb72c55f707d229888950}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__BillingReadingSet_ga6678b851920eb4645850476a32c6441e}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__BillingReadingSet_gac13de96611c3eee1e7fd3ca8c2c012b5}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__BillingReadingSet_ga29d6702bd43f699cb3702eb0ca024aba}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__BillingReadingSet_ga6cf80b1bd407c3e29e5504fd19cd6359}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::version}
+\item 
+\hyperlink{structSE__DateTimeInterval__t}{S\+E\+\_\+\+Date\+Time\+Interval\+\_\+t} \hyperlink{group__BillingReadingSet_ga18291782c5aa9a4ddfc21dc65d43bae0}{S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::time\+Period}
+\item 
+\mbox{\Hypertarget{group__BillingReadingSet_ga54fb355c6aa11a71008a772d4aabf72e}\label{group__BillingReadingSet_ga54fb355c6aa11a71008a772d4aabf72e}} 
+\hyperlink{structSE__BillingReadingListLink__t}{S\+E\+\_\+\+Billing\+Reading\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::\+Billing\+Reading\+List\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Time sequence of readings of the same reading type. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__BillingReadingSet_gaadb95ac5d5abb72c55f707d229888950}\label{group__BillingReadingSet_gaadb95ac5d5abb72c55f707d229888950}} 
+\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Billing\+Reading\+List\+Link\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__BillingReadingSet_ga29d6702bd43f699cb3702eb0ca024aba}\label{group__BillingReadingSet_ga29d6702bd43f699cb3702eb0ca024aba}} 
+\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}!description@{description}}
+\index{description@{description}!Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__BillingReadingSet_ga6678b851920eb4645850476a32c6441e}\label{group__BillingReadingSet_ga6678b851920eb4645850476a32c6441e}} 
+\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}!href@{href}}
+\index{href@{href}!Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__BillingReadingSet_gac13de96611c3eee1e7fd3ca8c2c012b5}\label{group__BillingReadingSet_gac13de96611c3eee1e7fd3ca8c2c012b5}} 
+\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__BillingReadingSet_ga18291782c5aa9a4ddfc21dc65d43bae0}\label{group__BillingReadingSet_ga18291782c5aa9a4ddfc21dc65d43bae0}} 
+\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}!time\+Period@{time\+Period}}
+\index{time\+Period@{time\+Period}!Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+\subsubsection{\texorpdfstring{time\+Period}{timePeriod}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::time\+Period}
+
+Specifies the time range during which the contained readings were taken. \mbox{\Hypertarget{group__BillingReadingSet_ga6cf80b1bd407c3e29e5504fd19cd6359}\label{group__BillingReadingSet_ga6cf80b1bd407c3e29e5504fd19cd6359}} 
+\index{Billing\+Reading\+Set@{Billing\+Reading\+Set}!version@{version}}
+\index{version@{version}!Billing\+Reading\+Set@{Billing\+Reading\+Set}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Billing\+Reading\+Set\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

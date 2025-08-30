@@ -1,0 +1,62 @@
+\hypertarget{group__MirrorUsagePointList}{}\section{Mirror\+Usage\+Point\+List}
+\label{group__MirrorUsagePointList}\index{Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}}
+Collaboration diagram for Mirror\+Usage\+Point\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{group__MirrorUsagePointList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__MirrorUsagePointList__t}{S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__MirrorUsagePointList_ga60049fcd3335ce75cef33ad42abc42f3}\label{group__MirrorUsagePointList_ga60049fcd3335ce75cef33ad42abc42f3}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__MirrorUsagePointList_ga575db02c1e3401b72229b00646a12fba}{S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__MirrorUsagePointList_gac3f1fba94c5ceb565f2ff2eedf3f425d}{S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__MirrorUsagePointList_ga56c6a07daa7b9e0e2a30b9259bdc8f29}{S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__MirrorUsagePointList_ga7b84695ca0e779b95c2b489d3d8257e3}{S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__MirrorUsagePointList_ga149e9e8d6933eac099e0765ec12e9c6a}\label{group__MirrorUsagePointList_ga149e9e8d6933eac099e0765ec12e9c6a}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::\+Mirror\+Usage\+Point}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} of Mirror\+Usage\+Point instances. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__MirrorUsagePointList_gac3f1fba94c5ceb565f2ff2eedf3f425d}\label{group__MirrorUsagePointList_gac3f1fba94c5ceb565f2ff2eedf3f425d}} 
+\index{Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}!all@{all}}
+\index{all@{all}!Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__MirrorUsagePointList_ga575db02c1e3401b72229b00646a12fba}\label{group__MirrorUsagePointList_ga575db02c1e3401b72229b00646a12fba}} 
+\index{Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}!href@{href}}
+\index{href@{href}!Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__MirrorUsagePointList_ga7b84695ca0e779b95c2b489d3d8257e3}\label{group__MirrorUsagePointList_ga7b84695ca0e779b95c2b489d3d8257e3}} 
+\index{Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__MirrorUsagePointList_ga56c6a07daa7b9e0e2a30b9259bdc8f29}\label{group__MirrorUsagePointList_ga56c6a07daa7b9e0e2a30b9259bdc8f29}} 
+\index{Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}!results@{results}}
+\index{results@{results}!Mirror\+Usage\+Point\+List@{Mirror\+Usage\+Point\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Mirror\+Usage\+Point\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. 

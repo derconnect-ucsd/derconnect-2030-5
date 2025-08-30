@@ -1,0 +1,48 @@
+\hypertarget{group__FileListLink}{}\section{File\+List\+Link}
+\label{group__FileListLink}\index{File\+List\+Link@{File\+List\+Link}}
+Collaboration diagram for File\+List\+Link\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{group__FileListLink}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__FileListLink__t}{S\+E\+\_\+\+File\+List\+Link\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__FileListLink_gaced91cb9594ebae572e6a7216179d24d}{S\+E\+\_\+\+File\+List\+Link\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__FileListLink_ga031e60ab342d2ccd4ac921fd30ffb9b1}{S\+E\+\_\+\+File\+List\+Link\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FileListLink_ga29b8ccd48909ecad5f8c9f14eacafe2c}{S\+E\+\_\+\+File\+List\+Link\+\_\+t\+::all}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+H\+A\+LL contain a Link to a \hyperlink{structList}{List} of File instances. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__FileListLink_gaced91cb9594ebae572e6a7216179d24d}\label{group__FileListLink_gaced91cb9594ebae572e6a7216179d24d}} 
+\index{File\+List\+Link@{File\+List\+Link}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!File\+List\+Link@{File\+List\+Link}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+Link\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+all\+\_\+exists (1 $<$$<$ 0) \mbox{\Hypertarget{group__FileListLink_ga29b8ccd48909ecad5f8c9f14eacafe2c}\label{group__FileListLink_ga29b8ccd48909ecad5f8c9f14eacafe2c}} 
+\index{File\+List\+Link@{File\+List\+Link}!all@{all}}
+\index{all@{all}!File\+List\+Link@{File\+List\+Link}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+Link\+\_\+t\+::all}
+
+Indicates the total number of items in the referenced list. This attribute S\+H\+A\+LL be present if the href is a local or relative U\+RI. This attribute S\+H\+O\+U\+LD N\+OT be present if the href is a remote or absolute U\+RI, as the server may be unaware of changes to the value. \mbox{\Hypertarget{group__FileListLink_ga031e60ab342d2ccd4ac921fd30ffb9b1}\label{group__FileListLink_ga031e60ab342d2ccd4ac921fd30ffb9b1}} 
+\index{File\+List\+Link@{File\+List\+Link}!href@{href}}
+\index{href@{href}!File\+List\+Link@{File\+List\+Link}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+List\+Link\+\_\+t\+::href}
+
+A U\+RI reference. 

@@ -1,0 +1,112 @@
+\hypertarget{group__DERAvailability}{}\section{D\+E\+R\+Availability}
+\label{group__DERAvailability}\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+Collaboration diagram for D\+E\+R\+Availability\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__DERAvailability}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DERAvailability__t}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__DERAvailability_ga5184b891eb9243cbc337cb66f7afc5d3}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__DERAvailability_ga5ae1c571d6750310abb6c25d2c1f9ec1}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__DERAvailability_gac57295f5506a2a4f18e4044cf783be4e}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__DERAvailability_gae081b220b89bb465c0654de559704c68}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::availability\+Duration}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__DERAvailability_ga1bb60a9e730bcf975b7a925dc5875136}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::max\+Charge\+Duration}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__DERAvailability_gafd14159c0b528ff888f15c999908eee9}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::reading\+Time}
+\item 
+\hyperlink{group__PerCent_ga14278cbee754c63496035b722b417ddc}{S\+E\+\_\+\+Per\+Cent\+\_\+t} \hyperlink{group__DERAvailability_ga1d323d90b7f839ca0c5c2fd243bf5a8e}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::reserve\+Charge\+Percent}
+\item 
+\hyperlink{group__PerCent_ga14278cbee754c63496035b722b417ddc}{S\+E\+\_\+\+Per\+Cent\+\_\+t} \hyperlink{group__DERAvailability_ga186a342c1180f00c5b9ba0d8b74d41f3}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::reserve\+Percent}
+\item 
+\hyperlink{structSE__ReactivePower__t}{S\+E\+\_\+\+Reactive\+Power\+\_\+t} \hyperlink{group__DERAvailability_ga71bc8d7e0861abe18b80c3f3850f472b}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::stat\+Var\+Avail}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__DERAvailability_gafa87b4a21d462f0eff8fbebff012f8c1}{S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::stat\+W\+Avail}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Indicates current reserve generation status 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DERAvailability_ga5184b891eb9243cbc337cb66f7afc5d3}\label{group__DERAvailability_ga5184b891eb9243cbc337cb66f7afc5d3}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+stat\+W\+Avail\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+stat\+Var\+Avail\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+reserve\+Percent\+\_\+exists (1 $<$$<$ 7)
+
+\#define S\+E\+\_\+reserve\+Charge\+Percent\+\_\+exists (1 $<$$<$ 8)
+
+\#define S\+E\+\_\+max\+Charge\+Duration\+\_\+exists (1 $<$$<$ 9) \mbox{\Hypertarget{group__DERAvailability_gae081b220b89bb465c0654de559704c68}\label{group__DERAvailability_gae081b220b89bb465c0654de559704c68}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!availability\+Duration@{availability\+Duration}}
+\index{availability\+Duration@{availability\+Duration}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{availability\+Duration}{availabilityDuration}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::availability\+Duration}
+
+Indicates number of seconds the D\+ER will be able to deliver active power at the reserve\+Percent level. \mbox{\Hypertarget{group__DERAvailability_ga5ae1c571d6750310abb6c25d2c1f9ec1}\label{group__DERAvailability_ga5ae1c571d6750310abb6c25d2c1f9ec1}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!href@{href}}
+\index{href@{href}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__DERAvailability_ga1bb60a9e730bcf975b7a925dc5875136}\label{group__DERAvailability_ga1bb60a9e730bcf975b7a925dc5875136}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!max\+Charge\+Duration@{max\+Charge\+Duration}}
+\index{max\+Charge\+Duration@{max\+Charge\+Duration}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{max\+Charge\+Duration}{maxChargeDuration}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::max\+Charge\+Duration}
+
+Indicates number of seconds the D\+ER will be able to receive active power at the reserve\+Charge\+Percent level. \mbox{\Hypertarget{group__DERAvailability_gafd14159c0b528ff888f15c999908eee9}\label{group__DERAvailability_gafd14159c0b528ff888f15c999908eee9}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!reading\+Time@{reading\+Time}}
+\index{reading\+Time@{reading\+Time}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{reading\+Time}{readingTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::reading\+Time}
+
+The timestamp when the D\+ER availability was last updated. \mbox{\Hypertarget{group__DERAvailability_ga1d323d90b7f839ca0c5c2fd243bf5a8e}\label{group__DERAvailability_ga1d323d90b7f839ca0c5c2fd243bf5a8e}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!reserve\+Charge\+Percent@{reserve\+Charge\+Percent}}
+\index{reserve\+Charge\+Percent@{reserve\+Charge\+Percent}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{reserve\+Charge\+Percent}{reserveChargePercent}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::reserve\+Charge\+Percent}
+
+Percent of continuous received active power (set\+Max\+Charge\+RateW) that is estimated to be available in reserve. \mbox{\Hypertarget{group__DERAvailability_ga186a342c1180f00c5b9ba0d8b74d41f3}\label{group__DERAvailability_ga186a342c1180f00c5b9ba0d8b74d41f3}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!reserve\+Percent@{reserve\+Percent}}
+\index{reserve\+Percent@{reserve\+Percent}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{reserve\+Percent}{reservePercent}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::reserve\+Percent}
+
+Percent of continuous delivered active power (set\+MaxW) that is estimated to be available in reserve. \mbox{\Hypertarget{group__DERAvailability_ga71bc8d7e0861abe18b80c3f3850f472b}\label{group__DERAvailability_ga71bc8d7e0861abe18b80c3f3850f472b}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!stat\+Var\+Avail@{stat\+Var\+Avail}}
+\index{stat\+Var\+Avail@{stat\+Var\+Avail}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{stat\+Var\+Avail}{statVarAvail}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::stat\+Var\+Avail}
+
+Estimated reserve reactive power, in var. Represents the lesser of received or delivered reactive power. \mbox{\Hypertarget{group__DERAvailability_gafa87b4a21d462f0eff8fbebff012f8c1}\label{group__DERAvailability_gafa87b4a21d462f0eff8fbebff012f8c1}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!stat\+W\+Avail@{stat\+W\+Avail}}
+\index{stat\+W\+Avail@{stat\+W\+Avail}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{stat\+W\+Avail}{statWAvail}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::stat\+W\+Avail}
+
+Estimated reserve active power, in watts. \mbox{\Hypertarget{group__DERAvailability_gac57295f5506a2a4f18e4044cf783be4e}\label{group__DERAvailability_gac57295f5506a2a4f18e4044cf783be4e}} 
+\index{D\+E\+R\+Availability@{D\+E\+R\+Availability}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!D\+E\+R\+Availability@{D\+E\+R\+Availability}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+D\+E\+R\+Availability\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

@@ -1,0 +1,70 @@
+\hypertarget{group__DemandResponseProgramList}{}\section{Demand\+Response\+Program\+List}
+\label{group__DemandResponseProgramList}\index{Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}}
+Collaboration diagram for Demand\+Response\+Program\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__DemandResponseProgramList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__DemandResponseProgramList__t}{S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__DemandResponseProgramList_gaa0806a18b74d75beca845f074186f80e}\label{group__DemandResponseProgramList_gaa0806a18b74d75beca845f074186f80e}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__DemandResponseProgramList_ga5073e9c90f4f74248ce8bf5570136c3e}{S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__DemandResponseProgramList_ga8ae2eb55ac9951bd8d8e11644ff223f9}{S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__DemandResponseProgramList_gac5e6faff00dcbcb67882031e92792075}{S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__DemandResponseProgramList_ga34ad081aa336bdce426fe32f9f22d573}{S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__DemandResponseProgramList_ga87aca3a2601d33694d6bcc8d0ec3bdc6}{S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__DemandResponseProgramList_ga0cc351d9fb686ad098d3036519e06778}\label{group__DemandResponseProgramList_ga0cc351d9fb686ad098d3036519e06778}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::\+Demand\+Response\+Program}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Demand\+Response\+Program objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__DemandResponseProgramList_gac5e6faff00dcbcb67882031e92792075}\label{group__DemandResponseProgramList_gac5e6faff00dcbcb67882031e92792075}} 
+\index{Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}!all@{all}}
+\index{all@{all}!Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__DemandResponseProgramList_ga5073e9c90f4f74248ce8bf5570136c3e}\label{group__DemandResponseProgramList_ga5073e9c90f4f74248ce8bf5570136c3e}} 
+\index{Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}!href@{href}}
+\index{href@{href}!Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__DemandResponseProgramList_ga87aca3a2601d33694d6bcc8d0ec3bdc6}\label{group__DemandResponseProgramList_ga87aca3a2601d33694d6bcc8d0ec3bdc6}} 
+\index{Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__DemandResponseProgramList_ga34ad081aa336bdce426fe32f9f22d573}\label{group__DemandResponseProgramList_ga34ad081aa336bdce426fe32f9f22d573}} 
+\index{Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}!results@{results}}
+\index{results@{results}!Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__DemandResponseProgramList_ga8ae2eb55ac9951bd8d8e11644ff223f9}\label{group__DemandResponseProgramList_ga8ae2eb55ac9951bd8d8e11644ff223f9}} 
+\index{Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Demand\+Response\+Program\+List@{Demand\+Response\+Program\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Demand\+Response\+Program\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

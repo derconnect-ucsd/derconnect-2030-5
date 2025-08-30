@@ -1,0 +1,5 @@
+<map id="AbstractDevice" name="AbstractDevice">
+<area shape="rect" id="node1" href="$group__SubscribableResource.html" title="SubscribableResource" alt="" coords="5,31,159,57"/>
+<area shape="rect" id="node3" href="$group__EndDevice.html" title="EndDevice" alt="" coords="367,5,453,32"/>
+<area shape="rect" id="node4" href="$group__SelfDevice.html" title="SelfDevice" alt="" coords="367,56,453,83"/>
+</map>

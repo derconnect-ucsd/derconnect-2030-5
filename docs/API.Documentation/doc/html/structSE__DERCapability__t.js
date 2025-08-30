@@ -1,0 +1,26 @@
+var structSE__DERCapability__t =
+[
+    [ "_flags", "group__DERCapability.html#ga0f194b8e66999993dad21c45fe22d0c7", null ],
+    [ "href", "group__DERCapability.html#gae473d708806e294b5acbc9e455497af9", null ],
+    [ "modesSupported", "group__DERCapability.html#gaeb2956e3adf1befb4d62ab1e2aa1de5c", null ],
+    [ "rtgA", "group__DERCapability.html#gae76648932f07be5a38c825f934fbe002", null ],
+    [ "rtgAbnormalCategory", "group__DERCapability.html#ga6aee5c16aef59e2683c53aa58c13dee8", null ],
+    [ "rtgAh", "group__DERCapability.html#ga259b7c7654bd92928ea31dac53ebda20", null ],
+    [ "rtgMaxChargeRateVA", "group__DERCapability.html#ga0e2378d8fdea4d48fb51d2f8d5b4b936", null ],
+    [ "rtgMaxChargeRateW", "group__DERCapability.html#ga36c8c55fa197038f70f83697f985446d", null ],
+    [ "rtgMaxDischargeRateVA", "group__DERCapability.html#ga68954554c11aab995b225b64dcae7501", null ],
+    [ "rtgMaxDischargeRateW", "group__DERCapability.html#gaf6967bed463f21a9877a155c994753d2", null ],
+    [ "rtgMinPF", "group__DERCapability.html#ga72727afdb49427d03d3d113d0d2d6bf5", null ],
+    [ "rtgMinPFNeg", "group__DERCapability.html#gaebcb9b5c1b7df73c7b4eca49b090d6c3", null ],
+    [ "rtgNormalCategory", "group__DERCapability.html#gacc4601c0a325f5ddfc49dfb2d8505fe6", null ],
+    [ "rtgOverExcitedPF", "group__DERCapability.html#ga09cc0b98cc28ab8552ef88162516fc1f", null ],
+    [ "rtgOverExcitedW", "group__DERCapability.html#gaf00b204426202867e4ed034f24913df1", null ],
+    [ "rtgUnderExcitedPF", "group__DERCapability.html#gafec88a7d239a508cf8179da9c92c860f", null ],
+    [ "rtgUnderExcitedW", "group__DERCapability.html#ga0b291049be0af4e289aea080f700b22c", null ],
+    [ "rtgVA", "group__DERCapability.html#gac861791e43780c5ca7f9994c31f59e86", null ],
+    [ "rtgVar", "group__DERCapability.html#ga626f569c239b41de4d007fddb01de132", null ],
+    [ "rtgVarNeg", "group__DERCapability.html#ga3bbef4aacb8b26a315f24bb5a9b26deb", null ],
+    [ "rtgW", "group__DERCapability.html#gabb04b932aebcf4b908bee4d1e9b81f13", null ],
+    [ "rtgWh", "group__DERCapability.html#gad7168b19a76c0dc8b404801be524bff4", null ],
+    [ "type", "group__DERCapability.html#ga50fcc4caf19115d8398da27622a972c1", null ]
+];

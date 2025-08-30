@@ -1,0 +1,56 @@
+\hypertarget{group__TimeConfiguration}{}\section{Time\+Configuration}
+\label{group__TimeConfiguration}\index{Time\+Configuration@{Time\+Configuration}}
+Collaboration diagram for Time\+Configuration\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group__TimeConfiguration}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__TimeConfiguration__t}{S\+E\+\_\+\+Time\+Configuration\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__DstRuleType_ga215f3da52e2c5be95bc85b60e8702bcf}{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t} \hyperlink{group__TimeConfiguration_gae87e7c6824261a50cda64560ae33fa4b}{S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::dst\+End\+Rule}
+\item 
+\hyperlink{group__TimeOffsetType_ga3de71705a6723a1013cf383b705cbd8a}{S\+E\+\_\+\+Time\+Offset\+Type\+\_\+t} \hyperlink{group__TimeConfiguration_ga3bb6651aeebc25b17fbcd004bb0a5ffc}{S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::dst\+Offset}
+\item 
+\hyperlink{group__DstRuleType_ga215f3da52e2c5be95bc85b60e8702bcf}{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t} \hyperlink{group__TimeConfiguration_gaa5bec33fb7f397915e1c59e039876bb0}{S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::dst\+Start\+Rule}
+\item 
+\hyperlink{group__TimeOffsetType_ga3de71705a6723a1013cf383b705cbd8a}{S\+E\+\_\+\+Time\+Offset\+Type\+\_\+t} \hyperlink{group__TimeConfiguration_ga2828faf061be8b3195d89dfbf7cb2b02}{S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::tz\+Offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains attributes related to the configuration of the time service. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__TimeConfiguration_gae87e7c6824261a50cda64560ae33fa4b}\label{group__TimeConfiguration_gae87e7c6824261a50cda64560ae33fa4b}} 
+\index{Time\+Configuration@{Time\+Configuration}!dst\+End\+Rule@{dst\+End\+Rule}}
+\index{dst\+End\+Rule@{dst\+End\+Rule}!Time\+Configuration@{Time\+Configuration}}
+\subsubsection{\texorpdfstring{dst\+End\+Rule}{dstEndRule}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::dst\+End\+Rule}
+
+Rule to calculate end of daylight savings time in the current year. Result of dst\+End\+Rule must be greater than result of dst\+Start\+Rule. \mbox{\Hypertarget{group__TimeConfiguration_ga3bb6651aeebc25b17fbcd004bb0a5ffc}\label{group__TimeConfiguration_ga3bb6651aeebc25b17fbcd004bb0a5ffc}} 
+\index{Time\+Configuration@{Time\+Configuration}!dst\+Offset@{dst\+Offset}}
+\index{dst\+Offset@{dst\+Offset}!Time\+Configuration@{Time\+Configuration}}
+\subsubsection{\texorpdfstring{dst\+Offset}{dstOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::dst\+Offset}
+
+Daylight savings time offset from local standard time. \mbox{\Hypertarget{group__TimeConfiguration_gaa5bec33fb7f397915e1c59e039876bb0}\label{group__TimeConfiguration_gaa5bec33fb7f397915e1c59e039876bb0}} 
+\index{Time\+Configuration@{Time\+Configuration}!dst\+Start\+Rule@{dst\+Start\+Rule}}
+\index{dst\+Start\+Rule@{dst\+Start\+Rule}!Time\+Configuration@{Time\+Configuration}}
+\subsubsection{\texorpdfstring{dst\+Start\+Rule}{dstStartRule}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::dst\+Start\+Rule}
+
+Rule to calculate start of daylight savings time in the current year. Result of dst\+End\+Rule must be greater than result of dst\+Start\+Rule. \mbox{\Hypertarget{group__TimeConfiguration_ga2828faf061be8b3195d89dfbf7cb2b02}\label{group__TimeConfiguration_ga2828faf061be8b3195d89dfbf7cb2b02}} 
+\index{Time\+Configuration@{Time\+Configuration}!tz\+Offset@{tz\+Offset}}
+\index{tz\+Offset@{tz\+Offset}!Time\+Configuration@{Time\+Configuration}}
+\subsubsection{\texorpdfstring{tz\+Offset}{tzOffset}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Time\+Configuration\+\_\+t\+::tz\+Offset}
+
+Local time zone offset from U\+T\+C\+Time. Does not include any daylight savings time offsets. 

@@ -1,0 +1,6 @@
+<map id="SE_DERProgram_t" name="SE_DERProgram_t">
+<area shape="rect" id="node2" href="$structSE__ActiveDERControlListLink__t.html" title="SE_ActiveDERControlListLink_t" alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node3" href="$structSE__DERControlListLink__t.html" title="SE_DERControlListLink_t" alt="" coords="23,56,198,83"/>
+<area shape="rect" id="node4" href="$structSE__DefaultDERControlLink__t.html" title="SE_DefaultDERControlLink_t" alt="" coords="13,107,208,133"/>
+<area shape="rect" id="node5" href="$structSE__DERCurveListLink__t.html" title="SE_DERCurveListLink_t" alt="" coords="27,157,194,184"/>
+</map>

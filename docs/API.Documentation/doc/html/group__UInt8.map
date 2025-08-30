@@ -1,0 +1,28 @@
+<map id="UInt8" name="UInt8">
+<area shape="rect" id="node2" href="$group__AccumulationBehaviourType.html" title="AccumulationBehaviourType" alt="" coords="235,5,423,32"/>
+<area shape="rect" id="node3" href="$group__PrimacyType.html" title="PrimacyType" alt="" coords="280,56,379,83"/>
+<area shape="rect" id="node4" href="$group__DERType.html" title="DERType" alt="" coords="289,107,369,133"/>
+<area shape="rect" id="node5" href="$group__PowerSourceType.html" title="PowerSourceType" alt="" coords="265,157,394,184"/>
+<area shape="rect" id="node6" href="$group__TOUType.html" title="TOUType" alt="" coords="290,208,369,235"/>
+<area shape="rect" id="node7" href="$group__SubscribableType.html" title="SubscribableType" alt="" coords="266,259,393,285"/>
+<area shape="rect" id="node8" href="$group__ServiceStatusType.html" title="ServiceStatusType" alt="" coords="263,309,396,336"/>
+<area shape="rect" id="node9" href="$group__FlowDirectionType.html" title="FlowDirectionType" alt="" coords="264,360,395,387"/>
+<area shape="rect" id="node10" href="$group__ConsumptionBlockType.html" title="ConsumptionBlockType" alt="" coords="249,411,410,437"/>
+<area shape="rect" id="node11" href="$group__CommodityType.html" title="CommodityType" alt="" coords="270,461,389,488"/>
+<area shape="rect" id="node12" href="$group__CreditTypeType.html" title="CreditTypeType" alt="" coords="272,512,387,539"/>
+<area shape="rect" id="node13" href="$group__DERUnitRefType.html" title="DERUnitRefType" alt="" coords="267,563,392,589"/>
+<area shape="rect" id="node15" href="$group__KindType.html" title="KindType" alt="" coords="291,613,368,640"/>
+<area shape="rect" id="node16" href="$group__UnitType.html" title="UnitType" alt="" coords="292,664,367,691"/>
+<area shape="rect" id="node17" href="$group__PriorityType.html" title="PriorityType" alt="" coords="283,715,375,741"/>
+<area shape="rect" id="node18" href="$group__PrepayModeType.html" title="PrepayModeType" alt="" coords="267,765,391,792"/>
+<area shape="rect" id="node19" href="$group__PhaseCode.html" title="PhaseCode" alt="" coords="284,816,375,843"/>
+<area shape="rect" id="node20" href="$group__CostKindType.html" title="CostKindType" alt="" coords="277,867,382,893"/>
+<area shape="rect" id="node21" href="$group__CreditStatusType.html" title="CreditStatusType" alt="" coords="267,917,391,944"/>
+<area shape="rect" id="node22" href="$group__ApplianceLoadReductionType.html" title="ApplianceLoadReductionType" alt="" coords="232,968,427,995"/>
+<area shape="rect" id="node23" href="$group__DataQualifierType.html" title="DataQualifierType" alt="" coords="266,1019,393,1045"/>
+<area shape="rect" id="node24" href="$group__DERCurveType.html" title="DERCurveType" alt="" coords="272,1069,387,1096"/>
+<area shape="rect" id="node25" href="$group__UomType.html" title="UomType" alt="" coords="290,1120,369,1147"/>
+<area shape="rect" id="node26" href="$group__ServiceKind.html" title="ServiceKind" alt="" coords="283,1171,375,1197"/>
+<area shape="rect" id="node27" href="$group__ChargeKind.html" title="ChargeKind" alt="" coords="284,1221,375,1248"/>
+<area shape="rect" id="node14" href="$group__se__typedefs.html" title="Typedefs" alt="" coords="5,613,81,640"/>
+</map>

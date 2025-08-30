@@ -1,0 +1,12 @@
+<map id="SE_FunctionSetAssignmentsBase_t" name="SE_FunctionSetAssignmentsBase_t">
+<area shape="rect" id="node2" href="$structSE__DERProgramListLink__t.html" title="SE_DERProgramListLink_t" alt="" coords="22,20,203,47"/>
+<area shape="rect" id="node3" href="$structSE__TariffProfileListLink__t.html" title="SE_TariffProfileListLink_t" alt="" coords="27,71,198,97"/>
+<area shape="rect" id="node4" href="$structSE__ResponseSetListLink__t.html" title="SE_ResponseSetListLink_t" alt="" coords="21,121,204,148"/>
+<area shape="rect" id="node5" href="$structSE__TimeLink__t.html" title="SE_TimeLink_t" alt="" coords="57,172,168,199"/>
+<area shape="rect" id="node6" href="$structSE__PrepaymentListLink__t.html" title="SE_PrepaymentListLink_t" alt="" coords="26,223,199,249"/>
+<area shape="rect" id="node7" href="$structSE__CustomerAccountListLink__t.html" title="SE_CustomerAccountListLink_t" alt="" coords="9,273,217,300"/>
+<area shape="rect" id="node8" href="$structSE__DemandResponseProgramListLink__t.html" title="SE_DemandResponseProgram\lListLink_t" alt="" coords="11,325,215,366"/>
+<area shape="rect" id="node9" href="$structSE__UsagePointListLink__t.html" title="SE_UsagePointListLink_t" alt="" coords="27,391,198,417"/>
+<area shape="rect" id="node10" href="$structSE__FileListLink__t.html" title="SE_FileListLink_t" alt="" coords="51,441,175,468"/>
+<area shape="rect" id="node11" href="$structSE__MessagingProgramListLink__t.html" title="SE_MessagingProgramListLink_t" alt="" coords="5,492,220,519"/>
+</map>

@@ -1,0 +1,62 @@
+\hypertarget{group__LoadShedAvailabilityList}{}\section{Load\+Shed\+Availability\+List}
+\label{group__LoadShedAvailabilityList}\index{Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}}
+Collaboration diagram for Load\+Shed\+Availability\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{group__LoadShedAvailabilityList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__LoadShedAvailabilityList__t}{S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__LoadShedAvailabilityList_ga7d816de65ecbeda7beb76a4617be416d}\label{group__LoadShedAvailabilityList_ga7d816de65ecbeda7beb76a4617be416d}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__LoadShedAvailabilityList_ga759f6f998744203770c7908f3f157784}{S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__LoadShedAvailabilityList_gaedd3746993d4fb321cdb00aa48c41e92}{S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__LoadShedAvailabilityList_gab30e5d3f4e29c7b26f294be2f5563a4f}{S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__LoadShedAvailabilityList_gacd95c2260e71af84870c073faceef2bc}{S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__LoadShedAvailabilityList_gafe4406fc065cce546b5ef78eb7a4422f}\label{group__LoadShedAvailabilityList_gafe4406fc065cce546b5ef78eb7a4422f}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::\+Load\+Shed\+Availability}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Load\+Shed\+Availability objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__LoadShedAvailabilityList_gaedd3746993d4fb321cdb00aa48c41e92}\label{group__LoadShedAvailabilityList_gaedd3746993d4fb321cdb00aa48c41e92}} 
+\index{Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}!all@{all}}
+\index{all@{all}!Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__LoadShedAvailabilityList_ga759f6f998744203770c7908f3f157784}\label{group__LoadShedAvailabilityList_ga759f6f998744203770c7908f3f157784}} 
+\index{Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}!href@{href}}
+\index{href@{href}!Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__LoadShedAvailabilityList_gacd95c2260e71af84870c073faceef2bc}\label{group__LoadShedAvailabilityList_gacd95c2260e71af84870c073faceef2bc}} 
+\index{Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__LoadShedAvailabilityList_gab30e5d3f4e29c7b26f294be2f5563a4f}\label{group__LoadShedAvailabilityList_gab30e5d3f4e29c7b26f294be2f5563a4f}} 
+\index{Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}!results@{results}}
+\index{results@{results}!Load\+Shed\+Availability\+List@{Load\+Shed\+Availability\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. 

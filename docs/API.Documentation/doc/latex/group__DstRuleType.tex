@@ -1,0 +1,123 @@
+\hypertarget{group__DstRuleType}{}\section{Dst\+Rule\+Type}
+\label{group__DstRuleType}\index{Dst\+Rule\+Type@{Dst\+Rule\+Type}}
+Collaboration diagram for Dst\+Rule\+Type\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__DstRuleType}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{group__HexBinary32_ga062e99a233c4875284116657d048bb98}{S\+E\+\_\+\+Hex\+Binary32\+\_\+t} \hyperlink{group__DstRuleType_ga215f3da52e2c5be95bc85b60e8702bcf}{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bit map encoded rule from which is calculated the start or end time, within the current year, to which daylight savings time offset must be applied.
+
+The rule encoding\+:
+
+Bits 0 -\/ 11\+: seconds 0 -\/ 3599
+
+Bits 12 -\/ 16\+: hours 0 -\/ 23
+
+Bits 17 -\/ 19\+: day of the week 0 = not applicable, 1 -\/ 7 (Monday = 1)
+
+Bits 20 -\/ 24\+: day of the month 0 = not applicable, 1 -\/ 31
+
+Bits 25 -\/ 27\+: operator (detailed below)
+
+Bits 28 -\/ 31\+: month 1 -\/ 12
+
+Rule value of 0x\+F\+F\+F\+F\+F\+F\+FF means rule processing/\+D\+ST correction is disabled.
+
+The operators\+:
+
+0\+: D\+ST starts/ends on the Day of the Month
+
+1\+: D\+ST starts/ends on the Day of the Week that is on or after the Day of the Month
+
+2\+: D\+ST starts/ends on the first occurrence of the Day of the Week in a month
+
+3\+: D\+ST starts/ends on the second occurrence of the Day of the Week in a month
+
+4\+: D\+ST starts/ends on the third occurrence of the Day of the Week in a month
+
+5\+: D\+ST starts/ends on the forth occurrence of the Day of the Week in a month
+
+6\+: D\+ST starts/ends on the fifth occurrence of the Day of the Week in a month
+
+7\+: D\+ST starts/ends on the last occurrence of the Day of the Week in a month
+
+An example\+: D\+ST starts on third Friday in March at 1\+:45 AM. The rule...
+
+Seconds\+: 2700
+
+Hours\+: 1
+
+Day of Week\+: 5
+
+Day of Month\+: 0
+
+Operator\+: 4
+
+Month\+: 3 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__DstRuleType_ga215f3da52e2c5be95bc85b60e8702bcf}\label{group__DstRuleType_ga215f3da52e2c5be95bc85b60e8702bcf}} 
+\index{Dst\+Rule\+Type@{Dst\+Rule\+Type}!S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t@{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t}}
+\index{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t@{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t}!Dst\+Rule\+Type@{Dst\+Rule\+Type}}
+\subsubsection{\texorpdfstring{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t}{SE\_DstRuleType\_t}}
+{\footnotesize\ttfamily \hyperlink{group__DstRuleType_ga215f3da52e2c5be95bc85b60e8702bcf}{S\+E\+\_\+\+Dst\+Rule\+Type\+\_\+t}}
+
+Bit map encoded rule from which is calculated the start or end time, within the current year, to which daylight savings time offset must be applied.
+
+The rule encoding\+:
+
+Bits 0 -\/ 11\+: seconds 0 -\/ 3599
+
+Bits 12 -\/ 16\+: hours 0 -\/ 23
+
+Bits 17 -\/ 19\+: day of the week 0 = not applicable, 1 -\/ 7 (Monday = 1)
+
+Bits 20 -\/ 24\+: day of the month 0 = not applicable, 1 -\/ 31
+
+Bits 25 -\/ 27\+: operator (detailed below)
+
+Bits 28 -\/ 31\+: month 1 -\/ 12
+
+Rule value of 0x\+F\+F\+F\+F\+F\+F\+FF means rule processing/\+D\+ST correction is disabled.
+
+The operators\+:
+
+0\+: D\+ST starts/ends on the Day of the Month
+
+1\+: D\+ST starts/ends on the Day of the Week that is on or after the Day of the Month
+
+2\+: D\+ST starts/ends on the first occurrence of the Day of the Week in a month
+
+3\+: D\+ST starts/ends on the second occurrence of the Day of the Week in a month
+
+4\+: D\+ST starts/ends on the third occurrence of the Day of the Week in a month
+
+5\+: D\+ST starts/ends on the forth occurrence of the Day of the Week in a month
+
+6\+: D\+ST starts/ends on the fifth occurrence of the Day of the Week in a month
+
+7\+: D\+ST starts/ends on the last occurrence of the Day of the Week in a month
+
+An example\+: D\+ST starts on third Friday in March at 1\+:45 AM. The rule...
+
+Seconds\+: 2700
+
+Hours\+: 1
+
+Day of Week\+: 5
+
+Day of Month\+: 0
+
+Operator\+: 4
+
+Month\+: 3 

@@ -1,0 +1,90 @@
+\hypertarget{group__IdentifiedObject}{}\section{Identified\+Object}
+\label{group__IdentifiedObject}\index{Identified\+Object@{Identified\+Object}}
+Collaboration diagram for Identified\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__IdentifiedObject}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__ReadingSetBase}{Reading\+Set\+Base}
+\item 
+\hyperlink{group__MeterReadingBase}{Meter\+Reading\+Base}
+\item 
+\hyperlink{group__UsagePointBase}{Usage\+Point\+Base}
+\item 
+\hyperlink{group__DERCurve}{D\+E\+R\+Curve}
+\item 
+\hyperlink{group__FlowReservationRequest}{Flow\+Reservation\+Request}
+\item 
+\hyperlink{group__Prepayment}{Prepayment}
+\item 
+\hyperlink{group__CreditRegister}{Credit\+Register}
+\item 
+\hyperlink{group__ServiceSupplier}{Service\+Supplier}
+\item 
+\hyperlink{group__CustomerAgreement}{Customer\+Agreement}
+\item 
+\hyperlink{group__CustomerAccount}{Customer\+Account}
+\item 
+\hyperlink{group__TariffProfile}{Tariff\+Profile}
+\item 
+\hyperlink{group__RateComponent}{Rate\+Component}
+\item 
+\hyperlink{group__DemandResponseProgram}{Demand\+Response\+Program}
+\item 
+\hyperlink{group__ResponseSet}{Response\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__IdentifiedObject__t}{S\+E\+\_\+\+Identified\+Object\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__IdentifiedObject_ga9b83511d3f44f8f23b394dd4ab8a51b4}\label{group__IdentifiedObject_ga9b83511d3f44f8f23b394dd4ab8a51b4}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Identified\+Object\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__IdentifiedObject_gaa38c752b4716c2365e11d7afd8495be1}{S\+E\+\_\+\+Identified\+Object\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__IdentifiedObject_ga2f6a112da8cb63840db553c07d6f5429}{S\+E\+\_\+\+Identified\+Object\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__IdentifiedObject_ga413d941623baaef9b40a6fb8dac29328}{S\+E\+\_\+\+Identified\+Object\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__IdentifiedObject_gaffcdf964702f132d4f4078cc4864d594}{S\+E\+\_\+\+Identified\+Object\+\_\+t\+::version}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a root class to provide common naming attributes for all classes needing naming attributes 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__IdentifiedObject_ga413d941623baaef9b40a6fb8dac29328}\label{group__IdentifiedObject_ga413d941623baaef9b40a6fb8dac29328}} 
+\index{Identified\+Object@{Identified\+Object}!description@{description}}
+\index{description@{description}!Identified\+Object@{Identified\+Object}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Identified\+Object\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__IdentifiedObject_gaa38c752b4716c2365e11d7afd8495be1}\label{group__IdentifiedObject_gaa38c752b4716c2365e11d7afd8495be1}} 
+\index{Identified\+Object@{Identified\+Object}!href@{href}}
+\index{href@{href}!Identified\+Object@{Identified\+Object}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Identified\+Object\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__IdentifiedObject_ga2f6a112da8cb63840db553c07d6f5429}\label{group__IdentifiedObject_ga2f6a112da8cb63840db553c07d6f5429}} 
+\index{Identified\+Object@{Identified\+Object}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Identified\+Object@{Identified\+Object}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Identified\+Object\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__IdentifiedObject_gaffcdf964702f132d4f4078cc4864d594}\label{group__IdentifiedObject_gaffcdf964702f132d4f4078cc4864d594}} 
+\index{Identified\+Object@{Identified\+Object}!version@{version}}
+\index{version@{version}!Identified\+Object@{Identified\+Object}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Identified\+Object\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

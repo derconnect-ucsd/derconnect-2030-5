@@ -1,0 +1,204 @@
+\hypertarget{group__hash}{}\section{Hash}
+\label{group__hash}\index{Hash@{Hash}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__hash_gadf905560217c8abc03d84eded54180e6}{global\+\_\+hash}(name,  kind,  size)
+\begin{DoxyCompactList}\small\item\em Create a global hash table with functions to initialize the Hash\+Table, find, insert, and delete entries from the Hash\+Table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__hash_ga6a684eeb68fe78419c0354cb07a1d191}\label{group__hash_ga6a684eeb68fe78419c0354cb07a1d191}} 
+\#define {\bfseries foreach\+\_\+h}(h,  ht)~for (h = hash\+\_\+iterate (ht); h != N\+U\+LL; h = hash\+\_\+next (ht))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__hash_gad09c371a5dda2decb59db772786a842a}\label{group__hash_gad09c371a5dda2decb59db772786a842a}} 
+typedef struct \+\_\+\+Hash\+Table {\bfseries Hash\+Table}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Table $\ast$ \hyperlink{group__hash_ga5c5c7364cbafc96b9cb5e16db229494e}{hash\+\_\+new} (int size)
+\begin{DoxyCompactList}\small\item\em Allocate a Hash\+Table. \end{DoxyCompactList}\item 
+void \hyperlink{group__hash_ga30d10595d9b6fd1f5078dc3d280f4d0f}{hash\+\_\+free} (Hash\+Table $\ast$ht)
+\begin{DoxyCompactList}\small\item\em Free a Hash\+Table. \end{DoxyCompactList}\item 
+void \hyperlink{group__hash_gabb3e92803e5e58da89747b7f60cd685a}{hash\+\_\+put} (Hash\+Table $\ast$ht, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Put the data item into the Hash\+Table. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__hash_ga4bbe51c4d1aac0038cc86f9f12f877d0}{hash\+\_\+delete} (Hash\+Table $\ast$ht, void $\ast$key)
+\begin{DoxyCompactList}\small\item\em Delete the hash entry that matches the key. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__hash_ga92a539c92a9ff17735271e171b70adab}{hash\+\_\+get} (Hash\+Table $\ast$ht, void $\ast$key)
+\begin{DoxyCompactList}\small\item\em Get the data item that matches the key. \end{DoxyCompactList}\item 
+Hash\+Table $\ast$ \hyperlink{group__hash_ga3ba3e849838d8f449a3f995423db5de1}{new\+\_\+string\+\_\+hash} (int size, void $\ast$($\ast$get\+\_\+key)(void $\ast$data))
+\begin{DoxyCompactList}\small\item\em Allocate a new Hash\+Table with entries hashed by character strings. \end{DoxyCompactList}\item 
+Hash\+Table $\ast$ \hyperlink{group__hash_gab2457c4ed3f2950ebdf12411d23d22ce}{new\+\_\+int64\+\_\+hash} (int size, void $\ast$($\ast$get\+\_\+key)(void $\ast$data))
+\begin{DoxyCompactList}\small\item\em Allocate a new Hash\+Table with entries hashed by 64-\/bit integers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__hash_gadfbdabf4e66f70f6c9f3cb3844d2e2cd}\label{group__hash_gadfbdabf4e66f70f6c9f3cb3844d2e2cd}} 
+void $\ast$ {\bfseries hash\+\_\+next} (Hash\+Table $\ast$ht)
+\item 
+\mbox{\Hypertarget{group__hash_ga103aae1052ca8c86980bceeda8ab09d3}\label{group__hash_ga103aae1052ca8c86980bceeda8ab09d3}} 
+void $\ast$ {\bfseries hash\+\_\+iterate} (Hash\+Table $\ast$ht)
+\item 
+\mbox{\Hypertarget{group__hash_ga73997244cca796594b2805e6a954cad2}\label{group__hash_ga73997244cca796594b2805e6a954cad2}} 
+void {\bfseries hash\+\_\+erase} (Hash\+Table $\ast$ht)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a dynamically sized hash table implementation based upon sparse groups. Sparse groups are arrays of elements that use a single bit to indicate occupancy. Only the elements of the array that are occupied are stored, this results in a compact representation of a hash table at the cost of some extra processing to perform the insertion. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__hash_gadf905560217c8abc03d84eded54180e6}\label{group__hash_gadf905560217c8abc03d84eded54180e6}} 
+\index{Hash@{Hash}!global\+\_\+hash@{global\+\_\+hash}}
+\index{global\+\_\+hash@{global\+\_\+hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{global\+\_\+hash}{global\_hash}}
+{\footnotesize\ttfamily \#define global\+\_\+hash(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{kind,  }\item[{}]{size }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+HashTable *name##\_hash = NULL;       \(\backslash\)
+  void *find\_##name (\textcolor{keywordtype}{void} *key) \{      \(\backslash\)
+    return \hyperlink{group__hash_ga92a539c92a9ff17735271e171b70adab}{hash\_get} (name##\_hash, key);    \(\backslash\)
+  \}              \(\backslash\)
+  void insert\_##name (\textcolor{keywordtype}{void} *data) \{      \(\backslash\)
+    hash\_put (name##\_hash, data);      \(\backslash\)
+  \}              \(\backslash\)
+  void *delete\_##name (\textcolor{keywordtype}{void} *key) \{      \(\backslash\)
+    return \hyperlink{group__hash_ga4bbe51c4d1aac0038cc86f9f12f877d0}{hash\_delete} (name##\_hash, key);    \(\backslash\)
+  \}              \(\backslash\)
+  void name##\_init () \{         \(\backslash\)
+    name##\_hash = new\_##kind##\_hash (size, name##\_key); \(\backslash\)
+  \}
+\end{DoxyCode}
+
+
+Create a global hash table with functions to initialize the Hash\+Table, find, insert, and delete entries from the Hash\+Table. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__hash_ga4bbe51c4d1aac0038cc86f9f12f877d0}\label{group__hash_ga4bbe51c4d1aac0038cc86f9f12f877d0}} 
+\index{Hash@{Hash}!hash\+\_\+delete@{hash\+\_\+delete}}
+\index{hash\+\_\+delete@{hash\+\_\+delete}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hash\+\_\+delete()}{hash\_delete()}}
+{\footnotesize\ttfamily void $\ast$ hash\+\_\+delete (\begin{DoxyParamCaption}\item[{Hash\+Table $\ast$}]{ht,  }\item[{void $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+Delete the hash entry that matches the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ht} & is a pointer to a Hash\+Table \\
+\hline
+{\em key} & is a pointer to a hash key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hash entry associated with the key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__hash_ga30d10595d9b6fd1f5078dc3d280f4d0f}\label{group__hash_ga30d10595d9b6fd1f5078dc3d280f4d0f}} 
+\index{Hash@{Hash}!hash\+\_\+free@{hash\+\_\+free}}
+\index{hash\+\_\+free@{hash\+\_\+free}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hash\+\_\+free()}{hash\_free()}}
+{\footnotesize\ttfamily void hash\+\_\+free (\begin{DoxyParamCaption}\item[{Hash\+Table $\ast$}]{ht }\end{DoxyParamCaption})}
+
+
+
+Free a Hash\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ht} & is a pointer to a Hash\+Table \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__hash_ga92a539c92a9ff17735271e171b70adab}\label{group__hash_ga92a539c92a9ff17735271e171b70adab}} 
+\index{Hash@{Hash}!hash\+\_\+get@{hash\+\_\+get}}
+\index{hash\+\_\+get@{hash\+\_\+get}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hash\+\_\+get()}{hash\_get()}}
+{\footnotesize\ttfamily void $\ast$ hash\+\_\+get (\begin{DoxyParamCaption}\item[{Hash\+Table $\ast$}]{ht,  }\item[{void $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+Get the data item that matches the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ht} & is a pointer to a Hash\+Table \\
+\hline
+{\em key} & is a pointer to a hash key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hash entry associated with the key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__hash_ga5c5c7364cbafc96b9cb5e16db229494e}\label{group__hash_ga5c5c7364cbafc96b9cb5e16db229494e}} 
+\index{Hash@{Hash}!hash\+\_\+new@{hash\+\_\+new}}
+\index{hash\+\_\+new@{hash\+\_\+new}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hash\+\_\+new()}{hash\_new()}}
+{\footnotesize\ttfamily Hash\+Table $\ast$ hash\+\_\+new (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Allocate a Hash\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & is the initial size of the Hash\+Table \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__hash_gabb3e92803e5e58da89747b7f60cd685a}\label{group__hash_gabb3e92803e5e58da89747b7f60cd685a}} 
+\index{Hash@{Hash}!hash\+\_\+put@{hash\+\_\+put}}
+\index{hash\+\_\+put@{hash\+\_\+put}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hash\+\_\+put()}{hash\_put()}}
+{\footnotesize\ttfamily void hash\+\_\+put (\begin{DoxyParamCaption}\item[{Hash\+Table $\ast$}]{ht,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Put the data item into the Hash\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ht} & is a pointer to a Hash\+Table \\
+\hline
+{\em data} & is pointer to the data item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__hash_gab2457c4ed3f2950ebdf12411d23d22ce}\label{group__hash_gab2457c4ed3f2950ebdf12411d23d22ce}} 
+\index{Hash@{Hash}!new\+\_\+int64\+\_\+hash@{new\+\_\+int64\+\_\+hash}}
+\index{new\+\_\+int64\+\_\+hash@{new\+\_\+int64\+\_\+hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{new\+\_\+int64\+\_\+hash()}{new\_int64\_hash()}}
+{\footnotesize\ttfamily Hash\+Table $\ast$ new\+\_\+int64\+\_\+hash (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{void $\ast$($\ast$)(void $\ast$data)}]{get\+\_\+key }\end{DoxyParamCaption})}
+
+
+
+Allocate a new Hash\+Table with entries hashed by 64-\/bit integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & is the initial size of the Hash\+Table \\
+\hline
+{\em get\+\_\+key} & is a user supplied function to get the key from a hash entry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new Hash\+Table 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__hash_ga3ba3e849838d8f449a3f995423db5de1}\label{group__hash_ga3ba3e849838d8f449a3f995423db5de1}} 
+\index{Hash@{Hash}!new\+\_\+string\+\_\+hash@{new\+\_\+string\+\_\+hash}}
+\index{new\+\_\+string\+\_\+hash@{new\+\_\+string\+\_\+hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{new\+\_\+string\+\_\+hash()}{new\_string\_hash()}}
+{\footnotesize\ttfamily Hash\+Table $\ast$ new\+\_\+string\+\_\+hash (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{void $\ast$($\ast$)(void $\ast$data)}]{get\+\_\+key }\end{DoxyParamCaption})}
+
+
+
+Allocate a new Hash\+Table with entries hashed by character strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & is the initial size of the Hash\+Table \\
+\hline
+{\em get\+\_\+key} & is a user supplied function to get the key from a hash entry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new Hash\+Table 
+\end{DoxyReturn}

@@ -1,0 +1,128 @@
+\hypertarget{group__output}{}\section{Output}
+\label{group__output}\index{Output@{Output}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__output_gad9787f49c9332986ed28632e7a39b51c}\label{group__output_gad9787f49c9332986ed28632e7a39b51c}} 
+typedef struct \+\_\+\+Output {\bfseries Output}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__output_ga6a3d8746b3070887a072f85dccf9d1c4}{exi\+\_\+output\+\_\+init} (Output $\ast$o, const Schema $\ast$schema, char $\ast$buffer, int size)
+\begin{DoxyCompactList}\small\item\em Initialize Output object to output an E\+XI document. \end{DoxyCompactList}\item 
+int \hyperlink{group__output_ga3d946f83e9903a8f747658e0661a5e45}{output\+\_\+item\+\_\+count} (Output $\ast$o, int level)
+\begin{DoxyCompactList}\small\item\em Return the item count at the specified element level. \end{DoxyCompactList}\item 
+int \hyperlink{group__output_ga01c802e726b86aedea1ab32b6367c93a}{output\+\_\+complete} (Output $\ast$o)
+\begin{DoxyCompactList}\small\item\em Is the output complete? \end{DoxyCompactList}\item 
+int \hyperlink{group__output_ga4061286ee8f7db4179a5c05cd0c53ab1}{output\+\_\+doc} (Output $\ast$o, void $\ast$obj, int type)
+\begin{DoxyCompactList}\small\item\em Output an X\+ML or E\+XI document to a buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__output_ga713d5923db024e1e4ef5d65fa372c133}{output\+\_\+init} (Output $\ast$o, const Schema $\ast$schema, char $\ast$buffer, int size)
+\begin{DoxyCompactList}\small\item\em Initialize an Output object to output an X\+ML document. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The output formater takes a C object that corresponds with a schema element declaration and converts it into an X\+ML or E\+XI document. Just like the parser the formater can operate in segments, outputting only the portion of the document that will fit within the buffer.
+
+Most documents within a schema can be comfortably output to a fixed length buffer, however documents with unbounded elements (elements that can occur any number of times) can easily exceed these confines. The List derived documents in I\+E\+EE 2030.\+5 are an example of documents that contain unbounded elements. According to the protocol these documents support a \char`\"{}paged\char`\"{} access method where a document is returned with only a portion of the entire set of elements.
+
+To support this paged access method with a fixed length buffer, it is useful to know how many elements fit in the buffer before the formater ran out of space. A call to \hyperlink{group__output_ga3d946f83e9903a8f747658e0661a5e45}{output\+\_\+item\+\_\+count} will return the number of elements successfully written to a buffer at the specified element level before \hyperlink{group__output_ga4061286ee8f7db4179a5c05cd0c53ab1}{output\+\_\+doc} returned. This count can be used to determine a limit of items that can be reliably output to a buffer. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__output_ga6a3d8746b3070887a072f85dccf9d1c4}\label{group__output_ga6a3d8746b3070887a072f85dccf9d1c4}} 
+\index{Output@{Output}!exi\+\_\+output\+\_\+init@{exi\+\_\+output\+\_\+init}}
+\index{exi\+\_\+output\+\_\+init@{exi\+\_\+output\+\_\+init}!Output@{Output}}
+\subsubsection{\texorpdfstring{exi\+\_\+output\+\_\+init()}{exi\_output\_init()}}
+{\footnotesize\ttfamily void exi\+\_\+output\+\_\+init (\begin{DoxyParamCaption}\item[{Output $\ast$}]{o,  }\item[{const Schema $\ast$}]{schema,  }\item[{char $\ast$}]{buffer,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Initialize Output object to output an E\+XI document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & is a pointer to an Output object \\
+\hline
+{\em schema} & is a pointer to a Schema object \\
+\hline
+{\em buffer} & is the container for the E\+XI output \\
+\hline
+{\em size} & is the size of the buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__output_ga01c802e726b86aedea1ab32b6367c93a}\label{group__output_ga01c802e726b86aedea1ab32b6367c93a}} 
+\index{Output@{Output}!output\+\_\+complete@{output\+\_\+complete}}
+\index{output\+\_\+complete@{output\+\_\+complete}!Output@{Output}}
+\subsubsection{\texorpdfstring{output\+\_\+complete()}{output\_complete()}}
+{\footnotesize\ttfamily int output\+\_\+complete (\begin{DoxyParamCaption}\item[{Output $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Is the output complete? 
+
+\begin{DoxyReturn}{Returns}
+1 if the output is complete, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__output_ga4061286ee8f7db4179a5c05cd0c53ab1}\label{group__output_ga4061286ee8f7db4179a5c05cd0c53ab1}} 
+\index{Output@{Output}!output\+\_\+doc@{output\+\_\+doc}}
+\index{output\+\_\+doc@{output\+\_\+doc}!Output@{Output}}
+\subsubsection{\texorpdfstring{output\+\_\+doc()}{output\_doc()}}
+{\footnotesize\ttfamily int output\+\_\+doc (\begin{DoxyParamCaption}\item[{Output $\ast$}]{o,  }\item[{void $\ast$}]{obj,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Output an X\+ML or E\+XI document to a buffer. 
+
+The buffer is fixed in length so this function may need to be called more than once to output the complete document. Use \hyperlink{group__output_ga01c802e726b86aedea1ab32b6367c93a}{output\+\_\+complete} to determine if the output is complete. 
+\begin{DoxyParams}{Parameters}
+{\em o} & is a pointer to an Output object \\
+\hline
+{\em base} & is a pointer to the object to output \\
+\hline
+{\em type} & is the type of object to output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the output (complete or partial) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__output_ga713d5923db024e1e4ef5d65fa372c133}\label{group__output_ga713d5923db024e1e4ef5d65fa372c133}} 
+\index{Output@{Output}!output\+\_\+init@{output\+\_\+init}}
+\index{output\+\_\+init@{output\+\_\+init}!Output@{Output}}
+\subsubsection{\texorpdfstring{output\+\_\+init()}{output\_init()}}
+{\footnotesize\ttfamily void output\+\_\+init (\begin{DoxyParamCaption}\item[{Output $\ast$}]{o,  }\item[{const Schema $\ast$}]{schema,  }\item[{char $\ast$}]{buffer,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Initialize an Output object to output an X\+ML document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & is a pointer to an Output object \\
+\hline
+{\em schema} & is a pointer to a Schema object \\
+\hline
+{\em buffer} & is a container for the X\+ML document \\
+\hline
+{\em size} & is the size of the buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__output_ga3d946f83e9903a8f747658e0661a5e45}\label{group__output_ga3d946f83e9903a8f747658e0661a5e45}} 
+\index{Output@{Output}!output\+\_\+item\+\_\+count@{output\+\_\+item\+\_\+count}}
+\index{output\+\_\+item\+\_\+count@{output\+\_\+item\+\_\+count}!Output@{Output}}
+\subsubsection{\texorpdfstring{output\+\_\+item\+\_\+count()}{output\_item\_count()}}
+{\footnotesize\ttfamily int output\+\_\+item\+\_\+count (\begin{DoxyParamCaption}\item[{Output $\ast$}]{o,  }\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Return the item count at the specified element level. 
+
+This function is useful for determining the limit when outputting unbounded lists of objects to a fixed length buffer. The level is the level of the document at which the unbounded element occurs with 0 as the level of the root element, 1 as the level of the child of the root and so forth. 
+\begin{DoxyParams}{Parameters}
+{\em o} & is a pointer to the Output object \\
+\hline
+{\em level} & is the stack level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the count of items at the specified level 
+\end{DoxyReturn}

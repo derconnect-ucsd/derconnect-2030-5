@@ -1,0 +1,77 @@
+\hypertarget{group__address}{}\section{Address}
+\label{group__address}\index{Address@{Address}}
+Collaboration diagram for Address\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{group__address}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}\label{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}} 
+typedef struct \+\_\+\+Address \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address}
+\begin{DoxyCompactList}\small\item\em The Address struture represents an I\+Pv4 or I\+Pv6 address with an associated port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$ \hyperlink{group__address_ga85a8bd0dd6b9139d97f514010a98260d}{address\+\_\+new} ()
+\begin{DoxyCompactList}\small\item\em Allocate an Address. \end{DoxyCompactList}\item 
+\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$ \hyperlink{group__address_gadcf5fd6cadba30e8c63131dee535eda9}{ipv4\+\_\+address} (uint32\+\_\+t addr, int port)
+\begin{DoxyCompactList}\small\item\em Contruct an I\+Pv4 Address given the address number and port. \end{DoxyCompactList}\item 
+\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$ \hyperlink{group__address_ga02db9250da5222ffccdd99c6f2b2d410}{ipv6\+\_\+address} (char $\ast$addr, int port)
+\begin{DoxyCompactList}\small\item\em Contruct an I\+Pv6 Address given the address number and port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__address_ga85a8bd0dd6b9139d97f514010a98260d}\label{group__address_ga85a8bd0dd6b9139d97f514010a98260d}} 
+\index{Address@{Address}!address\+\_\+new@{address\+\_\+new}}
+\index{address\+\_\+new@{address\+\_\+new}!Address@{Address}}
+\subsubsection{\texorpdfstring{address\+\_\+new()}{address\_new()}}
+{\footnotesize\ttfamily \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address}$\ast$ address\+\_\+new (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocate an Address. 
+
+\begin{DoxyReturn}{Returns}
+a new Address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__address_gadcf5fd6cadba30e8c63131dee535eda9}\label{group__address_gadcf5fd6cadba30e8c63131dee535eda9}} 
+\index{Address@{Address}!ipv4\+\_\+address@{ipv4\+\_\+address}}
+\index{ipv4\+\_\+address@{ipv4\+\_\+address}!Address@{Address}}
+\subsubsection{\texorpdfstring{ipv4\+\_\+address()}{ipv4\_address()}}
+{\footnotesize\ttfamily \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address}$\ast$ ipv4\+\_\+address (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Contruct an I\+Pv4 Address given the address number and port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & is an I\+Pv4 address in host format \\
+\hline
+{\em port} & is the port to associated with the I\+Pv4 address \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__address_ga02db9250da5222ffccdd99c6f2b2d410}\label{group__address_ga02db9250da5222ffccdd99c6f2b2d410}} 
+\index{Address@{Address}!ipv6\+\_\+address@{ipv6\+\_\+address}}
+\index{ipv6\+\_\+address@{ipv6\+\_\+address}!Address@{Address}}
+\subsubsection{\texorpdfstring{ipv6\+\_\+address()}{ipv6\_address()}}
+{\footnotesize\ttfamily \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address}$\ast$ ipv6\+\_\+address (\begin{DoxyParamCaption}\item[{char $\ast$}]{addr,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Contruct an I\+Pv6 Address given the address number and port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & is a 16 byte (128 bit) I\+Pv6 address \\
+\hline
+{\em port} & is the port to associated with the I\+Pv6 address \\
+\hline
+\end{DoxyParams}

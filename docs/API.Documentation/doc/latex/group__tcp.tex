@@ -1,0 +1,231 @@
+\hypertarget{group__tcp}{}\section{Tcp\+Port}
+\label{group__tcp}\index{Tcp\+Port@{Tcp\+Port}}
+Collaboration diagram for Tcp\+Port\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{group__tcp}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__tcp_gaffe71a51b1d23f2e4e54ccfb67bb30f8}\label{group__tcp_gaffe71a51b1d23f2e4e54ccfb67bb30f8}} 
+typedef struct \+\_\+\+Tcp\+Port \hyperlink{group__tcp_gaffe71a51b1d23f2e4e54ccfb67bb30f8}{Tcp\+Port}
+\begin{DoxyCompactList}\small\item\em A Tcp\+Port represents a T\+CP communication channel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}\label{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}} 
+typedef struct \+\_\+\+Acceptor \hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor}
+\begin{DoxyCompactList}\small\item\em An Acceptor represents a queue of clients waiting to establish a T\+CP connection on a specific address/port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__tcp_gad2e85a3151cfb7e79fcba1dc40813da1}{Tcp\+Status} \{ \newline
+\hyperlink{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1a30c0b4dad1e3a3b93f822b9cef26244b}{Closed}, 
+\newline
+\hyperlink{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1a37598fb32f748e1b192f3febe773379f}{In\+Progress}, 
+\newline
+\hyperlink{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1ad253364cc2926eb617b0833335fe4467}{Connected}
+ \}\begin{DoxyCompactList}\small\item\em The status of a Tcp\+Port. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__tcp_ga59fc6c5e7e9a5e2344dad80f42bbdec4}\label{group__tcp_ga59fc6c5e7e9a5e2344dad80f42bbdec4}} 
+\hyperlink{group__tcp_gaffe71a51b1d23f2e4e54ccfb67bb30f8}{Tcp\+Port} $\ast$ {\bfseries tcp\+\_\+new} ()
+\item 
+\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$ \hyperlink{group__tcp_gafcf36036563f4bf40b5ec38752b29391}{tcp\+\_\+host} (void $\ast$port)
+\begin{DoxyCompactList}\small\item\em Return the Address of the connected T\+CP host. \end{DoxyCompactList}\item 
+int \hyperlink{group__tcp_ga4e3db9ca684fe6b75e37dae88f3aeac4}{tcp\+\_\+status} (void $\ast$port)
+\begin{DoxyCompactList}\small\item\em Return the status of the Tcp\+Port. \end{DoxyCompactList}\item 
+\hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$ \hyperlink{group__tcp_ga2dacd5771bd75f786c01c9fb13967a18}{tcp\+\_\+listen} (\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Listen for connection requests on a specifc address/port. \end{DoxyCompactList}\item 
+int \hyperlink{group__tcp_ga838b072bf2904373b0555f9453e38934}{tcp\+\_\+accept} (void $\ast$port, \hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Accept a connection request and assign to a Tcp\+Port. \end{DoxyCompactList}\item 
+int \hyperlink{group__tcp_gaacf72af5cac869052f5562e9bf369bae}{tcp\+\_\+connect} (void $\ast$port, \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$server)
+\begin{DoxyCompactList}\small\item\em Establish a T\+CP connection with a host. \end{DoxyCompactList}\item 
+int \hyperlink{group__tcp_ga81c323618e59f27c9fd8921a08a75b8c}{tcp\+\_\+read} (void $\ast$port, char $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Read data from a Tcp\+Port. \end{DoxyCompactList}\item 
+int \hyperlink{group__tcp_gaa8742e37aea8e8925a5cb1ac8fa93766}{tcp\+\_\+write} (void $\ast$port, const char $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Write data to a Tcp\+Port. \end{DoxyCompactList}\item 
+void \hyperlink{group__tcp_gad6e94cc6e0319629b8b1dd2cfab0ca48}{tcp\+\_\+close} (void $\ast$port)
+\begin{DoxyCompactList}\small\item\em Close a T\+CP connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__tcp_gad2e85a3151cfb7e79fcba1dc40813da1}\label{group__tcp_gad2e85a3151cfb7e79fcba1dc40813da1}} 
+\index{Tcp\+Port@{Tcp\+Port}!Tcp\+Status@{Tcp\+Status}}
+\index{Tcp\+Status@{Tcp\+Status}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{Tcp\+Status}{TcpStatus}}
+{\footnotesize\ttfamily enum \hyperlink{group__tcp_gad2e85a3151cfb7e79fcba1dc40813da1}{Tcp\+Status}}
+
+
+
+The status of a Tcp\+Port. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Closed@{Closed}!Tcp\+Port@{Tcp\+Port}}\index{Tcp\+Port@{Tcp\+Port}!Closed@{Closed}}}\mbox{\Hypertarget{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1a30c0b4dad1e3a3b93f822b9cef26244b}\label{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1a30c0b4dad1e3a3b93f822b9cef26244b}} 
+Closed&Tcp\+Port is closed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{In\+Progress@{In\+Progress}!Tcp\+Port@{Tcp\+Port}}\index{Tcp\+Port@{Tcp\+Port}!In\+Progress@{In\+Progress}}}\mbox{\Hypertarget{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1a37598fb32f748e1b192f3febe773379f}\label{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1a37598fb32f748e1b192f3febe773379f}} 
+In\+Progress&Connection initiated with \hyperlink{group__tcp_gaacf72af5cac869052f5562e9bf369bae}{tcp\+\_\+connect} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Connected@{Connected}!Tcp\+Port@{Tcp\+Port}}\index{Tcp\+Port@{Tcp\+Port}!Connected@{Connected}}}\mbox{\Hypertarget{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1ad253364cc2926eb617b0833335fe4467}\label{group__tcp_ggad2e85a3151cfb7e79fcba1dc40813da1ad253364cc2926eb617b0833335fe4467}} 
+Connected&Tcp\+Port is connected \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__tcp_ga838b072bf2904373b0555f9453e38934}\label{group__tcp_ga838b072bf2904373b0555f9453e38934}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+accept@{tcp\+\_\+accept}}
+\index{tcp\+\_\+accept@{tcp\+\_\+accept}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+accept()}{tcp\_accept()}}
+{\footnotesize\ttfamily int tcp\+\_\+accept (\begin{DoxyParamCaption}\item[{void $\ast$}]{port,  }\item[{\hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Accept a connection request and assign to a Tcp\+Port. 
+
+If there are no active requests, queue the port to receive a connection at a later time. 
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+{\em a} & is pointer to an Acceptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if an connection was established, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__tcp_gad6e94cc6e0319629b8b1dd2cfab0ca48}\label{group__tcp_gad6e94cc6e0319629b8b1dd2cfab0ca48}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+close@{tcp\+\_\+close}}
+\index{tcp\+\_\+close@{tcp\+\_\+close}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+close()}{tcp\_close()}}
+{\footnotesize\ttfamily void tcp\+\_\+close (\begin{DoxyParamCaption}\item[{void $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+Close a T\+CP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__tcp_gaacf72af5cac869052f5562e9bf369bae}\label{group__tcp_gaacf72af5cac869052f5562e9bf369bae}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+connect@{tcp\+\_\+connect}}
+\index{tcp\+\_\+connect@{tcp\+\_\+connect}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+connect()}{tcp\_connect()}}
+{\footnotesize\ttfamily int tcp\+\_\+connect (\begin{DoxyParamCaption}\item[{void $\ast$}]{port,  }\item[{\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$}]{server }\end{DoxyParamCaption})}
+
+
+
+Establish a T\+CP connection with a host. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+{\em server} & is a pointer to an host Address \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__tcp_gafcf36036563f4bf40b5ec38752b29391}\label{group__tcp_gafcf36036563f4bf40b5ec38752b29391}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+host@{tcp\+\_\+host}}
+\index{tcp\+\_\+host@{tcp\+\_\+host}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+host()}{tcp\_host()}}
+{\footnotesize\ttfamily \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address}$\ast$ tcp\+\_\+host (\begin{DoxyParamCaption}\item[{void $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+Return the Address of the connected T\+CP host. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Address of connected T\+CP host. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__tcp_ga2dacd5771bd75f786c01c9fb13967a18}\label{group__tcp_ga2dacd5771bd75f786c01c9fb13967a18}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+listen@{tcp\+\_\+listen}}
+\index{tcp\+\_\+listen@{tcp\+\_\+listen}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+listen()}{tcp\_listen()}}
+{\footnotesize\ttfamily \hyperlink{group__tcp_ga99fb3ed761c86c0379dc50f80c51c87a}{Acceptor}$\ast$ tcp\+\_\+listen (\begin{DoxyParamCaption}\item[{\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Listen for connection requests on a specifc address/port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & is the address/port on which to listen for connection requests \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Acceptor ready to accept connections 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__tcp_ga81c323618e59f27c9fd8921a08a75b8c}\label{group__tcp_ga81c323618e59f27c9fd8921a08a75b8c}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+read@{tcp\+\_\+read}}
+\index{tcp\+\_\+read@{tcp\+\_\+read}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+read()}{tcp\_read()}}
+{\footnotesize\ttfamily int tcp\+\_\+read (\begin{DoxyParamCaption}\item[{void $\ast$}]{port,  }\item[{char $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Read data from a Tcp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+{\em buffer} & is a container for the data to be read \\
+\hline
+{\em length} & is the length of the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the data read from the Tcp\+Port or -\/1 to indicate that no data is available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__tcp_ga4e3db9ca684fe6b75e37dae88f3aeac4}\label{group__tcp_ga4e3db9ca684fe6b75e37dae88f3aeac4}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+status@{tcp\+\_\+status}}
+\index{tcp\+\_\+status@{tcp\+\_\+status}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+status()}{tcp\_status()}}
+{\footnotesize\ttfamily int tcp\+\_\+status (\begin{DoxyParamCaption}\item[{void $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+Return the status of the Tcp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the Tcp\+Port (\hyperlink{group__tcp_gad2e85a3151cfb7e79fcba1dc40813da1}{Tcp\+Status}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__tcp_gaa8742e37aea8e8925a5cb1ac8fa93766}\label{group__tcp_gaa8742e37aea8e8925a5cb1ac8fa93766}} 
+\index{Tcp\+Port@{Tcp\+Port}!tcp\+\_\+write@{tcp\+\_\+write}}
+\index{tcp\+\_\+write@{tcp\+\_\+write}!Tcp\+Port@{Tcp\+Port}}
+\subsubsection{\texorpdfstring{tcp\+\_\+write()}{tcp\_write()}}
+{\footnotesize\ttfamily int tcp\+\_\+write (\begin{DoxyParamCaption}\item[{void $\ast$}]{port,  }\item[{const char $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Write data to a Tcp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Tcp\+Port \\
+\hline
+{\em buffer} & is a container for the data to write \\
+\hline
+{\em length} & is the length of the data to write \\
+\hline
+\end{DoxyParams}

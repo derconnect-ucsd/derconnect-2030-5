@@ -1,0 +1,59 @@
+\hypertarget{group__Registration}{}\section{Registration}
+\label{group__Registration}\index{Registration@{Registration}}
+Collaboration diagram for Registration\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{group__Registration}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Registration__t}{S\+E\+\_\+\+Registration\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__Registration_ga788bddcd4b3b1df80e599abdcf73a870}\label{group__Registration_ga788bddcd4b3b1df80e599abdcf73a870}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Registration\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Registration_ga76fcf14a2f87084c2513efdfe08f25b5}{S\+E\+\_\+\+Registration\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__Registration_ga7168a63281b2883dea8ab4f1366e854b}{S\+E\+\_\+\+Registration\+\_\+t\+::poll\+Rate}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__Registration_gabd2cd11ffd9eed1da4ff688b6be28b19}{S\+E\+\_\+\+Registration\+\_\+t\+::date\+Time\+Registered}
+\item 
+\hyperlink{group__PINType_ga30be98f3ca9ec3c8261d0bb63307bc85}{S\+E\+\_\+\+P\+I\+N\+Type\+\_\+t} \hyperlink{group__Registration_ga81325290ed2a058059fb75d933c159ae}{S\+E\+\_\+\+Registration\+\_\+t\+::p\+IN}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Registration represents an authorization to access the resources on a host. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Registration_gabd2cd11ffd9eed1da4ff688b6be28b19}\label{group__Registration_gabd2cd11ffd9eed1da4ff688b6be28b19}} 
+\index{Registration@{Registration}!date\+Time\+Registered@{date\+Time\+Registered}}
+\index{date\+Time\+Registered@{date\+Time\+Registered}!Registration@{Registration}}
+\subsubsection{\texorpdfstring{date\+Time\+Registered}{dateTimeRegistered}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Registration\+\_\+t\+::date\+Time\+Registered}
+
+Contains the time at which this registration was created, by which clients M\+AY prioritize information providers with the most recent registrations, when no additional direction from the consumer is available. \mbox{\Hypertarget{group__Registration_ga76fcf14a2f87084c2513efdfe08f25b5}\label{group__Registration_ga76fcf14a2f87084c2513efdfe08f25b5}} 
+\index{Registration@{Registration}!href@{href}}
+\index{href@{href}!Registration@{Registration}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Registration\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__Registration_ga81325290ed2a058059fb75d933c159ae}\label{group__Registration_ga81325290ed2a058059fb75d933c159ae}} 
+\index{Registration@{Registration}!p\+IN@{p\+IN}}
+\index{p\+IN@{p\+IN}!Registration@{Registration}}
+\subsubsection{\texorpdfstring{p\+IN}{pIN}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Registration\+\_\+t\+::p\+IN}
+
+Contains the registration P\+IN number associated with the device, including the checksum digit. \mbox{\Hypertarget{group__Registration_ga7168a63281b2883dea8ab4f1366e854b}\label{group__Registration_ga7168a63281b2883dea8ab4f1366e854b}} 
+\index{Registration@{Registration}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Registration@{Registration}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Registration\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. 

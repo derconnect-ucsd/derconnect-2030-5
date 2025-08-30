@@ -1,0 +1,6 @@
+<map id="Platform" name="Platform">
+<area shape="rect" id="node1" href="$group__network.html" title="Network" alt="" coords="124,5,195,32"/>
+<area shape="rect" id="node2" href="$group__file.html" title="File" alt="" coords="138,56,181,83"/>
+<area shape="rect" id="node3" href="$group__event.html" title="Event" alt="" coords="131,107,187,133"/>
+<area shape="rect" id="node5" href="$group__timer.html" title="Timer" alt="" coords="132,157,187,184"/>
+</map>

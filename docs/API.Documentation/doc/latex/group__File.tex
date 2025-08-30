@@ -1,0 +1,134 @@
+\hypertarget{group__File}{}\section{File}
+\label{group__File}\index{File@{File}}
+Collaboration diagram for File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{group__File}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__File__t}{S\+E\+\_\+\+File\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__File_gaf9fb522b583f585ebfa63bf9aae654c4}{S\+E\+\_\+\+File\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__File_ga4f649ba81f3ec3758585c829bffe909e}{S\+E\+\_\+\+File\+\_\+t\+::href}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__File_ga10cf0e5d17ce214712253641b664a0a4}{S\+E\+\_\+\+File\+\_\+t\+::activate\+Time}
+\item 
+char $\ast$ \hyperlink{group__File_ga291723dcc840904ef8ca0ee385c935a3}{S\+E\+\_\+\+File\+\_\+t\+::file\+U\+RI}
+\item 
+\hyperlink{group__HexBinary160_ga92b92aa55555bdb75f3a59060f2c1632}{S\+E\+\_\+\+Hex\+Binary160\+\_\+t} \hyperlink{group__File_ga74ca6e064ee6671f42955d17470e25b2}{S\+E\+\_\+\+File\+\_\+t\+::l\+F\+DI}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__File_ga1cd1a18ab1e17b4a045bebf80d68eaeb}{S\+E\+\_\+\+File\+\_\+t\+::mf\+Hw\+Ver}
+\item 
+\hyperlink{group__PENType_ga75343bbeec563c431fef2977b4dfa4e9}{S\+E\+\_\+\+P\+E\+N\+Type\+\_\+t} \hyperlink{group__File_gadfaca088f863cdcf43485a271a8a481a}{S\+E\+\_\+\+File\+\_\+t\+::mf\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__File_ga5e0a19dba9edc6f4b68f377ef065b4b7}{S\+E\+\_\+\+File\+\_\+t\+::mf\+Model}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__File_ga0811fbd161a3bf54bb0b2c47aaac6d62}{S\+E\+\_\+\+File\+\_\+t\+::mf\+Ser\+Num}
+\item 
+\hyperlink{group__String16_ga96799b35e03c3e6545eb138a7f879015}{S\+E\+\_\+\+String16\+\_\+t} \hyperlink{group__File_ga89d714f28592f9970532c15f4c5630e3}{S\+E\+\_\+\+File\+\_\+t\+::mf\+Ver}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__File_ga19932bde03637ceb3778be45c83d6d26}{S\+E\+\_\+\+File\+\_\+t\+::size}
+\item 
+\hyperlink{group__HexBinary16_gac040be0e918a360be6bcf5e8b8ad2c49}{S\+E\+\_\+\+Hex\+Binary16\+\_\+t} \hyperlink{group__File_gac0aab114d7b9752adb600099323cd594}{S\+E\+\_\+\+File\+\_\+t\+::type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This resource contains various meta-\/data describing a file\textquotesingle{}s characteristics. The meta-\/data provides general file information and also is used to support filtered queries of file lists 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__File_gaf9fb522b583f585ebfa63bf9aae654c4}\label{group__File_gaf9fb522b583f585ebfa63bf9aae654c4}} 
+\index{File@{File}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!File@{File}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+mf\+Ser\+Num\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+mf\+Hw\+Ver\+\_\+exists (1 $<$$<$ 6) \mbox{\Hypertarget{group__File_ga10cf0e5d17ce214712253641b664a0a4}\label{group__File_ga10cf0e5d17ce214712253641b664a0a4}} 
+\index{File@{File}!activate\+Time@{activate\+Time}}
+\index{activate\+Time@{activate\+Time}!File@{File}}
+\subsubsection{\texorpdfstring{activate\+Time}{activateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::activate\+Time}
+
+This element M\+U\+ST be set to the date/time at which this file is activated. If the activation time is less than or equal to current time, the LD M\+U\+ST immediately place the file into the activated state (in the case of a firmware file, the file is now the running image). If the activation time is greater than the current time, the LD M\+U\+ST wait until the specified activation time is reached, then M\+U\+ST place the file into the activated state. Omission of this element means that the LD M\+U\+ST N\+OT take any action to activate the file until a subsequent G\+ET to this File resource provides an activate\+Time. \mbox{\Hypertarget{group__File_ga291723dcc840904ef8ca0ee385c935a3}\label{group__File_ga291723dcc840904ef8ca0ee385c935a3}} 
+\index{File@{File}!file\+U\+RI@{file\+U\+RI}}
+\index{file\+U\+RI@{file\+U\+RI}!File@{File}}
+\subsubsection{\texorpdfstring{file\+U\+RI}{fileURI}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::file\+U\+RI}
+
+This element M\+U\+ST be set to the U\+RI location of the file binary artifact. This is the B\+L\+OB (binary large object) that is actually loaded by the LD \mbox{\Hypertarget{group__File_ga4f649ba81f3ec3758585c829bffe909e}\label{group__File_ga4f649ba81f3ec3758585c829bffe909e}} 
+\index{File@{File}!href@{href}}
+\index{href@{href}!File@{File}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__File_ga74ca6e064ee6671f42955d17470e25b2}\label{group__File_ga74ca6e064ee6671f42955d17470e25b2}} 
+\index{File@{File}!l\+F\+DI@{l\+F\+DI}}
+\index{l\+F\+DI@{l\+F\+DI}!File@{File}}
+\subsubsection{\texorpdfstring{l\+F\+DI}{lFDI}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::l\+F\+DI}
+
+This element M\+U\+ST be set to the L\+F\+DI of the device for which this file in targeted. \mbox{\Hypertarget{group__File_ga1cd1a18ab1e17b4a045bebf80d68eaeb}\label{group__File_ga1cd1a18ab1e17b4a045bebf80d68eaeb}} 
+\index{File@{File}!mf\+Hw\+Ver@{mf\+Hw\+Ver}}
+\index{mf\+Hw\+Ver@{mf\+Hw\+Ver}!File@{File}}
+\subsubsection{\texorpdfstring{mf\+Hw\+Ver}{mfHwVer}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::mf\+Hw\+Ver}
+
+This element M\+U\+ST be set to the hardware version for which this file is targeted. \mbox{\Hypertarget{group__File_gadfaca088f863cdcf43485a271a8a481a}\label{group__File_gadfaca088f863cdcf43485a271a8a481a}} 
+\index{File@{File}!mf\+ID@{mf\+ID}}
+\index{mf\+ID@{mf\+ID}!File@{File}}
+\subsubsection{\texorpdfstring{mf\+ID}{mfID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::mf\+ID}
+
+This element M\+U\+ST be set to the manufacturer\textquotesingle{}s Private Enterprise Number (assigned by I\+A\+NA). \mbox{\Hypertarget{group__File_ga5e0a19dba9edc6f4b68f377ef065b4b7}\label{group__File_ga5e0a19dba9edc6f4b68f377ef065b4b7}} 
+\index{File@{File}!mf\+Model@{mf\+Model}}
+\index{mf\+Model@{mf\+Model}!File@{File}}
+\subsubsection{\texorpdfstring{mf\+Model}{mfModel}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::mf\+Model}
+
+This element M\+U\+ST be set to the manufacturer model number for which this file is targeted. The syntax and semantics are left to the manufacturer. \mbox{\Hypertarget{group__File_ga0811fbd161a3bf54bb0b2c47aaac6d62}\label{group__File_ga0811fbd161a3bf54bb0b2c47aaac6d62}} 
+\index{File@{File}!mf\+Ser\+Num@{mf\+Ser\+Num}}
+\index{mf\+Ser\+Num@{mf\+Ser\+Num}!File@{File}}
+\subsubsection{\texorpdfstring{mf\+Ser\+Num}{mfSerNum}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::mf\+Ser\+Num}
+
+This element M\+U\+ST be set to the manufacturer serial number for which this file is targeted. The syntax and semantics are left to the manufacturer. \mbox{\Hypertarget{group__File_ga89d714f28592f9970532c15f4c5630e3}\label{group__File_ga89d714f28592f9970532c15f4c5630e3}} 
+\index{File@{File}!mf\+Ver@{mf\+Ver}}
+\index{mf\+Ver@{mf\+Ver}!File@{File}}
+\subsubsection{\texorpdfstring{mf\+Ver}{mfVer}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::mf\+Ver}
+
+This element M\+U\+ST be set to the software version information for this file. The syntax and semantics are left to the manufacturer. \mbox{\Hypertarget{group__File_ga19932bde03637ceb3778be45c83d6d26}\label{group__File_ga19932bde03637ceb3778be45c83d6d26}} 
+\index{File@{File}!size@{size}}
+\index{size@{size}!File@{File}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::size}
+
+This element M\+U\+ST be set to the total size (in bytes) of the file referenced by file\+U\+RI. \mbox{\Hypertarget{group__File_gac0aab114d7b9752adb600099323cd594}\label{group__File_gac0aab114d7b9752adb600099323cd594}} 
+\index{File@{File}!type@{type}}
+\index{type@{type}!File@{File}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+\_\+t\+::type}
+
+A value indicating the type of the file. M\+U\+ST be one of the following values\+:
+
+00 = Software Image
+
+01 = Security Credential
+
+02 = Configuration
+
+03 = Log
+
+04–7\+F\+FF = reserved
+
+8000-\/\+F\+F\+FF = Manufacturer defined 

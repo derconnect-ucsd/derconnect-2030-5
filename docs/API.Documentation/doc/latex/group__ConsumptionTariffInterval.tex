@@ -1,0 +1,73 @@
+\hypertarget{group__ConsumptionTariffInterval}{}\section{Consumption\+Tariff\+Interval}
+\label{group__ConsumptionTariffInterval}\index{Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}}
+Collaboration diagram for Consumption\+Tariff\+Interval\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group__ConsumptionTariffInterval}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ConsumptionTariffInterval__t}{S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__ConsumptionTariffInterval_gacbc5360ac90b58365b561193009cf141}{S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ConsumptionTariffInterval_ga443637f1365ce8d25ceb058b8dd9d93d}{S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::href}
+\item 
+\hyperlink{group__ConsumptionBlockType_ga526f797922e4c3009d50c28f457c462e}{S\+E\+\_\+\+Consumption\+Block\+Type\+\_\+t} \hyperlink{group__ConsumptionTariffInterval_gab62382c449daf3ca552062780486fc3e}{S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::consumption\+Block}
+\item 
+\mbox{\Hypertarget{group__ConsumptionTariffInterval_ga3d46f1ff55de83b9192e3fd4b9950494}\label{group__ConsumptionTariffInterval_ga3d46f1ff55de83b9192e3fd4b9950494}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::\+Environmental\+Cost}
+\item 
+\hyperlink{group__Int32_gaa7afc819cfc8033c5fa408e34da8b71a}{S\+E\+\_\+\+Int32\+\_\+t} \hyperlink{group__ConsumptionTariffInterval_ga92c4173ce74527498b5aa9fa2782ee5f}{S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::price}
+\item 
+\hyperlink{group__UInt48_gaa15d726fc29126d24b991437334d77a0}{S\+E\+\_\+\+U\+Int48\+\_\+t} \hyperlink{group__ConsumptionTariffInterval_ga6bdef05db8c5f945867838c51904afc1}{S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::start\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+One of a sequence of thresholds defined in terms of consumption quantity of a service such as electricity, water, gas, etc. It defines the steps or blocks in a step tariff structure, where start\+Value simultaneously defines the entry value of this step and the closing value of the previous step. Where consumption is greater than start\+Value, it falls within this block and where consumption is less than or equal to start\+Value, it falls within one of the previous blocks. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ConsumptionTariffInterval_gacbc5360ac90b58365b561193009cf141}\label{group__ConsumptionTariffInterval_gacbc5360ac90b58365b561193009cf141}} 
+\index{Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+price\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__ConsumptionTariffInterval_gab62382c449daf3ca552062780486fc3e}\label{group__ConsumptionTariffInterval_gab62382c449daf3ca552062780486fc3e}} 
+\index{Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}!consumption\+Block@{consumption\+Block}}
+\index{consumption\+Block@{consumption\+Block}!Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}}
+\subsubsection{\texorpdfstring{consumption\+Block}{consumptionBlock}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::consumption\+Block}
+
+Indicates the consumption block related to the reading. If not specified, is assumed to be \char`\"{}0 -\/ N/\+A\char`\"{}. \mbox{\Hypertarget{group__ConsumptionTariffInterval_ga443637f1365ce8d25ceb058b8dd9d93d}\label{group__ConsumptionTariffInterval_ga443637f1365ce8d25ceb058b8dd9d93d}} 
+\index{Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}!href@{href}}
+\index{href@{href}!Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ConsumptionTariffInterval_ga92c4173ce74527498b5aa9fa2782ee5f}\label{group__ConsumptionTariffInterval_ga92c4173ce74527498b5aa9fa2782ee5f}} 
+\index{Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}!price@{price}}
+\index{price@{price}!Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}}
+\subsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::price}
+
+The charge for this rate component, per unit of measure defined by the associated Reading\+Type, in currency specified in Tariff\+Profile.
+
+The Pricing service provider determines the appropriate price attribute value based on its applicable regulatory rules. For example, price could be net or inclusive of applicable taxes, fees, or levies.
+
+The Billing function set provides the ability to represent billing information in a more detailed manner. \mbox{\Hypertarget{group__ConsumptionTariffInterval_ga6bdef05db8c5f945867838c51904afc1}\label{group__ConsumptionTariffInterval_ga6bdef05db8c5f945867838c51904afc1}} 
+\index{Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}!start\+Value@{start\+Value}}
+\index{start\+Value@{start\+Value}!Consumption\+Tariff\+Interval@{Consumption\+Tariff\+Interval}}
+\subsubsection{\texorpdfstring{start\+Value}{startValue}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Consumption\+Tariff\+Interval\+\_\+t\+::start\+Value}
+
+The lowest level of consumption that defines the starting point of this consumption step or block. Thresholds start at zero for each billing period.
+
+If specified, the first Consumption\+Tariff\+Interval.\+start\+Value for a Time\+Tariff\+Interal instance S\+H\+A\+LL begin at \char`\"{}0.\char`\"{} Subsequent Consumption\+Tariff\+Interval.\+start\+Value elements S\+H\+A\+LL be greater than the previous one. 

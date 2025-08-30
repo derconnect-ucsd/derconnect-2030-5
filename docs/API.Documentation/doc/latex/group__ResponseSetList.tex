@@ -1,0 +1,62 @@
+\hypertarget{group__ResponseSetList}{}\section{Response\+Set\+List}
+\label{group__ResponseSetList}\index{Response\+Set\+List@{Response\+Set\+List}}
+Collaboration diagram for Response\+Set\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{group__ResponseSetList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__ResponseSetList__t}{S\+E\+\_\+\+Response\+Set\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__ResponseSetList_ga948ed8926e5408e4614b269c52f7859f}\label{group__ResponseSetList_ga948ed8926e5408e4614b269c52f7859f}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__ResponseSetList_gadc2f2a201658b2bf27072ae811b9b014}{S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__ResponseSetList_gacd39a1a009fb2aa7adbea7016bfe6c29}{S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__ResponseSetList_gaa96307d02ec1a098b78dc3f11eedff51}{S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__ResponseSetList_gad0b2c3c48abf6ac9c5426cc6942d4b55}{S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__ResponseSetList_gac4af653bfa431acfef684867beaf5500}\label{group__ResponseSetList_gac4af653bfa431acfef684867beaf5500}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::\+Response\+Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Response\+Set objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__ResponseSetList_gacd39a1a009fb2aa7adbea7016bfe6c29}\label{group__ResponseSetList_gacd39a1a009fb2aa7adbea7016bfe6c29}} 
+\index{Response\+Set\+List@{Response\+Set\+List}!all@{all}}
+\index{all@{all}!Response\+Set\+List@{Response\+Set\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ResponseSetList_gadc2f2a201658b2bf27072ae811b9b014}\label{group__ResponseSetList_gadc2f2a201658b2bf27072ae811b9b014}} 
+\index{Response\+Set\+List@{Response\+Set\+List}!href@{href}}
+\index{href@{href}!Response\+Set\+List@{Response\+Set\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__ResponseSetList_gad0b2c3c48abf6ac9c5426cc6942d4b55}\label{group__ResponseSetList_gad0b2c3c48abf6ac9c5426cc6942d4b55}} 
+\index{Response\+Set\+List@{Response\+Set\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Response\+Set\+List@{Response\+Set\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__ResponseSetList_gaa96307d02ec1a098b78dc3f11eedff51}\label{group__ResponseSetList_gaa96307d02ec1a098b78dc3f11eedff51}} 
+\index{Response\+Set\+List@{Response\+Set\+List}!results@{results}}
+\index{results@{results}!Response\+Set\+List@{Response\+Set\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Response\+Set\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. 

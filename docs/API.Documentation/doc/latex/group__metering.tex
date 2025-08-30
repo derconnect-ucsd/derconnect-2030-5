@@ -1,0 +1,111 @@
+\hypertarget{group__metering}{}\section{Metering}
+\label{group__metering}\index{Metering@{Metering}}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__metering_gab0fd19d6dbdfff825c669e43fc4f2cbe}{Role\+Flags} \{ \newline
+\hyperlink{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea6828f4696d930aa921eca21ae642b1a2}{is\+Mirror} = 1, 
+\newline
+\hyperlink{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeae06974b7bb65c103acace906efec9912}{is\+Premises\+Aggregation\+Point} = (1 $<$$<$ 1), 
+\newline
+\hyperlink{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea995e5648a17931f016c740b2e0ddb0a2}{is\+P\+EV} = (1 $<$$<$ 2), 
+\newline
+\hyperlink{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeabd5e19091655e41979efdec7d141f02c}{is\+D\+ER} = (1 $<$$<$ 3), 
+\newline
+\hyperlink{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea4b162a7882183e4b22091ea7ef3905d3}{is\+Revenue\+Quality} = (1 $<$$<$ 4), 
+\newline
+{\bfseries is\+DC} = (1 $<$$<$ 5), 
+\newline
+\hyperlink{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeaa02b2e6d34db0c84ebf803a683663ed3}{is\+Submeter} = (1 $<$$<$ 6)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__metering_gac0c4d2e92df6808d560e724eaf7a9328}{create\+\_\+mirror} (\hyperlink{structSE__MirrorUsagePoint__t}{S\+E\+\_\+\+Mirror\+Usage\+Point\+\_\+t} $\ast$mup, char $\ast$desc, int flags, char $\ast$lfdi)
+\begin{DoxyCompactList}\small\item\em Initialize a Mirror\+Usage\+Point structure. \end{DoxyCompactList}\item 
+\hyperlink{structList}{List} $\ast$ \hyperlink{group__metering_ga22473d12cfe58259f79ca148451b3382}{create\+\_\+reading} (\hyperlink{structList}{List} $\ast$rds, char $\ast$desc, int uom, int kind)
+\begin{DoxyCompactList}\small\item\em Create a new Mirror\+Meter\+Reading and add it to the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create Mirror\+Usage\+Points and Mirror\+Meter\+Readings. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__metering_gab0fd19d6dbdfff825c669e43fc4f2cbe}\label{group__metering_gab0fd19d6dbdfff825c669e43fc4f2cbe}} 
+\index{Metering@{Metering}!Role\+Flags@{Role\+Flags}}
+\index{Role\+Flags@{Role\+Flags}!Metering@{Metering}}
+\subsubsection{\texorpdfstring{Role\+Flags}{RoleFlags}}
+{\footnotesize\ttfamily enum \hyperlink{group__metering_gab0fd19d6dbdfff825c669e43fc4f2cbe}{Role\+Flags}}
+
+Role\+Flags for a Usage\+Point \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is\+Mirror@{is\+Mirror}!Metering@{Metering}}\index{Metering@{Metering}!is\+Mirror@{is\+Mirror}}}\mbox{\Hypertarget{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea6828f4696d930aa921eca21ae642b1a2}\label{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea6828f4696d930aa921eca21ae642b1a2}} 
+is\+Mirror&S\+H\+A\+LL be set if the server is not the measurement device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is\+Premises\+Aggregation\+Point@{is\+Premises\+Aggregation\+Point}!Metering@{Metering}}\index{Metering@{Metering}!is\+Premises\+Aggregation\+Point@{is\+Premises\+Aggregation\+Point}}}\mbox{\Hypertarget{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeae06974b7bb65c103acace906efec9912}\label{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeae06974b7bb65c103acace906efec9912}} 
+is\+Premises\+Aggregation\+Point&S\+H\+A\+LL be set if the Usage\+Point is the point of delivery for a premises. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is\+P\+EV@{is\+P\+EV}!Metering@{Metering}}\index{Metering@{Metering}!is\+P\+EV@{is\+P\+EV}}}\mbox{\Hypertarget{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea995e5648a17931f016c740b2e0ddb0a2}\label{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea995e5648a17931f016c740b2e0ddb0a2}} 
+is\+P\+EV&S\+H\+A\+LL be set if the usage applies to an electric vehicle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is\+D\+ER@{is\+D\+ER}!Metering@{Metering}}\index{Metering@{Metering}!is\+D\+ER@{is\+D\+ER}}}\mbox{\Hypertarget{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeabd5e19091655e41979efdec7d141f02c}\label{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeabd5e19091655e41979efdec7d141f02c}} 
+is\+D\+ER&S\+H\+A\+LL be set if the usage applies to a distributed energy resource, capable of delivering power to the grid. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is\+Revenue\+Quality@{is\+Revenue\+Quality}!Metering@{Metering}}\index{Metering@{Metering}!is\+Revenue\+Quality@{is\+Revenue\+Quality}}}\mbox{\Hypertarget{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea4b162a7882183e4b22091ea7ef3905d3}\label{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbea4b162a7882183e4b22091ea7ef3905d3}} 
+is\+Revenue\+Quality&S\+H\+A\+LL be set if usage was measured by a device certified as revenue quality \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is\+Submeter@{is\+Submeter}!Metering@{Metering}}\index{Metering@{Metering}!is\+Submeter@{is\+Submeter}}}\mbox{\Hypertarget{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeaa02b2e6d34db0c84ebf803a683663ed3}\label{group__metering_ggab0fd19d6dbdfff825c669e43fc4f2cbeaa02b2e6d34db0c84ebf803a683663ed3}} 
+is\+Submeter&S\+H\+A\+LL be set if the usage point is not a premises aggregation point \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__metering_gac0c4d2e92df6808d560e724eaf7a9328}\label{group__metering_gac0c4d2e92df6808d560e724eaf7a9328}} 
+\index{Metering@{Metering}!create\+\_\+mirror@{create\+\_\+mirror}}
+\index{create\+\_\+mirror@{create\+\_\+mirror}!Metering@{Metering}}
+\subsubsection{\texorpdfstring{create\+\_\+mirror()}{create\_mirror()}}
+{\footnotesize\ttfamily void create\+\_\+mirror (\begin{DoxyParamCaption}\item[{\hyperlink{structSE__MirrorUsagePoint__t}{S\+E\+\_\+\+Mirror\+Usage\+Point\+\_\+t} $\ast$}]{mup,  }\item[{char $\ast$}]{desc,  }\item[{int}]{flags,  }\item[{char $\ast$}]{lfdi }\end{DoxyParamCaption})}
+
+
+
+Initialize a Mirror\+Usage\+Point structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mup} & is a pointer to an \hyperlink{structSE__MirrorUsagePoint__t}{S\+E\+\_\+\+Mirror\+Usage\+Point\+\_\+t} strcuture \\
+\hline
+{\em desc} & is a pointer to a string (up to 31 bytes) describing the mirror or N\+U\+LL for no description. \\
+\hline
+{\em flags} & is a set of Role\+Flags (bitwise OR of zero or more flags) \\
+\hline
+{\em lfdi} & is a pointer to a device L\+F\+DI \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__metering_ga22473d12cfe58259f79ca148451b3382}\label{group__metering_ga22473d12cfe58259f79ca148451b3382}} 
+\index{Metering@{Metering}!create\+\_\+reading@{create\+\_\+reading}}
+\index{create\+\_\+reading@{create\+\_\+reading}!Metering@{Metering}}
+\subsubsection{\texorpdfstring{create\+\_\+reading()}{create\_reading()}}
+{\footnotesize\ttfamily \hyperlink{structList}{List} $\ast$ create\+\_\+reading (\begin{DoxyParamCaption}\item[{\hyperlink{structList}{List} $\ast$}]{rds,  }\item[{char $\ast$}]{desc,  }\item[{int}]{uom,  }\item[{int}]{kind }\end{DoxyParamCaption})}
+
+
+
+Create a new Mirror\+Meter\+Reading and add it to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rds} & is a pointer to a \hyperlink{structList}{List} of Mirror\+Meter\+Readings \\
+\hline
+{\em desc} & is a pointer to a string, the reading description, or N\+U\+LL for no description \\
+\hline
+{\em uom} & is the type of the reading (Uom\+Type) \\
+\hline
+{\em kind} & is Reading\+Type kind (Kind\+Type) \\
+\hline
+\end{DoxyParams}

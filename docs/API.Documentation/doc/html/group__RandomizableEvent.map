@@ -1,0 +1,6 @@
+<map id="RandomizableEvent" name="RandomizableEvent">
+<area shape="rect" id="node1" href="$group__Event.html" title="Event" alt="" coords="5,56,61,83"/>
+<area shape="rect" id="node3" href="$group__TimeTariffInterval.html" title="TimeTariffInterval" alt="" coords="298,5,422,32"/>
+<area shape="rect" id="node4" href="$group__EndDeviceControl.html" title="EndDeviceControl" alt="" coords="296,56,424,83"/>
+<area shape="rect" id="node5" href="$group__DERControl.html" title="DERControl" alt="" coords="313,107,407,133"/>
+</map>

@@ -1,0 +1,28 @@
+\hypertarget{structSE__EventStatus__t}{}\section{S\+E\+\_\+\+Event\+Status\+\_\+t Struct Reference}
+\label{structSE__EventStatus__t}\index{S\+E\+\_\+\+Event\+Status\+\_\+t@{S\+E\+\_\+\+Event\+Status\+\_\+t}}
+
+
+{\ttfamily \#include $<$se\+\_\+types.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__EventStatus_ga22ffd743b9bee41ded4925788c8bd778}{\+\_\+flags}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__EventStatus_ga59fc1cc6e5c19bf792c0b84e7e37a4e7}{current\+Status}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__EventStatus_gaed58cdf8b3efb07a6241882255bc644c}{date\+Time}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__EventStatus_ga54eb494ef98025237ddfd1959e20eecd}{potentially\+Superseded\+Time}
+\item 
+\hyperlink{group__String192_ga25f61da2bbbdfe30dbf77fcbb7edd7d7}{S\+E\+\_\+\+String192\+\_\+t} \hyperlink{group__EventStatus_ga30cb8c829f1f7458598572c159ccae98}{reason}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Current status information relevant to a specific object. The Status object is used to indicate the current status of an Event. Devices can read the containing resource (e.\+g. Text\+Message) to get the most up to date status of the event. Devices can also subscribe to a specific resource instance to get updates when any of its attributes change, including the Status object. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+se\+\_\+types.\+h\item 
+se\+\_\+types\+\_\+doc.\+h\end{DoxyCompactItemize}

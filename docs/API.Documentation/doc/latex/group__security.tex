@@ -1,0 +1,181 @@
+\hypertarget{group__security}{}\section{Security}
+\label{group__security}\index{Security@{Security}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__security_ga1b09f2f73eb988a994e010525463c4ba}\label{group__security_ga1b09f2f73eb988a994e010525463c4ba}} 
+typedef int($\ast$ {\bfseries Verify\+Func}) (void $\ast$context, uint8\+\_\+t $\ast$cert, int length)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{group__security_gabae7ae3a93a3e0e7d8375a3f3a25724d}{tls\+\_\+init} (const char $\ast$path, Verify\+Func verify)
+\begin{DoxyCompactList}\small\item\em Initialize the T\+LS library. \end{DoxyCompactList}\item 
+void \hyperlink{group__security_gadea9b85056a9814af0f31825e3c4cfe7}{load\+\_\+cert} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load a CA certificate. \end{DoxyCompactList}\item 
+void \hyperlink{group__security_ga7a1ba6975237933bc8447986ea73fe08}{load\+\_\+cert\+\_\+dir} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load a CA certificate directory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__security_ga6821c2ae8cba93d7e61ebbb3bab48002}\label{group__security_ga6821c2ae8cba93d7e61ebbb3bab48002}} 
+void {\bfseries print\+\_\+bytes} (unsigned char $\ast$data, int n)
+\item 
+uint64\+\_\+t \hyperlink{group__security_ga0e83013b684ca7c97129148e672a5d83}{sfdi\+\_\+gen} (uint8\+\_\+t $\ast$lfdi)
+\begin{DoxyCompactList}\small\item\em Generate S\+F\+DI from L\+F\+DI hash. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{group__security_ga0c3b1ec1fd87c9cfb07b82f97655ed1f}{lfdi\+\_\+hash} (uint8\+\_\+t $\ast$lfdi, uint8\+\_\+t $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Generate S\+F\+DI and L\+F\+DI hash values from a device certificate. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{group__security_ga6dbafb6acf80fc86e418814b288a7e1a}{lfdi\+\_\+gen} (uint8\+\_\+t $\ast$lfdi, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Generate S\+F\+DI and L\+F\+DI hash values from a device certificate file. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{group__security_ga85dca7ededd3e531ce19183751f71ff4}{load\+\_\+device\+\_\+cert} (uint8\+\_\+t $\ast$lfdi, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Generate S\+F\+DI and L\+F\+DI hash values from a device certificate file and print them to the console. \end{DoxyCompactList}\item 
+void \hyperlink{group__security_ga37aa027507f0512a802bc034def54576}{security\+\_\+init} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Initialize the device S\+F\+DI and L\+D\+FI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__security_ga6dbafb6acf80fc86e418814b288a7e1a}\label{group__security_ga6dbafb6acf80fc86e418814b288a7e1a}} 
+\index{Security@{Security}!lfdi\+\_\+gen@{lfdi\+\_\+gen}}
+\index{lfdi\+\_\+gen@{lfdi\+\_\+gen}!Security@{Security}}
+\subsubsection{\texorpdfstring{lfdi\+\_\+gen()}{lfdi\_gen()}}
+{\footnotesize\ttfamily uint64\+\_\+t lfdi\+\_\+gen (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{lfdi,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Generate S\+F\+DI and L\+F\+DI hash values from a device certificate file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lfdi} & is a 20 byte buffer that stores the L\+F\+DI result \\
+\hline
+{\em path} & is the path of the device certificate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the S\+F\+DI hash result truncated from the L\+F\+DI result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__security_ga0c3b1ec1fd87c9cfb07b82f97655ed1f}\label{group__security_ga0c3b1ec1fd87c9cfb07b82f97655ed1f}} 
+\index{Security@{Security}!lfdi\+\_\+hash@{lfdi\+\_\+hash}}
+\index{lfdi\+\_\+hash@{lfdi\+\_\+hash}!Security@{Security}}
+\subsubsection{\texorpdfstring{lfdi\+\_\+hash()}{lfdi\_hash()}}
+{\footnotesize\ttfamily uint64\+\_\+t lfdi\+\_\+hash (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{lfdi,  }\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Generate S\+F\+DI and L\+F\+DI hash values from a device certificate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lfdi} & is a 20 byte buffer that stores the L\+F\+DI result \\
+\hline
+{\em buffer} & contains the device certificate, it must be a multiple of S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+S\+I\+ZE (64 bytes) and have at least 9 bytes of padding, this can be obtained by allocating a buffer of size sha256\+\_\+size (length). \\
+\hline
+{\em length} & is the length of the device certificate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the S\+F\+DI hash result truncated from the L\+F\+DI result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__security_gadea9b85056a9814af0f31825e3c4cfe7}\label{group__security_gadea9b85056a9814af0f31825e3c4cfe7}} 
+\index{Security@{Security}!load\+\_\+cert@{load\+\_\+cert}}
+\index{load\+\_\+cert@{load\+\_\+cert}!Security@{Security}}
+\subsubsection{\texorpdfstring{load\+\_\+cert()}{load\_cert()}}
+{\footnotesize\ttfamily void load\+\_\+cert (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Load a CA certificate. 
+
+This certificate can be sent along with client certificate as part of establishing a T\+LS session, it can also be used in CA certificate chain verification of a client certificate. 
+\begin{DoxyParams}{Parameters}
+{\em path} & is the file name of the CA certificate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__security_ga7a1ba6975237933bc8447986ea73fe08}\label{group__security_ga7a1ba6975237933bc8447986ea73fe08}} 
+\index{Security@{Security}!load\+\_\+cert\+\_\+dir@{load\+\_\+cert\+\_\+dir}}
+\index{load\+\_\+cert\+\_\+dir@{load\+\_\+cert\+\_\+dir}!Security@{Security}}
+\subsubsection{\texorpdfstring{load\+\_\+cert\+\_\+dir()}{load\_cert\_dir()}}
+{\footnotesize\ttfamily void load\+\_\+cert\+\_\+dir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Load a CA certificate directory. 
+
+Call \hyperlink{group__security_gadea9b85056a9814af0f31825e3c4cfe7}{load\+\_\+cert} for every file in the directory. 
+\begin{DoxyParams}{Parameters}
+{\em path} & is the file name of the directory to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__security_ga85dca7ededd3e531ce19183751f71ff4}\label{group__security_ga85dca7ededd3e531ce19183751f71ff4}} 
+\index{Security@{Security}!load\+\_\+device\+\_\+cert@{load\+\_\+device\+\_\+cert}}
+\index{load\+\_\+device\+\_\+cert@{load\+\_\+device\+\_\+cert}!Security@{Security}}
+\subsubsection{\texorpdfstring{load\+\_\+device\+\_\+cert()}{load\_device\_cert()}}
+{\footnotesize\ttfamily uint64\+\_\+t load\+\_\+device\+\_\+cert (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{lfdi,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Generate S\+F\+DI and L\+F\+DI hash values from a device certificate file and print them to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lfdi} & is a 20 byte buffer that stores the L\+F\+DI result \\
+\hline
+{\em path} & is the path of the device certificate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the S\+F\+DI hash result truncated from the L\+F\+DI result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__security_ga37aa027507f0512a802bc034def54576}\label{group__security_ga37aa027507f0512a802bc034def54576}} 
+\index{Security@{Security}!security\+\_\+init@{security\+\_\+init}}
+\index{security\+\_\+init@{security\+\_\+init}!Security@{Security}}
+\subsubsection{\texorpdfstring{security\+\_\+init()}{security\_init()}}
+{\footnotesize\ttfamily void security\+\_\+init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Initialize the device S\+F\+DI and L\+D\+FI. 
+
+Initialize the global variable device\+\_\+lfdi and device\+\_\+sfdi by computing the hash of a device certificate. 
+\begin{DoxyParams}{Parameters}
+{\em path} & is the path of the device certificate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__security_ga0e83013b684ca7c97129148e672a5d83}\label{group__security_ga0e83013b684ca7c97129148e672a5d83}} 
+\index{Security@{Security}!sfdi\+\_\+gen@{sfdi\+\_\+gen}}
+\index{sfdi\+\_\+gen@{sfdi\+\_\+gen}!Security@{Security}}
+\subsubsection{\texorpdfstring{sfdi\+\_\+gen()}{sfdi\_gen()}}
+{\footnotesize\ttfamily uint64\+\_\+t sfdi\+\_\+gen (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{lfdi }\end{DoxyParamCaption})}
+
+
+
+Generate S\+F\+DI from L\+F\+DI hash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lfdi} & is the 20 byte L\+F\+DI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the computed S\+F\+DI result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__security_gabae7ae3a93a3e0e7d8375a3f3a25724d}\label{group__security_gabae7ae3a93a3e0e7d8375a3f3a25724d}} 
+\index{Security@{Security}!tls\+\_\+init@{tls\+\_\+init}}
+\index{tls\+\_\+init@{tls\+\_\+init}!Security@{Security}}
+\subsubsection{\texorpdfstring{tls\+\_\+init()}{tls\_init()}}
+{\footnotesize\ttfamily char $\ast$ tls\+\_\+init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{Verify\+Func}]{verify }\end{DoxyParamCaption})}
+
+
+
+Initialize the T\+LS library. 
+
+Initialize the T\+LS library calling the appropriate functions. Load the device certificate \textquotesingle{}path\textquotesingle{}.x509 and use the device private key \textquotesingle{}path\textquotesingle{}.pem, where \textquotesingle{}path\textquotesingle{} is the first function parameter. 
+\begin{DoxyParams}{Parameters}
+{\em path} & is used to identify the device certificate and private key files, \textquotesingle{}path\textquotesingle{}.x509 and \textquotesingle{}path\textquotesingle{}.pem respectively. \\
+\hline
+{\em verify} & is called as extra step to verify the client T\+LS certificate. Certificates are in any case are verified against their CA certificate chain, this extra step this can be used to impliment a filter by only accepting clients with the right credentials (S\+F\+DI, L\+F\+DI), this parameter can be N\+U\+LL to indicate not to take this step. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the path of the device certificate \textquotesingle{}path\textquotesingle{}.x509 
+\end{DoxyReturn}

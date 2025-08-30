@@ -1,0 +1,9 @@
+<map id="SE_DERStatus_t" name="SE_DERStatus_t">
+<area shape="rect" id="node2" href="$structSE__OperationalModeStatusType__t.html" title="SE_OperationalModeStatus\lType_t" alt="" coords="20,6,203,47"/>
+<area shape="rect" id="node3" href="$structSE__ConnectStatusType__t.html" title="SE_ConnectStatusType_t" alt="" coords="24,72,199,99"/>
+<area shape="rect" id="node4" href="$structSE__ManufacturerStatusType__t.html" title="SE_ManufacturerStatusType_t" alt="" coords="11,123,212,149"/>
+<area shape="rect" id="node5" href="$structSE__InverterStatusType__t.html" title="SE_InverterStatusType_t" alt="" coords="27,173,196,200"/>
+<area shape="rect" id="node6" href="$structSE__StateOfChargeStatusType__t.html" title="SE_StateOfChargeStatusType_t" alt="" coords="5,224,217,251"/>
+<area shape="rect" id="node7" href="$structSE__LocalControlModeStatusType__t.html" title="SE_LocalControlModeStatus\lType_t" alt="" coords="16,275,207,317"/>
+<area shape="rect" id="node8" href="$structSE__StorageModeStatusType__t.html" title="SE_StorageModeStatusType_t" alt="" coords="10,341,213,368"/>
+</map>

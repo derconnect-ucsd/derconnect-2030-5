@@ -1,0 +1,72 @@
+\hypertarget{group__TargetReading}{}\section{Target\+Reading}
+\label{group__TargetReading}\index{Target\+Reading@{Target\+Reading}}
+Collaboration diagram for Target\+Reading\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{group__TargetReading}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__TargetReading__t}{S\+E\+\_\+\+Target\+Reading\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__TargetReading_gaaf344e38f87e901981538342c80f3d6f}{S\+E\+\_\+\+Target\+Reading\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__TargetReading_gaea2bf3a76c988bc1e063e3230087b17e}{S\+E\+\_\+\+Target\+Reading\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__TargetReading_gaba82706ff98671daae1c9e06ee1e0d12}{S\+E\+\_\+\+Target\+Reading\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__TargetReading_gab528105e52e927d416310936aefb3b49}{S\+E\+\_\+\+Target\+Reading\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__TargetReading_gae96ed0578c2f7248515997778cee5da8}{S\+E\+\_\+\+Target\+Reading\+\_\+t\+::version}
+\item 
+\mbox{\Hypertarget{group__TargetReading_gaf811fbd86370bd8226e0b8fd0bec9072}\label{group__TargetReading_gaf811fbd86370bd8226e0b8fd0bec9072}} 
+\hyperlink{structSE__BillingReadingSetListLink__t}{S\+E\+\_\+\+Billing\+Reading\+Set\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Target\+Reading\+\_\+t\+::\+Billing\+Reading\+Set\+List\+Link}
+\item 
+\mbox{\Hypertarget{group__TargetReading_ga3d0ec88707fed30dc0aa6d1f8d94ff70}\label{group__TargetReading_ga3d0ec88707fed30dc0aa6d1f8d94ff70}} 
+\hyperlink{structSE__ReadingTypeLink__t}{S\+E\+\_\+\+Reading\+Type\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Target\+Reading\+\_\+t\+::\+Reading\+Type\+Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains readings that specify a target or goal, such as a consumption target, to which billing incentives or other contractual ramifications may be associated. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__TargetReading_gaaf344e38f87e901981538342c80f3d6f}\label{group__TargetReading_gaaf344e38f87e901981538342c80f3d6f}} 
+\index{Target\+Reading@{Target\+Reading}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Target\+Reading@{Target\+Reading}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Target\+Reading\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Reading\+Type\+Link\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+\+Billing\+Reading\+Set\+List\+Link\+\_\+exists (1 $<$$<$ 6) \mbox{\Hypertarget{group__TargetReading_gab528105e52e927d416310936aefb3b49}\label{group__TargetReading_gab528105e52e927d416310936aefb3b49}} 
+\index{Target\+Reading@{Target\+Reading}!description@{description}}
+\index{description@{description}!Target\+Reading@{Target\+Reading}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Target\+Reading\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__TargetReading_gaea2bf3a76c988bc1e063e3230087b17e}\label{group__TargetReading_gaea2bf3a76c988bc1e063e3230087b17e}} 
+\index{Target\+Reading@{Target\+Reading}!href@{href}}
+\index{href@{href}!Target\+Reading@{Target\+Reading}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Target\+Reading\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__TargetReading_gaba82706ff98671daae1c9e06ee1e0d12}\label{group__TargetReading_gaba82706ff98671daae1c9e06ee1e0d12}} 
+\index{Target\+Reading@{Target\+Reading}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Target\+Reading@{Target\+Reading}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Target\+Reading\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__TargetReading_gae96ed0578c2f7248515997778cee5da8}\label{group__TargetReading_gae96ed0578c2f7248515997778cee5da8}} 
+\index{Target\+Reading@{Target\+Reading}!version@{version}}
+\index{version@{version}!Target\+Reading@{Target\+Reading}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Target\+Reading\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

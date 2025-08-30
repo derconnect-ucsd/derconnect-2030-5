@@ -1,0 +1,92 @@
+\hypertarget{group__EventStatus}{}\section{Event\+Status}
+\label{group__EventStatus}\index{Event\+Status@{Event\+Status}}
+Collaboration diagram for Event\+Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__EventStatus}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__EventStatus__t}{S\+E\+\_\+\+Event\+Status\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__EventStatus_ga22ffd743b9bee41ded4925788c8bd778}{S\+E\+\_\+\+Event\+Status\+\_\+t\+::\+\_\+flags}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__EventStatus_ga59fc1cc6e5c19bf792c0b84e7e37a4e7}{S\+E\+\_\+\+Event\+Status\+\_\+t\+::current\+Status}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__EventStatus_gaed58cdf8b3efb07a6241882255bc644c}{S\+E\+\_\+\+Event\+Status\+\_\+t\+::date\+Time}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__EventStatus_ga54eb494ef98025237ddfd1959e20eecd}{S\+E\+\_\+\+Event\+Status\+\_\+t\+::potentially\+Superseded\+Time}
+\item 
+\hyperlink{group__String192_ga25f61da2bbbdfe30dbf77fcbb7edd7d7}{S\+E\+\_\+\+String192\+\_\+t} \hyperlink{group__EventStatus_ga30cb8c829f1f7458598572c159ccae98}{S\+E\+\_\+\+Event\+Status\+\_\+t\+::reason}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Current status information relevant to a specific object. The Status object is used to indicate the current status of an Event. Devices can read the containing resource (e.\+g. Text\+Message) to get the most up to date status of the event. Devices can also subscribe to a specific resource instance to get updates when any of its attributes change, including the Status object. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__EventStatus_ga22ffd743b9bee41ded4925788c8bd778}\label{group__EventStatus_ga22ffd743b9bee41ded4925788c8bd778}} 
+\index{Event\+Status@{Event\+Status}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Event\+Status@{Event\+Status}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+Status\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+reason\+\_\+exists (1 $<$$<$ 0)
+
+\#define S\+E\+\_\+potentially\+Superseded\+Time\+\_\+exists (1 $<$$<$ 1)
+
+\#define S\+E\+\_\+potentially\+Superseded\+\_\+true (1 $<$$<$ 2) \mbox{\Hypertarget{group__EventStatus_ga59fc1cc6e5c19bf792c0b84e7e37a4e7}\label{group__EventStatus_ga59fc1cc6e5c19bf792c0b84e7e37a4e7}} 
+\index{Event\+Status@{Event\+Status}!current\+Status@{current\+Status}}
+\index{current\+Status@{current\+Status}!Event\+Status@{Event\+Status}}
+\subsubsection{\texorpdfstring{current\+Status}{currentStatus}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+Status\+\_\+t\+::current\+Status}
+
+Field representing the current status type.
+
+0 = Scheduled
+
+This status indicates that the event has been scheduled and the event has not yet started. The server S\+H\+A\+LL set the event to this status when the event is first scheduled and persist until the event has become active or has been cancelled. For events with a start time less than or equal to the current time, this status S\+H\+A\+LL never be indicated, the event S\+H\+A\+LL start with a status of “\+Active”.
+
+1 = Active
+
+This status indicates that the event is currently active. The server S\+H\+A\+LL set the event to this status when the event reaches its earliest Effective Start Time.
+
+2 = Cancelled
+
+When events are cancelled, the Status.\+date\+Time attribute S\+H\+A\+LL be set to the time the cancellation occurred, which cannot be in the future. The server is responsible for maintaining the cancelled event in its collection for the duration of the original event, or until the server has run out of space and needs to store a new event. Client devices S\+H\+A\+LL be aware of Cancelled events, determine if the Cancelled event applies to them, and cancel the event immediately if applicable.
+
+3 = Cancelled with Randomization
+
+The server is responsible for maintaining the cancelled event in its collection for the duration of the Effective Scheduled Period. Client devices S\+H\+A\+LL be aware of Cancelled with Randomization events, determine if the Cancelled event applies to them, and cancel the event immediately, using the larger of (absolute value of randomize\+Start) and (absolute value of randomize\+Duration) as the end randomization, in seconds. This Status.\+type S\+H\+A\+LL N\+OT be used with \char`\"{}regular\char`\"{} Events, only with specializations of Randomizable\+Event.
+
+4 = Superseded
+
+Events marked as Superseded by servers are events that may have been replaced by new events from the same program that target the exact same set of device\+Category\textquotesingle{}s (if applicable) and overlap for a given period of time. Servers S\+H\+A\+LL mark an event as Superseded at the earliest Effective Start Time of the overlapping event. Servers are responsible for maintaining the Superseded event in their collection for the duration of the Effective Scheduled Period.
+
+Client devices encountering a Superseded event S\+H\+A\+LL terminate execution of the event immediately and commence execution of the new event immediately, unless the current time is within the start randomization window of the superseded event, in which case the client S\+H\+A\+LL obey the start randomization of the new event. This Status.\+type S\+H\+A\+LL N\+OT be used with Text\+Message, since multiple text messages can be active.
+
+All other values reserved. \mbox{\Hypertarget{group__EventStatus_gaed58cdf8b3efb07a6241882255bc644c}\label{group__EventStatus_gaed58cdf8b3efb07a6241882255bc644c}} 
+\index{Event\+Status@{Event\+Status}!date\+Time@{date\+Time}}
+\index{date\+Time@{date\+Time}!Event\+Status@{Event\+Status}}
+\subsubsection{\texorpdfstring{date\+Time}{dateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+Status\+\_\+t\+::date\+Time}
+
+The date\+Time attribute will provide a timestamp of when the current status was defined. date\+Time M\+U\+ST be set to the time at which the status change occurred, not a time in the future or past. \mbox{\Hypertarget{group__EventStatus_ga54eb494ef98025237ddfd1959e20eecd}\label{group__EventStatus_ga54eb494ef98025237ddfd1959e20eecd}} 
+\index{Event\+Status@{Event\+Status}!potentially\+Superseded\+Time@{potentially\+Superseded\+Time}}
+\index{potentially\+Superseded\+Time@{potentially\+Superseded\+Time}!Event\+Status@{Event\+Status}}
+\subsubsection{\texorpdfstring{potentially\+Superseded\+Time}{potentiallySupersededTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+Status\+\_\+t\+::potentially\+Superseded\+Time}
+
+Indicates the time that the potentially\+Superseded flag was set. \mbox{\Hypertarget{group__EventStatus_ga30cb8c829f1f7458598572c159ccae98}\label{group__EventStatus_ga30cb8c829f1f7458598572c159ccae98}} 
+\index{Event\+Status@{Event\+Status}!reason@{reason}}
+\index{reason@{reason}!Event\+Status@{Event\+Status}}
+\subsubsection{\texorpdfstring{reason}{reason}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Event\+Status\+\_\+t\+::reason}
+
+The Reason attribute allows a Service provider to provide a textual explanation of the status. 

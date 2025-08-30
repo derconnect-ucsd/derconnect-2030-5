@@ -1,0 +1,6 @@
+<map id="BillingMeterReadingBase" name="BillingMeterReadingBase">
+<area shape="rect" id="node1" href="$group__ProjectionReading.html" title="ProjectionReading" alt="" coords="403,5,531,32"/>
+<area shape="rect" id="node2" href="$group__HistoricalReading.html" title="HistoricalReading" alt="" coords="404,56,529,83"/>
+<area shape="rect" id="node5" href="$group__TargetReading.html" title="TargetReading" alt="" coords="413,107,520,133"/>
+<area shape="rect" id="node4" href="$group__MeterReadingBase.html" title="MeterReadingBase" alt="" coords="5,56,139,83"/>
+</map>

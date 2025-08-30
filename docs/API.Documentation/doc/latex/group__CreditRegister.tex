@@ -1,0 +1,96 @@
+\hypertarget{group__CreditRegister}{}\section{Credit\+Register}
+\label{group__CreditRegister}\index{Credit\+Register@{Credit\+Register}}
+Collaboration diagram for Credit\+Register\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{group__CreditRegister}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__CreditRegister__t}{S\+E\+\_\+\+Credit\+Register\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__CreditRegister_gadbc5a3366401cd1972b2e99c05b685f0}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__CreditRegister_ga6dc29bbd10dc51848e6fbedbfbdbc428}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::href}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__CreditRegister_ga08dc81d2c42276324c84c732071a907a}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::m\+R\+ID}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__CreditRegister_gaa27bbe878f77be7bdaa8a8a74d845f0c}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::description}
+\item 
+\hyperlink{group__VersionType_ga4b8d27838226948397ed99f67d46e2ae}{S\+E\+\_\+\+Version\+Type\+\_\+t} \hyperlink{group__CreditRegister_gae291a84e122c89e218a4a85dc5be4cb7}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::version}
+\item 
+\hyperlink{structSE__AccountingUnit__t}{S\+E\+\_\+\+Accounting\+Unit\+\_\+t} \hyperlink{group__CreditRegister_ga1ddd68658ee4d433120cf122868ada78}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::credit\+Amount}
+\item 
+\hyperlink{group__CreditTypeType_ga5a63742e5c65087df17ed6ad8f420b5e}{S\+E\+\_\+\+Credit\+Type\+Type\+\_\+t} \hyperlink{group__CreditRegister_ga64f4538c159f8e56b25fad6e98265b86}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::credit\+Type}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__CreditRegister_gabed95bad275808f5aefbf623bc20aaec}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::effective\+Time}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__CreditRegister_ga360e14671fe75ee6b62e1034f2045ee9}{S\+E\+\_\+\+Credit\+Register\+\_\+t\+::token}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Credit\+Register instances define a credit-\/modifying transaction. Typically this would be a credit-\/adding transaction, but may be a subtracting transaction (perhaps in response to an out-\/of-\/band debt signal). 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__CreditRegister_gadbc5a3366401cd1972b2e99c05b685f0}\label{group__CreditRegister_gadbc5a3366401cd1972b2e99c05b685f0}} 
+\index{Credit\+Register@{Credit\+Register}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+credit\+Type\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__CreditRegister_ga1ddd68658ee4d433120cf122868ada78}\label{group__CreditRegister_ga1ddd68658ee4d433120cf122868ada78}} 
+\index{Credit\+Register@{Credit\+Register}!credit\+Amount@{credit\+Amount}}
+\index{credit\+Amount@{credit\+Amount}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{credit\+Amount}{creditAmount}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::credit\+Amount}
+
+Credit\+Amount is the amount of credit being added by a particular Credit\+Register transaction. Negative values indicate that credit is being subtracted. \mbox{\Hypertarget{group__CreditRegister_ga64f4538c159f8e56b25fad6e98265b86}\label{group__CreditRegister_ga64f4538c159f8e56b25fad6e98265b86}} 
+\index{Credit\+Register@{Credit\+Register}!credit\+Type@{credit\+Type}}
+\index{credit\+Type@{credit\+Type}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{credit\+Type}{creditType}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::credit\+Type}
+
+Credit\+Type indicates whether the credit transaction applies to regular or emergency credit. \mbox{\Hypertarget{group__CreditRegister_gaa27bbe878f77be7bdaa8a8a74d845f0c}\label{group__CreditRegister_gaa27bbe878f77be7bdaa8a8a74d845f0c}} 
+\index{Credit\+Register@{Credit\+Register}!description@{description}}
+\index{description@{description}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::description}
+
+The description is a human readable text describing or naming the object. \mbox{\Hypertarget{group__CreditRegister_gabed95bad275808f5aefbf623bc20aaec}\label{group__CreditRegister_gabed95bad275808f5aefbf623bc20aaec}} 
+\index{Credit\+Register@{Credit\+Register}!effective\+Time@{effective\+Time}}
+\index{effective\+Time@{effective\+Time}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{effective\+Time}{effectiveTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::effective\+Time}
+
+Effective\+Time identifies the time at which the credit transaction goes into effect. For credit addition transactions, this is typically the moment at which the transaction takes place. For credit subtraction transactions, (e.\+g., non-\/fuel debt recovery transactions initiated from a back-\/haul or E\+SI) this may be a future time at which credit is deducted. \mbox{\Hypertarget{group__CreditRegister_ga6dc29bbd10dc51848e6fbedbfbdbc428}\label{group__CreditRegister_ga6dc29bbd10dc51848e6fbedbfbdbc428}} 
+\index{Credit\+Register@{Credit\+Register}!href@{href}}
+\index{href@{href}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__CreditRegister_ga08dc81d2c42276324c84c732071a907a}\label{group__CreditRegister_ga08dc81d2c42276324c84c732071a907a}} 
+\index{Credit\+Register@{Credit\+Register}!m\+R\+ID@{m\+R\+ID}}
+\index{m\+R\+ID@{m\+R\+ID}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{m\+R\+ID}{mRID}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::m\+R\+ID}
+
+The global identifier of the object. \mbox{\Hypertarget{group__CreditRegister_ga360e14671fe75ee6b62e1034f2045ee9}\label{group__CreditRegister_ga360e14671fe75ee6b62e1034f2045ee9}} 
+\index{Credit\+Register@{Credit\+Register}!token@{token}}
+\index{token@{token}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::token}
+
+Token is security data that authenticates the legitimacy of the transaction. The details of this token are not defined by I\+E\+EE 2030.\+5. How a Prepayment server handles this field is left as vendor specific implementation or will be defined by one or more other standards. \mbox{\Hypertarget{group__CreditRegister_gae291a84e122c89e218a4a85dc5be4cb7}\label{group__CreditRegister_gae291a84e122c89e218a4a85dc5be4cb7}} 
+\index{Credit\+Register@{Credit\+Register}!version@{version}}
+\index{version@{version}!Credit\+Register@{Credit\+Register}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Credit\+Register\+\_\+t\+::version}
+
+Contains the version number of the object. See the type definition for details. 

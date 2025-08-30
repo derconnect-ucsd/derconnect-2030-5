@@ -1,0 +1,8 @@
+<map id="Response" name="Response">
+<area shape="rect" id="node2" href="$group__TextResponse.html" title="TextResponse" alt="" coords="327,5,434,32"/>
+<area shape="rect" id="node3" href="$group__DrResponse.html" title="DrResponse" alt="" coords="333,56,428,83"/>
+<area shape="rect" id="node4" href="$group__FlowReservationResponseResponse.html" title="FlowReservationResponseResponse" alt="" coords="261,107,500,133"/>
+<area shape="rect" id="node6" href="$group__PriceResponse.html" title="PriceResponse" alt="" coords="325,157,436,184"/>
+<area shape="rect" id="node7" href="$group__DERControlResponse.html" title="DERControlResponse" alt="" coords="305,208,457,235"/>
+<area shape="rect" id="node5" href="$group__Resource.html" title="Resource" alt="" coords="5,107,84,133"/>
+</map>

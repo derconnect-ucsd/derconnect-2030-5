@@ -1,0 +1,11 @@
+<map id="SubscribableResource" name="SubscribableResource">
+<area shape="rect" id="node1" href="$group__SubscribableIdentifiedObject.html" title="SubscribableIdentifiedObject" alt="" coords="333,5,521,32"/>
+<area shape="rect" id="node3" href="$group__DERStatus.html" title="DERStatus" alt="" coords="383,56,472,83"/>
+<area shape="rect" id="node4" href="$group__DERSettings.html" title="DERSettings" alt="" coords="378,107,477,133"/>
+<area shape="rect" id="node5" href="$group__DER.html" title="DER" alt="" coords="402,157,453,184"/>
+<area shape="rect" id="node6" href="$group__AbstractDevice.html" title="AbstractDevice" alt="" coords="371,208,483,235"/>
+<area shape="rect" id="node7" href="$group__DERAvailability.html" title="DERAvailability" alt="" coords="370,259,485,285"/>
+<area shape="rect" id="node9" href="$group__Configuration.html" title="Configuration" alt="" coords="378,309,477,336"/>
+<area shape="rect" id="node10" href="$group__SubscribableList.html" title="SubscribableList" alt="" coords="368,360,487,387"/>
+<area shape="rect" id="node8" href="$group__Resource.html" title="Resource" alt="" coords="5,183,84,209"/>
+</map>

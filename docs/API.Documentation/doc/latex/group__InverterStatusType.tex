@@ -1,0 +1,64 @@
+\hypertarget{group__InverterStatusType}{}\section{Inverter\+Status\+Type}
+\label{group__InverterStatusType}\index{Inverter\+Status\+Type@{Inverter\+Status\+Type}}
+Collaboration diagram for Inverter\+Status\+Type\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{group__InverterStatusType}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__InverterStatusType__t}{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__InverterStatusType_ga87657492474108fe3e58f3e8ac2a5e8d}{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t\+::date\+Time}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__InverterStatusType_ga2e5ea03a4944948d5ab06b26e1be0bd3}{S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t\+::value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+ER Inverter\+Status value\+:
+
+0 -\/ N/A
+
+1 -\/ off
+
+2 -\/ sleeping (auto-\/shutdown) or D\+ER is at low output power/voltage
+
+3 -\/ starting up or ON but not producing power
+
+4 -\/ tracking M\+P\+PT power point
+
+5 -\/ forced power reduction/derating
+
+6 -\/ shutting down
+
+7 -\/ one or more faults exist
+
+8 -\/ standby (service on unit) -\/ D\+ER may be at high output voltage/power
+
+9 -\/ test mode
+
+10 -\/ as defined in manufacturer status
+
+All other values reserved. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__InverterStatusType_ga87657492474108fe3e58f3e8ac2a5e8d}\label{group__InverterStatusType_ga87657492474108fe3e58f3e8ac2a5e8d}} 
+\index{Inverter\+Status\+Type@{Inverter\+Status\+Type}!date\+Time@{date\+Time}}
+\index{date\+Time@{date\+Time}!Inverter\+Status\+Type@{Inverter\+Status\+Type}}
+\subsubsection{\texorpdfstring{date\+Time}{dateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t\+::date\+Time}
+
+The date and time at which the state applied. \mbox{\Hypertarget{group__InverterStatusType_ga2e5ea03a4944948d5ab06b26e1be0bd3}\label{group__InverterStatusType_ga2e5ea03a4944948d5ab06b26e1be0bd3}} 
+\index{Inverter\+Status\+Type@{Inverter\+Status\+Type}!value@{value}}
+\index{value@{value}!Inverter\+Status\+Type@{Inverter\+Status\+Type}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Inverter\+Status\+Type\+\_\+t\+::value}
+
+The value indicating the state. 

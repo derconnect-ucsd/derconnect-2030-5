@@ -1,0 +1,6 @@
+<map id="SE_MeterReading_t" name="SE_MeterReading_t">
+<area shape="rect" id="node2" href="$structSE__ReadingLink__t.html" title="SE_ReadingLink_t" alt="" coords="39,5,170,32"/>
+<area shape="rect" id="node3" href="$structSE__RateComponentListLink__t.html" title="SE_RateComponentListLink_t" alt="" coords="5,56,204,83"/>
+<area shape="rect" id="node4" href="$structSE__ReadingSetListLink__t.html" title="SE_ReadingSetListLink_t" alt="" coords="19,107,190,133"/>
+<area shape="rect" id="node5" href="$structSE__ReadingTypeLink__t.html" title="SE_ReadingTypeLink_t" alt="" coords="25,157,184,184"/>
+</map>

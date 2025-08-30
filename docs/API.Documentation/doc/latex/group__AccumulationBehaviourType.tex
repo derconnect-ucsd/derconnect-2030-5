@@ -1,0 +1,79 @@
+\hypertarget{group__AccumulationBehaviourType}{}\section{Accumulation\+Behaviour\+Type}
+\label{group__AccumulationBehaviourType}\index{Accumulation\+Behaviour\+Type@{Accumulation\+Behaviour\+Type}}
+Collaboration diagram for Accumulation\+Behaviour\+Type\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{group__AccumulationBehaviourType}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__AccumulationBehaviourType_gaa25de69f43be64dff9ec0bdf3ef685d2}{S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+0 = Not Applicable (default, if not specified)
+
+3 = Cumulative
+
+The sum of the previous billing period values. Note\+: “\+Cumulative” is commonly used in conjunction with “demand.\+” Each demand reset causes the maximum demand value for the present billing period (since the last demand reset) to accumulate as an accumulative total of all maximum demands. So instead of “zeroing” the demand register, a demand reset has the affect of adding the present maximum demand to this accumulating total.
+
+4 = Delta\+Data
+
+The difference between the value at the end of the prescribed interval and the beginning of the interval. This is used for incremental interval data.
+
+Note\+: One common application would be for load profile data, another use might be to report the number of events within an interval (such as the number of equipment energizations within the specified period of time.)
+
+6 = Indicating
+
+As if a needle is swung out on the meter face to a value to indicate the current value. (Note\+: An “indicating” value is typically measured over hundreds of milliseconds or greater, or may imply a “pusher” mechanism to capture a value. Compare this to “instantaneous” which is measured over a shorter period of time.)
+
+9 = Summation
+
+A form of accumulation which is selective with respect to time.
+
+Note \+: “\+Summation” could be considered a specialization of “\+Bulk Quantity” according to the rules of inheritance where “\+Summation” selectively accumulates pulses over a timing pattern, and “\+Bulk\+Quantity” accumulates pulses all of the time.
+
+12 = Instantaneous
+
+Typically measured over the fastest period of time allowed by the definition of the metric (usually milliseconds or tens of milliseconds.) (Note\+: “\+Instantaneous” was moved to attribute \#3 in 61968-\/9\+Ed2 from attribute \#1 in 61968-\/9\+Ed1.)
+
+All other values reserved. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__AccumulationBehaviourType_gaa25de69f43be64dff9ec0bdf3ef685d2}\label{group__AccumulationBehaviourType_gaa25de69f43be64dff9ec0bdf3ef685d2}} 
+\index{Accumulation\+Behaviour\+Type@{Accumulation\+Behaviour\+Type}!S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t@{S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t}}
+\index{S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t@{S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t}!Accumulation\+Behaviour\+Type@{Accumulation\+Behaviour\+Type}}
+\subsubsection{\texorpdfstring{S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t}{SE\_AccumulationBehaviourType\_t}}
+{\footnotesize\ttfamily \hyperlink{group__AccumulationBehaviourType_gaa25de69f43be64dff9ec0bdf3ef685d2}{S\+E\+\_\+\+Accumulation\+Behaviour\+Type\+\_\+t}}
+
+0 = Not Applicable (default, if not specified)
+
+3 = Cumulative
+
+The sum of the previous billing period values. Note\+: “\+Cumulative” is commonly used in conjunction with “demand.\+” Each demand reset causes the maximum demand value for the present billing period (since the last demand reset) to accumulate as an accumulative total of all maximum demands. So instead of “zeroing” the demand register, a demand reset has the affect of adding the present maximum demand to this accumulating total.
+
+4 = Delta\+Data
+
+The difference between the value at the end of the prescribed interval and the beginning of the interval. This is used for incremental interval data.
+
+Note\+: One common application would be for load profile data, another use might be to report the number of events within an interval (such as the number of equipment energizations within the specified period of time.)
+
+6 = Indicating
+
+As if a needle is swung out on the meter face to a value to indicate the current value. (Note\+: An “indicating” value is typically measured over hundreds of milliseconds or greater, or may imply a “pusher” mechanism to capture a value. Compare this to “instantaneous” which is measured over a shorter period of time.)
+
+9 = Summation
+
+A form of accumulation which is selective with respect to time.
+
+Note \+: “\+Summation” could be considered a specialization of “\+Bulk Quantity” according to the rules of inheritance where “\+Summation” selectively accumulates pulses over a timing pattern, and “\+Bulk\+Quantity” accumulates pulses all of the time.
+
+12 = Instantaneous
+
+Typically measured over the fastest period of time allowed by the definition of the metric (usually milliseconds or tens of milliseconds.) (Note\+: “\+Instantaneous” was moved to attribute \#3 in 61968-\/9\+Ed2 from attribute \#1 in 61968-\/9\+Ed1.)
+
+All other values reserved. 

@@ -1,0 +1,131 @@
+\hypertarget{group__dnssd__client}{}\section{Service Discovery}
+\label{group__dnssd__client}\index{Service Discovery@{Service Discovery}}
+Collaboration diagram for Service Discovery\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{group__dnssd__client}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__se__discover}{I\+E\+E\+E 2030.\+5 Service Discovery}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__dnssd__client_gaabd3019c43122eb4e319dfd53571b524}\label{group__dnssd__client_gaabd3019c43122eb4e319dfd53571b524}} 
+typedef struct \+\_\+\+Service {\bfseries Service}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{group__dnssd__client_ga8f7a5f9ac12499f257a2246565d08594}{dnssd\+\_\+query} (char $\ast$packet)
+\begin{DoxyCompactList}\small\item\em Initialize a D\+N\+S-\/\+SD query. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__dnssd__client_ga5bd74cd3f020394cb9b4df715fc18872}{dnssd\+\_\+question} (char $\ast$dest, char $\ast$name, int type, int unicast)
+\begin{DoxyCompactList}\small\item\em Add a question to a D\+N\+S-\/\+SD query. \end{DoxyCompactList}\item 
+Service $\ast$ \hyperlink{group__dnssd__client_ga1c4f7e5942f7beaf7646dcbbfe687382}{dnssd\+\_\+receive} (\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$port)
+\begin{DoxyCompactList}\small\item\em Receive D\+N\+S-\/\+SD packets from a Udp\+Port. \end{DoxyCompactList}\item 
+Service $\ast$ \hyperlink{group__dnssd__client_ga18c057a6f1be1a5916c765a4f344f1ea}{service\+\_\+next} (Service $\ast$s)
+\begin{DoxyCompactList}\small\item\em Return the next Service given a pointer to a discovered Service. \end{DoxyCompactList}\item 
+void \hyperlink{group__dnssd__client_gaa3bb0c6fef63b306e3c422be939adc48}{print\+\_\+service} (Service $\ast$s)
+\begin{DoxyCompactList}\small\item\em Print description of a Service to stdout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides an implementation of D\+N\+S-\/\+Based Service Discovery (\href{https://tools.ietf.org/html/rfc6763}{\tt R\+FC 6763}). 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__dnssd__client_ga8f7a5f9ac12499f257a2246565d08594}\label{group__dnssd__client_ga8f7a5f9ac12499f257a2246565d08594}} 
+\index{Service Discovery@{Service Discovery}!dnssd\+\_\+query@{dnssd\+\_\+query}}
+\index{dnssd\+\_\+query@{dnssd\+\_\+query}!Service Discovery@{Service Discovery}}
+\subsubsection{\texorpdfstring{dnssd\+\_\+query()}{dnssd\_query()}}
+{\footnotesize\ttfamily char $\ast$ dnssd\+\_\+query (\begin{DoxyParamCaption}\item[{char $\ast$}]{packet }\end{DoxyParamCaption})}
+
+
+
+Initialize a D\+N\+S-\/\+SD query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & is a container for the D\+N\+S-\/\+SD query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination for the first question within the packet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__dnssd__client_ga5bd74cd3f020394cb9b4df715fc18872}\label{group__dnssd__client_ga5bd74cd3f020394cb9b4df715fc18872}} 
+\index{Service Discovery@{Service Discovery}!dnssd\+\_\+question@{dnssd\+\_\+question}}
+\index{dnssd\+\_\+question@{dnssd\+\_\+question}!Service Discovery@{Service Discovery}}
+\subsubsection{\texorpdfstring{dnssd\+\_\+question()}{dnssd\_question()}}
+{\footnotesize\ttfamily char $\ast$ dnssd\+\_\+question (\begin{DoxyParamCaption}\item[{char $\ast$}]{dest,  }\item[{char $\ast$}]{name,  }\item[{int}]{type,  }\item[{int}]{unicast }\end{DoxyParamCaption})}
+
+
+
+Add a question to a D\+N\+S-\/\+SD query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & is the destination of the question within a D\+N\+S-\/\+SD packet \\
+\hline
+{\em name} & is a pointer to a name in the D\+NS counted label format \\
+\hline
+{\em type} & is the type of resource record that pertains to the question \\
+\hline
+{\em unicast} & is the value of the QU bit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination of the next question within the query 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__dnssd__client_ga1c4f7e5942f7beaf7646dcbbfe687382}\label{group__dnssd__client_ga1c4f7e5942f7beaf7646dcbbfe687382}} 
+\index{Service Discovery@{Service Discovery}!dnssd\+\_\+receive@{dnssd\+\_\+receive}}
+\index{dnssd\+\_\+receive@{dnssd\+\_\+receive}!Service Discovery@{Service Discovery}}
+\subsubsection{\texorpdfstring{dnssd\+\_\+receive()}{dnssd\_receive()}}
+{\footnotesize\ttfamily Service $\ast$ dnssd\+\_\+receive (\begin{DoxyParamCaption}\item[{\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+Receive D\+N\+S-\/\+SD packets from a Udp\+Port. 
+
+Receive and process packets from a Udp\+Port and return the discovered services. 
+\begin{DoxyParams}{Parameters}
+{\em port} & is a pointer to a Udp\+Port \\
+\hline
+{\em Service} & is a pointer the first discovered Service \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__dnssd__client_gaa3bb0c6fef63b306e3c422be939adc48}\label{group__dnssd__client_gaa3bb0c6fef63b306e3c422be939adc48}} 
+\index{Service Discovery@{Service Discovery}!print\+\_\+service@{print\+\_\+service}}
+\index{print\+\_\+service@{print\+\_\+service}!Service Discovery@{Service Discovery}}
+\subsubsection{\texorpdfstring{print\+\_\+service()}{print\_service()}}
+{\footnotesize\ttfamily void print\+\_\+service (\begin{DoxyParamCaption}\item[{Service $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Print description of a Service to stdout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a Service \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__dnssd__client_ga18c057a6f1be1a5916c765a4f344f1ea}\label{group__dnssd__client_ga18c057a6f1be1a5916c765a4f344f1ea}} 
+\index{Service Discovery@{Service Discovery}!service\+\_\+next@{service\+\_\+next}}
+\index{service\+\_\+next@{service\+\_\+next}!Service Discovery@{Service Discovery}}
+\subsubsection{\texorpdfstring{service\+\_\+next()}{service\_next()}}
+{\footnotesize\ttfamily Service $\ast$ service\+\_\+next (\begin{DoxyParamCaption}\item[{Service $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Return the next Service given a pointer to a discovered Service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & is a pointer to a Service \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the next discovered Service 
+\end{DoxyReturn}

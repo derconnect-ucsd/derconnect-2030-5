@@ -1,0 +1,129 @@
+\hypertarget{group__FileStatus}{}\section{File\+Status}
+\label{group__FileStatus}\index{File\+Status@{File\+Status}}
+Collaboration diagram for File\+Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{group__FileStatus}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__FileStatus__t}{S\+E\+\_\+\+File\+Status\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__FileStatus_ga4b3b27fbcfaf0fc19ac6bd5d54afd811}{S\+E\+\_\+\+File\+Status\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__FileStatus_gab42569063c0f1f2ecbacadf94a84692b}{S\+E\+\_\+\+File\+Status\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__FileStatus_ga84d473efe80699dab7000ebf8e072f81}{S\+E\+\_\+\+File\+Status\+\_\+t\+::poll\+Rate}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__FileStatus_gaf741987e3e6783c64bf119b24dde669f}{S\+E\+\_\+\+File\+Status\+\_\+t\+::activate\+Time}
+\item 
+\mbox{\Hypertarget{group__FileStatus_gad7c3e40aec562033c0335399fbdf6599}\label{group__FileStatus_gad7c3e40aec562033c0335399fbdf6599}} 
+\hyperlink{structSE__FileLink__t}{S\+E\+\_\+\+File\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+File\+Status\+\_\+t\+::\+File\+Link}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__FileStatus_ga10c95c145e19e06b777320bf0a2dd354}{S\+E\+\_\+\+File\+Status\+\_\+t\+::load\+Percent}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__FileStatus_gace8c5876bbb1939bc810eba9c41485a8}{S\+E\+\_\+\+File\+Status\+\_\+t\+::next\+Request\+Attempt}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FileStatus_gaac513ab0b825a0ca8dc8781afbd86fea}{S\+E\+\_\+\+File\+Status\+\_\+t\+::request503\+Count}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__FileStatus_ga225fff3f05549ecacea2c1f2ce1b4776}{S\+E\+\_\+\+File\+Status\+\_\+t\+::request\+Fail\+Count}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__FileStatus_ga5ec878ed781a4fa3d9a7530017df562a}{S\+E\+\_\+\+File\+Status\+\_\+t\+::status}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__FileStatus_ga07bc76971f8a0f26f8e5b1c62e6432e6}{S\+E\+\_\+\+File\+Status\+\_\+t\+::status\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This object provides status of device file load and activation operations. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__FileStatus_ga4b3b27fbcfaf0fc19ac6bd5d54afd811}\label{group__FileStatus_ga4b3b27fbcfaf0fc19ac6bd5d54afd811}} 
+\index{File\+Status@{File\+Status}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+File\+Link\+\_\+exists (1 $<$$<$ 5) \mbox{\Hypertarget{group__FileStatus_gaf741987e3e6783c64bf119b24dde669f}\label{group__FileStatus_gaf741987e3e6783c64bf119b24dde669f}} 
+\index{File\+Status@{File\+Status}!activate\+Time@{activate\+Time}}
+\index{activate\+Time@{activate\+Time}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{activate\+Time}{activateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::activate\+Time}
+
+Date/time at which this File, referred to by File\+Link, will be activated. Omission of or presence and value of this element M\+U\+ST exactly match omission or presence and value of the activate\+Time element from the File resource. \mbox{\Hypertarget{group__FileStatus_gab42569063c0f1f2ecbacadf94a84692b}\label{group__FileStatus_gab42569063c0f1f2ecbacadf94a84692b}} 
+\index{File\+Status@{File\+Status}!href@{href}}
+\index{href@{href}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__FileStatus_ga10c95c145e19e06b777320bf0a2dd354}\label{group__FileStatus_ga10c95c145e19e06b777320bf0a2dd354}} 
+\index{File\+Status@{File\+Status}!load\+Percent@{load\+Percent}}
+\index{load\+Percent@{load\+Percent}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{load\+Percent}{loadPercent}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::load\+Percent}
+
+This element M\+U\+ST be set to the percentage of the file, indicated by File\+Link, that was loaded during the latest load attempt. This value M\+U\+ST be reset to 0 each time a load attempt is started for the File indicated by File\+Link. This value M\+U\+ST be increased when an LD receives H\+T\+TP response containing file content. This value M\+U\+ST be set to 100 when the full content of the file has been received by the LD \mbox{\Hypertarget{group__FileStatus_gace8c5876bbb1939bc810eba9c41485a8}\label{group__FileStatus_gace8c5876bbb1939bc810eba9c41485a8}} 
+\index{File\+Status@{File\+Status}!next\+Request\+Attempt@{next\+Request\+Attempt}}
+\index{next\+Request\+Attempt@{next\+Request\+Attempt}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{next\+Request\+Attempt}{nextRequestAttempt}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::next\+Request\+Attempt}
+
+This element M\+U\+ST be set to the time at which the LD will issue its next G\+ET request for file content from the File indicated by File\+Link \mbox{\Hypertarget{group__FileStatus_ga84d473efe80699dab7000ebf8e072f81}\label{group__FileStatus_ga84d473efe80699dab7000ebf8e072f81}} 
+\index{File\+Status@{File\+Status}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__FileStatus_gaac513ab0b825a0ca8dc8781afbd86fea}\label{group__FileStatus_gaac513ab0b825a0ca8dc8781afbd86fea}} 
+\index{File\+Status@{File\+Status}!request503\+Count@{request503\+Count}}
+\index{request503\+Count@{request503\+Count}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{request503\+Count}{request503Count}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::request503\+Count}
+
+This value M\+U\+ST be reset to 0 when File\+Link is first pointed at a new File. This value M\+U\+ST be incremented each time an
+
+LD receives a 503 error from the FS. \mbox{\Hypertarget{group__FileStatus_ga225fff3f05549ecacea2c1f2ce1b4776}\label{group__FileStatus_ga225fff3f05549ecacea2c1f2ce1b4776}} 
+\index{File\+Status@{File\+Status}!request\+Fail\+Count@{request\+Fail\+Count}}
+\index{request\+Fail\+Count@{request\+Fail\+Count}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{request\+Fail\+Count}{requestFailCount}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::request\+Fail\+Count}
+
+This value M\+U\+ST be reset to 0 when File\+Link is first pointed at a new File. This value M\+U\+ST be incremented each time a G\+ET request for file content failed. 503 errors M\+U\+ST be excluded from this counter. \mbox{\Hypertarget{group__FileStatus_ga5ec878ed781a4fa3d9a7530017df562a}\label{group__FileStatus_ga5ec878ed781a4fa3d9a7530017df562a}} 
+\index{File\+Status@{File\+Status}!status@{status}}
+\index{status@{status}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::status}
+
+Current loading status of the file indicated by File\+Link. This element M\+U\+ST be set to one of the following values\+:
+
+0 -\/ No load operation in progress
+
+1 -\/ File load in progress (first request for file content has been issued by LD)
+
+2 -\/ File load failed
+
+3 -\/ File loaded successfully (full content of file has been received by the LD), signature verification in progress
+
+4 -\/ File signature verification failed
+
+5 -\/ File signature verified, waiting to activate file.
+
+6 -\/ File activation failed
+
+7 -\/ File activation in progress
+
+8 -\/ File activated successfully (this state may not be reached/persisted through an image activation)
+
+9-\/255 -\/ Reserved for future use. \mbox{\Hypertarget{group__FileStatus_ga07bc76971f8a0f26f8e5b1c62e6432e6}\label{group__FileStatus_ga07bc76971f8a0f26f8e5b1c62e6432e6}} 
+\index{File\+Status@{File\+Status}!status\+Time@{status\+Time}}
+\index{status\+Time@{status\+Time}!File\+Status@{File\+Status}}
+\subsubsection{\texorpdfstring{status\+Time}{statusTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+File\+Status\+\_\+t\+::status\+Time}
+
+This element M\+U\+ST be set to the time at which file status transitioned to the value indicated in the status element. 

@@ -1,0 +1,71 @@
+\hypertarget{group__LoadShedAvailability}{}\section{Load\+Shed\+Availability}
+\label{group__LoadShedAvailability}\index{Load\+Shed\+Availability@{Load\+Shed\+Availability}}
+Collaboration diagram for Load\+Shed\+Availability\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{group__LoadShedAvailability}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__LoadShedAvailability__t}{S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__LoadShedAvailability_ga404541fef1f866fbfc92c7f236622e07}{S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__LoadShedAvailability_ga09ec435977ecddd0dc707dec6818d08e}{S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__LoadShedAvailability_ga200cb55232c00f729b128f5414767e00}{S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::availability\+Duration}
+\item 
+\mbox{\Hypertarget{group__LoadShedAvailability_ga106ceb952dc5f3d711e1cb21d6f9082b}\label{group__LoadShedAvailability_ga106ceb952dc5f3d711e1cb21d6f9082b}} 
+\hyperlink{structSE__DemandResponseProgramLink__t}{S\+E\+\_\+\+Demand\+Response\+Program\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::\+Demand\+Response\+Program\+Link}
+\item 
+\hyperlink{group__PerCent_ga14278cbee754c63496035b722b417ddc}{S\+E\+\_\+\+Per\+Cent\+\_\+t} \hyperlink{group__LoadShedAvailability_ga884487f6c05e859588d1880d494aa5eb}{S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::sheddable\+Percent}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__LoadShedAvailability_ga1a6b6f3e9fc1c6520221cce4af77712f}{S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::sheddable\+Power}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Indicates current consumption status and ability to shed load. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__LoadShedAvailability_ga404541fef1f866fbfc92c7f236622e07}\label{group__LoadShedAvailability_ga404541fef1f866fbfc92c7f236622e07}} 
+\index{Load\+Shed\+Availability@{Load\+Shed\+Availability}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Load\+Shed\+Availability@{Load\+Shed\+Availability}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+sheddable\+Power\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+sheddable\+Percent\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+\+Demand\+Response\+Program\+Link\+\_\+exists (1 $<$$<$ 7) \mbox{\Hypertarget{group__LoadShedAvailability_ga200cb55232c00f729b128f5414767e00}\label{group__LoadShedAvailability_ga200cb55232c00f729b128f5414767e00}} 
+\index{Load\+Shed\+Availability@{Load\+Shed\+Availability}!availability\+Duration@{availability\+Duration}}
+\index{availability\+Duration@{availability\+Duration}!Load\+Shed\+Availability@{Load\+Shed\+Availability}}
+\subsubsection{\texorpdfstring{availability\+Duration}{availabilityDuration}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::availability\+Duration}
+
+Indicates for how many seconds the consuming device will be able to reduce consumption at the maximum response level. \mbox{\Hypertarget{group__LoadShedAvailability_ga09ec435977ecddd0dc707dec6818d08e}\label{group__LoadShedAvailability_ga09ec435977ecddd0dc707dec6818d08e}} 
+\index{Load\+Shed\+Availability@{Load\+Shed\+Availability}!href@{href}}
+\index{href@{href}!Load\+Shed\+Availability@{Load\+Shed\+Availability}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__LoadShedAvailability_ga884487f6c05e859588d1880d494aa5eb}\label{group__LoadShedAvailability_ga884487f6c05e859588d1880d494aa5eb}} 
+\index{Load\+Shed\+Availability@{Load\+Shed\+Availability}!sheddable\+Percent@{sheddable\+Percent}}
+\index{sheddable\+Percent@{sheddable\+Percent}!Load\+Shed\+Availability@{Load\+Shed\+Availability}}
+\subsubsection{\texorpdfstring{sheddable\+Percent}{sheddablePercent}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::sheddable\+Percent}
+
+Maximum percent of current operating load that is estimated to be sheddable. \mbox{\Hypertarget{group__LoadShedAvailability_ga1a6b6f3e9fc1c6520221cce4af77712f}\label{group__LoadShedAvailability_ga1a6b6f3e9fc1c6520221cce4af77712f}} 
+\index{Load\+Shed\+Availability@{Load\+Shed\+Availability}!sheddable\+Power@{sheddable\+Power}}
+\index{sheddable\+Power@{sheddable\+Power}!Load\+Shed\+Availability@{Load\+Shed\+Availability}}
+\subsubsection{\texorpdfstring{sheddable\+Power}{sheddablePower}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Load\+Shed\+Availability\+\_\+t\+::sheddable\+Power}
+
+Maximum amount of current operating load that is estimated to be sheddable, in Watts. 

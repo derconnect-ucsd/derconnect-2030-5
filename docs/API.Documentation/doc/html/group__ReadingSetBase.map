@@ -1,0 +1,6 @@
+<map id="ReadingSetBase" name="ReadingSetBase">
+<area shape="rect" id="node1" href="$group__IdentifiedObject.html" title="IdentifiedObject" alt="" coords="5,56,119,83"/>
+<area shape="rect" id="node2" href="$group__ReadingSet.html" title="ReadingSet" alt="" coords="352,5,443,32"/>
+<area shape="rect" id="node3" href="$group__MirrorReadingSet.html" title="MirrorReadingSet" alt="" coords="336,56,459,83"/>
+<area shape="rect" id="node5" href="$group__BillingReadingSet.html" title="BillingReadingSet" alt="" coords="335,107,460,133"/>
+</map>

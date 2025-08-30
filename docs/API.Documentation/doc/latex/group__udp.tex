@@ -1,0 +1,132 @@
+\hypertarget{group__udp}{}\section{Udp\+Port}
+\label{group__udp}\index{Udp\+Port@{Udp\+Port}}
+Collaboration diagram for Udp\+Port\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{group__udp}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}\label{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}} 
+typedef struct \+\_\+\+Udp\+Port \hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port}
+\begin{DoxyCompactList}\small\item\em Udp\+Port represent a port on which to send and receive U\+DP datagrams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{group__udp_gaf0333276e97bcc889b582368165bd1a8}{udp\+\_\+receive} (\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$p, int $\ast$length)
+\begin{DoxyCompactList}\small\item\em Receive a U\+DP datagram from a host on a Udp\+Port. \end{DoxyCompactList}\item 
+int \hyperlink{group__udp_ga88f203abae4140781b82c1fb50d5a6de}{udp\+\_\+send} (\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$p, char $\ast$data, int length, \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Send a U\+DP datagram to a host Address from a Udp\+Port. \end{DoxyCompactList}\item 
+\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$ \hyperlink{group__udp_ga948090eea01ee0c584863a5484ffae3e}{udp\+\_\+new} (int size)
+\begin{DoxyCompactList}\small\item\em Allocate a new Udp\+Port. \end{DoxyCompactList}\item 
+void \hyperlink{group__udp_ga2bcfb527d627ba3162937e2096c4eccf}{udp\+\_\+open} (\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$p, \hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Open a Udp\+Port. \end{DoxyCompactList}\item 
+void \hyperlink{group__udp_ga774f3267b310c8c530c1cd24136ad911}{udp\+\_\+join\+\_\+group} (\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$p, char $\ast$addr, int loop)
+\begin{DoxyCompactList}\small\item\em Join a multicast group (I\+Pv6). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__udp_ga774f3267b310c8c530c1cd24136ad911}\label{group__udp_ga774f3267b310c8c530c1cd24136ad911}} 
+\index{Udp\+Port@{Udp\+Port}!udp\+\_\+join\+\_\+group@{udp\+\_\+join\+\_\+group}}
+\index{udp\+\_\+join\+\_\+group@{udp\+\_\+join\+\_\+group}!Udp\+Port@{Udp\+Port}}
+\subsubsection{\texorpdfstring{udp\+\_\+join\+\_\+group()}{udp\_join\_group()}}
+{\footnotesize\ttfamily void udp\+\_\+join\+\_\+group (\begin{DoxyParamCaption}\item[{\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$}]{p,  }\item[{char $\ast$}]{addr,  }\item[{int}]{loop }\end{DoxyParamCaption})}
+
+
+
+Join a multicast group (I\+Pv6). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Udp\+Port \\
+\hline
+{\em addr} & is an I\+Pv6 multicast address \\
+\hline
+{\em loop} & selects whether to receive our own multicasts \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__udp_ga948090eea01ee0c584863a5484ffae3e}\label{group__udp_ga948090eea01ee0c584863a5484ffae3e}} 
+\index{Udp\+Port@{Udp\+Port}!udp\+\_\+new@{udp\+\_\+new}}
+\index{udp\+\_\+new@{udp\+\_\+new}!Udp\+Port@{Udp\+Port}}
+\subsubsection{\texorpdfstring{udp\+\_\+new()}{udp\_new()}}
+{\footnotesize\ttfamily \hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port}$\ast$ udp\+\_\+new (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Allocate a new Udp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & is the size of the buffer to receive datagrams \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a Udp\+Port with buffer of the requested size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__udp_ga2bcfb527d627ba3162937e2096c4eccf}\label{group__udp_ga2bcfb527d627ba3162937e2096c4eccf}} 
+\index{Udp\+Port@{Udp\+Port}!udp\+\_\+open@{udp\+\_\+open}}
+\index{udp\+\_\+open@{udp\+\_\+open}!Udp\+Port@{Udp\+Port}}
+\subsubsection{\texorpdfstring{udp\+\_\+open()}{udp\_open()}}
+{\footnotesize\ttfamily void udp\+\_\+open (\begin{DoxyParamCaption}\item[{\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$}]{p,  }\item[{\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Open a Udp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Udp\+Port \\
+\hline
+{\em address} & is a pointer to an Address at which to receive datagrams \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__udp_gaf0333276e97bcc889b582368165bd1a8}\label{group__udp_gaf0333276e97bcc889b582368165bd1a8}} 
+\index{Udp\+Port@{Udp\+Port}!udp\+\_\+receive@{udp\+\_\+receive}}
+\index{udp\+\_\+receive@{udp\+\_\+receive}!Udp\+Port@{Udp\+Port}}
+\subsubsection{\texorpdfstring{udp\+\_\+receive()}{udp\_receive()}}
+{\footnotesize\ttfamily char$\ast$ udp\+\_\+receive (\begin{DoxyParamCaption}\item[{\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$}]{p,  }\item[{int $\ast$}]{length }\end{DoxyParamCaption})}
+
+
+
+Receive a U\+DP datagram from a host on a Udp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a U\+DP port. \\
+\hline
+{\em length} & is updated to indicate the length of the datagram. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a buffer containing the datagram and the length of the datagram or N\+U\+LL if no datagram is available 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__udp_ga88f203abae4140781b82c1fb50d5a6de}\label{group__udp_ga88f203abae4140781b82c1fb50d5a6de}} 
+\index{Udp\+Port@{Udp\+Port}!udp\+\_\+send@{udp\+\_\+send}}
+\index{udp\+\_\+send@{udp\+\_\+send}!Udp\+Port@{Udp\+Port}}
+\subsubsection{\texorpdfstring{udp\+\_\+send()}{udp\_send()}}
+{\footnotesize\ttfamily int udp\+\_\+send (\begin{DoxyParamCaption}\item[{\hyperlink{group__udp_ga0c4c532cfe05c936ac56874867ba49e4}{Udp\+Port} $\ast$}]{p,  }\item[{char $\ast$}]{data,  }\item[{int}]{length,  }\item[{\hyperlink{group__address_ga80f2dcdb3778441e85ac8c9dbb6f324a}{Address} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Send a U\+DP datagram to a host Address from a Udp\+Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & is a pointer to a Udp\+Port \\
+\hline
+{\em data} & is a pointer to a buffer containing the datagram \\
+\hline
+{\em length} & is the length of the datagram \\
+\hline
+{\em address} & is a pointer to the Address of the host to receive the datagram \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the datagram sent or -\/1 if 
+\end{DoxyReturn}

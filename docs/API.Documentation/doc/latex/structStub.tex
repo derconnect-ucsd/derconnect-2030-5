@@ -1,0 +1,72 @@
+\hypertarget{structStub}{}\section{Stub Struct Reference}
+\label{structStub}\index{Stub@{Stub}}
+
+
+Collaboration diagram for Stub\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{structStub__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structStub_ab023791d92d9f03ab3e3193600f07ea4}\label{structStub_ab023791d92d9f03ab3e3193600f07ea4}} 
+\hyperlink{structResource}{Resource} {\bfseries base}
+\item 
+\mbox{\Hypertarget{structStub_a2450f7f3ff0f1b7ab45fbe127d56a562}\label{structStub_a2450f7f3ff0f1b7ab45fbe127d56a562}} 
+void $\ast$ \hyperlink{structStub_a2450f7f3ff0f1b7ab45fbe127d56a562}{conn}
+\begin{DoxyCompactList}\small\item\em is a pointer to an Se\+Connection \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a016f6fa267a5c0477cbc5aa891067e85}\label{structStub_a016f6fa267a5c0477cbc5aa891067e85}} 
+int \hyperlink{structStub_a016f6fa267a5c0477cbc5aa891067e85}{poll\+\_\+rate}
+\begin{DoxyCompactList}\small\item\em is the poll rate for the resource \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_aff83e689245e091df91c5557f4d6a2dd}\label{structStub_aff83e689245e091df91c5557f4d6a2dd}} 
+time\+\_\+t \hyperlink{structStub_aff83e689245e091df91c5557f4d6a2dd}{poll\+\_\+next}
+\begin{DoxyCompactList}\small\item\em is the next time to poll the resource \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a4f7beac68bbc637c3ebaac85b991be8c}\label{structStub_a4f7beac68bbc637c3ebaac85b991be8c}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint32\_t \hyperlink{structStub_a0f1287218e96b9ff7d2fe3464f0c7421}{flags}\\
+\>\>{\em is a bitwise requirements checklist }\\
+\>uint32\_t \hyperlink{structStub_a3fe8a6d4ee70417e24becff7169ee75c}{count}\\
+\>\>{\em is the number of list items successfully retrieved }\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structStub_a0523681b16fbb6eda78be66d1b193395}\label{structStub_a0523681b16fbb6eda78be66d1b193395}} 
+uint32\+\_\+t \hyperlink{structStub_a0523681b16fbb6eda78be66d1b193395}{flag}
+\begin{DoxyCompactList}\small\item\em is the marker for this resource in its dependents \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_aee2b6394a09ce36a29545ee6e91fc995}\label{structStub_aee2b6394a09ce36a29545ee6e91fc995}} 
+\hyperlink{structList}{List} $\ast$ \hyperlink{structStub_aee2b6394a09ce36a29545ee6e91fc995}{list}
+\begin{DoxyCompactList}\small\item\em is a list of schedules for events, old requirements for lists \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_ae2746157cf93bf0e84ccb0d04cbfc5a7}\label{structStub_ae2746157cf93bf0e84ccb0d04cbfc5a7}} 
+uint32\+\_\+t \hyperlink{structStub_ae2746157cf93bf0e84ccb0d04cbfc5a7}{offset}
+\begin{DoxyCompactList}\small\item\em is the offset used for list paging \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a64d1c4bd1952753d74f1ead9c6bb0cca}\label{structStub_a64d1c4bd1952753d74f1ead9c6bb0cca}} 
+uint32\+\_\+t \hyperlink{structStub_a64d1c4bd1952753d74f1ead9c6bb0cca}{all}
+\begin{DoxyCompactList}\small\item\em is the total number of list items \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a374ef6513cdc775ae5b3d3f1f5f6ba80}\label{structStub_a374ef6513cdc775ae5b3d3f1f5f6ba80}} 
+struct \+\_\+\+Stub $\ast$ \hyperlink{structStub_a374ef6513cdc775ae5b3d3f1f5f6ba80}{moved}
+\begin{DoxyCompactList}\small\item\em is a pointer to the new resource \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a8e01c70d5988a8873ede2fb988c6d980}\label{structStub_a8e01c70d5988a8873ede2fb988c6d980}} 
+\hyperlink{structList}{List} $\ast$ \hyperlink{structStub_a8e01c70d5988a8873ede2fb988c6d980}{deps}
+\begin{DoxyCompactList}\small\item\em is a list of dependencies \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a08ba060435c86dcf589680e6d59b9a56}\label{structStub_a08ba060435c86dcf589680e6d59b9a56}} 
+\hyperlink{structList}{List} $\ast$ \hyperlink{structStub_a08ba060435c86dcf589680e6d59b9a56}{reqs}
+\begin{DoxyCompactList}\small\item\em is a list of requirements \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_a07a309b9a6b90d1ead7cd3eb6ec04105}\label{structStub_a07a309b9a6b90d1ead7cd3eb6ec04105}} 
+void $\ast$ \hyperlink{structStub_a07a309b9a6b90d1ead7cd3eb6ec04105}{context}
+\begin{DoxyCompactList}\small\item\em is a user defined completion context \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structStub_aeda3e44f0c4625dfcbfceaf60d09f769}\label{structStub_aeda3e44f0c4625dfcbfceaf60d09f769}} 
+void($\ast$ \hyperlink{structStub_aeda3e44f0c4625dfcbfceaf60d09f769}{completion} )(struct \+\_\+\+Stub $\ast$)
+\begin{DoxyCompactList}\small\item\em is a user defined completion routine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structResource}{Resource} \hyperlink{structStub}{Stub}. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+retrieve.\+c\end{DoxyCompactItemize}

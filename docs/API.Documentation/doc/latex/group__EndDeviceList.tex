@@ -1,0 +1,70 @@
+\hypertarget{group__EndDeviceList}{}\section{End\+Device\+List}
+\label{group__EndDeviceList}\index{End\+Device\+List@{End\+Device\+List}}
+Collaboration diagram for End\+Device\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{group__EndDeviceList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__EndDeviceList__t}{S\+E\+\_\+\+End\+Device\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__EndDeviceList_ga23e407063381c916123359bb2361aa6c}\label{group__EndDeviceList_ga23e407063381c916123359bb2361aa6c}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__EndDeviceList_ga2dee4395bae5adb1b32a956a23a94d05}{S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__EndDeviceList_ga2b2e8f1980c958770b758272899979d0}{S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__EndDeviceList_gabb9e8efdbe6326b1cdf0aef5b232b73d}{S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__EndDeviceList_gabaccd9c1e6895d28cbee5cc2eca2b23e}{S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::results}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__EndDeviceList_gaadffae7b67b10a6e379b98a3e43f1c5e}{S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::poll\+Rate}
+\item 
+\mbox{\Hypertarget{group__EndDeviceList_gaacd818cbf5645500f6809f962a8244d9}\label{group__EndDeviceList_gaacd818cbf5645500f6809f962a8244d9}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::\+End\+Device}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold End\+Device objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__EndDeviceList_gabb9e8efdbe6326b1cdf0aef5b232b73d}\label{group__EndDeviceList_gabb9e8efdbe6326b1cdf0aef5b232b73d}} 
+\index{End\+Device\+List@{End\+Device\+List}!all@{all}}
+\index{all@{all}!End\+Device\+List@{End\+Device\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on G\+ET, ignored otherwise. \mbox{\Hypertarget{group__EndDeviceList_ga2dee4395bae5adb1b32a956a23a94d05}\label{group__EndDeviceList_ga2dee4395bae5adb1b32a956a23a94d05}} 
+\index{End\+Device\+List@{End\+Device\+List}!href@{href}}
+\index{href@{href}!End\+Device\+List@{End\+Device\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__EndDeviceList_gaadffae7b67b10a6e379b98a3e43f1c5e}\label{group__EndDeviceList_gaadffae7b67b10a6e379b98a3e43f1c5e}} 
+\index{End\+Device\+List@{End\+Device\+List}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!End\+Device\+List@{End\+Device\+List}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__EndDeviceList_gabaccd9c1e6895d28cbee5cc2eca2b23e}\label{group__EndDeviceList_gabaccd9c1e6895d28cbee5cc2eca2b23e}} 
+\index{End\+Device\+List@{End\+Device\+List}!results@{results}}
+\index{results@{results}!End\+Device\+List@{End\+Device\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. \mbox{\Hypertarget{group__EndDeviceList_ga2b2e8f1980c958770b758272899979d0}\label{group__EndDeviceList_ga2b2e8f1980c958770b758272899979d0}} 
+\index{End\+Device\+List@{End\+Device\+List}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!End\+Device\+List@{End\+Device\+List}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+End\+Device\+List\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). 

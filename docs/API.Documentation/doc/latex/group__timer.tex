@@ -1,0 +1,78 @@
+\hypertarget{group__timer}{}\section{Timer}
+\label{group__timer}\index{Timer@{Timer}}
+Collaboration diagram for Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{group__timer}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__timer_gab154a081bf98a40566e2c962ac9fb810}\label{group__timer_gab154a081bf98a40566e2c962ac9fb810}} 
+typedef struct \+\_\+\+Timer {\bfseries Timer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__timer_gacbdc140f686e71964beb4e5608313b5b}{set\+\_\+timer} (Timer $\ast$timer, int timeout)
+\begin{DoxyCompactList}\small\item\em Set the timeout for a Timer in seconds. \end{DoxyCompactList}\item 
+Timer $\ast$ \hyperlink{group__timer_ga0aaa8477c77e036e7f41f7704721b9f7}{add\+\_\+timer} (int type)
+\begin{DoxyCompactList}\small\item\em Create a new timer. \end{DoxyCompactList}\item 
+Timer $\ast$ \hyperlink{group__timer_gab1f067b2c41862d5cf2a06ca8a5359da}{new\+\_\+timer} (int type, int timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__timer_ga0aaa8477c77e036e7f41f7704721b9f7}\label{group__timer_ga0aaa8477c77e036e7f41f7704721b9f7}} 
+\index{Timer@{Timer}!add\+\_\+timer@{add\+\_\+timer}}
+\index{add\+\_\+timer@{add\+\_\+timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{add\+\_\+timer()}{add\_timer()}}
+{\footnotesize\ttfamily Timer$\ast$ add\+\_\+timer (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Create a new timer. 
+
+When the timer expires the event type returned is the value passed to this function. This way different timers can be distinguished.  is the type to be returned by event\+\_\+poll, type should be a unique event type, it can be obtained by adding to the value of E\+V\+E\+N\+T\+\_\+\+N\+EW, e.\+g. add\+\_\+timer (E\+V\+E\+N\+T\+\_\+\+N\+E\+W+1) \begin{DoxyReturn}{Returns}
+a new unarmed timer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__timer_gab1f067b2c41862d5cf2a06ca8a5359da}\label{group__timer_gab1f067b2c41862d5cf2a06ca8a5359da}} 
+\index{Timer@{Timer}!new\+\_\+timer@{new\+\_\+timer}}
+\index{new\+\_\+timer@{new\+\_\+timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{new\+\_\+timer()}{new\_timer()}}
+{\footnotesize\ttfamily Timer$\ast$ new\+\_\+timer (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+Create a new timer, and set the timeout.
+
+This is the equivalent of calling set\+\_\+timer (add\+\_\+timer (type), timeout). 
+\begin{DoxyParams}{Parameters}
+{\em type} & is the event type to be returned by event\+\_\+poll \\
+\hline
+{\em timeout} & is the timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new armed timer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__timer_gacbdc140f686e71964beb4e5608313b5b}\label{group__timer_gacbdc140f686e71964beb4e5608313b5b}} 
+\index{Timer@{Timer}!set\+\_\+timer@{set\+\_\+timer}}
+\index{set\+\_\+timer@{set\+\_\+timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{set\+\_\+timer()}{set\_timer()}}
+{\footnotesize\ttfamily void set\+\_\+timer (\begin{DoxyParamCaption}\item[{Timer $\ast$}]{timer,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Set the timeout for a Timer in seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & is a pointer to the Timer \\
+\hline
+{\em timeout} & is the timeout in seconds \\
+\hline
+\end{DoxyParams}

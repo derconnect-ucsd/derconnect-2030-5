@@ -1,0 +1,54 @@
+\hypertarget{group__NotificationList}{}\section{Notification\+List}
+\label{group__NotificationList}\index{Notification\+List@{Notification\+List}}
+Collaboration diagram for Notification\+List\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{group__NotificationList}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__NotificationList__t}{S\+E\+\_\+\+Notification\+List\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__NotificationList_ga1562a2419abf1b794dcb37857015d36d}\label{group__NotificationList_ga1562a2419abf1b794dcb37857015d36d}} 
+uint32\+\_\+t {\bfseries S\+E\+\_\+\+Notification\+List\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__NotificationList_ga04f41cbd1d96801ed0fed7c958e4b5b1}{S\+E\+\_\+\+Notification\+List\+\_\+t\+::href}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__NotificationList_gacdc28bcbd39f7984a6ba52a731267bcc}{S\+E\+\_\+\+Notification\+List\+\_\+t\+::all}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__NotificationList_ga2a5654da4e99aa6515a308a702b7dee8}{S\+E\+\_\+\+Notification\+List\+\_\+t\+::results}
+\item 
+\mbox{\Hypertarget{group__NotificationList_gaee115c0fcc73a3d5a3fe8f4118ffdc94}\label{group__NotificationList_gaee115c0fcc73a3d5a3fe8f4118ffdc94}} 
+\hyperlink{structList}{List} $\ast$ {\bfseries S\+E\+\_\+\+Notification\+List\+\_\+t\+::\+Notification}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{structList}{List} element to hold Notification objects. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__NotificationList_gacdc28bcbd39f7984a6ba52a731267bcc}\label{group__NotificationList_gacdc28bcbd39f7984a6ba52a731267bcc}} 
+\index{Notification\+List@{Notification\+List}!all@{all}}
+\index{all@{all}!Notification\+List@{Notification\+List}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Notification\+List\+\_\+t\+::all}
+
+The number specifying \char`\"{}all\char`\"{} of the items in the list. Required on a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__NotificationList_ga04f41cbd1d96801ed0fed7c958e4b5b1}\label{group__NotificationList_ga04f41cbd1d96801ed0fed7c958e4b5b1}} 
+\index{Notification\+List@{Notification\+List}!href@{href}}
+\index{href@{href}!Notification\+List@{Notification\+List}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Notification\+List\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__NotificationList_ga2a5654da4e99aa6515a308a702b7dee8}\label{group__NotificationList_ga2a5654da4e99aa6515a308a702b7dee8}} 
+\index{Notification\+List@{Notification\+List}!results@{results}}
+\index{results@{results}!Notification\+List@{Notification\+List}}
+\subsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Notification\+List\+\_\+t\+::results}
+
+Indicates the number of items in this page of results. 

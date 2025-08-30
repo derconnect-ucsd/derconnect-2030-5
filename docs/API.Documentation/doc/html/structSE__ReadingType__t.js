@@ -1,0 +1,21 @@
+var structSE__ReadingType__t =
+[
+    [ "_flags", "group__ReadingType.html#ga0b47ada65894fa1e36bc0d185d21a71d", null ],
+    [ "accumulationBehaviour", "group__ReadingType.html#ga4ed3a5e9fe3ab6c2ea585504d1d6a239", null ],
+    [ "calorificValue", "group__ReadingType.html#ga57e12f39f9ed0fcdb2a9b83dab5b3e2f", null ],
+    [ "commodity", "group__ReadingType.html#gac70ce0c79f4a38a96aa90aa1843907c1", null ],
+    [ "conversionFactor", "group__ReadingType.html#ga479e0031bba268429db70bbcb9f4ef2d", null ],
+    [ "dataQualifier", "group__ReadingType.html#gac7db2fdae63614e7fd7e738071012fa7", null ],
+    [ "flowDirection", "group__ReadingType.html#ga13cc7653b3ac0633618440d2ad240aa0", null ],
+    [ "href", "group__ReadingType.html#gaab72122e2abf41553e43032788338e3e", null ],
+    [ "intervalLength", "group__ReadingType.html#ga27fb2c72d4c94d8e2b9ddd66ac40b089", null ],
+    [ "kind", "group__ReadingType.html#ga9b4451c6dfbfd971677fe48371e3190c", null ],
+    [ "maxNumberOfIntervals", "group__ReadingType.html#ga2d016202de3cc2404cf2065adeaeb4f7", null ],
+    [ "numberOfConsumptionBlocks", "group__ReadingType.html#gaf04b33d882d8c1fc9a5234d3a2a7f01b", null ],
+    [ "numberOfTouTiers", "group__ReadingType.html#ga815c888ead50b860c86080e455b1bb2b", null ],
+    [ "phase", "group__ReadingType.html#ga3857d20c24886f3715200ce0f9dd6f06", null ],
+    [ "powerOfTenMultiplier", "group__ReadingType.html#ga11cd4f657954c77645c4a09c3a7964a3", null ],
+    [ "subIntervalLength", "group__ReadingType.html#gaba391fb84126105e4f4d8f6428906b99", null ],
+    [ "supplyLimit", "group__ReadingType.html#gae36049c7b71555f2c13bd42dc32453e7", null ],
+    [ "uom", "group__ReadingType.html#ga1b34c217f3198c9de70789e4517720c4", null ]
+];

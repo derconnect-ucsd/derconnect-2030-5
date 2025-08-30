@@ -1,0 +1,9 @@
+<map id="SE_DERCapability_t" name="SE_DERCapability_t">
+<area shape="rect" id="node2" href="$structSE__ReactivePower__t.html" title="SE_ReactivePower_t" alt="" coords="5,17,152,44"/>
+<area shape="rect" id="node3" href="$structSE__AmpereHour__t.html" title="SE_AmpereHour_t" alt="" coords="13,68,144,95"/>
+<area shape="rect" id="node4" href="$structSE__WattHour__t.html" title="SE_WattHour_t" alt="" coords="21,119,136,145"/>
+<area shape="rect" id="node5" href="$structSE__CurrentRMS__t.html" title="SE_CurrentRMS_t" alt="" coords="13,169,144,196"/>
+<area shape="rect" id="node6" href="$structSE__PowerFactor__t.html" title="SE_PowerFactor_t" alt="" coords="13,253,145,280"/>
+<area shape="rect" id="node7" href="$structSE__ApparentPower__t.html" title="SE_ApparentPower_t" alt="" coords="5,343,152,369"/>
+<area shape="rect" id="node8" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="13,447,145,473"/>
+</map>

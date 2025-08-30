@@ -1,0 +1,130 @@
+\subsection*{Usage }
+
+The {\ttfamily client\+\_\+test} application is a command line tool with the following arguments\+: \begin{DoxyVerb}client_test interface [device certs..] <subtype[:1] | URI> [commands]
+\end{DoxyVerb}
+
+
+The {\ttfamily interface} argument is the the name of the network interface, running the {\ttfamily client\+\_\+test} application with no arguments will list the available network interfaces.
+
+The {\ttfamily device} argument names the device certificate and private key pair used for T\+LS, the application will load the certificate {\ttfamily device.\+x509} and use the private key file {\ttfamily device.\+pem}.
+
+The {\ttfamily certs} argument is a list of CA certificates or certificate directories to be loaded. If a directory is specified, then all the certificates within the directory are loaded. If no certficates or directories then the certificates from {\ttfamily ./certs} in the local directory are loaded.
+
+The {\ttfamily $<$subtype\mbox{[}\+:1\mbox{]} $\vert$ U\+RI$>$} argument delimits the list of certificates and specifies either to perform xm\+D\+NS service discovery, or to retrieve the document at the specified U\+RI.
+
+\subsection*{Subtype D\+N\+S-\/\+SD queries }
+
+The {\ttfamily subtype} can be one of\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily bill} -\/ to discover Billing servers
+\item {\ttfamily dr} -\/ to discover Demand Response / Load Control servers
+\item {\ttfamily derp} -\/ to discover Distributed Energy Resources servers
+\item {\ttfamily file} -\/ to discover File Download servers
+\item {\ttfamily msg} -\/ to discover Messaging servers
+\item {\ttfamily ppy} -\/ to discover Prepayment servers
+\item {\ttfamily rsps} -\/ to discover Response servers
+\item {\ttfamily tp} -\/ to discover Pricing servers
+\item {\ttfamily tm} -\/ to disocver Time servers
+\item {\ttfamily upt} -\/ to discover Metering servers
+\item {\ttfamily edev} -\/ to discover End Device servers
+\item {\ttfamily mup} -\/ to discover Meter Mirroring servers
+\item {\ttfamily sdev} -\/ to discover Self Device servers
+\item {\ttfamily smartenergy} -\/ to discover I\+E\+EE 2030.\+5 servers of any type
+\end{DoxyItemize}
+
+When the number {\ttfamily 1} is affixed to the {\ttfamily subtype}, the {\ttfamily client\+\_\+test} sets the {\ttfamily QU} bit to {\ttfamily 1} in the service discovery request indicating that a unicast response is desired.
+
+Since the {\ttfamily subtype} argument can delimit the list of certifcates it follows that there can not be a certificate or certificate directory with the same name as the {\ttfamily subtype} argument.
+
+After the service discovery is performed the {\ttfamily client\+\_\+test} application will retreive the Device\+Capability resource at the location given by the {\ttfamily dcap} key in discovery response.
+
+\subsection*{U\+RI retrieval }
+
+If a {\ttfamily subtype} is not specified in the list of arguments, the {\ttfamily client\+\_\+test} application attempts to parse a U\+RI. The first argument that matches an absolute form U\+RI (e.\+g \href{https:://}{\tt https\+:://}\mbox{[}\+:\+:1\mbox{]}/dcap ) will delimit the list of certificates and attempt to retrieve the U\+RI. The U\+RI scheme specified determines the type of connection used to retreive the resource either {\ttfamily http} for an unencrypted connection or {\ttfamily https} for a secure T\+LS connection. If no port is specified, the default ports for H\+T\+TP and H\+T\+T\+PS are used, 80 and 443 respectively.
+
+\subsection*{Commands }
+
+The last set of arguments are a list of commands to be interpreted. These can be any of the following\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily sfdi S\+F\+DI} -\/ Use the specified sfdi in performing device registration. This command should be the first command in the list of commands.
+\item {\ttfamily register} -\/ Register the client End\+Device with the server. The {\ttfamily client\+\_\+test} application will first check the available End\+Devices in the End\+Device\+List resource. If an End\+Device with a matching s\+F\+DI is not found, the client P\+O\+S\+Ts an End\+Device instance that contains the s\+F\+DI computed from the device certificate. If the P\+O\+ST succeeds or the End\+Device with a matching s\+F\+DI was found, the client will retreive the Registration resource linked from the End\+Device instance, the p\+IN value should be 111115, if not the registration fails. If registritation succeeds and the End\+Device has an associated D\+ER instance, then P\+UT the device settings to the links provided in the D\+ER instance.
+\item {\ttfamily primary} -\/ Perform all the functions of {\ttfamily register}, then retreive the Function\+Set\+Assignments\+List associated with each End\+Device. Determine the Function\+Set\+Assignments with the highest priority according to the list ordering and retrieve only the D\+E\+R\+Program\+List associated with that F\+SA, then retrieve the D\+E\+R\+Curve\+List and D\+E\+R\+Control\+List associated with the highest priority D\+E\+R\+Program in the D\+E\+R\+Program\+List. Finally schedule the events when retrieval is complete.
+\item {\ttfamily all} -\/ Perform the same functions as {\ttfamily primary}, except all D\+E\+R\+Programs and the associated D\+E\+R\+Curve\+Lists and D\+E\+R\+Control\+Lists are retrieved.
+\item {\ttfamily time} -\/ Perform the time test.
+\item {\ttfamily self} -\/ Get the Self\+Device and poll the server Log\+Event\+List if present.
+\item {\ttfamily metering} -\/ Perform the mirrored metering test.
+\item {\ttfamily meter} -\/ Perform the inverter meter reading test.
+\item {\ttfamily alarm} -\/ Perfrom the alarms test.
+\item {\ttfamily device directory} -\/ Load the device certificates from the directory and perform the D\+ER Identification Test.
+\item {\ttfamily poll interval} -\/ Set the poll rate for active events in seconds, the default is 300 seconds or 5 minutes.
+\item {\ttfamily load sfdi directory} -\/ Load the device settings located in {\ttfamily directory} for the End\+Device with the {\ttfamily sfdi} specified.
+\end{DoxyItemize}
+
+\subsection*{Version History }
+
+\subsubsection*{Version 0.\+2.\+3}
+
+Changes\+:
+
+
+\begin{DoxyItemize}
+\item Event scheduler rewrite, support for program removal and addition, primacy changes and overlapping D\+ER controls.
+\item added commands {\ttfamily edev}, {\ttfamily time}, {\ttfamily self}, {\ttfamily metering} {\ttfamily meter}, {\ttfamily alarm}, {\ttfamily device}
+\end{DoxyItemize}
+
+\subsubsection*{Version 0.\+2.\+2}
+
+Changes\+:
+
+
+\begin{DoxyItemize}
+\item New event scheduler, only schedule one future event per End\+Device.
+\end{DoxyItemize}
+
+Fixes\+:
+
+
+\begin{DoxyItemize}
+\item Divide by zero exception when randomization bound is 0.
+\item remove \char`\"{}level=-\/\+S1\char`\"{} from Content-\/\+Type in P\+U\+T/\+P\+O\+ST
+\end{DoxyItemize}
+
+\subsubsection*{Version 0.\+2.\+1}
+
+Changes\+:
+
+
+\begin{DoxyItemize}
+\item Added {\ttfamily sfdi S\+F\+DI} command to specify the S\+F\+DI of the client End\+Device when no certificate is used.
+\end{DoxyItemize}
+
+Fixes\+:
+
+
+\begin{DoxyItemize}
+\item Safely ignore responses with resources that do not contain an href.
+\item Fixes to the E\+XI parsing and output based upon more extensive testing.
+\end{DoxyItemize}
+
+\subsubsection*{Version 0.\+2.\+0}
+
+Changes\+:
+
+
+\begin{DoxyItemize}
+\item Added responses for I\+E\+EE 2030.\+5 events
+\item Added polling interval for active events
+\item Added polling for event status changes from scheduled to active
+\item Added support to load device settings from a file and P\+UT to the server
+\item Added device registration sequence
+\item Added {\ttfamily primary} and {\ttfamily all} commands and associated retreival patterns.
+\item Added user manual and version information
+\end{DoxyItemize}
+
+\subsubsection*{Version 0.\+1.\+0}
+
+Initial version 

@@ -1,0 +1,74 @@
+\hypertarget{group__PriceResponse}{}\section{Price\+Response}
+\label{group__PriceResponse}\index{Price\+Response@{Price\+Response}}
+Collaboration diagram for Price\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{group__PriceResponse}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__PriceResponse__t}{S\+E\+\_\+\+Price\+Response\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__PriceResponse_ga03c805f3561a787a08ee7d85f906c991}{S\+E\+\_\+\+Price\+Response\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__PriceResponse_ga74e2af000045c4743754d6a2c585fbed}{S\+E\+\_\+\+Price\+Response\+\_\+t\+::href}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__PriceResponse_gaca058e6a4b9bdabf0802cbab15dc0df2}{S\+E\+\_\+\+Price\+Response\+\_\+t\+::created\+Date\+Time}
+\item 
+\hyperlink{group__HexBinary160_ga92b92aa55555bdb75f3a59060f2c1632}{S\+E\+\_\+\+Hex\+Binary160\+\_\+t} \hyperlink{group__PriceResponse_ga690190c08ea8f2142672cca33e552a08}{S\+E\+\_\+\+Price\+Response\+\_\+t\+::end\+Device\+L\+F\+DI}
+\item 
+\hyperlink{group__UInt8_gaf7c365a1acfe204e3a67c16ed44572f5}{S\+E\+\_\+\+U\+Int8\+\_\+t} \hyperlink{group__PriceResponse_ga1660cfe81626577fdff445d0503634ff}{S\+E\+\_\+\+Price\+Response\+\_\+t\+::status}
+\item 
+\hyperlink{group__mRIDType_gac74622112f3a388a2851b2289963ba5e}{S\+E\+\_\+m\+R\+I\+D\+Type\+\_\+t} \hyperlink{group__PriceResponse_ga63c19ee87750d603c251c988496b702e}{S\+E\+\_\+\+Price\+Response\+\_\+t\+::subject}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A response related to a price message. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__PriceResponse_ga03c805f3561a787a08ee7d85f906c991}\label{group__PriceResponse_ga03c805f3561a787a08ee7d85f906c991}} 
+\index{Price\+Response@{Price\+Response}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Price\+Response@{Price\+Response}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Price\+Response\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+status\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+created\+Date\+Time\+\_\+exists (1 $<$$<$ 6) \mbox{\Hypertarget{group__PriceResponse_gaca058e6a4b9bdabf0802cbab15dc0df2}\label{group__PriceResponse_gaca058e6a4b9bdabf0802cbab15dc0df2}} 
+\index{Price\+Response@{Price\+Response}!created\+Date\+Time@{created\+Date\+Time}}
+\index{created\+Date\+Time@{created\+Date\+Time}!Price\+Response@{Price\+Response}}
+\subsubsection{\texorpdfstring{created\+Date\+Time}{createdDateTime}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Price\+Response\+\_\+t\+::created\+Date\+Time}
+
+The created\+Date\+Time field contains the date and time when the acknowledgement/status occurred in the client. The client will provide the timestamp to ensure the proper time is captured in case the response is delayed in reaching the server (server receipt time would not be the same as the actual confirmation time). The time reported from the client should be relative to the time server indicated by the Function\+Set\+Assignment that also indicated the event resource; if no Function\+Set\+Assignment exists, the time of the server where the event resource was hosted. \mbox{\Hypertarget{group__PriceResponse_ga690190c08ea8f2142672cca33e552a08}\label{group__PriceResponse_ga690190c08ea8f2142672cca33e552a08}} 
+\index{Price\+Response@{Price\+Response}!end\+Device\+L\+F\+DI@{end\+Device\+L\+F\+DI}}
+\index{end\+Device\+L\+F\+DI@{end\+Device\+L\+F\+DI}!Price\+Response@{Price\+Response}}
+\subsubsection{\texorpdfstring{end\+Device\+L\+F\+DI}{endDeviceLFDI}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Price\+Response\+\_\+t\+::end\+Device\+L\+F\+DI}
+
+Contains the L\+F\+DI of the device providing the response. \mbox{\Hypertarget{group__PriceResponse_ga74e2af000045c4743754d6a2c585fbed}\label{group__PriceResponse_ga74e2af000045c4743754d6a2c585fbed}} 
+\index{Price\+Response@{Price\+Response}!href@{href}}
+\index{href@{href}!Price\+Response@{Price\+Response}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Price\+Response\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__PriceResponse_ga1660cfe81626577fdff445d0503634ff}\label{group__PriceResponse_ga1660cfe81626577fdff445d0503634ff}} 
+\index{Price\+Response@{Price\+Response}!status@{status}}
+\index{status@{status}!Price\+Response@{Price\+Response}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Price\+Response\+\_\+t\+::status}
+
+The status field contains the acknowledgement or status. Each event type (D\+R\+LC, D\+ER, Price, or Text) can return different status information (e.\+g. an Acknowledge will be returned for a Price event where a D\+R\+LC event can return Event Received, Event Started, and Event Completed). The Status field value definitions are defined in Table 27\+: Response Types by Function Set. \mbox{\Hypertarget{group__PriceResponse_ga63c19ee87750d603c251c988496b702e}\label{group__PriceResponse_ga63c19ee87750d603c251c988496b702e}} 
+\index{Price\+Response@{Price\+Response}!subject@{subject}}
+\index{subject@{subject}!Price\+Response@{Price\+Response}}
+\subsubsection{\texorpdfstring{subject}{subject}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Price\+Response\+\_\+t\+::subject}
+
+The subject field provides a method to match the response with the originating event. It is populated with the m\+R\+ID of the original object. 

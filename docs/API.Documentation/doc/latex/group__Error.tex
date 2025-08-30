@@ -1,0 +1,60 @@
+\hypertarget{group__Error}{}\section{Error}
+\label{group__Error}\index{Error@{Error}}
+Collaboration diagram for Error\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{group__Error}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Error__t}{S\+E\+\_\+\+Error\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Error_ga8aa22215f51b089c7bdb02b69c5fd9eb}{S\+E\+\_\+\+Error\+\_\+t\+::\+\_\+flags}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__Error_ga0e519f8abdfdbf90cb4262b3670c8a87}{S\+E\+\_\+\+Error\+\_\+t\+::max\+Retry\+Duration}
+\item 
+\hyperlink{group__UInt16_gac68d541f189538bfd30cfaa712d20d29}{S\+E\+\_\+\+U\+Int16\+\_\+t} \hyperlink{group__Error_gac36d2114ba2736c8052d850778818b78}{S\+E\+\_\+\+Error\+\_\+t\+::reason\+Code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains information about the nature of an error if a request could not be completed successfully. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Error_ga8aa22215f51b089c7bdb02b69c5fd9eb}\label{group__Error_ga8aa22215f51b089c7bdb02b69c5fd9eb}} 
+\index{Error@{Error}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Error@{Error}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Error\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+max\+Retry\+Duration\+\_\+exists (1 $<$$<$ 0) \mbox{\Hypertarget{group__Error_ga0e519f8abdfdbf90cb4262b3670c8a87}\label{group__Error_ga0e519f8abdfdbf90cb4262b3670c8a87}} 
+\index{Error@{Error}!max\+Retry\+Duration@{max\+Retry\+Duration}}
+\index{max\+Retry\+Duration@{max\+Retry\+Duration}!Error@{Error}}
+\subsubsection{\texorpdfstring{max\+Retry\+Duration}{maxRetryDuration}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Error\+\_\+t\+::max\+Retry\+Duration}
+
+Contains the number of seconds the client S\+H\+O\+U\+LD wait before retrying the request. \mbox{\Hypertarget{group__Error_gac36d2114ba2736c8052d850778818b78}\label{group__Error_gac36d2114ba2736c8052d850778818b78}} 
+\index{Error@{Error}!reason\+Code@{reason\+Code}}
+\index{reason\+Code@{reason\+Code}!Error@{Error}}
+\subsubsection{\texorpdfstring{reason\+Code}{reasonCode}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Error\+\_\+t\+::reason\+Code}
+
+Code indicating the reason for failure.
+
+0 -\/ Invalid request format
+
+1 -\/ Invalid request values (e.\+g. invalid threshold values)
+
+2 -\/ \hyperlink{structResource}{Resource} limit reached
+
+3 -\/ Conditional subscription field not supported
+
+4 -\/ Maximum request frequency exceeded
+
+All other values reserved 

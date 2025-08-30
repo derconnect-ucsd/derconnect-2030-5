@@ -1,0 +1,44 @@
+The E\+P\+RI 2030.\+5 Client is a C library and application framework for creating I\+E\+EE 2030.\+5 compliant applications. The framework is lightweight, portable, and fast (based on state machines and asynchronous events).
+
+\subsection*{Features }
+
+
+\begin{DoxyItemize}
+\item portable networking layer (U\+DP, T\+CP, I\+Pv6/\+I\+Pv4)
+\item support for the Linux platform
+\item T\+LS 1.\+2 currently supported through the Open\+S\+SL library
+\item D\+N\+S-\/\+SD client for I\+E\+EE 2030.\+5 service discovery
+\item H\+T\+TP 1.\+1 client/server
+\item X\+M\+L/\+E\+XI schema based parser/serializer
+\item I\+E\+EE 2030.\+5 client A\+PI
+\item I\+E\+EE 2030.\+5 client examples (D\+ER function set)
+\item small modular source code
+\end{DoxyItemize}
+
+\subsection*{Dependencies }
+
+
+\begin{DoxyItemize}
+\item G\+CC compiler version 4.\+6 or greater
+\item Open\+S\+SL version 1.\+1.\+0 or greater
+\item G\+NU Bash -- for building
+\end{DoxyItemize}
+
+\subsection*{Building }
+
+To build the framework library and applications run\+: \begin{DoxyVerb}./build.sh
+\end{DoxyVerb}
+
+
+By default the build script uses the compiler {\ttfamily x86\+\_\+64-\/linux-\/gnu-\/gcc}. To change the compiler edit the variable {\ttfamily linux\+\_\+host} in {\ttfamily build.\+sh}, this variable describes the system target. If you are unsure of the target, run\+: \begin{DoxyVerb}gcc -v|&grep -e Target
+\end{DoxyVerb}
+
+
+You can also change the prefix used to search for the C target libraries, by default it is {\ttfamily /usr}, this prefix concatenated the gcc sysroot (the value produced by {\ttfamily gcc -\/sysroot})
+
+With no arguments given {\ttfamily build.\+sh} will build the library and applications using {\ttfamily -\/\+Os} (optimized for size), however debug builds and cross compiled are also possible. Running {\ttfamily build.\+sh} with the {\ttfamily debug} option will pass the argument {\ttfamily -\/g} to gcc\+: \begin{DoxyVerb}./build.sh debug
+\end{DoxyVerb}
+
+
+To build cross compiled applications edit the variables {\ttfamily linux\+\_\+cross\+\_\+host} and {\ttfamily linux\+\_\+cross\+\_\+prefix} appropriately and run\+: \begin{DoxyVerb}./build.sh cross\end{DoxyVerb}
+ 

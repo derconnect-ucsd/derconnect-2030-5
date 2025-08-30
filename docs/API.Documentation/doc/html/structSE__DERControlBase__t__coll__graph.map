@@ -1,0 +1,8 @@
+<map id="SE_DERControlBase_t" name="SE_DERControlBase_t">
+<area shape="rect" id="node2" href="$structSE__ReactivePower__t.html" title="SE_ReactivePower_t" alt="" coords="6,7,153,33"/>
+<area shape="rect" id="node3" href="$structSE__FixedVar__t.html" title="SE_FixedVar_t" alt="" coords="24,57,135,84"/>
+<area shape="rect" id="node4" href="$structSE__FreqDroopType__t.html" title="SE_FreqDroopType_t" alt="" coords="5,108,153,135"/>
+<area shape="rect" id="node5" href="$structSE__PowerFactor__t.html" title="SE_PowerFactor_t" alt="" coords="13,159,145,185"/>
+<area shape="rect" id="node6" href="$structSE__ActivePower__t.html" title="SE_ActivePower_t" alt="" coords="13,209,145,236"/>
+<area shape="rect" id="node7" href="$structSE__DERCurveLink__t.html" title="SE_DERCurveLink_t" alt="" coords="6,399,153,425"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SE_MirrorMeterReading_t" name="SE_MirrorMeterReading_t">
+<area shape="rect" id="node2" href="$structSE__Reading__t.html" title="SE_Reading_t" alt="" coords="46,109,153,136"/>
+<area shape="rect" id="node3" href="$structSE__DateTimeInterval__t.html" title="SE_DateTimeInterval_t" alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node4" href="$structSE__ReadingType__t.html" title="SE_ReadingType_t" alt="" coords="185,109,320,136"/>
+<area shape="rect" id="node5" href="$structSE__UnitValueType__t.html" title="SE_UnitValueType_t" alt="" coords="189,5,333,32"/>
+<area shape="rect" id="node6" href="$structList.html" title="Linked List structure. " alt="" coords="345,109,387,136"/>
+</map>

@@ -1,0 +1,85 @@
+\hypertarget{group__Configuration}{}\section{Configuration}
+\label{group__Configuration}\index{Configuration@{Configuration}}
+Collaboration diagram for Configuration\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{group__Configuration}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__Configuration__t}{S\+E\+\_\+\+Configuration\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Configuration_ga8a3ca98bd859b81b66d18b1e187c88d9}{S\+E\+\_\+\+Configuration\+\_\+t\+::\+\_\+flags}
+\item 
+char $\ast$ \hyperlink{group__Configuration_ga4e903b7cfa2e74aa671801bcb604387b}{S\+E\+\_\+\+Configuration\+\_\+t\+::href}
+\item 
+\hyperlink{group__SubscribableType_ga5c41f553d369710ed34619266bf2551e}{S\+E\+\_\+\+Subscribable\+Type\+\_\+t} \hyperlink{group__Configuration_ga314f37faa263874665349279e360400d}{S\+E\+\_\+\+Configuration\+\_\+t\+::subscribable}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__Configuration_gab33fe4f10250aa426acb5e134ab4cc0c}{S\+E\+\_\+\+Configuration\+\_\+t\+::poll\+Rate}
+\item 
+\hyperlink{group__LocaleType_gafbd2b639ff2cebd36ad75759203ee20c}{S\+E\+\_\+\+Locale\+Type\+\_\+t} \hyperlink{group__Configuration_gae45efe46ca71698cd46e1517aa7e8bae}{S\+E\+\_\+\+Configuration\+\_\+t\+::current\+Locale}
+\item 
+\mbox{\Hypertarget{group__Configuration_ga398ef6cfdc707bb0a8031c6612a1b9eb}\label{group__Configuration_ga398ef6cfdc707bb0a8031c6612a1b9eb}} 
+\hyperlink{structSE__PowerConfiguration__t}{S\+E\+\_\+\+Power\+Configuration\+\_\+t} {\bfseries S\+E\+\_\+\+Configuration\+\_\+t\+::\+Power\+Configuration}
+\item 
+\mbox{\Hypertarget{group__Configuration_ga33317df5ca07269728a973e762cf4ad2}\label{group__Configuration_ga33317df5ca07269728a973e762cf4ad2}} 
+\hyperlink{structSE__PriceResponseCfgListLink__t}{S\+E\+\_\+\+Price\+Response\+Cfg\+List\+Link\+\_\+t} {\bfseries S\+E\+\_\+\+Configuration\+\_\+t\+::\+Price\+Response\+Cfg\+List\+Link}
+\item 
+\mbox{\Hypertarget{group__Configuration_gafbefcf7a19886ea448cb399f1bec5ff7}\label{group__Configuration_gafbefcf7a19886ea448cb399f1bec5ff7}} 
+\hyperlink{structSE__TimeConfiguration__t}{S\+E\+\_\+\+Time\+Configuration\+\_\+t} {\bfseries S\+E\+\_\+\+Configuration\+\_\+t\+::\+Time\+Configuration}
+\item 
+\hyperlink{group__String32_gac9f59b06b168b4d2e0d45ed41699af42}{S\+E\+\_\+\+String32\+\_\+t} \hyperlink{group__Configuration_gae6dff21a0f541f054b5b0c53ea90b621}{S\+E\+\_\+\+Configuration\+\_\+t\+::user\+Device\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This resource contains various settings to control the operation of the device 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Configuration_ga8a3ca98bd859b81b66d18b1e187c88d9}\label{group__Configuration_ga8a3ca98bd859b81b66d18b1e187c88d9}} 
+\index{Configuration@{Configuration}!\+\_\+flags@{\+\_\+flags}}
+\index{\+\_\+flags@{\+\_\+flags}!Configuration@{Configuration}}
+\subsubsection{\texorpdfstring{\+\_\+flags}{\_flags}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Configuration\+\_\+t\+::\+\_\+flags}
+
+\#define S\+E\+\_\+\+Time\+Configuration\+\_\+exists (1 $<$$<$ 5)
+
+\#define S\+E\+\_\+\+Price\+Response\+Cfg\+List\+Link\+\_\+exists (1 $<$$<$ 6)
+
+\#define S\+E\+\_\+\+Power\+Configuration\+\_\+exists (1 $<$$<$ 7) \mbox{\Hypertarget{group__Configuration_gae45efe46ca71698cd46e1517aa7e8bae}\label{group__Configuration_gae45efe46ca71698cd46e1517aa7e8bae}} 
+\index{Configuration@{Configuration}!current\+Locale@{current\+Locale}}
+\index{current\+Locale@{current\+Locale}!Configuration@{Configuration}}
+\subsubsection{\texorpdfstring{current\+Locale}{currentLocale}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Configuration\+\_\+t\+::current\+Locale}
+
+\mbox{[}R\+FC 4646\mbox{]} identifier of the language-\/region currently in use. \mbox{\Hypertarget{group__Configuration_ga4e903b7cfa2e74aa671801bcb604387b}\label{group__Configuration_ga4e903b7cfa2e74aa671801bcb604387b}} 
+\index{Configuration@{Configuration}!href@{href}}
+\index{href@{href}!Configuration@{Configuration}}
+\subsubsection{\texorpdfstring{href}{href}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Configuration\+\_\+t\+::href}
+
+A reference to the resource address (U\+RI). Required in a response to a G\+ET, ignored otherwise. \mbox{\Hypertarget{group__Configuration_gab33fe4f10250aa426acb5e134ab4cc0c}\label{group__Configuration_gab33fe4f10250aa426acb5e134ab4cc0c}} 
+\index{Configuration@{Configuration}!poll\+Rate@{poll\+Rate}}
+\index{poll\+Rate@{poll\+Rate}!Configuration@{Configuration}}
+\subsubsection{\texorpdfstring{poll\+Rate}{pollRate}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Configuration\+\_\+t\+::poll\+Rate}
+
+The default polling rate for this function set (this resource and all resources below), in seconds. If not specified, a default of 900 seconds (15 minutes) is used. It is R\+E\+C\+O\+M\+M\+E\+N\+D\+ED a client poll the resources of this function set every poll\+Rate seconds. \mbox{\Hypertarget{group__Configuration_ga314f37faa263874665349279e360400d}\label{group__Configuration_ga314f37faa263874665349279e360400d}} 
+\index{Configuration@{Configuration}!subscribable@{subscribable}}
+\index{subscribable@{subscribable}!Configuration@{Configuration}}
+\subsubsection{\texorpdfstring{subscribable}{subscribable}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Configuration\+\_\+t\+::subscribable}
+
+Indicates whether or not subscriptions are supported for this resource, and whether or not conditional (thresholds) are supported. If not specified, is \char`\"{}not subscribable\char`\"{} (0). \mbox{\Hypertarget{group__Configuration_gae6dff21a0f541f054b5b0c53ea90b621}\label{group__Configuration_gae6dff21a0f541f054b5b0c53ea90b621}} 
+\index{Configuration@{Configuration}!user\+Device\+Name@{user\+Device\+Name}}
+\index{user\+Device\+Name@{user\+Device\+Name}!Configuration@{Configuration}}
+\subsubsection{\texorpdfstring{user\+Device\+Name}{userDeviceName}}
+{\footnotesize\ttfamily S\+E\+\_\+\+Configuration\+\_\+t\+::user\+Device\+Name}
+
+User assigned, convenience name used for network browsing displays, etc. Example \char`\"{}\+My Thermostat\char`\"{} 

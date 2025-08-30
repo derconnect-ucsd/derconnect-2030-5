@@ -1,0 +1,28 @@
+\hypertarget{structSE__Charge__t}{}\section{S\+E\+\_\+\+Charge\+\_\+t Struct Reference}
+\label{structSE__Charge__t}\index{S\+E\+\_\+\+Charge\+\_\+t@{S\+E\+\_\+\+Charge\+\_\+t}}
+
+
+{\ttfamily \#include $<$se\+\_\+types.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries \+\_\+flags}
+\item 
+\hyperlink{group__String20_gac62354528eb48096f8deab6e503a3193}{S\+E\+\_\+\+String20\+\_\+t} \hyperlink{group__Charge_gaf71b9ce21de6c7acc90259e2ead7523b}{description}
+\item 
+\hyperlink{group__ChargeKind_gac33236bd52e13aede011017e581420b8}{S\+E\+\_\+\+Charge\+Kind\+\_\+t} \hyperlink{group__Charge_gaa4b5e0563a6399b45d450cd7140d6404}{kind}
+\item 
+\hyperlink{group__Int32_gaa7afc819cfc8033c5fa408e34da8b71a}{S\+E\+\_\+\+Int32\+\_\+t} \hyperlink{group__Charge_gaeaac7d57d7b8c24acd4edd955b84f618}{value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Charges contain charges on a customer bill. These could be items like taxes, levies, surcharges, rebates, or others. This is meant to allow the H\+AN device to retrieve enough information to be able to reconstruct an estimate of what the total bill would look like.
+
+Providers can provide line item billing, including multiple charge kinds (e.\+g. taxes, surcharges) at whatever granularity desired, using as many Charges as desired during a billing period. There can also be any number of Charges associated with different Reading\+Types to distinguish between T\+OU tiers, consumption blocks, or demand charges. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+se\+\_\+types.\+h\item 
+se\+\_\+types\+\_\+doc.\+h\end{DoxyCompactItemize}

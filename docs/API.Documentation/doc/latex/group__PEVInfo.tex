@@ -1,0 +1,80 @@
+\hypertarget{group__PEVInfo}{}\section{P\+E\+V\+Info}
+\label{group__PEVInfo}\index{P\+E\+V\+Info@{P\+E\+V\+Info}}
+Collaboration diagram for P\+E\+V\+Info\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{group__PEVInfo}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSE__PEVInfo__t}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__PEVInfo_ga0ef709bf9f4b4b2157b2c82ef43d39aa}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::charging\+Power\+Now}
+\item 
+\hyperlink{structSE__RealEnergy__t}{S\+E\+\_\+\+Real\+Energy\+\_\+t} \hyperlink{group__PEVInfo_gad47c45664492878b0b3afc247a5d5522}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::energy\+Request\+Now}
+\item 
+\hyperlink{structSE__ActivePower__t}{S\+E\+\_\+\+Active\+Power\+\_\+t} \hyperlink{group__PEVInfo_ga7c062430150ff29489e36e8d96e0b12c}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::max\+Forward\+Power}
+\item 
+\hyperlink{group__UInt32_ga70bd4ecda3c0c85d20779d685a270cdb}{S\+E\+\_\+\+U\+Int32\+\_\+t} \hyperlink{group__PEVInfo_ga5f6d6597c160908cc295b6d1392e9225}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::minimum\+Charging\+Duration}
+\item 
+\hyperlink{group__PerCent_ga14278cbee754c63496035b722b417ddc}{S\+E\+\_\+\+Per\+Cent\+\_\+t} \hyperlink{group__PEVInfo_ga36d8d6c62de4e5fe59431faa1f847189}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::target\+State\+Of\+Charge}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__PEVInfo_ga2f882d30896a2cc714f4e3c852e4fc74}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::time\+Charge\+Is\+Needed}
+\item 
+\hyperlink{group__TimeType_ga6fba87a5b57829b4ff3f0e7638156682}{S\+E\+\_\+\+Time\+Type\+\_\+t} \hyperlink{group__PEVInfo_ga3c4bef34dcb71114ec8bc685a1df5280}{S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::time\+Charging\+Status\+P\+EV}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains attributes that can be exposed by P\+E\+Vs and other devices that have charging requirements. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__PEVInfo_ga0ef709bf9f4b4b2157b2c82ef43d39aa}\label{group__PEVInfo_ga0ef709bf9f4b4b2157b2c82ef43d39aa}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!charging\+Power\+Now@{charging\+Power\+Now}}
+\index{charging\+Power\+Now@{charging\+Power\+Now}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{charging\+Power\+Now}{chargingPowerNow}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::charging\+Power\+Now}
+
+This is the actual power flow in or out of the charger or inverter. This is calculated by the vehicle based on actual measurements. This number is positive for charging. \mbox{\Hypertarget{group__PEVInfo_gad47c45664492878b0b3afc247a5d5522}\label{group__PEVInfo_gad47c45664492878b0b3afc247a5d5522}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!energy\+Request\+Now@{energy\+Request\+Now}}
+\index{energy\+Request\+Now@{energy\+Request\+Now}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{energy\+Request\+Now}{energyRequestNow}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::energy\+Request\+Now}
+
+This is the amount of energy that must be transferred from the grid to E\+V\+SE and P\+EV to achieve the target state of charge allowing for charger efficiency and any vehicle and E\+V\+SE parasitic loads. This is calculated by the vehicle and changes throughout the connection as forward or reverse power flow change the battery state of charge. This number is positive for charging. \mbox{\Hypertarget{group__PEVInfo_ga7c062430150ff29489e36e8d96e0b12c}\label{group__PEVInfo_ga7c062430150ff29489e36e8d96e0b12c}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!max\+Forward\+Power@{max\+Forward\+Power}}
+\index{max\+Forward\+Power@{max\+Forward\+Power}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{max\+Forward\+Power}{maxForwardPower}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::max\+Forward\+Power}
+
+This is maximum power transfer capability that could be used for charging the P\+EV to perform the requested energy transfer. It is the lower of the vehicle or E\+V\+SE physical power limitations. It is not based on economic considerations. The vehicle may draw less power than this value based on its charging cycle. The vehicle defines this parameter. This number is positive for charging power flow. \mbox{\Hypertarget{group__PEVInfo_ga5f6d6597c160908cc295b6d1392e9225}\label{group__PEVInfo_ga5f6d6597c160908cc295b6d1392e9225}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!minimum\+Charging\+Duration@{minimum\+Charging\+Duration}}
+\index{minimum\+Charging\+Duration@{minimum\+Charging\+Duration}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{minimum\+Charging\+Duration}{minimumChargingDuration}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::minimum\+Charging\+Duration}
+
+This is computed by the P\+EV based on the charging profile to complete the energy transfer if the maximum power is authorized. The value will never be smaller than the ratio of the energy request to the power request because the charging profile may not allow the maximum power to be used throughout the transfer. This is a critical parameter for determining whether any slack time exists in the charging cycle between the current time and the T\+C\+IN. \mbox{\Hypertarget{group__PEVInfo_ga36d8d6c62de4e5fe59431faa1f847189}\label{group__PEVInfo_ga36d8d6c62de4e5fe59431faa1f847189}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!target\+State\+Of\+Charge@{target\+State\+Of\+Charge}}
+\index{target\+State\+Of\+Charge@{target\+State\+Of\+Charge}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{target\+State\+Of\+Charge}{targetStateOfCharge}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::target\+State\+Of\+Charge}
+
+This is the target state of charge that is to be achieved during charging before the time of departure (T\+C\+IN). The default value is 100\%. The value cannot be set to a value less than the actual state of charge. \mbox{\Hypertarget{group__PEVInfo_ga2f882d30896a2cc714f4e3c852e4fc74}\label{group__PEVInfo_ga2f882d30896a2cc714f4e3c852e4fc74}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!time\+Charge\+Is\+Needed@{time\+Charge\+Is\+Needed}}
+\index{time\+Charge\+Is\+Needed@{time\+Charge\+Is\+Needed}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{time\+Charge\+Is\+Needed}{timeChargeIsNeeded}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::time\+Charge\+Is\+Needed}
+
+Time Charge is Needed (T\+C\+IN) is the time that the P\+EV is expected to depart. The value is manually entered using controls and displays in the vehicle or on the E\+V\+SE or using a mobile device. It is authenticated and saved by the P\+EV. This value may be updated during a charging session. \mbox{\Hypertarget{group__PEVInfo_ga3c4bef34dcb71114ec8bc685a1df5280}\label{group__PEVInfo_ga3c4bef34dcb71114ec8bc685a1df5280}} 
+\index{P\+E\+V\+Info@{P\+E\+V\+Info}!time\+Charging\+Status\+P\+EV@{time\+Charging\+Status\+P\+EV}}
+\index{time\+Charging\+Status\+P\+EV@{time\+Charging\+Status\+P\+EV}!P\+E\+V\+Info@{P\+E\+V\+Info}}
+\subsubsection{\texorpdfstring{time\+Charging\+Status\+P\+EV}{timeChargingStatusPEV}}
+{\footnotesize\ttfamily S\+E\+\_\+\+P\+E\+V\+Info\+\_\+t\+::time\+Charging\+Status\+P\+EV}
+
+This is the time that the parameters are updated, except for changes to T\+C\+IN. 

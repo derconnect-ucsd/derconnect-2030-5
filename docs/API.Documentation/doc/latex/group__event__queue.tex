@@ -1,0 +1,83 @@
+\hypertarget{group__event__queue}{}\section{Event Queue}
+\label{group__event__queue}\index{Event Queue@{Event Queue}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__event__queue_gaff84eb9632fc20086dd9853d249b39ec}\label{group__event__queue_gaff84eb9632fc20086dd9853d249b39ec}} 
+\#define {\bfseries E\+V\+E\+N\+T\+\_\+\+T\+I\+M\+ER}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+2)
+\item 
+\mbox{\Hypertarget{group__event__queue_ga813ea155658c016a7c9b69e3418e5d0a}\label{group__event__queue_ga813ea155658c016a7c9b69e3418e5d0a}} 
+\#define {\bfseries E\+V\+E\+N\+T\+\_\+\+S\+T\+A\+RT}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+3)
+\item 
+\mbox{\Hypertarget{group__event__queue_ga17320346a282fc1dc697bb25278ca1be}\label{group__event__queue_ga17320346a282fc1dc697bb25278ca1be}} 
+\#define {\bfseries E\+V\+E\+N\+T\+\_\+\+E\+ND}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+4)
+\item 
+\mbox{\Hypertarget{group__event__queue_ga5250420b845f38502703f9b84753021f}\label{group__event__queue_ga5250420b845f38502703f9b84753021f}} 
+\#define {\bfseries E\+V\+E\+N\+T\+\_\+\+U\+P\+D\+A\+TE}~(\hyperlink{group__event_gga2628ea8d12e8b2563c32f05dc7fff6faa747b63b45296ad40109256f1a3c93bb7}{E\+V\+E\+N\+T\+\_\+\+N\+EW}+5)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__event__queue_gaa77118055993ed58322ec2de84b2a882}{insert\+\_\+event} (void $\ast$data, int type, int64\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Insert an event into the queue. \end{DoxyCompactList}\item 
+void \hyperlink{group__event__queue_ga6dc3ba93481bf089b19ce108d04711e6}{remove\+\_\+event} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Remove all events from the queue that match the event data. \end{DoxyCompactList}\item 
+int \hyperlink{group__event__queue_gabf7fc29f08e3723a690036b3d0c63d81}{next\+\_\+event} (void $\ast$$\ast$any)
+\begin{DoxyCompactList}\small\item\em Returns (and removes) the next active event from the queue if any. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__event__queue_ga0675272d0bed0894084544d46b5417a0}\label{group__event__queue_ga0675272d0bed0894084544d46b5417a0}} 
+void \hyperlink{group__event__queue_ga0675272d0bed0894084544d46b5417a0}{event\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Create an event queue timer to wake up \hyperlink{group__event_gaab7ac3049413d657bde5b7a6ae33c128}{event\+\_\+poll}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a timed event queue. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__event__queue_gaa77118055993ed58322ec2de84b2a882}\label{group__event__queue_gaa77118055993ed58322ec2de84b2a882}} 
+\index{Event Queue@{Event Queue}!insert\+\_\+event@{insert\+\_\+event}}
+\index{insert\+\_\+event@{insert\+\_\+event}!Event Queue@{Event Queue}}
+\subsubsection{\texorpdfstring{insert\+\_\+event()}{insert\_event()}}
+{\footnotesize\ttfamily void insert\+\_\+event (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{int}]{type,  }\item[{int64\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+Insert an event into the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is a pointer to the event data \\
+\hline
+{\em type} & is the type of the event \\
+\hline
+{\em time} & is the time at which the event becomes active \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__event__queue_gabf7fc29f08e3723a690036b3d0c63d81}\label{group__event__queue_gabf7fc29f08e3723a690036b3d0c63d81}} 
+\index{Event Queue@{Event Queue}!next\+\_\+event@{next\+\_\+event}}
+\index{next\+\_\+event@{next\+\_\+event}!Event Queue@{Event Queue}}
+\subsubsection{\texorpdfstring{next\+\_\+event()}{next\_event()}}
+{\footnotesize\ttfamily int next\+\_\+event (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{any }\end{DoxyParamCaption})}
+
+
+
+Returns (and removes) the next active event from the queue if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em any} & is a pointer to value that receives the event data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the type of event or E\+V\+E\+N\+T\+\_\+\+N\+O\+NE if there are no active events in the queue. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__event__queue_ga6dc3ba93481bf089b19ce108d04711e6}\label{group__event__queue_ga6dc3ba93481bf089b19ce108d04711e6}} 
+\index{Event Queue@{Event Queue}!remove\+\_\+event@{remove\+\_\+event}}
+\index{remove\+\_\+event@{remove\+\_\+event}!Event Queue@{Event Queue}}
+\subsubsection{\texorpdfstring{remove\+\_\+event()}{remove\_event()}}
+{\footnotesize\ttfamily void remove\+\_\+event (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Remove all events from the queue that match the event data. 
+
+data is a pointer to the event data 
